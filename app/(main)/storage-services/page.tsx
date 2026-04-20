@@ -1,0 +1,22 @@
+import type { Metadata } from "next";
+import ServicePage from "@/components/pages/ServicePage";
+
+// Force SSR on-demand — page components use React hooks (use client)
+export const dynamic = 'force-dynamic';
+
+export const metadata: Metadata = {
+  title: "Moving Storage Services in Seattle | On The Go Moving",
+  description: "Secure storage vaults at our Redmond facility. Short and long-term storage for your belongings during a move. Climate-controlled warehouse. Free quotes — (425) 761-8500.",
+  alternates: {
+    canonical: "https://onthegomoving.com/storage-services/",
+  },
+  openGraph: {
+    title: "Moving Storage Services in Seattle | On The Go Moving",
+    description: "Secure storage vaults at our Redmond facility. Short and long-term storage for your belongings during a move. Climate-controlled warehouse. Free quotes — (425) 761-8500.",
+    url: "https://onthegomoving.com/storage-services/",
+  },
+};
+
+export default function Page() {
+  return <ServicePage slug="storage-services" />;
+}

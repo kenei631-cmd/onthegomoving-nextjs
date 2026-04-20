@@ -1,0 +1,464 @@
+"use client";
+
+// ON THE GO MOVING — Blog Post Template
+// Design: Clean Pacific Utility — readable article layout with sticky sidebar
+// AEO Strategy: Direct-answer paragraphs, FAQ schema, author markup, internal linking
+// Schema: Article + FAQPage + BreadcrumbList JSON-LD on every post
+// Data: 230 posts imported from /lib/blogData.ts (auto-generated from WordPress scrape)
+// ==========================================================================
+import { useEffect } from "react";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { BRAND_IMAGES } from "@/lib/brandImages";
+import { ArrowRight, Calendar, Clock, User, Tag, ChevronRight } from "lucide-react";
+import { BLOG_POSTS } from "@/lib/blogPosts";
+import { POSTS_DATA } from "@/lib/blogData";
+
+// ── RELATED POSTS SIDEBAR ─────────────────────────────────────────────────────
+function RelatedPosts({ currentSlug, category }: { currentSlug: string; category: string }) {
+  const related = BLOG_POSTS.filter(p => p.slug !== currentSlug && p.category === category).slice(0, 3);
+  const others = BLOG_POSTS.filter(p => p.slug !== currentSlug && p.category !== category).slice(0, 3 - related.length);
+  const posts = [...related, ...others].slice(0, 3);
+  return (
+    <div className="bg-[#f5f5f3] rounded-xl p-5">
+      <h3 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-widest">Related Articles</h3>
+      <div className="space-y-4">
+        {posts.map(p => (
+          <Link key={p.slug} href={`/${p.slug}/`}>
+            <div className="flex gap-3 group cursor-pointer">
+              <div className="w-16 h-14 rounded-lg overflow-hidden flex-shrink-0">
+                <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+              </div>
+              <div>
+                <p className="text-xs font-semibold text-gray-800 group-hover:text-[#75aa11] transition-colors leading-snug line-clamp-2">{p.title}</p>
+                <p className="text-xs text-gray-400 mt-1">{p.readTime}</p>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ── QUOTE CTA SIDEBAR ─────────────────────────────────────────────────────────
+function QuoteCTA() {
+  return (
+    <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100">
+      <div className="p-5" style={{ backgroundColor: "#1e3a0f" }}>
+        <p className="text-white font-bold text-lg" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+          Moving in the Seattle Area?
+        </p>
+        <p className="text-white/70 text-sm mt-1">Get a free, no-obligation quote from On The Go Moving.</p>
+      </div>
+      <div className="p-5 bg-white">
+        <ul className="space-y-2 mb-4">
+          {["Licensed & insured in WA", "Flat-rate & hourly options", "No hidden fees", "5-star rated crew"].map(item => (
+            <li key={item} className="flex items-center gap-2 text-sm text-gray-700">
+              <span className="w-4 h-4 rounded-full flex items-center justify-center text-white text-xs flex-shrink-0" style={{ backgroundColor: "#75aa11" }}>✓</span>
+              {item}
+            </li>
+          ))}
+        </ul>
+        <Link href="/contact-us/" className="btn-gold w-full text-center block text-sm">
+          Get a Free Quote
+        </Link>
+        <p className="text-center text-xs text-gray-400 mt-2">Or call <a href="tel:+14257618500" className="font-semibold" style={{ color: "#75aa11" }}>(425) 761-8500</a></p>
+      </div>
+    </div>
+  );
+}
+
+export default function BlogPost({ slug: slugProp }: { slug?: string }) {
+  const slug = slugProp ?? "";
+  const post = POSTS_DATA[slug];
+  const meta = BLOG_POSTS.find(p => p.slug === slug);
+
+  // Scroll to top on mount
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [slug]);
+
+  // Inject JSON-LD schema
+  useEffect(() => {
+    if (!post) return;
+    const articleSchema = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.title,
+      "description": post.metaDescription,
+      "datePublished": post.dateISO,
+      "dateModified": post.dateISO,
+      "author": {
+        "@type": "Organization",
+        "name": "On The Go Moving & Storage",
+        "url": "https://onthegomoving.com",
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "On The Go Moving & Storage",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://onthegomoving.com/wp-content/uploads/2021/10/on-the-go-moving-logo.png",
+        },
+      },
+      "image": post.heroImage,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://onthegomoving.com/${post.slug}/`,
+      },
+    };
+
+    const faqSchema = post.faqs.length > 0 ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": post.faqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.a,
+        },
+      })),
+    } : null;
+
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://onthegomoving.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://onthegomoving.com/blog/" },
+        { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://onthegomoving.com/${post.slug}/` },
+      ],
+    };
+
+    // Remove old schemas
+    document.querySelectorAll('script[data-blog-schema]').forEach(el => el.remove());
+
+    const schemas = [articleSchema, breadcrumbSchema, ...(faqSchema ? [faqSchema] : [])];
+    schemas.forEach(schema => {
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.setAttribute("data-blog-schema", "true");
+      script.textContent = JSON.stringify(schema);
+      document.head.appendChild(script);
+    });
+
+    // Update meta tags
+    document.title = post.metaTitle;
+    let metaDesc = document.querySelector('meta[name="description"]');
+    if (!metaDesc) {
+      metaDesc = document.createElement("meta");
+      metaDesc.setAttribute("name", "description");
+      document.head.appendChild(metaDesc);
+    }
+    metaDesc.setAttribute("content", post.metaDescription);
+
+    // Canonical link tag
+    let canonicalEl = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+    if (!canonicalEl) {
+      canonicalEl = document.createElement("link");
+      canonicalEl.setAttribute("rel", "canonical");
+      document.head.appendChild(canonicalEl);
+    }
+    canonicalEl.setAttribute("href", `https://onthegomoving.com/${post.slug}/`);
+
+    // OG + Twitter tags
+    const setOG = (prop: string, content: string) => {
+      let el = document.querySelector(`meta[property="${prop}"]`) as HTMLMetaElement;
+      if (!el) { el = document.createElement("meta"); el.setAttribute("property", prop); document.head.appendChild(el); }
+      el.setAttribute("content", content);
+    };
+    const setMetaName = (name: string, content: string) => {
+      let el = document.querySelector(`meta[name="${name}"]`) as HTMLMetaElement;
+      if (!el) { el = document.createElement("meta"); el.setAttribute("name", name); document.head.appendChild(el); }
+      el.setAttribute("content", content);
+    };
+    const ogImage = post.heroImage || "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-storage-truck.jpg";
+    const postUrl = `https://onthegomoving.com/${post.slug}/`;
+    setOG("og:type", "article");
+    setOG("og:title", post.metaTitle);
+    setOG("og:description", post.metaDescription);
+    setOG("og:url", postUrl);
+    setOG("og:image", ogImage);
+    setOG("og:site_name", "On The Go Moving & Storage");
+    setMetaName("twitter:card", "summary_large_image");
+    setMetaName("twitter:title", post.metaTitle);
+    setMetaName("twitter:description", post.metaDescription);
+    setMetaName("twitter:image", ogImage);
+
+    return () => {
+      document.querySelectorAll('script[data-blog-schema]').forEach(el => el.remove());
+    };
+  }, [post, slug]);
+
+  // 404 for unknown slugs — show a "coming soon" placeholder
+  if (!post) {
+    const placeholderMeta = meta;
+    return (
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="flex-1 pt-[72px]">
+          <section className="py-24 bg-[#f5f5f3] text-center">
+            <div className="container max-w-2xl">
+              <p className="section-label text-[#75aa11] mb-3">Coming Soon</p>
+              <h1 className="text-4xl font-extrabold text-gray-900 mb-4" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                {placeholderMeta?.title ?? "Article Coming Soon"}
+              </h1>
+              <p className="text-gray-500 mb-8">
+                This article is being migrated from our WordPress site. Check back soon, or browse our other moving guides below.
+              </p>
+              <Link href="/blog/" className="btn-gold inline-flex items-center gap-2">
+                Browse All Articles <ArrowRight size={15} />
+              </Link>
+            </div>
+          </section>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-1 pt-[72px]">
+
+        {/* ── HERO ── */}
+        <section
+          className="relative"
+          style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(15,40,10,0.85) 0%, rgba(15,40,10,0.60) 100%), url(${post.heroImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="container py-16 relative z-10">
+            {/* Breadcrumb */}
+            <nav className="flex items-center gap-1.5 text-green-300/70 text-xs mb-6">
+              <Link href="/" className="hover:text-white">Home</Link>
+              <ChevronRight size={12} />
+              <Link href="/blog/" className="hover:text-white">Blog</Link>
+              <ChevronRight size={12} />
+              <span className="text-white/80 truncate max-w-xs">{post.title}</span>
+            </nav>
+
+            {/* Category + meta */}
+            <div className="flex flex-wrap items-center gap-3 mb-4">
+              <span className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full text-white" style={{ backgroundColor: "#75aa11" }}>
+                <Tag size={10} className="inline mr-1" />{post.category}
+              </span>
+              <span className="text-xs text-white/60 flex items-center gap-1"><Calendar size={11} /> {post.date}</span>
+              <span className="text-xs text-white/60 flex items-center gap-1"><Clock size={11} /> {post.readTime}</span>
+              <span className="text-xs text-white/60 flex items-center gap-1"><User size={11} /> {post.author}</span>
+            </div>
+
+            <h1
+              className="text-4xl lg:text-5xl font-extrabold text-white max-w-3xl leading-tight"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+            >
+              {post.title}
+            </h1>
+          </div>
+        </section>
+
+        {/* ── ARTICLE BODY + SIDEBAR ── */}
+        <section className="py-12 bg-white">
+          <div className="container">
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10">
+
+              {/* MAIN CONTENT */}
+              <article className="max-w-none">
+                {/* Intro paragraph — AEO direct answer */}
+                <p className="text-lg text-gray-700 leading-relaxed mb-8 font-medium border-l-4 pl-5" style={{ borderColor: "#75aa11" }}>
+                  {post.intro}
+                </p>
+
+                {/* Sections */}
+                {post.sections.map((section, i) => (
+                  <div key={i} className="mb-8">
+                    {section.type === "h2" ? (
+                      <h2
+                        className="text-2xl font-extrabold text-gray-900 mb-3 pb-2 border-b border-gray-100"
+                        style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+                      >
+                        {section.heading}
+                      </h2>
+                    ) : (
+                      <h3
+                        className="text-xl font-bold text-gray-900 mb-2"
+                        style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+                      >
+                        {section.heading}
+                      </h3>
+                    )}
+                    <p className="text-gray-600 leading-relaxed">{section.body}</p>
+                  </div>
+                ))}
+
+                {/* Internal CTA — prominent mid-article conversion block */}
+                {post.relatedService && (
+                  <div className="my-10 rounded-2xl overflow-hidden shadow-md" style={{ background: "linear-gradient(135deg, #1e3a0f 0%, #2d5a1b 100%)" }}>
+                    <div className="p-6 sm:p-8">
+                      <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <div className="flex-1">
+                          <p className="text-white font-extrabold text-xl mb-1" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                            Ready to Move in the Seattle Area?
+                          </p>
+                          <p className="text-white/80 text-sm">
+                            On The Go Moving serves Redmond, Bellevue, Kirkland, Seattle &amp; 20+ Eastside cities. Licensed, insured, 4.8★ rated.
+                          </p>
+                        </div>
+                        <div className="flex flex-col gap-2 sm:items-end flex-shrink-0">
+                          <Link href="/contact-us/" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm text-white" style={{ backgroundColor: "#75aa11" }}>
+                            Get a Free Quote <ArrowRight size={14} />
+                          </Link>
+                          <a href="tel:+14257618500" className="text-white/70 text-xs text-center hover:text-white transition-colors">
+                            Or call (425) 761-8500
+                          </a>
+                        </div>
+                      </div>
+                      <div className="mt-4 pt-4 border-t border-white/20">
+                        <p className="text-white/60 text-xs mb-2">Explore our services:</p>
+                        <div className="flex flex-wrap gap-2">
+                          {[
+                            { label: "Residential Moving", href: "/residential-moving/" },
+                            { label: "Packing Services", href: "/packing-services/" },
+                            { label: "Storage", href: "/storage-services/" },
+                            { label: "Commercial Moving", href: "/commercial-moving/" },
+                            { label: "Senior Moving", href: "/senior-moving/" },
+                          ].map(s => (
+                            <Link key={s.href} href={s.href} className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold text-white/90 hover:text-white transition-colors" style={{ backgroundColor: "rgba(255,255,255,0.12)" }}>
+                              {s.label}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* FAQ Section */}
+                {post.faqs.length > 0 && (
+                  <div className="mt-10">
+                    <h2
+                      className="text-2xl font-extrabold text-gray-900 mb-6"
+                      style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+                    >
+                      Frequently Asked Questions
+                    </h2>
+                    <div className="space-y-5">
+                      {post.faqs.map((faq, i) => (
+                        <div key={i} className="border border-gray-100 rounded-xl p-5 bg-[#fafafa]">
+                          <h3 className="font-bold text-gray-900 mb-2 text-base">{faq.q}</h3>
+                          <p className="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+
+                {/* Author Box */}
+                <div className="mt-12 p-5 rounded-xl bg-[#f5f5f3] flex gap-4 items-start">
+                  <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
+                    <img src={BRAND_IMAGES.ourCompany} alt="On The Go Moving Team" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <p className="font-bold text-gray-900 text-sm">{post.author}</p>
+                    <p className="text-gray-500 text-xs mt-0.5">
+                      On The Go Moving & Storage has been serving the Seattle/Eastside area since 2007. Our team of professional movers has completed thousands of residential, apartment, and commercial moves across King and Snohomish counties.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Bottom CTA — full-width conversion block before back link */}
+                <div className="mt-10 rounded-2xl p-6 sm:p-8 text-center" style={{ backgroundColor: "#f0f7e6", border: "2px solid #75aa11" }}>
+                  <p className="text-2xl font-extrabold text-gray-900 mb-2" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
+                    Get a Free Moving Quote Today
+                  </p>
+                  <p className="text-gray-600 text-sm mb-5">
+                    Serving Seattle, Bellevue, Redmond, Kirkland, Sammamish &amp; the entire Eastside. Flat-rate pricing. No hidden fees.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                    <Link href="/contact-us/" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-bold text-white text-sm" style={{ backgroundColor: "#75aa11" }}>
+                      Request a Free Quote <ArrowRight size={14} />
+                    </Link>
+                    <a href="tel:+14257618500" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-bold text-sm" style={{ backgroundColor: "#1e3a0f", color: "white" }}>
+                      Call (425) 761-8500
+                    </a>
+                  </div>
+                  <div className="mt-4 flex flex-wrap justify-center gap-4 text-xs text-gray-500">
+                    <span>✓ Licensed &amp; Insured in WA</span>
+                    <span>✓ 4.8★ Google Rating</span>
+                    <span>✓ Flat-Rate Pricing</span>
+                    <span>✓ No Hidden Fees</span>
+                  </div>
+                </div>
+
+                {/* Back to Blog */}
+                <div className="mt-8">
+                  <Link href="/blog/" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[#75aa11] transition-colors">
+                    ← Back to All Articles
+                  </Link>
+                </div>
+              </article>
+
+              {/* SIDEBAR */}
+              <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+                <QuoteCTA />
+                <RelatedPosts currentSlug={slug} category={post.category} />
+
+                {/* Service Links */}
+                <div className="bg-[#f5f5f3] rounded-xl p-5">
+                  <h3 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-widest">Our Services</h3>
+                  <div className="space-y-2">
+                    {[
+                      { label: "Residential Moving", href: "/residential-moving/" },
+                      { label: "Apartment Moving", href: "/apartment-moving/" },
+                      { label: "Commercial Moving", href: "/commercial-moving/" },
+                      { label: "Packing Services", href: "/packing-services/" },
+                      { label: "Storage Services", href: "/storage-services/" },
+                      { label: "Senior Moving", href: "/senior-moving/" },
+                      { label: "Specialty Moving", href: "/specialty-moving/" },
+                    ].map(s => (
+                      <Link key={s.href} href={s.href} className="flex items-center justify-between text-sm text-gray-700 hover:text-[#75aa11] transition-colors py-1 border-b border-gray-100 last:border-0">
+                        {s.label} <ChevronRight size={13} className="text-gray-400" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Contextual Location Links — dynamic based on post topic */}
+                <div className="bg-white rounded-xl p-5 border border-gray-100">
+                  <h3 className="font-bold text-gray-900 mb-3 text-sm uppercase tracking-widest">Serving Your City</h3>
+                  <div className="space-y-2">
+                    {[
+                      { label: "Seattle Movers", href: "/seattle-movers/" },
+                      { label: "Bellevue Movers", href: "/bellevue-movers/" },
+                      { label: "Redmond Movers", href: "/redmond-movers/" },
+                      { label: "Kirkland Movers", href: "/kirkland-movers/" },
+                      { label: "Sammamish Movers", href: "/sammamish-movers/" },
+                      { label: "Issaquah Movers", href: "/issaquah-movers/" },
+                      { label: "Bothell Movers", href: "/bothell-movers/" },
+                    ].map(s => (
+                      <Link key={s.href} href={s.href} className="flex items-center justify-between text-sm text-gray-700 hover:text-[#75aa11] transition-colors py-1 border-b border-gray-100 last:border-0">
+                        {s.label} <ChevronRight size={13} className="text-gray-400" />
+                      </Link>
+                    ))}
+                  </div>
+                  <Link href="/we-are-local/" className="mt-3 flex items-center gap-1 text-xs font-semibold" style={{ color: "#75aa11" }}>
+                    View all service areas <ChevronRight size={11} />
+                  </Link>
+                </div>
+              </aside>
+
+            </div>
+          </div>
+        </section>
+
+      </main>
+      <Footer />
+    </div>
+  );
+}
