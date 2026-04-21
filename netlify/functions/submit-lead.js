@@ -18,12 +18,14 @@ function getSupermoveJobType(moveType) {
 function buildSupermovePayload(lead) {
   const { projectType, jobType } = getSupermoveJobType(lead.moveType);
 
-  let projectSize = "";
+  // PROJECT_SIZE must be one of the valid SuperMove enum values:
+  // 'Studio', '1 Bedroom', '2 Bedrooms', '3 Bedrooms', '4 Bedrooms',
+  // '5 Bedrooms', '6+ Bedrooms', 'Commercial', '(none)'
+  let projectSize = "(none)";
   if (lead.moveType === "commercial") {
-    // For commercial, use square footage as the project size if provided
-    projectSize = lead.squareFeet ? `${lead.squareFeet} sq ft` : "Commercial";
+    projectSize = "Commercial";
   } else if (lead.moveSize) {
-    projectSize = lead.moveSize;
+    projectSize = lead.moveSize; // Already matches enum (Studio, 1 Bedroom, etc.)
   }
 
   const noteLines = [
