@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { POSTS_DATA } from "@/lib/blogData";
 import BlogPost from "@/components/pages/BlogPost";
 
-
 export async function generateStaticParams() {
   return Object.keys(POSTS_DATA).map((slug) => ({ slug }));
 }
@@ -17,7 +16,9 @@ export async function generateMetadata({
   const post = POSTS_DATA[slug];
   if (!post) return {};
 
-  // Canonical points to root-level URL matching the live WordPress site structure
+  // Canonical always points to the root-level URL (no /blog/ prefix),
+  // matching the live WordPress site. The Netlify redirect rule in netlify.toml
+  // handles the actual 301 redirect from /blog/slug/ → /slug/.
   const canonical = `https://onthegomoving.com/${post.slug}/`;
 
   return {

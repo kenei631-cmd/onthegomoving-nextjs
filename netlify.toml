@@ -6,3 +6,18 @@
 [build.environment]
   NODE_VERSION = "20"
   PNPM_VERSION = "9"
+
+# Redirect /blog/[slug]/ → /[slug]/ (301) to consolidate blog post URLs
+# at the root level, matching the live WordPress site structure.
+# This prevents duplicate content between /blog/slug/ and /slug/.
+[[redirects]]
+  from = "/blog/:slug/"
+  to = "/:slug/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/:slug"
+  to = "/:slug/"
+  status = 301
+  force = true
