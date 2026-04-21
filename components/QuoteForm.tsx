@@ -13,12 +13,13 @@
 //   Row 4: Move Type (full width)
 //   Row 5: Move Size (full width, apartment/house only) OR Square Feet (commercial only)
 //   Row 6: Free Storage checkbox
+//   Row 7: Urgency signal (landing pages only, when showUrgency=true)
 //
 // Move Size values map 1:1 to Supermove's PROJECT_SIZE enum.
 // ==========================================================================
 
 import { useState, useEffect } from "react";
-import { ArrowLeftRight, ArrowRight, CheckCircle, Loader2, Lock } from "lucide-react";
+import { ArrowLeftRight, ArrowRight, CheckCircle, Loader2, Lock, Zap } from "lucide-react";
 import { toast } from "sonner";
 
 interface QuoteFormProps {
@@ -28,6 +29,18 @@ interface QuoteFormProps {
   sourceLabel?: string;
   /** Pre-check the Free Storage checkbox (use on storage-related pages) */
   defaultFreeStorage?: boolean;
+  /**
+   * Pre-select the Move Type dropdown.
+   * "apartment" | "house" | "commercial"
+   * Use on intent-specific landing pages to reduce friction.
+   */
+  defaultMoveType?: "apartment" | "house" | "commercial" | "";
+  /**
+   * When true, shows an urgency signal above the submit button and redirects
+   * to /get/thank-you/ instead of the main thank-you page.
+   * Set to true on all /get/* landing pages.
+   */
+  isLandingPage?: boolean;
 }
 
 const MOVE_SIZES = [
@@ -40,7 +53,25 @@ const MOVE_SIZES = [
   "6+ Bedrooms",
 ];
 
-export default function QuoteForm({ variant = "hero", className = "", sourceLabel, defaultFreeStorage = false }: QuoteFormProps) {
+/** Push a GTM phone_click event. Call from onClick on any phone <a> tag. */
+export function pushPhoneClickEvent(source?: string) {
+  if (typeof window !== "undefined" && (window as any).dataLayer) {
+    (window as any).dataLayer.push({
+      event: "phone_click",
+      phoneClickSource: source || "unknown",
+      pagePath: window.location.pathname,
+    });
+  }
+}
+
+export default function QuoteForm({
+  variant = "hero",
+  className = "",
+  sourceLabel,
+  defaultFreeStorage = false,
+  defaultMoveType = "",
+  isLandingPage = false,
+}: QuoteFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [focused, setFocused] = useState<string | null>(null);
@@ -58,9 +89,9 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
     moveDate: "",
     zipFrom: "",
     zipTo: "",
-    moveType: "",   // "apartment" | "house" | "commercial"
-    moveSize: "",   // Studio, 1 Bedroom, 2 Bedrooms … (apartment/house only)
-    squareFeet: "", // commercial only
+    moveType: defaultMoveType,  // "apartment" | "house" | "commercial"
+    moveSize: "",               // Studio, 1 Bedroom, 2 Bedrooms … (apartment/house only)
+    squareFeet: "",             // commercial only
     freeStorage: defaultFreeStorage,
   });
 
@@ -143,17 +174,21 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
         throw new Error("Function returned error");
       }
 
-      // Push GTM event if dataLayer is available
+      // Push GTM event — differentiate landing page vs organic
       if (typeof window !== "undefined" && (window as any).dataLayer) {
         (window as any).dataLayer.push({
-          event: "quote_form_submit",
+          event: isLandingPage ? "paid_lead_form_submit" : "quote_form_submit",
           formData: { moveType: formData.moveType, moveSize: formData.moveSize, zipFrom: formData.zipFrom },
+          isLandingPage,
         });
       }
 
       setSubmitted(true);
       setTimeout(() => {
-        window.location.href = "/thank-you-get-a-quote-services/";
+        // Landing pages redirect to /get/thank-you/ for accurate paid conversion tracking
+        window.location.href = isLandingPage
+          ? "/get/thank-you/"
+          : "/thank-you-get-a-quote-services/";
       }, 1500);
     } catch (err) {
       console.error("[QuoteForm] Submission error:", err);
@@ -246,6 +281,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
             type="text"
             name="fullName"
             required
+            autoComplete="name"
             value={formData.fullName}
             onChange={handleChange}
             placeholder="Jane Smith"
@@ -265,6 +301,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
             type="tel"
             name="phone"
             required
+            autoComplete="tel"
             value={formData.phone}
             onChange={handleChange}
             placeholder="(425) 555-0100"
@@ -285,6 +322,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
             type="email"
             name="email"
             required
+            autoComplete="email"
             value={formData.email}
             onChange={handleChange}
             placeholder="jane@example.com"
@@ -304,6 +342,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
             type="date"
             name="moveDate"
             required
+            autoComplete="off"
             value={formData.moveDate}
             onChange={handleChange}
             className={inputClass("moveDate")}
@@ -325,6 +364,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
               type="text"
               name="zipFrom"
               required
+              autoComplete="postal-code"
               value={formData.zipFrom}
               onChange={handleChange}
               placeholder="98052"
@@ -356,6 +396,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
               type="text"
               name="zipTo"
               required
+              autoComplete="off"
               value={formData.zipTo}
               onChange={handleChange}
               placeholder="98101"
@@ -427,6 +468,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
               type="text"
               name="squareFeet"
               required
+              autoComplete="off"
               value={formData.squareFeet}
               onChange={handleChange}
               placeholder="e.g. 2500"
@@ -457,12 +499,22 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
 
       </div>
 
+      {/* Urgency signal — landing pages only */}
+      {isLandingPage && (
+        <div className="mt-4 flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2.5">
+          <Zap size={14} className="text-amber-500 flex-shrink-0" />
+          <p className="text-xs text-amber-800 font-medium">
+            Crews available this week — slots fill fast in summer. Submit now to hold your date.
+          </p>
+        </div>
+      )}
+
       {/* Submit button */}
       <button
         type="submit"
         disabled={loading}
         className={[
-          "mt-5 w-full flex items-center justify-center gap-2 py-3 text-base font-bold rounded-md",
+          "mt-4 w-full flex items-center justify-center gap-2 py-3 text-base font-bold rounded-md",
           "transition-all duration-200",
           "bg-[#fbc319] text-[#1a1a1a] uppercase tracking-wide",
           loading

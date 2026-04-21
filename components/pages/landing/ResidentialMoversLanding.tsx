@@ -4,10 +4,11 @@
 // Google Ads landing page — trust-focused, reviews, family-owned
 // noindex: paid traffic only
 // ==========================================================================
-import QuoteForm from "@/components/QuoteForm";
+import { useState } from "react";
+import QuoteForm, { pushPhoneClickEvent } from "@/components/QuoteForm";
 import { COMPANY } from "@/lib/siteData";
 import { BRAND_IMAGES } from "@/lib/brandImages";
-import { Phone, CheckCircle, Home, Star, Shield, Users, Package, Clock } from "lucide-react";
+import { Phone, CheckCircle, Home, Star, Shield, Users, Package, Clock, ChevronDown, ChevronUp } from "lucide-react";
 
 const MOVE_TYPES = [
   {
@@ -60,6 +61,45 @@ const TRUST_ITEMS = [
   { icon: CheckCircle, text: "1 free month storage with every move" },
 ];
 
+const FAQS = [
+  {
+    q: "What does flat-rate pricing mean?",
+    a: "Flat-rate means the price we quote you is the price you pay — period. We don't run an hourly clock that can balloon if the move takes longer than expected. You'll know your exact cost before move day.",
+  },
+  {
+    q: "What's included in a residential move?",
+    a: "A trained crew (2–4 movers), a moving truck, all equipment (dollies, furniture pads, straps, floor runners), careful loading and unloading, furniture disassembly and reassembly, and placement at your destination.",
+  },
+  {
+    q: "Do you move pianos, safes, and specialty items?",
+    a: "Yes. We have specialized equipment and experience for pianos, gun safes, large appliances, and other heavy or fragile specialty items. Just mention them when you request your quote.",
+  },
+  {
+    q: "How far in advance should I book?",
+    a: "We recommend booking 2–4 weeks in advance for weekend moves, especially in summer. That said, we often have weekday availability on shorter notice — call us to check.",
+  },
+];
+
+function FaqItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border border-gray-200 rounded-xl overflow-hidden">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors"
+      >
+        <span className="font-semibold text-[#1a2e0a] text-sm sm:text-base">{q}</span>
+        {open ? <ChevronUp size={18} className="text-[#75aa11] flex-shrink-0" /> : <ChevronDown size={18} className="text-gray-400 flex-shrink-0" />}
+      </button>
+      {open && (
+        <div className="px-5 pb-4 text-gray-600 text-sm border-t border-gray-100 pt-3 bg-white">
+          {a}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function ResidentialMoversLanding() {
   return (
     <div className="bg-white">
@@ -87,6 +127,7 @@ export default function ResidentialMoversLanding() {
               {/* Phone CTA */}
               <a
                 href={COMPANY.phoneHref}
+                onClick={() => pushPhoneClickEvent("residential-hero")}
                 className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-xl px-8 py-4 rounded-xl transition-colors shadow-lg mb-6"
               >
                 <Phone size={22} />
@@ -108,9 +149,40 @@ export default function ResidentialMoversLanding() {
             <div id="quote-form" className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8">
               <h2 className="text-[#1a2e0a] text-xl font-bold mb-1">Get Your Free Moving Quote</h2>
               <p className="text-gray-500 text-sm mb-4">Flat-rate pricing — know your exact cost before move day.</p>
-              <QuoteForm variant="inline" sourceLabel="landing-residential-movers" />
+              <QuoteForm
+                variant="inline"
+                sourceLabel="landing-residential-movers"
+                defaultMoveType="house"
+                isLandingPage={true}
+              />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Google Reviews bar ── */}
+      <section className="bg-white border-b border-gray-100 py-5">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600">
+          <div className="flex items-center gap-2">
+            <div className="flex gap-0.5">
+              {[1,2,3,4,5].map(i => (
+                <Star key={i} size={16} className="text-yellow-400 fill-yellow-400" />
+              ))}
+            </div>
+            <span className="font-bold text-gray-800">{COMPANY.googleRating} out of 5</span>
+          </div>
+          <div className="h-4 w-px bg-gray-200 hidden sm:block" />
+          <span><strong className="text-gray-800">{COMPANY.googleReviewCount.toLocaleString()}</strong> verified Google reviews</span>
+          <div className="h-4 w-px bg-gray-200 hidden sm:block" />
+          <span className="flex items-center gap-1.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Google Reviews
+          </span>
         </div>
       </section>
 
@@ -173,6 +245,7 @@ export default function ResidentialMoversLanding() {
                 src={BRAND_IMAGES.crewEntryway1}
                 alt="On The Go Moving residential crew"
                 className="w-full h-72 object-cover"
+                loading="lazy"
               />
             </div>
             <div>
@@ -199,6 +272,20 @@ export default function ResidentialMoversLanding() {
         </div>
       </section>
 
+      {/* ── FAQ ── */}
+      <section className="py-14">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-3xl font-extrabold text-[#1a2e0a] text-center mb-8">
+            Common Questions About Residential Moving
+          </h2>
+          <div className="space-y-3">
+            {FAQS.map((faq) => (
+              <FaqItem key={faq.q} q={faq.q} a={faq.a} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Bottom CTA ── */}
       <section className="bg-[#75aa11] py-12 text-white text-center">
         <div className="max-w-2xl mx-auto px-4">
@@ -206,6 +293,7 @@ export default function ResidentialMoversLanding() {
           <p className="text-white/90 mb-6">Call us for a free flat-rate quote. No obligation, no surprises.</p>
           <a
             href={COMPANY.phoneHref}
+            onClick={() => pushPhoneClickEvent("residential-bottom-cta")}
             className="inline-flex items-center gap-3 bg-white text-[#1a2e0a] font-extrabold text-xl px-10 py-4 rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
           >
             <Phone size={22} />

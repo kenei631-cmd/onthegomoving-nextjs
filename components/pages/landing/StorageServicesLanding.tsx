@@ -4,10 +4,11 @@
 // Google Ads landing page — vault storage differentiation vs self-storage
 // noindex: paid traffic only
 // ==========================================================================
-import QuoteForm from "@/components/QuoteForm";
+import { useState } from "react";
+import QuoteForm, { pushPhoneClickEvent } from "@/components/QuoteForm";
 import { COMPANY } from "@/lib/siteData";
 import { BRAND_IMAGES } from "@/lib/brandImages";
-import { Phone, CheckCircle, Package, Shield, Lock, Star, Truck, Clock } from "lucide-react";
+import { Phone, CheckCircle, Package, Shield, Lock, Star, ChevronDown, ChevronUp } from "lucide-react";
 
 const COMPARISON = [
   {
@@ -44,6 +45,45 @@ const TRUST_ITEMS = [
   { icon: CheckCircle, text: "1 free month with any move" },
 ];
 
+const FAQS = [
+  {
+    q: "What's the difference between vault storage and self-storage?",
+    a: "With our vault storage, your belongings are loaded into a private wooden vault at our secure Redmond facility — no other customers' items share your space. Self-storage units are open rooms in a shared building where anyone with a unit can walk past your belongings.",
+  },
+  {
+    q: "How does the 1 free month of storage work?",
+    a: "Every move we do includes 1 free month of vault storage at our Redmond facility. After the free month, storage continues at our standard monthly rate. There's no obligation to continue — we'll deliver your items back whenever you're ready.",
+  },
+  {
+    q: "Can I access my stored items?",
+    a: "Yes. You can schedule access to your vault during business hours. Because we use private vaults rather than open units, we'll retrieve your specific vault for you.",
+  },
+  {
+    q: "Do you pick up and deliver stored items?",
+    a: "Yes. We pick up your items, transport them to our Redmond storage facility, and deliver them back to you when you're ready — all included in the service. You never have to rent a truck or make multiple trips.",
+  },
+];
+
+function FaqItem({ q, a }: { q: string; a: string }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className="border border-gray-200 rounded-xl overflow-hidden">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left bg-white hover:bg-gray-50 transition-colors"
+      >
+        <span className="font-semibold text-[#1a2e0a] text-sm sm:text-base">{q}</span>
+        {open ? <ChevronUp size={18} className="text-[#75aa11] flex-shrink-0" /> : <ChevronDown size={18} className="text-gray-400 flex-shrink-0" />}
+      </button>
+      {open && (
+        <div className="px-5 pb-4 text-gray-600 text-sm border-t border-gray-100 pt-3 bg-white">
+          {a}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function StorageServicesLanding() {
   return (
     <div className="bg-white">
@@ -71,6 +111,7 @@ export default function StorageServicesLanding() {
               {/* Phone CTA */}
               <a
                 href={COMPANY.phoneHref}
+                onClick={() => pushPhoneClickEvent("storage-hero")}
                 className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-xl px-8 py-4 rounded-xl transition-colors shadow-lg mb-6"
               >
                 <Phone size={22} />
@@ -92,9 +133,41 @@ export default function StorageServicesLanding() {
             <div id="quote-form" className="bg-white rounded-2xl shadow-2xl p-6 sm:p-8">
               <h2 className="text-[#1a2e0a] text-xl font-bold mb-1">Get a Storage Quote</h2>
               <p className="text-gray-500 text-sm mb-4">Tell us what you need to store and we'll give you a flat monthly rate.</p>
-              <QuoteForm variant="inline" sourceLabel="landing-storage-services" defaultFreeStorage={true} />
+              <QuoteForm
+                variant="inline"
+                sourceLabel="landing-storage-services"
+                defaultMoveType="house"
+                defaultFreeStorage={true}
+                isLandingPage={true}
+              />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* ── Google Reviews bar ── */}
+      <section className="bg-white border-b border-gray-100 py-5">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-600">
+          <div className="flex items-center gap-2">
+            <div className="flex gap-0.5">
+              {[1,2,3,4,5].map(i => (
+                <Star key={i} size={16} className="text-yellow-400 fill-yellow-400" />
+              ))}
+            </div>
+            <span className="font-bold text-gray-800">{COMPANY.googleRating} out of 5</span>
+          </div>
+          <div className="h-4 w-px bg-gray-200 hidden sm:block" />
+          <span><strong className="text-gray-800">{COMPANY.googleReviewCount.toLocaleString()}</strong> verified Google reviews</span>
+          <div className="h-4 w-px bg-gray-200 hidden sm:block" />
+          <span className="flex items-center gap-1.5">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+              <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+              <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+              <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+            </svg>
+            Google Reviews
+          </span>
         </div>
       </section>
 
@@ -164,8 +237,23 @@ export default function StorageServicesLanding() {
                 src={BRAND_IMAGES.storageForklift}
                 alt="On The Go Moving storage warehouse"
                 className="w-full h-72 object-cover"
+                loading="lazy"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="bg-gray-50 py-14">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <h2 className="text-3xl font-extrabold text-[#1a2e0a] text-center mb-8">
+            Common Questions About Our Storage
+          </h2>
+          <div className="space-y-3">
+            {FAQS.map((faq) => (
+              <FaqItem key={faq.q} q={faq.q} a={faq.a} />
+            ))}
           </div>
         </div>
       </section>
@@ -177,6 +265,7 @@ export default function StorageServicesLanding() {
           <p className="text-white/90 mb-6">Call us to discuss your storage needs and get a flat monthly rate. No long-term contracts required.</p>
           <a
             href={COMPANY.phoneHref}
+            onClick={() => pushPhoneClickEvent("storage-bottom-cta")}
             className="inline-flex items-center gap-3 bg-white text-[#1a2e0a] font-extrabold text-xl px-10 py-4 rounded-xl hover:bg-gray-100 transition-colors shadow-lg"
           >
             <Phone size={22} />
