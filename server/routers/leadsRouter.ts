@@ -19,6 +19,15 @@ function getSupermoveJobType(moveType?: string | null): { projectType: string; j
 
 /**
  * Builds the SuperMove Developer API payload from our lead data.
+ *
+ * Move Type logic:
+ *   - apartment / house → PROJECT_SIZE = moveSize (e.g. '1 Bedroom', 'Studio')
+ *   - commercial        → PROJECT_SIZE = 'Commercial'
+ *   - anything else     → PROJECT_SIZE = '(none)'
+ *
+ * Valid PROJECT_SIZE values:
+ *   'Studio' | '1 Bedroom' | '2 Bedrooms' | '3 Bedrooms' | '4 Bedrooms' |
+ *   '5 Bedrooms' | '6+ Bedrooms' | 'Commercial' | '(none)'
  */
 function buildSupermovePayload(lead: {
   fullName: string;
@@ -26,6 +35,8 @@ function buildSupermovePayload(lead: {
   email: string;
   moveDate?: string | null;
   moveType?: string | null;
+  moveSize?: string | null;   // e.g. '1 Bedroom', '2 Bedrooms', 'Studio'
+  squareFeet?: string | null; // Commercial only
   fromZip?: string | null;
   toZip?: string | null;
   wantsStorage?: boolean | number | null;
@@ -33,6 +44,21 @@ function buildSupermovePayload(lead: {
   sourceLabel?: string | null;
 }) {
   const { projectType, jobType } = getSupermoveJobType(lead.moveType);
+
+  // Map move type + size to Supermove's PROJECT_SIZE enum
+  let projectSize: string = "(none)";
+  if (lead.moveType === "commercial") {
+    projectSize = "Commercial";
+  } else if (lead.moveSize) {
+    // moveSize already matches Supermove enum exactly (e.g. '1 Bedroom', 'Studio')
+    projectSize = lead.moveSize;
+  }
+
+  const noteLines = [
+    lead.wantsStorage ? "Interested in storage" : "",
+    lead.squareFeet ? `Square feet: ${lead.squareFeet}` : "",
+    lead.sourceLabel ? `Source: ${lead.sourceLabel}` : "",
+  ].filter(Boolean);
 
   const payload: Record<string, unknown> = {
     project_type: projectType,
@@ -51,21 +77,13 @@ function buildSupermovePayload(lead: {
           ...(lead.fromZip ? [{ address: lead.fromZip }] : []),
           ...(lead.toZip ? [{ address: lead.toZip }] : []),
         ],
-        note_from_customer: [
-          lead.wantsStorage ? "Interested in storage" : "",
-          lead.sourceLabel ? `Source: ${lead.sourceLabel}` : "",
-        ]
-          .filter(Boolean)
-          .join(" | "),
+        note_from_customer: noteLines.join(" | "),
       },
     ],
     referral_source: "Custom Website via A Supermove-Managed Integration",
     tags: ["WEBSITE_LEAD"],
+    values: { PROJECT_SIZE: projectSize },
   };
-
-  if (lead.moveType) {
-    payload.values = { PROJECT_SIZE: lead.moveType };
-  }
 
   return payload;
 }
@@ -85,6 +103,8 @@ export const leadsRouter = router({
         email: z.string().email("Valid email is required"),
         moveDate: z.string().optional(),
         moveType: z.string().optional(),
+        moveSize: z.string().optional(),   // e.g. '1 Bedroom', '2 Bedrooms', 'Studio'
+        squareFeet: z.string().optional(), // Commercial only
         fromZip: z.string().optional(),
         toZip: z.string().optional(),
         wantsStorage: z.boolean().optional().default(false),
@@ -99,6 +119,8 @@ export const leadsRouter = router({
         email: input.email,
         moveDate: input.moveDate ?? null,
         moveType: input.moveType ?? null,
+        moveSize: input.moveSize ?? null,
+        squareFeet: input.squareFeet ?? null,
         fromZip: input.fromZip ?? null,
         toZip: input.toZip ?? null,
         wantsStorage: input.wantsStorage ? 1 : 0,
@@ -116,7 +138,20 @@ export const leadsRouter = router({
         console.error("[Leads]", webhookError);
       } else {
         try {
-          const payload = buildSupermovePayload(input);
+          const payload = buildSupermovePayload({
+            fullName: input.fullName,
+            phone: input.phone,
+            email: input.email,
+            moveDate: input.moveDate,
+            moveType: input.moveType,
+            moveSize: input.moveSize,
+            squareFeet: input.squareFeet,
+            fromZip: input.fromZip,
+            toZip: input.toZip,
+            wantsStorage: input.wantsStorage,
+            sourcePage: input.sourcePage,
+            sourceLabel: input.sourceLabel,
+          });
           const response = await fetch(webhookUrl, {
             method: "POST",
             headers: {
@@ -170,6 +205,8 @@ export const leadsRouter = router({
             email: lead.email,
             moveDate: lead.moveDate,
             moveType: lead.moveType,
+            moveSize: (lead as any).moveSize ?? null,
+            squareFeet: (lead as any).squareFeet ?? null,
             fromZip: lead.fromZip,
             toZip: lead.toZip,
             wantsStorage: lead.wantsStorage,
