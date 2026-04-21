@@ -347,7 +347,7 @@ function makePianoEntry(city: string, citySlug: string): CityServiceData {
   return entry(
     city, citySlug,
     "Piano Moving", "piano-movers",
-    `On The Go Moving & Storage provides professional piano moving services in ${city}, WA. We move upright pianos, baby grands, and grand pianos safely using specialized equipment and trained crews. Whether you're moving across ${city} or across the state, we handle your piano with the care it deserves.`,
+    `On The Go Moving & Storage provides professional piano moving services in ${city}, WA. We move upright pianos, baby grands, and grand pianos safely using specialized equipment and trained crews. Whether you're moving across ${city} or anywhere within Washington State, we handle your piano with the care it deserves.`,
     `Our ${city} piano moving crews use piano boards, skid boards, and heavy-duty straps specifically designed for piano transport. We assess stair count, doorway widths, and access points before every move to ensure a safe, damage-free experience.`,
     [
       "We assess your piano type, stair count, and access points",

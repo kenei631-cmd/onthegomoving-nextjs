@@ -618,7 +618,7 @@ const SERVICE_DATA: Record<string, {
   // ── FURNITURE MOVING ──────────────────────────────────────────────────────
   "furniture-moving": {
     title: "Furniture Moving Services",
-    metaTitle: "Furniture Moving Services | Local & Long-Distance | On The Go Moving",
+    metaTitle: "Furniture Moving Services | Seattle & Eastside WA | On The Go Moving",
     metaDesc: "Professional furniture movers in Seattle, Bellevue, Redmond & the Eastside. Single items to full households. Careful handling, no damage guarantee. Free quote.",
     canonical: "https://onthegomoving.com/furniture-moving/",
     heroTagline: "Furniture Moving Services — Seattle & the Eastside",
@@ -749,7 +749,7 @@ const SERVICE_DATA: Record<string, {
       { icon: Building2, label: "HR & Facilities Teams", desc: "Coordinated employee relocation programs with dedicated account management.", color: "border-brand-green bg-green-50", iconColor: "text-brand-green" },
       { icon: Users, label: "Relocating Employees", desc: "White-glove household moves for employees transferring to the Seattle area.", color: "border-blue-400 bg-blue-50", iconColor: "text-blue-500" },
       { icon: Package, label: "Tech Companies", desc: "Campus-to-campus moves for growing tech companies in the Eastside corridor.", color: "border-amber-400 bg-amber-50", iconColor: "text-amber-500" },
-      { icon: Home, label: "National Companies", desc: "Coordinating moves for employees relocating from out of state to Seattle.", color: "border-purple-400 bg-purple-50", iconColor: "text-purple-500" },
+      { icon: Home, label: "National Companies", desc: "Coordinating local moves within Washington State for employees relocating to Seattle.", color: "border-purple-400 bg-purple-50", iconColor: "text-purple-500" },
     ],
     process: [
       { icon: Phone, step: "Account Setup", desc: "We assign a dedicated account manager and establish your corporate account." },

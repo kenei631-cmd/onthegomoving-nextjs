@@ -29,7 +29,7 @@ const MOVE_TYPES = [
   {
     icon: Clock,
     title: "Long-Distance Moves",
-    desc: "Moves across Washington State and beyond — same trusted crew.",
+    desc: "Moves anywhere within Washington State — same flat-rate pricing, same trusted crew.",
   },
 ];
 
