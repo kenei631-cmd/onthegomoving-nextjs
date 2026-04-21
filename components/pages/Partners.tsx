@@ -179,7 +179,7 @@ export default function Partners() {
                 >
                   <Phone className="w-4 h-4" /> Become a Partner
                 </a>
-                <Link
+                <a
                   href="/contact-us/"
                   className="inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 border border-white/30 text-white font-bold text-base px-7 py-3.5 rounded-lg transition-all"
                   style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
@@ -359,7 +359,7 @@ export default function Partners() {
                   </li>
                 ))}
               </ul>
-              <Link
+              <a
                 href="/real-estate-agents/"
                 className="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold px-6 py-3 rounded-lg transition-all hover:scale-105 text-sm"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.03em" }}
@@ -392,7 +392,7 @@ export default function Partners() {
                   </li>
                 ))}
               </ul>
-              <Link
+              <a
                 href="/staging-professionals/"
                 className="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold px-6 py-3 rounded-lg transition-all hover:scale-105 text-sm"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.03em" }}
@@ -488,7 +488,7 @@ export default function Partners() {
             >
               <Phone className="w-5 h-5" /> {COMPANY.phone}
             </a>
-            <Link
+            <a
               href="/contact-us/"
               className="inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 border border-white/30 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all"
               style={{ fontFamily: "'Barlow Condensed', sans-serif" }}

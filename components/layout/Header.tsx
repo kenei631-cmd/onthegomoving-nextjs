@@ -222,7 +222,7 @@ export default function Header() {
             </p>
             <div className="grid grid-cols-3 gap-x-6 gap-y-1">
               {NAV_SERVICES.map((svc) => (
-                <Link
+                <a
                   key={svc.href}
                   href={svc.href}
                   onClick={closePanel}
@@ -251,7 +251,7 @@ export default function Header() {
             </div>
             {/* View All Services footer link */}
             <div className="mt-4 pt-3 border-t border-gray-100">
-              <Link
+              <a
                 href="/residential-moving/"
                 onClick={closePanel}
                 className="inline-flex items-center gap-1.5 text-sm font-bold text-[#75aa11] hover:text-[#1e3a0f] transition-colors"
@@ -277,7 +277,7 @@ export default function Header() {
               <p className="text-white/70 text-xs leading-relaxed">
                 No obligation. Flat-rate pricing. 1 free month of storage included.
               </p>
-              <Link
+              <a
                 href="/contact-us/"
                 onClick={closePanel}
                 className="mt-auto inline-flex items-center justify-center gap-2 bg-[#fbc319] hover:bg-[#f5b800] text-[#1a1a1a] font-bold text-sm px-4 py-2.5 rounded-lg transition-colors"
@@ -330,7 +330,7 @@ export default function Header() {
               filteredCities.length > 0 ? (
                 <div className="grid grid-cols-3 gap-x-4 gap-y-0.5">
                   {filteredCities.map(loc => (
-                    <Link
+                    <a
                       key={loc.href}
                       href={loc.href}
                       onClick={closePanel}
@@ -355,7 +355,7 @@ export default function Header() {
                       {region.label}
                     </p>
                     {region.cities.map(loc => (
-                      <Link
+                      <a
                         key={loc.href}
                         href={loc.href}
                         onClick={closePanel}
@@ -374,7 +374,7 @@ export default function Header() {
 
             {/* View all link */}
             <div className="mt-4 pt-3 border-t border-gray-100">
-              <Link
+              <a
                 href="/we-are-local/"
                 onClick={closePanel}
                 className="inline-flex items-center gap-1.5 text-sm font-bold text-[#75aa11] hover:text-[#1e3a0f] transition-colors"
@@ -404,7 +404,7 @@ export default function Header() {
                   </li>
                 ))}
               </ul>
-              <Link
+              <a
                 href="/contact-us/"
                 onClick={closePanel}
                 className="mt-auto inline-flex items-center justify-center gap-2 bg-[#fbc319] hover:bg-[#f5b800] text-[#1a1a1a] font-bold text-sm px-4 py-2.5 rounded-lg transition-colors"
@@ -430,7 +430,7 @@ export default function Header() {
             </p>
             <div className="space-y-0.5">
               {ABOUT_ITEMS.map((item) => (
-                <Link
+                <a
                   key={item.href}
                   href={item.href}
                   onClick={closePanel}
@@ -588,7 +588,7 @@ export default function Header() {
                   </button>
                 </div>
               ) : (
-                <Link
+                <a
                   key={item.label}
                   href={item.href!}
                   className="px-3 py-2 text-sm font-semibold text-gray-700 hover:text-[#75aa11] rounded transition-colors"
@@ -602,7 +602,7 @@ export default function Header() {
 
           {/* CTA + Mobile hamburger */}
           <div className="flex items-center gap-3">
-            <Link
+            <a
               href="/contact-us/"
               className="hidden md:inline-flex btn-primary text-sm"
             >
@@ -656,7 +656,7 @@ export default function Header() {
                       {mobileDropdown === item.label && (
                         <div className="ml-3 mb-1 border-l-2 border-[#75aa11] pl-3 space-y-0.5">
                           {item.children.map((child) => (
-                            <Link
+                            <a
                               key={child.href}
                               href={child.href}
                               className="block py-2.5 px-2 text-sm text-gray-600 hover:text-[#1e3a0f] hover:bg-[#e8f4d0] rounded transition-colors active:bg-[#d4eaaa]"
@@ -672,7 +672,7 @@ export default function Header() {
                       )}
                     </div>
                   ) : (
-                    <Link
+                    <a
                       href={(item as { href: string }).href}
                       className="block px-3 py-3 text-sm font-bold text-gray-800 rounded-lg hover:bg-gray-50 hover:text-[#75aa11] transition-colors active:bg-gray-100"
                       onClick={() => setMobileOpen(false)}
@@ -683,7 +683,7 @@ export default function Header() {
                 </div>
               ))}
               <div className="pt-3 mt-2 border-t border-gray-100 space-y-2">
-                <Link
+                <a
                   href="/contact-us/"
                   className="btn-primary w-full justify-center text-center block"
                   onClick={() => setMobileOpen(false)}

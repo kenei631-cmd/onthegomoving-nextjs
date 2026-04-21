@@ -75,7 +75,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {NAV_SERVICES.map((s) => (
                 <li key={s.href}>
-                  <Link
+                  <a
                     href={s.href}
                     className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5"
                   >
@@ -104,7 +104,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {ALL_LOCATIONS.slice(0, 13).map((l) => (
                 <li key={l.href}>
-                  <Link
+                  <a
                     href={l.href}
                     className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5"
                   >
@@ -127,7 +127,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {ALL_LOCATIONS.slice(13).map((l) => (
                 <li key={l.href}>
-                  <Link
+                  <a
                     href={l.href}
                     className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5"
                   >
@@ -164,7 +164,7 @@ export default function Footer() {
                 { label: "Contact Us", href: "/contact-us/" },
               ].map((l) => (
                 <li key={l.href}>
-                  <Link
+                  <a
                     href={l.href}
                     className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5"
                   >
@@ -176,7 +176,7 @@ export default function Footer() {
             </ul>
 
             {/* CTA */}
-            <Link
+            <a
               href="/contact-us/"
               className="btn-gold text-sm w-full justify-center"
             >

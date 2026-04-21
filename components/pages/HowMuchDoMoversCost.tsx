@@ -387,7 +387,7 @@ export default function HowMuchDoMoversCost() {
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
               {CITY_LINKS.map(({ city, slug }) => (
-                <Link
+                <a
                   key={slug}
                   href={`/${slug}/`}
                   className="bg-white rounded-lg px-4 py-3 text-sm font-semibold text-gray-700 hover:shadow-md border border-gray-200 transition-all flex items-center gap-2"

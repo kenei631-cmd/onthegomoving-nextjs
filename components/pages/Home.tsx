@@ -473,7 +473,7 @@ export default function Home() {
             <FadeSection>
               <div className="grid grid-cols-2 gap-2">
                 {TOP_LOCATIONS.map((loc) => (
-                  <Link
+                  <a
                     key={loc.href}
                     href={loc.href}
                     className="flex items-center gap-2 px-3 py-2.5 rounded-lg border border-gray-100 hover:border-[#75aa11]/40 hover:bg-[#f0f8e8] transition-all text-sm text-gray-700 hover:text-[#1e3a0f] font-medium group"
