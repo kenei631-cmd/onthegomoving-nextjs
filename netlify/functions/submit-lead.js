@@ -18,7 +18,7 @@ function getSupermoveJobType(moveType) {
 function buildSupermovePayload(lead) {
   const { projectType, jobType } = getSupermoveJobType(lead.moveType);
 
-  let projectSize = "(none)";
+  let projectSize = "";
   if (lead.moveType === "commercial") {
     projectSize = "Commercial";
   } else if (lead.moveSize) {
