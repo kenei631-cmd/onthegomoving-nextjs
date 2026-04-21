@@ -14,6 +14,91 @@ import { ArrowRight, Calendar, Clock, User, Tag, ChevronRight } from "lucide-rea
 import { BLOG_POSTS } from "@/lib/blogPosts";
 import { POSTS_DATA } from "@/lib/blogData";
 
+// ── INTERNAL LINK INJECTION ──────────────────────────────────────────────────
+// Maps keyword patterns → service/location URLs.
+// Rules: first occurrence only per post, max 4 links per post, case-insensitive,
+// skip if the post's own relatedService matches the target (avoid self-links).
+const KEYWORD_MAP: Array<{ pattern: RegExp; url: string; label: string }> = [
+  // Service pages — highest commercial intent first
+  { pattern: /\bresidential moving(?! service)|\bresidential movers?\b|\bhome movers?\b|\bhouse movers?\b/i, url: "/residential-moving/", label: "residential moving" },
+  { pattern: /\bpacking services?\b|\bprofessional packing\b|\bpacking and unpacking\b/i, url: "/packing-services/", label: "packing services" },
+  { pattern: /\bstorage services?\b|\bmoving storage\b|\bstorage units?\b/i, url: "/storage-services/", label: "storage services" },
+  { pattern: /\bcommercial moving\b|\boffice movers?\b|\bbusiness movers?\b/i, url: "/commercial-moving/", label: "commercial moving" },
+  { pattern: /\bsenior moving\b|\bsenior movers?\b|\bsenior relocation\b/i, url: "/senior-moving/", label: "senior moving" },
+  { pattern: /\bapartment moving\b|\bapartment movers?\b/i, url: "/apartment-moving/", label: "apartment moving" },
+  { pattern: /\bpiano moving\b|\bpiano movers?\b/i, url: "/piano-moving/", label: "piano moving" },
+  { pattern: /\bspecialty moving\b|\bspecialty movers?\b/i, url: "/specialty-moving/", label: "specialty moving" },
+  { pattern: /\bunpacking services?\b/i, url: "/unpacking-services/", label: "unpacking services" },
+  { pattern: /\blabor[- ]only moving\b|\blabor[- ]only movers?\b/i, url: "/labor-only-moving/", label: "labor-only moving" },
+  // Location pages — top cities
+  { pattern: /\bSeattle movers?\b|\bmovers? in Seattle\b/i, url: "/seattle-movers/", label: "Seattle movers" },
+  { pattern: /\bBellevue movers?\b|\bmovers? in Bellevue\b/i, url: "/bellevue-movers/", label: "Bellevue movers" },
+  { pattern: /\bRedmond movers?\b|\bmovers? in Redmond\b/i, url: "/redmond-movers/", label: "Redmond movers" },
+  { pattern: /\bKirkland movers?\b|\bmovers? in Kirkland\b/i, url: "/kirkland-movers/", label: "Kirkland movers" },
+  { pattern: /\bSammamish movers?\b|\bmovers? in Sammamish\b/i, url: "/sammamish-movers/", label: "Sammamish movers" },
+  { pattern: /\bIssaquah movers?\b|\bmovers? in Issaquah\b/i, url: "/issaquah-movers/", label: "Issaquah movers" },
+  { pattern: /\bBothell movers?\b|\bmovers? in Bothell\b/i, url: "/bothell-movers/", label: "Bothell movers" },
+  { pattern: /\bKenmore movers?\b|\bmovers? in Kenmore\b/i, url: "/kenmore-movers/", label: "Kenmore movers" },
+  { pattern: /\bRenton movers?\b|\bmovers? in Renton\b/i, url: "/renton-movers/", label: "Renton movers" },
+];
+
+const MAX_LINKS_PER_POST = 4;
+
+/**
+ * Injects contextual internal links into a plain-text string.
+ * - Tracks which URLs have already been linked (first-occurrence-only per post)
+ * - Respects the MAX_LINKS_PER_POST cap
+ * - Skips the target URL if it matches the post's own relatedService page
+ * - Returns an HTML string safe to render via dangerouslySetInnerHTML
+ */
+function linkifyContent(
+  text: string,
+  linkedUrls: Set<string>,
+  skipUrl: string | undefined
+): string {
+  if (linkedUrls.size >= MAX_LINKS_PER_POST) return escapeHtml(text);
+
+  let result = text;
+  let offset = 0; // track position shifts from replacements
+
+  for (const { pattern, url, label } of KEYWORD_MAP) {
+    if (linkedUrls.size >= MAX_LINKS_PER_POST) break;
+    if (url === skipUrl) continue;
+    if (linkedUrls.has(url)) continue;
+
+    // Find first match in the ORIGINAL text (before replacements shift positions)
+    const match = text.match(pattern);
+    if (!match || match.index === undefined) continue;
+
+    const matchedText = match[0];
+    const startInOriginal = match.index;
+
+    // Build the replacement anchor
+    const anchor = `<a href="${url}" class="text-[#75aa11] font-semibold hover:underline">${matchedText}</a>`;
+
+    // Apply replacement to result string at the correct offset position
+    const adjustedStart = startInOriginal + offset;
+    const before = result.slice(0, adjustedStart);
+    const after = result.slice(adjustedStart + matchedText.length);
+    result = before + anchor + after;
+    offset += anchor.length - matchedText.length;
+
+    linkedUrls.add(url);
+  }
+
+  // Escape any remaining unlinked HTML special chars in plain text segments
+  // (anchors are already safe; only escape outside them)
+  return result;
+}
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 // ── RELATED POSTS SIDEBAR ─────────────────────────────────────────────────────
 function RelatedPosts({ currentSlug, category }: { currentSlug: string; category: string }) {
   const related = BLOG_POSTS.filter(p => p.slug !== currentSlug && p.category === category).slice(0, 3);
@@ -73,6 +158,11 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
   const slug = slugProp ?? "";
   const post = POSTS_DATA[slug];
   const meta = BLOG_POSTS.find(p => p.slug === slug);
+
+  // Shared link tracker for this post — ensures first-occurrence-only across all sections
+  const linkedUrls = new Set<string>();
+  // Skip self-referential links (e.g. a packing post shouldn't link to /packing-services/ mid-article)
+  const skipUrl = post?.relatedService ?? undefined;
 
   // Scroll to top on mount
   useEffect(() => {
@@ -270,9 +360,11 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
               {/* MAIN CONTENT */}
               <article className="max-w-none">
                 {/* Intro paragraph — AEO direct answer */}
-                <p className="text-lg text-gray-700 leading-relaxed mb-8 font-medium border-l-4 pl-5" style={{ borderColor: "#75aa11" }}>
-                  {post.intro}
-                </p>
+                <p
+                  className="text-lg text-gray-700 leading-relaxed mb-8 font-medium border-l-4 pl-5"
+                  style={{ borderColor: "#75aa11" }}
+                  dangerouslySetInnerHTML={{ __html: linkifyContent(post.intro, linkedUrls, skipUrl) }}
+                />
 
                 {/* Sections */}
                 {post.sections.map((section, i) => (
@@ -292,7 +384,10 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                         {section.heading}
                       </h3>
                     )}
-                    <p className="text-gray-600 leading-relaxed">{section.body}</p>
+                    <p
+                      className="text-gray-600 leading-relaxed"
+                      dangerouslySetInnerHTML={{ __html: linkifyContent(section.body, linkedUrls, skipUrl) }}
+                    />
                   </div>
                 ))}
 
