@@ -50,10 +50,10 @@ const SERVICE_DATA: Record<string, {
   // ── COMMERCIAL MOVING ─────────────────────────────────────────────────────
   "commercial-moving": {
     title: "Commercial Moving Services",
-    metaTitle: "Commercial Movers Seattle | Office Relocation | On The Go Moving",
-    metaDesc: "Professional commercial and office moving services in Seattle, WA. Minimize downtime with experienced commercial moving crews. Free quote.",
+    metaTitle: "Commercial Moving Services | Seattle & Eastside WA | On The Go Moving",
+    metaDesc: "Professional commercial moving services in Seattle, Bellevue, Redmond & the Eastside. Minimize downtime with experienced commercial moving crews. Free quote.",
     canonical: "https://onthegomoving.com/commercial-moving/",
-    heroTagline: "Commercial Moving in Seattle & the Eastside",
+    heroTagline: "Commercial Moving Services — Seattle & the Eastside",
     intro: "On The Go Moving & Storage specializes in commercial relocations for businesses of all sizes — from small offices to large corporate campuses. We work around your schedule to minimize downtime and get your business back up and running as quickly as possible.",
     whatIsItTitle: "What Is Commercial Moving?",
     whatIsIt: "Commercial moving involves relocating a business's equipment, furniture, files, and technology from one location to another. Unlike residential moves, commercial moves require careful planning around business hours, IT infrastructure, and specialized equipment handling. A professional commercial moving company provides project management, after-hours crews, and secure chain-of-custody for sensitive items.",
@@ -108,10 +108,10 @@ const SERVICE_DATA: Record<string, {
   // ── PACKING SERVICES ──────────────────────────────────────────────────────
   "packing-services": {
     title: "Professional Packing Services",
-    metaTitle: "Packing Services Seattle | Professional Packers | On The Go Moving",
-    metaDesc: "Professional packing services in Seattle, WA. Full-pack, partial-pack, and unpacking services. Quality materials, careful handling. Free quote.",
+    metaTitle: "Professional Packing Services | Seattle & Eastside WA | On The Go Moving",
+    metaDesc: "Expert packing services in Seattle, Bellevue, Redmond & the Eastside. Full-pack, partial-pack, and unpacking. Quality materials, careful handling. Free quote.",
     canonical: "https://onthegomoving.com/packing-services/",
-    heroTagline: "Professional Packing Services in Seattle & the Eastside",
+    heroTagline: "Professional Packing Services — Seattle & the Eastside",
     intro: "Our professional packing services take the most time-consuming part of moving off your plate. We use high-quality packing materials and proven techniques to ensure every item — from everyday dishes to fragile antiques — arrives at your new home in perfect condition.",
     whatIsItTitle: "What Are Professional Packing Services?",
     whatIsIt: "Professional packing services involve trained movers carefully wrapping, boxing, and labeling all of your belongings using professional-grade materials. This includes furniture wrapping, dish packing, electronics protection, and custom crating for specialty items. A professional packer works systematically and efficiently, typically completing in hours what takes most homeowners days.",
@@ -165,7 +165,7 @@ const SERVICE_DATA: Record<string, {
   // ── STORAGE SERVICES ──────────────────────────────────────────────────────
   "storage-services": {
     title: "Storage Services",
-    metaTitle: "Storage Vaults Seattle | Secure Storage Redmond WA | On The Go Moving",
+    metaTitle: "Secure Storage Vaults | Redmond WA | On The Go Moving & Storage",
     metaDesc: "Secure storage vault rental at our Redmond, WA facility. First month free with any move. Short and long-term storage for households and businesses. On The Go Moving & Storage.",
     canonical: "https://onthegomoving.com/storage-services/",
     heroTagline: "Secure Storage Vaults in Redmond, WA",
@@ -222,10 +222,10 @@ const SERVICE_DATA: Record<string, {
   // ── LABOR ONLY ────────────────────────────────────────────────────────────
   "labor-only-moving": {
     title: "Labor Only Moving Services",
-    metaTitle: "Labor Only Movers Seattle | Loading & Unloading | On The Go Moving",
-    metaDesc: "Labor only moving services in Seattle, WA. Hire professional movers for loading, unloading, or furniture rearranging. You provide the truck. Free quote.",
+    metaTitle: "Labor Only Moving Services | Loading & Unloading | On The Go Moving",
+    metaDesc: "Professional labor only movers in Seattle, Bellevue, Redmond & the Eastside. Loading, unloading, and furniture rearranging. You provide the truck. Free quote.",
     canonical: "https://onthegomoving.com/labor-only-moving/",
-    heroTagline: "Labor Only Moving in Seattle & the Eastside",
+    heroTagline: "Labor Only Moving Services — Seattle & the Eastside",
     intro: "Have your own truck, container, or POD? On The Go Moving provides professional labor-only services for loading, unloading, and furniture rearranging. Get the muscle without paying for a truck you don't need.",
     whatIsItTitle: "What Is Labor Only Moving?",
     whatIsIt: "Labor only moving services provide professional movers without a truck. This is ideal when you're renting your own moving truck, using a portable storage container (PODS, U-Pack), or simply need help rearranging furniture in your current home. You pay only for the labor — the same professional crews we use for full-service moves.",
@@ -279,10 +279,10 @@ const SERVICE_DATA: Record<string, {
   // ── SPECIALTY MOVING ──────────────────────────────────────────────────────
   "specialty-moving": {
     title: "Specialty Moving Services",
-    metaTitle: "Specialty Movers Seattle | Piano, Antique & Safe Moving | On The Go Moving",
-    metaDesc: "Professional specialty moving in Seattle, WA. Expert handling of pianos, antiques, fine art, safes, and hot tubs. Licensed & insured. Free quote.",
+    metaTitle: "Specialty Moving Services | Piano, Antique & Safe Moving | On The Go Moving",
+    metaDesc: "Expert specialty movers in Seattle, Bellevue, Redmond & the Eastside. Pianos, antiques, fine art, safes, and hot tubs. Licensed & insured. Free quote.",
     canonical: "https://onthegomoving.com/specialty-moving/",
-    heroTagline: "Specialty Moving in Seattle & the Eastside",
+    heroTagline: "Specialty Moving Services — Seattle & the Eastside",
     intro: "Some items require more than a standard moving crew. On The Go Moving & Storage has specialized equipment and trained professionals to safely move your most valuable and difficult-to-handle items — from grand pianos and antique furniture to gun safes and hot tubs.",
     whatIsItTitle: "What Is Specialty Moving?",
     whatIsIt: "Specialty moving covers items that require special equipment, techniques, or expertise beyond a standard household move. This includes pianos, pool tables, large safes, antiques, fine art, grandfather clocks, and outdoor items like hot tubs. Improper handling of these items can cause damage to the item, your home, or injury to movers.",
@@ -336,10 +336,10 @@ const SERVICE_DATA: Record<string, {
   // ── APARTMENT MOVING ──────────────────────────────────────────────────────
   "apartment-moving": {
     title: "Apartment Moving Services",
-    metaTitle: "Apartment Movers Seattle | Condo Moving | On The Go Moving & Storage",
-    metaDesc: "Professional apartment movers in Seattle, WA. Expert handling of elevators, stairs, and tight spaces. Affordable rates. Licensed & insured. Free quote.",
+    metaTitle: "Apartment Moving Services | Seattle & Eastside WA | On The Go Moving",
+    metaDesc: "Professional apartment movers in Seattle, Bellevue, Kirkland & the Eastside. Expert handling of elevators, stairs, and tight spaces. Licensed & insured. Free quote.",
     canonical: "https://onthegomoving.com/apartment-moving/",
-    heroTagline: "Apartment Moving in Seattle & the Eastside",
+    heroTagline: "Apartment Moving Services — Seattle & the Eastside",
     intro: "Apartment moves come with unique challenges — elevators, stairs, narrow hallways, and strict building rules. On The Go Moving's crews are experienced apartment movers who know how to navigate Seattle's high-rises, condos, and urban apartment buildings efficiently and without damage.",
     whatIsItTitle: "What Is Apartment Moving?",
     whatIsIt: "Apartment moving involves relocating belongings from one apartment or condo unit to another. It typically requires navigating elevators, stairwells, and tight spaces, and may involve coordinating with building management for elevator reservations and loading dock access. Professional apartment movers know these requirements and handle them proactively.",
@@ -393,10 +393,10 @@ const SERVICE_DATA: Record<string, {
   // ── SENIOR MOVING ─────────────────────────────────────────────────────────
   "senior-moving": {
     title: "Senior Moving Services",
-    metaTitle: "Senior Movers Seattle | Assisted Living Moving | On The Go Moving",
-    metaDesc: "Compassionate senior moving services in Seattle, WA. Downsizing, assisted living, and retirement community moves. Patient, caring crews. Free quote.",
+    metaTitle: "Senior Moving Services | Assisted Living & Downsizing | On The Go Moving",
+    metaDesc: "Compassionate senior movers in Seattle, Bellevue, Redmond & the Eastside. Downsizing, assisted living, and retirement community moves. Patient, caring crews. Free quote.",
     canonical: "https://onthegomoving.com/senior-moving/",
-    heroTagline: "Compassionate Senior Moving in Seattle & the Eastside",
+    heroTagline: "Senior Moving Services — Seattle & the Eastside",
     intro: "Moving later in life requires a different level of care, patience, and understanding. On The Go Moving's senior moving specialists are trained to provide compassionate, stress-free moves for seniors — whether downsizing to a smaller home, moving to an assisted living facility, or relocating closer to family.",
     whatIsItTitle: "What Are Senior Moving Services?",
     whatIsIt: "Senior moving services are specialized moving services designed for older adults. They typically include extra time for decision-making, assistance with downsizing and donation coordination, careful handling of sentimental items, and coordination with assisted living or retirement community staff. A senior-focused moving company understands the emotional and physical challenges of moving later in life.",
@@ -450,10 +450,10 @@ const SERVICE_DATA: Record<string, {
   // ── WAREHOUSING ───────────────────────────────────────────────────────────
   "warehousing-services": {
     title: "Warehousing Services",
-    metaTitle: "Warehousing Services Seattle | Business Storage | On The Go Moving",
-    metaDesc: "Professional warehousing and business storage services in the Seattle area. Secure, climate-controlled warehouse space. On The Go Moving & Storage.",
+    metaTitle: "Warehousing & Business Storage Services | Redmond WA | On The Go Moving",
+    metaDesc: "Secure warehousing and business storage at our Redmond, WA facility. Climate-controlled warehouse space for businesses and households. On The Go Moving & Storage.",
     canonical: "https://onthegomoving.com/warehousing-distribution/",
-    heroTagline: "Warehousing & Business Storage in Seattle",
+    heroTagline: "Warehousing & Business Storage — Redmond, WA",
     intro: "On The Go Moving & Storage provides professional warehousing solutions for businesses that need secure, flexible storage for inventory, equipment, furniture, and records. Our Redmond, WA warehouse facility offers climate-controlled space with professional handling and logistics support.",
     whatIsItTitle: "What Are Warehousing Services?",
     whatIsIt: "Warehousing services provide businesses with secure, managed storage space for inventory, equipment, and assets. Unlike self-storage, professional warehousing includes handling, inventory management, and logistics support. Our Redmond, WA facility is climate-controlled, 24/7 monitored, and staffed by professional logistics personnel.",
@@ -506,10 +506,10 @@ const SERVICE_DATA: Record<string, {
   // ── OFFICE MOVING ─────────────────────────────────────────────────────────
   "office-moving": {
     title: "Office Moving Services",
-    metaTitle: "Office Movers Seattle | Commercial Office Relocation | On The Go Moving",
-    metaDesc: "Professional office moving services in Seattle, WA. Minimize downtime with experienced office movers. Free quote. Licensed & insured.",
+    metaTitle: "Office Moving Services | Commercial Office Relocation | On The Go Moving",
+    metaDesc: "Professional office movers in Seattle, Bellevue, Redmond & the Eastside. Minimize downtime with experienced office relocation crews. Free quote. Licensed & insured.",
     canonical: "https://onthegomoving.com/office-moving/",
-    heroTagline: "Office Moving in Seattle & the Eastside",
+    heroTagline: "Office Moving Services — Seattle & the Eastside",
     intro: "On The Go Moving & Storage specializes in office relocations for businesses of all sizes — from small startups to large corporate offices. We work around your schedule, move after hours or on weekends, and have your office fully operational by Monday morning.",
     whatIsItTitle: "What Is Office Moving?",
     whatIsIt: "Office moving involves the professional relocation of workstations, furniture, IT equipment, filing systems, and office supplies from one commercial space to another. A professional office move minimizes downtime, protects sensitive equipment, and keeps your business running with minimal disruption. Unlike residential moves, office moves require careful planning around business hours and IT infrastructure.",
@@ -562,10 +562,10 @@ const SERVICE_DATA: Record<string, {
   // ── PIANO MOVING ──────────────────────────────────────────────────────────
   "piano-moving": {
     title: "Piano Moving Services",
-    metaTitle: "Piano Movers Seattle | Professional Piano Moving | On The Go Moving",
-    metaDesc: "Professional piano moving services in Seattle, WA. Upright, grand, and baby grand pianos moved safely. Experienced piano movers. Free quote.",
+    metaTitle: "Professional Piano Moving Services | Seattle & Eastside WA | On The Go Moving",
+    metaDesc: "Expert piano movers in Seattle, Bellevue, Kirkland & the Eastside. Upright, grand, and baby grand pianos moved safely. Experienced crews. Free quote.",
     canonical: "https://onthegomoving.com/piano-moving/",
-    heroTagline: "Expert Piano Moving in Seattle & the Eastside",
+    heroTagline: "Professional Piano Moving Services — Seattle & the Eastside",
     intro: "Moving a piano requires specialized equipment, a trained crew, and years of experience. On The Go Moving & Storage has moved hundreds of pianos across the Greater Seattle area — uprights, baby grands, and concert grands — safely and without damage.",
     whatIsItTitle: "What Does Piano Moving Involve?",
     whatIsIt: "Piano moving is a specialized moving service that requires custom equipment (piano boards, skid boards, straps, and padding) and a trained crew experienced in navigating stairs, tight hallways, and doorways with instruments that weigh 300–1,200 lbs. Improper piano moving can damage the instrument, the home, and injure movers.",
@@ -618,10 +618,10 @@ const SERVICE_DATA: Record<string, {
   // ── FURNITURE MOVING ──────────────────────────────────────────────────────
   "furniture-moving": {
     title: "Furniture Moving Services",
-    metaTitle: "Furniture Movers Seattle | Local Furniture Moving | On The Go Moving",
-    metaDesc: "Professional furniture moving services in Seattle, WA. Single items to full households. Careful handling, no damage guarantee. Free quote.",
+    metaTitle: "Furniture Moving Services | Local & Long-Distance | On The Go Moving",
+    metaDesc: "Professional furniture movers in Seattle, Bellevue, Redmond & the Eastside. Single items to full households. Careful handling, no damage guarantee. Free quote.",
     canonical: "https://onthegomoving.com/furniture-moving/",
-    heroTagline: "Furniture Moving in Seattle & the Eastside",
+    heroTagline: "Furniture Moving Services — Seattle & the Eastside",
     intro: "Whether you need to move a single piece of furniture across town or an entire household, On The Go Moving & Storage provides careful, professional furniture moving services throughout the Greater Seattle area. We bring all the equipment needed to protect your furniture and your home.",
     whatIsItTitle: "What Is Professional Furniture Moving?",
     whatIsIt: "Furniture moving is the professional transport of individual pieces or entire sets of furniture — sofas, beds, dressers, dining tables, entertainment centers, and more — from one location to another. Professional furniture movers use moving blankets, stretch wrap, dollies, and straps to prevent damage during loading, transport, and unloading.",
@@ -674,10 +674,10 @@ const SERVICE_DATA: Record<string, {
   // ── CONDO MOVING ──────────────────────────────────────────────────────────
   "condo-moving": {
     title: "Condo Moving Services",
-    metaTitle: "Condo Movers Seattle | Condo Moving Company | On The Go Moving",
-    metaDesc: "Professional condo moving services in Seattle, Bellevue, Kirkland & the Eastside. Elevator coordination, HOA compliance, careful handling. Free quote.",
+    metaTitle: "Condo Moving Services | Elevator & HOA Specialists | On The Go Moving",
+    metaDesc: "Professional condo movers in Seattle, Bellevue, Kirkland & the Eastside. Elevator coordination, HOA compliance, and careful handling. Free quote.",
     canonical: "https://onthegomoving.com/condo-moving/",
-    heroTagline: "Condo Moving in Seattle & the Eastside",
+    heroTagline: "Condo Moving Services — Seattle & the Eastside",
     intro: "Condo moves come with unique challenges — elevator reservations, HOA move-in windows, limited parking for moving trucks, and tight hallways. On The Go Moving & Storage has navigated hundreds of condo moves across Seattle and the Eastside, and we know exactly how to handle every building's requirements.",
     whatIsItTitle: "What Is Condo Moving?",
     whatIsIt: "Condo moving is the relocation of belongings from or to a condominium unit. Unlike house moves, condo moves require coordination with building management for elevator reservations, certificates of insurance, move-in time windows, and parking permits. Professional condo movers know these requirements and handle them proactively.",
@@ -730,10 +730,10 @@ const SERVICE_DATA: Record<string, {
   // ── CORPORATE RELOCATION ──────────────────────────────────────────────────
   "corporate-relocation": {
     title: "Corporate Relocation Services",
-    metaTitle: "Corporate Relocation Seattle | Employee Relocation | On The Go Moving",
-    metaDesc: "Professional corporate relocation services in Seattle, WA. Employee moves, office relocations, and full corporate campus moves. Free quote.",
+    metaTitle: "Corporate Relocation Services | Employee & Office Moves | On The Go Moving",
+    metaDesc: "Professional corporate relocation in Seattle, Bellevue, Redmond & the Eastside. Employee moves, office relocations, and full corporate campus moves. Free quote.",
     canonical: "https://onthegomoving.com/corporate-relocation/",
-    heroTagline: "Corporate Relocation in Seattle & the Eastside",
+    heroTagline: "Corporate Relocation Services — Seattle & the Eastside",
     intro: "On The Go Moving & Storage provides comprehensive corporate relocation services for businesses relocating employees or entire operations. From single employee moves to full campus relocations, we provide the planning, coordination, and execution that corporate clients demand.",
     whatIsItTitle: "What Is Corporate Relocation?",
     whatIsIt: "Corporate relocation involves moving employees and/or entire business operations from one location to another. This includes employee household moves, office furniture and equipment relocation, IT infrastructure transport, and coordination with HR and facilities teams. A professional corporate relocation company provides project management, dedicated account management, and seamless execution.",
@@ -786,10 +786,10 @@ const SERVICE_DATA: Record<string, {
   // ── APPLIANCE MOVING ──────────────────────────────────────────────────────
   "appliance-moving": {
     title: "Appliance Moving Services",
-    metaTitle: "Appliance Movers Seattle | Appliance Moving & Installation | On The Go Moving",
-    metaDesc: "Professional appliance moving services in Seattle, WA. Refrigerators, washers, dryers, and more. Safe handling, no damage. Free quote.",
+    metaTitle: "Appliance Moving Services | Refrigerators, Washers & More | On The Go Moving",
+    metaDesc: "Professional appliance movers in Seattle, Bellevue, Redmond & the Eastside. Refrigerators, washers, dryers, and more. Safe handling, no damage. Free quote.",
     canonical: "https://onthegomoving.com/appliance-moving/",
-    heroTagline: "Appliance Moving in Seattle & the Eastside",
+    heroTagline: "Appliance Moving Services — Seattle & the Eastside",
     intro: "Moving heavy appliances — refrigerators, washers, dryers, dishwashers, stoves — requires specialized equipment and experienced crews. On The Go Moving & Storage provides professional appliance moving services throughout the Greater Seattle area, with careful handling to protect your appliances, floors, and home.",
     whatIsItTitle: "What Is Appliance Moving?",
     whatIsIt: "Appliance moving is the professional transport of heavy household appliances — refrigerators, washers, dryers, dishwashers, stoves, and more. Appliances require specialized dollies, straps, and techniques to move safely without damaging the appliance, floors, or doorways. Professional appliance movers also handle disconnection and reconnection coordination.",
@@ -842,10 +842,10 @@ const SERVICE_DATA: Record<string, {
   // ── UNPACKING SERVICES ────────────────────────────────────────────────────
   "unpacking-services": {
     title: "Unpacking Services",
-    metaTitle: "Unpacking Services Seattle | Professional Unpackers | On The Go Moving",
-    metaDesc: "Professional unpacking services in Seattle, WA. We unpack, organize, and set up your new home. Full-service unpacking available. Free quote.",
+    metaTitle: "Professional Unpacking Services | Seattle & Eastside WA | On The Go Moving",
+    metaDesc: "Expert unpacking services in Seattle, Bellevue, Redmond & the Eastside. We unpack, organize, and set up your new home. Full-service unpacking available. Free quote.",
     canonical: "https://onthegomoving.com/unpacking-services/",
-    heroTagline: "Professional Unpacking Services in Seattle & the Eastside",
+    heroTagline: "Professional Unpacking Services — Seattle & the Eastside",
     intro: "Moving in is just the beginning. Our professional unpacking services take the stress out of settling into your new home. We unpack boxes, place items in their designated rooms, organize your kitchen and closets, and remove all packing materials — leaving your new home ready to live in.",
     whatIsItTitle: "What Are Professional Unpacking Services?",
     whatIsIt: "Professional unpacking services involve trained movers systematically unpacking all boxes, placing items in their designated rooms, and organizing your new home according to your preferences. This includes kitchen organization, closet setup, and removal of all packing materials. Professional unpackers work efficiently and can complete in hours what takes most families days.",
@@ -898,10 +898,10 @@ const SERVICE_DATA: Record<string, {
   // ── FREIGHT FORWARDING ────────────────────────────────────────────────────
   "freight-forwarding-service": {
     title: "Freight Forwarding Services",
-    metaTitle: "Freight Forwarding Seattle | Freight & Logistics Services | On The Go Moving",
-    metaDesc: "Freight forwarding and logistics services in Seattle, WA. Local and regional freight transport for businesses. Licensed, insured. Free quote.",
+    metaTitle: "Freight Forwarding Services | Local & Regional Logistics | On The Go Moving",
+    metaDesc: "Professional freight forwarding and logistics in Seattle, Bellevue, Redmond & the Eastside. Local and regional freight transport for businesses. Licensed, insured. Free quote.",
     canonical: "https://onthegomoving.com/freight-forwarding-service/",
-    heroTagline: "Freight Forwarding & Logistics in Seattle",
+    heroTagline: "Freight Forwarding & Logistics Services — Seattle & the Eastside",
     intro: "On The Go Moving & Storage provides freight forwarding and logistics services for businesses in the Greater Seattle area. From single pallets to full truckloads, we coordinate pickup, transport, and delivery with the reliability and care your business demands.",
     whatIsItTitle: "What Is Freight Forwarding?",
     whatIsIt: "Freight forwarding is the coordination and shipment of goods from one location to another using a network of carriers and logistics services. A freight forwarder acts as an intermediary between the shipper and transportation services, handling documentation, routing, and delivery coordination. For local and regional freight, On The Go Moving provides direct transport with our own fleet.",

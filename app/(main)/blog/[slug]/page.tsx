@@ -17,7 +17,8 @@ export async function generateMetadata({
   const post = POSTS_DATA[slug];
   if (!post) return {};
 
-  const canonical = `https://onthegomoving.com/blog/${post.slug}/`;
+  // Canonical points to root-level URL matching the live WordPress site structure
+  const canonical = `https://onthegomoving.com/${post.slug}/`;
 
   return {
     title: post.metaTitle || post.title,
