@@ -29,7 +29,7 @@ const TEAM_QUALITIES = [
 ];
 
 const TEAM = [
-  { name: "Keith", role: "Founder & Owner", fact: "Started OTGM at 26 with one truck and a belief that moving companies could do better." },
+  { name: "Jason Sexton", role: "Founder & Owner", fact: "Started OTGM at 26 with one truck and a belief that moving companies could do better." },
   { name: "Operations Team", role: "Move Coordinators", fact: "Our coordinators have an average tenure of 6 years — they know every neighborhood in the service area." },
   { name: "Field Crews", role: "Professional Movers", fact: "Every crew member is background-checked, drug-tested, and trained in furniture protection and safe lifting." },
 ];
@@ -77,7 +77,7 @@ export default function AboutUs() {
         url: "https://onthegomoving.com",
         logo: "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-logo.png",
         foundingDate: "2009",
-        founder: { "@type": "Person", name: "Keith" },
+        founder: { "@type": "Person", name: "Jason Sexton" },
         address: {
           "@type": "PostalAddress",
           streetAddress: "16625 Redmond Way #M365",
