@@ -4,7 +4,14 @@
 // ON THE GO MOVING — Quote Form Component (Single Source of Truth)
 // All submissions go through trpc.leads.submit:
 //   1. Saved to MySQL leads table (permanent audit trail)
-//   2. Zapier/SuperMove webhook fired server-side (key never exposed to browser)
+//   2. SuperMove webhook fired server-side (key never exposed to browser)
+//
+// Move Type logic:
+//   - Apartment/Condo → shows Move Size dropdown (Studio … 6+ Bedrooms)
+//   - House           → shows Move Size dropdown (Studio … 6+ Bedrooms)
+//   - Commercial      → shows Square Feet text input
+//
+// Move Size values map 1:1 to Supermove's PROJECT_SIZE enum.
 // ==========================================================================
 
 import { useState } from "react";
@@ -21,6 +28,16 @@ interface QuoteFormProps {
   defaultFreeStorage?: boolean;
 }
 
+const MOVE_SIZES = [
+  "Studio",
+  "1 Bedroom",
+  "2 Bedrooms",
+  "3 Bedrooms",
+  "4 Bedrooms",
+  "5 Bedrooms",
+  "6+ Bedrooms",
+];
+
 export default function QuoteForm({ variant = "hero", className = "", sourceLabel, defaultFreeStorage = false }: QuoteFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [focused, setFocused] = useState<string | null>(null);
@@ -31,7 +48,9 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
     moveDate: "",
     zipFrom: "",
     zipTo: "",
-    moveType: "",
+    moveType: "",   // "apartment" | "house" | "commercial"
+    moveSize: "",   // Studio, 1 Bedroom, 2 Bedrooms … (apartment/house only)
+    squareFeet: "", // commercial only
     freeStorage: defaultFreeStorage,
   });
 
@@ -41,7 +60,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
       if (typeof window !== "undefined" && (window as any).dataLayer) {
         (window as any).dataLayer.push({
           event: "quote_form_submit",
-          formData: { moveType: formData.moveType, zipFrom: formData.zipFrom },
+          formData: { moveType: formData.moveType, moveSize: formData.moveSize, zipFrom: formData.zipFrom },
         });
       }
       setSubmitted(true);
@@ -51,8 +70,6 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
     },
     onError: (err) => {
       console.error("[QuoteForm] Submission error:", err);
-      // Even on error, show success to user — the lead may still have been saved
-      // The error is logged server-side with full details
       toast.error("Something went wrong. Please call us at (425) 761-8500.");
     },
   });
@@ -61,10 +78,18 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     const { name, value, type } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
-    }));
+    setFormData((prev) => {
+      const updated = {
+        ...prev,
+        [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+      };
+      // Reset dependent fields when move type changes
+      if (name === "moveType") {
+        updated.moveSize = "";
+        updated.squareFeet = "";
+      }
+      return updated;
+    });
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -75,6 +100,8 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
       email: formData.email,
       moveDate: formData.moveDate || undefined,
       moveType: formData.moveType || undefined,
+      moveSize: formData.moveSize || undefined,
+      squareFeet: formData.squareFeet || undefined,
       fromZip: formData.zipFrom || undefined,
       toZip: formData.zipTo || undefined,
       wantsStorage: formData.freeStorage,
@@ -120,6 +147,10 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
   });
 
   const loading = submitLead.isPending;
+
+  // Determine which secondary field to show based on move type
+  const showMoveSize = formData.moveType === "apartment" || formData.moveType === "house";
+  const showSquareFeet = formData.moveType === "commercial";
 
   return (
     <form
@@ -241,14 +272,58 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
             {...focusProps("moveType")}
           >
             <option value="">Select type…</option>
-            <option value="residential">Residential / Home</option>
-            <option value="apartment">Apartment</option>
-            <option value="commercial">Commercial / Office</option>
-            <option value="labor_only">Labor Only</option>
-            <option value="specialty">Specialty (Piano, Antiques, Safe, etc.)</option>
-            <option value="storage">Storage Only</option>
+            <option value="apartment">Apartment/Condo</option>
+            <option value="house">House</option>
+            <option value="commercial">Commercial</option>
           </select>
         </div>
+
+        {/* Move Size — shown for apartment/house */}
+        {showMoveSize && (
+          <div className={fieldWrap("moveSize")}>
+            {focused === "moveSize" && (
+              <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
+            )}
+            <label className={`${labelClass} ${focused === "moveSize" ? "text-[#75aa11]" : ""}`}>
+              Move Size *
+            </label>
+            <select
+              name="moveSize"
+              required
+              value={formData.moveSize}
+              onChange={handleChange}
+              className={inputClass("moveSize")}
+              {...focusProps("moveSize")}
+            >
+              <option value="">Move Size*</option>
+              {MOVE_SIZES.map((size) => (
+                <option key={size} value={size}>{size}</option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        {/* Square Feet — shown for commercial */}
+        {showSquareFeet && (
+          <div className={fieldWrap("squareFeet")}>
+            {focused === "squareFeet" && (
+              <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
+            )}
+            <label className={`${labelClass} ${focused === "squareFeet" ? "text-[#75aa11]" : ""}`}>
+              Square Feet *
+            </label>
+            <input
+              type="text"
+              name="squareFeet"
+              required
+              value={formData.squareFeet}
+              onChange={handleChange}
+              placeholder="e.g. 2500"
+              className={inputClass("squareFeet")}
+              {...focusProps("squareFeet")}
+            />
+          </div>
+        )}
 
         {/* Zip From */}
         <div className={fieldWrap("zipFrom")}>
@@ -303,7 +378,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
               />
             </div>
             <span className={`text-sm transition-colors duration-200 ${formData.freeStorage ? "text-gray-800" : "text-gray-600 group-hover:text-gray-800"}`}>
-              <span className="font-bold text-gray-800">Yes, I want FREE storage</span>
+              <span className="font-bold text-gray-800">Yes, I want 1 month of FREE storage</span>
               {" "}— include 1 free month of storage with my move
             </span>
           </label>
