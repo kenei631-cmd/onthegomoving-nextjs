@@ -89,7 +89,7 @@ export default function Blog() {
                   <span className="flex items-center gap-1"><Calendar size={13} />{featured.date}</span>
                   <span>{featured.readTime}</span>
                 </div>
-                <a href={`/blog/${featured.slug}/`} className="btn-primary inline-flex items-center gap-2">
+                <a href={`/${featured.slug}/`} className="btn-primary inline-flex items-center gap-2">
                   Read Article <ArrowRight size={15} />
                 </a>
               </div>
@@ -144,7 +144,7 @@ export default function Blog() {
                 <p className="text-sm text-gray-400 mb-6">{filtered.length} article{filtered.length !== 1 ? "s" : ""}{activeCategory !== "All" ? ` in ${activeCategory}` : ""}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {filtered.map((post) => (
-                    <a key={post.slug} href={`/blog/${post.slug}/`}>
+                    <a key={post.slug} href={`/${post.slug}/`}>
                       <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow group cursor-pointer h-full flex flex-col">
                         <div className="h-44 overflow-hidden">
                           <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
