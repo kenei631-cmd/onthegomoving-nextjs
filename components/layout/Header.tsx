@@ -10,7 +10,6 @@
 // Mobile: accordion unchanged.
 // ==========================================================================
 import { useState, useEffect, useRef, useCallback } from "react";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { COMPANY, NAV_SERVICES, NAV_LOCATIONS, ALL_LOCATIONS } from "@/lib/siteData";
 import {
@@ -247,7 +246,7 @@ export default function Header() {
                       {SERVICE_DESCRIPTIONS[svc.href] ?? ""}
                     </span>
                   </span>
-                </Link>
+                </a>
               ))}
             </div>
             {/* View All Services footer link */}
@@ -258,7 +257,7 @@ export default function Header() {
                 className="inline-flex items-center gap-1.5 text-sm font-bold text-[#75aa11] hover:text-[#1e3a0f] transition-colors"
               >
                 Browse all 9 services <ArrowRight size={14} />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -285,7 +284,7 @@ export default function Header() {
                 style={{ fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.04em" }}
               >
                 GET FREE QUOTE <ArrowRight size={14} />
-              </Link>
+              </a>
               <a
                 href={COMPANY.phoneHref}
                 onClick={closePanel}
@@ -341,7 +340,7 @@ export default function Header() {
                       <span className="text-sm text-gray-700 group-hover:text-[#1e3a0f] font-medium">
                         {loc.label}
                       </span>
-                    </Link>
+                    </a>
                   ))}
                 </div>
               ) : (
@@ -366,7 +365,7 @@ export default function Header() {
                         <span className="text-sm text-gray-700 group-hover:text-[#1e3a0f] font-medium">
                           {loc.label}
                         </span>
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 ))}
@@ -381,7 +380,7 @@ export default function Header() {
                 className="inline-flex items-center gap-1.5 text-sm font-bold text-[#75aa11] hover:text-[#1e3a0f] transition-colors"
               >
                 View all 35+ service areas <ArrowRight size={14} />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -412,7 +411,7 @@ export default function Header() {
                 style={{ fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.04em" }}
               >
                 GET FREE QUOTE <ArrowRight size={14} />
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -444,7 +443,7 @@ export default function Header() {
                     </span>
                     <span className="block text-xs text-gray-500 mt-0.5">{item.desc}</span>
                   </span>
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -546,13 +545,13 @@ export default function Header() {
         {/* Main nav bar */}
         <div className="container flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0">
+          <a href="/" className="flex items-center shrink-0">
             <img
               src={BRAND_IMAGES.logo}
               alt="On The Go Moving & Storage"
               className="h-10 w-auto"
             />
-          </Link>
+          </a>
 
           {/* Desktop nav */}
           <nav className="hidden lg:flex items-center gap-0.5">
@@ -596,7 +595,7 @@ export default function Header() {
                   style={{ fontFamily: "'Nunito Sans', sans-serif" }}
                 >
                   {item.label}
-                </Link>
+                </a>
               )
             )}
           </nav>
@@ -608,7 +607,7 @@ export default function Header() {
               className="hidden md:inline-flex btn-primary text-sm"
             >
               GET FREE QUOTE
-            </Link>
+            </a>
             <button
               className="lg:hidden p-2 text-gray-700 hover:text-[#75aa11] transition-colors"
               onClick={() => {
@@ -667,7 +666,7 @@ export default function Header() {
                               }}
                             >
                               {child.label}
-                            </Link>
+                            </a>
                           ))}
                         </div>
                       )}
@@ -679,7 +678,7 @@ export default function Header() {
                       onClick={() => setMobileOpen(false)}
                     >
                       {item.label}
-                    </Link>
+                    </a>
                   )}
                 </div>
               ))}
@@ -690,7 +689,7 @@ export default function Header() {
                   onClick={() => setMobileOpen(false)}
                 >
                   Get Free Quote
-                </Link>
+                </a>
                 <a
                   href={COMPANY.phoneHref}
                   className="flex items-center justify-center gap-2 py-3 text-sm font-bold text-[#1e3a0f] border-2 border-[#1e3a0f] rounded-lg hover:bg-[#1e3a0f] hover:text-white transition-colors"

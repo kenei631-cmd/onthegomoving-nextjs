@@ -12,7 +12,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
-import Link from "next/link";
 import {
   CheckCircle,
   Phone,
@@ -186,7 +185,7 @@ export default function Partners() {
                   style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                 >
                   Get a Free Quote <ArrowRight className="w-4 h-4" />
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -366,7 +365,7 @@ export default function Partners() {
                 style={{ fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.03em" }}
               >
                 Real Estate Partner Program <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
             </div>
           </div>
 
@@ -399,7 +398,7 @@ export default function Partners() {
                 style={{ fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.03em" }}
               >
                 Staging Partner Program <ArrowRight className="w-4 h-4" />
-              </Link>
+              </a>
             </div>
             <div className="order-1 lg:order-2 rounded-xl overflow-hidden shadow-md">
               <img
@@ -495,7 +494,7 @@ export default function Partners() {
               style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
             >
               Send Us a Message <ArrowRight className="w-5 h-5" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

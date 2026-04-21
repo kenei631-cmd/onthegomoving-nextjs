@@ -19,7 +19,6 @@ import {
   Home, Building2, Users, Package, Truck, DollarSign,
   Award, Zap, MapPin, ChevronDown, ChevronUp,
 } from "lucide-react";
-import Link from "next/link";
 
 // ---------------------------------------------------------------------------
 // Service data — one entry per slug
@@ -1046,9 +1045,9 @@ export default function ServicePage({ slug }: ServicePageProps) {
         <main className="flex-1 pt-[72px] flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-3xl font-bold text-gray-900">Service Not Found</h1>
-            <Link href="/">
+            <a href="/">
               <span className="btn-primary mt-4 inline-flex cursor-pointer">Back to Home</span>
-            </Link>
+            </a>
           </div>
         </main>
         <Footer />
@@ -1162,11 +1161,11 @@ export default function ServicePage({ slug }: ServicePageProps) {
                 {data.whatIsIt}
               </p>
               <div className="mt-6 flex gap-3">
-                <Link href="/contact-us/">
+                <a href="/contact-us/">
                   <span className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-forest text-white font-bold px-5 py-3 rounded-lg transition-all cursor-pointer text-sm">
                     Get Free Quote <ArrowRight size={15} />
                   </span>
-                </Link>
+                </a>
                 <a href={COMPANY.phoneHref} className="inline-flex items-center gap-2 border-2 border-brand-green text-brand-green hover:bg-brand-green hover:text-white font-bold px-5 py-3 rounded-lg transition-all text-sm">
                   <Phone size={15} /> {COMPANY.phone}
                 </a>
@@ -1322,11 +1321,11 @@ export default function ServicePage({ slug }: ServicePageProps) {
           </div>
           <p className="text-gray-400 text-xs mt-3 text-center">{data.pricingNote}</p>
           <div className="text-center mt-6">
-            <Link href="/how-much-do-movers-cost/">
+            <a href="/how-much-do-movers-cost/">
               <span className="inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:underline cursor-pointer">
                 See the full pricing guide — How Much Do Movers Cost? <ArrowRight size={14} />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -1423,20 +1422,20 @@ export default function ServicePage({ slug }: ServicePageProps) {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
             {ALL_LOCATIONS.map((loc) => (
-              <Link key={loc.href} href={loc.href}>
+              <a key={loc.href} href={loc.href}>
                 <div className="bg-white border border-gray-200 hover:border-brand-green rounded-lg px-4 py-3 flex items-center gap-2 group transition-all cursor-pointer">
                   <MapPin className="w-3.5 h-3.5 text-brand-green flex-shrink-0" />
                   <span className="text-gray-700 group-hover:text-brand-green text-xs font-medium transition-colors">{loc.label} Movers</span>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
           <div className="text-center mt-6">
-            <Link href="/we-are-local/">
+            <a href="/we-are-local/">
               <span className="inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:underline cursor-pointer">
                 View full service area <ArrowRight className="w-4 h-4" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -1452,12 +1451,12 @@ export default function ServicePage({ slug }: ServicePageProps) {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {NAV_SERVICES.filter(s => !s.href.includes(slug)).map((s) => (
-              <Link key={s.href} href={s.href}>
+              <a key={s.href} href={s.href}>
                 <div className="bg-gray-50 border border-gray-200 hover:border-brand-green rounded-xl p-4 flex items-center gap-3 group transition-all cursor-pointer">
                   <ArrowRight className="w-4 h-4 text-brand-green flex-shrink-0" />
                   <span className="text-gray-700 group-hover:text-brand-green font-medium text-sm transition-colors">{s.label}</span>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -1524,12 +1523,12 @@ export default function ServicePage({ slug }: ServicePageProps) {
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
                 {unique.map(c => (
-                  <Link key={c.slug} href={`/${c.slug}-movers/${serviceKey}/`}>
+                  <a key={c.slug} href={`/${c.slug}-movers/${serviceKey}/`}>
                     <span className="flex items-center gap-1.5 px-3 py-2 rounded-lg border border-gray-200 bg-white hover:border-brand-forest hover:bg-brand-forest/5 text-gray-700 hover:text-brand-forest text-sm font-medium transition-all cursor-pointer">
                       <MapPin size={12} className="text-brand-forest flex-shrink-0" />
                       {c.city}
                     </span>
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>
@@ -1552,11 +1551,11 @@ export default function ServicePage({ slug }: ServicePageProps) {
             No obligation. No hidden fees. Just honest, transparent pricing from Seattle's most trusted movers since 2009.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact-us/">
+            <a href="/contact-us/">
               <span className="inline-flex items-center justify-center gap-2 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-lg px-8 py-4 rounded-lg transition-all hover:scale-105 cursor-pointer">
                 Get Free Quote <ArrowRight size={18} />
               </span>
-            </Link>
+            </a>
             <a
               href={COMPANY.phoneHref}
               className="inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all border border-white/30"

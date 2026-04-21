@@ -1,4 +1,3 @@
-import Link from "next/link";
 
 // Force dynamic rendering to avoid prerender issues with LayoutRouterContext
 
@@ -53,7 +52,7 @@ export default function NotFoundPage() {
         }}
       >
         Back to Home
-      </Link>
+      </a>
     </div>
   );
 }

@@ -8,7 +8,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { COMPANY } from "@/lib/siteData";
-import Link from "next/link";
 import { Phone, ArrowRight, CheckCircle, Star, Award, Users, Heart, Shield } from "lucide-react";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { useSEO, MOVING_COMPANY_SCHEMA } from "@/hooks/useSEO";
@@ -165,7 +164,7 @@ export default function AboutUs() {
                   With over {COMPANY.googleReviewCount.toLocaleString()} five-star Google reviews and more than 50,000 successful moves, we are proud to be the moving company the Eastside trusts most.
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Link href="/contact-us/" className="btn-primary">Get a Free Quote <ArrowRight size={16} /></Link>
+                  <a href="/contact-us/" className="btn-primary">Get a Free Quote <ArrowRight size={16} /></a>
                   <a href={COMPANY.phoneHref} className="btn-gold"><Phone size={16} /> {COMPANY.phone}</a>
                 </div>
               </div>
@@ -382,9 +381,9 @@ export default function AboutUs() {
                 <p className="text-gray-700 leading-relaxed mb-6">
                   When you hire On The Go Moving, you are supporting a locally owned company that reinvests in the neighborhoods we serve.
                 </p>
-                <Link href="/we-are-local/" className="btn-primary inline-flex">
+                <a href="/we-are-local/" className="btn-primary inline-flex">
                   Learn About Our Community Work <ArrowRight size={16} />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -434,9 +433,9 @@ export default function AboutUs() {
               Get a free, no-obligation quote in under 60 seconds. We respond within 1 hour.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact-us/" className="btn-gold text-base px-8 py-3">
+              <a href="/contact-us/" className="btn-gold text-base px-8 py-3">
                 Get Your Free Quote <ArrowRight size={16} />
-              </Link>
+              </a>
               <a href={COMPANY.phoneHref} className="btn-primary text-base px-8 py-3">
                 <Phone size={16} /> {COMPANY.phone}
               </a>

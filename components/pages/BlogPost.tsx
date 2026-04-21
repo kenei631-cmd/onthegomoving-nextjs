@@ -7,7 +7,6 @@
 // Data: 230 posts imported from /lib/blogData.ts (auto-generated from WordPress scrape)
 // ==========================================================================
 import { useEffect } from "react";
-import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BRAND_IMAGES } from "@/lib/brandImages";
@@ -25,7 +24,7 @@ function RelatedPosts({ currentSlug, category }: { currentSlug: string; category
       <h3 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-widest">Related Articles</h3>
       <div className="space-y-4">
         {posts.map(p => (
-          <Link key={p.slug} href={`/blog/${p.slug}/`}>
+          <a key={p.slug} href={`/blog/${p.slug}/`}>
             <div className="flex gap-3 group cursor-pointer">
               <div className="w-16 h-14 rounded-lg overflow-hidden flex-shrink-0">
                 <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
@@ -35,7 +34,7 @@ function RelatedPosts({ currentSlug, category }: { currentSlug: string; category
                 <p className="text-xs text-gray-400 mt-1">{p.readTime}</p>
               </div>
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </div>
@@ -61,9 +60,9 @@ function QuoteCTA() {
             </li>
           ))}
         </ul>
-        <Link href="/contact-us/" className="btn-gold w-full text-center block text-sm">
+        <a href="/contact-us/" className="btn-gold w-full text-center block text-sm">
           Get a Free Quote
-        </Link>
+        </a>
         <p className="text-center text-xs text-gray-400 mt-2">Or call <a href="tel:+14257618500" className="font-semibold" style={{ color: "#75aa11" }}>(425) 761-8500</a></p>
       </div>
     </div>
@@ -209,9 +208,9 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
               <p className="text-gray-500 mb-8">
                 This article is being migrated from our WordPress site. Check back soon, or browse our other moving guides below.
               </p>
-              <Link href="/blog/" className="btn-gold inline-flex items-center gap-2">
+              <a href="/blog/" className="btn-gold inline-flex items-center gap-2">
                 Browse All Articles <ArrowRight size={15} />
-              </Link>
+              </a>
             </div>
           </section>
         </main>
@@ -237,9 +236,9 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
           <div className="container py-16 relative z-10">
             {/* Breadcrumb */}
             <nav className="flex items-center gap-1.5 text-green-300/70 text-xs mb-6">
-              <Link href="/" className="hover:text-white">Home</Link>
+              <a href="/" className="hover:text-white">Home</a>
               <ChevronRight size={12} />
-              <Link href="/blog/" className="hover:text-white">Blog</Link>
+              <a href="/blog/" className="hover:text-white">Blog</a>
               <ChevronRight size={12} />
               <span className="text-white/80 truncate max-w-xs">{post.title}</span>
             </nav>
@@ -311,9 +310,9 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                           </p>
                         </div>
                         <div className="flex flex-col gap-2 sm:items-end flex-shrink-0">
-                          <Link href="/contact-us/" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm text-white" style={{ backgroundColor: "#75aa11" }}>
+                          <a href="/contact-us/" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg font-bold text-sm text-white" style={{ backgroundColor: "#75aa11" }}>
                             Get a Free Quote <ArrowRight size={14} />
-                          </Link>
+                          </a>
                           <a href="tel:+14257618500" className="text-white/70 text-xs text-center hover:text-white transition-colors">
                             Or call (425) 761-8500
                           </a>
@@ -329,9 +328,9 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                             { label: "Commercial Moving", href: "/commercial-moving/" },
                             { label: "Senior Moving", href: "/senior-moving/" },
                           ].map(s => (
-                            <Link key={s.href} href={s.href} className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold text-white/90 hover:text-white transition-colors" style={{ backgroundColor: "rgba(255,255,255,0.12)" }}>
+                            <a key={s.href} href={s.href} className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold text-white/90 hover:text-white transition-colors" style={{ backgroundColor: "rgba(255,255,255,0.12)" }}>
                               {s.label}
-                            </Link>
+                            </a>
                           ))}
                         </div>
                       </div>
@@ -381,9 +380,9 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                     Serving Seattle, Bellevue, Redmond, Kirkland, Sammamish &amp; the entire Eastside. Flat-rate pricing. No hidden fees.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                    <Link href="/contact-us/" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-bold text-white text-sm" style={{ backgroundColor: "#75aa11" }}>
+                    <a href="/contact-us/" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-bold text-white text-sm" style={{ backgroundColor: "#75aa11" }}>
                       Request a Free Quote <ArrowRight size={14} />
-                    </Link>
+                    </a>
                     <a href="tel:+14257618500" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-bold text-sm" style={{ backgroundColor: "#1e3a0f", color: "white" }}>
                       Call (425) 761-8500
                     </a>
@@ -398,9 +397,9 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
 
                 {/* Back to Blog */}
                 <div className="mt-8">
-                  <Link href="/blog/" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[#75aa11] transition-colors">
+                  <a href="/blog/" className="inline-flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[#75aa11] transition-colors">
                     ← Back to All Articles
-                  </Link>
+                  </a>
                 </div>
               </article>
 
@@ -422,9 +421,9 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                       { label: "Senior Moving", href: "/senior-moving/" },
                       { label: "Specialty Moving", href: "/specialty-moving/" },
                     ].map(s => (
-                      <Link key={s.href} href={s.href} className="flex items-center justify-between text-sm text-gray-700 hover:text-[#75aa11] transition-colors py-1 border-b border-gray-100 last:border-0">
+                      <a key={s.href} href={s.href} className="flex items-center justify-between text-sm text-gray-700 hover:text-[#75aa11] transition-colors py-1 border-b border-gray-100 last:border-0">
                         {s.label} <ChevronRight size={13} className="text-gray-400" />
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -442,14 +441,14 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                       { label: "Issaquah Movers", href: "/issaquah-movers/" },
                       { label: "Bothell Movers", href: "/bothell-movers/" },
                     ].map(s => (
-                      <Link key={s.href} href={s.href} className="flex items-center justify-between text-sm text-gray-700 hover:text-[#75aa11] transition-colors py-1 border-b border-gray-100 last:border-0">
+                      <a key={s.href} href={s.href} className="flex items-center justify-between text-sm text-gray-700 hover:text-[#75aa11] transition-colors py-1 border-b border-gray-100 last:border-0">
                         {s.label} <ChevronRight size={13} className="text-gray-400" />
-                      </Link>
+                      </a>
                     ))}
                   </div>
-                  <Link href="/we-are-local/" className="mt-3 flex items-center gap-1 text-xs font-semibold" style={{ color: "#75aa11" }}>
+                  <a href="/we-are-local/" className="mt-3 flex items-center gap-1 text-xs font-semibold" style={{ color: "#75aa11" }}>
                     View all service areas <ChevronRight size={11} />
-                  </Link>
+                  </a>
                 </div>
               </aside>
 

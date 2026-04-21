@@ -8,7 +8,6 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 import { CheckCircle, Phone, Clock, Star, ArrowRight } from "lucide-react";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 
@@ -206,20 +205,20 @@ export default function ThankYou() {
                 { title: "Moving Tips & Guides", href: "/blog/", desc: "Expert advice on packing, planning, and everything in between." },
                 { title: "FAQ", href: "/faq/", desc: "Answers to the most common questions about hiring movers." },
               ].map(item => (
-                <Link key={item.href} href={item.href}>
+                <a key={item.href} href={item.href}>
                   <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-shadow group cursor-pointer h-full">
                     <h3 className="font-bold text-gray-900 mb-2 group-hover:text-[#75aa11] transition-colors" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
                       {item.title}
                     </h3>
                     <p className="text-gray-500 text-sm">{item.desc}</p>
                   </div>
-                </Link>
+                </a>
               ))}
             </div>
             <div className="text-center mt-8">
-              <Link href="/" className="btn-primary inline-flex items-center gap-2">
+              <a href="/" className="btn-primary inline-flex items-center gap-2">
                 Back to Home <ArrowRight size={15} />
-              </Link>
+              </a>
             </div>
           </div>
         </section>

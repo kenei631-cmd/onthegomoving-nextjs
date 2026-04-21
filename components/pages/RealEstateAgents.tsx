@@ -6,7 +6,6 @@
 // Forest green + gold brand palette, Playfair Display headings.
 // =============================================================================
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Phone, Star, Shield, CheckCircle, Users, Gift, TrendingUp, ChevronDown, ChevronUp, ArrowRight, BadgeCheck, Calendar, FileText } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -148,11 +147,11 @@ export default function RealEstateAgents() {
                 <Phone className="w-5 h-5" />
                 Call {COMPANY.phone}
               </a>
-              <Link href="/contact-us/">
+              <a href="/contact-us/">
                 <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                   Become a Partner
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -217,11 +216,11 @@ export default function RealEstateAgents() {
                   <Phone className="w-5 h-5" />
                   Call to Sign Up
                 </a>
-                <Link href="/contact-us/">
+                <a href="/contact-us/">
                   <span className="inline-flex items-center justify-center gap-2 border-2 border-brand-forest text-brand-forest hover:bg-brand-forest hover:text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                     Online Sign Up
                   </span>
-                </Link>
+                </a>
               </div>
             </div>
             <div
@@ -319,11 +318,11 @@ export default function RealEstateAgents() {
               <Phone className="w-5 h-5" />
               Call {COMPANY.phone}
             </a>
-            <Link href="/contact-us/">
+            <a href="/contact-us/">
               <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                 Send Us a Message <ArrowRight className="w-5 h-5" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

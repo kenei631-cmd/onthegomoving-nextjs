@@ -7,7 +7,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
-import Link from "next/link";
 import {
   CheckCircle, Phone, Star, Clock, Shield, Package,
   ArrowRight, BadgeCheck, Warehouse, Wrench, Zap,
@@ -170,11 +169,11 @@ export default function StagingProfessionals() {
                   <Phone className="w-5 h-5" />
                   Call {COMPANY.phone}
                 </a>
-                <Link href="/contact-us/">
+                <a href="/contact-us/">
                   <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                     Become a Partner
                   </span>
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -293,11 +292,11 @@ export default function StagingProfessionals() {
                   <Phone className="w-5 h-5" />
                   Call to Get Started
                 </a>
-                <Link href="/contact-us/">
+                <a href="/contact-us/">
                   <span className="inline-flex items-center justify-center gap-2 border-2 border-brand-forest text-brand-forest hover:bg-brand-forest hover:text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                     Send a Message
                   </span>
-                </Link>
+                </a>
               </div>
             </div>
             <div
@@ -436,11 +435,11 @@ export default function StagingProfessionals() {
               <Phone className="w-5 h-5" />
               Call {COMPANY.phone}
             </a>
-            <Link href="/partners/">
+            <a href="/partners/">
               <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                 View All Partner Programs <ArrowRight className="w-5 h-5" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

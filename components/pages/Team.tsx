@@ -6,7 +6,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
-import Link from "next/link";
 import { CheckCircle, Phone, Shield, Star, Users, Award } from "lucide-react";
 
 const VALUES = [
@@ -152,11 +151,11 @@ export default function Team() {
             <a href={COMPANY.phoneHref} className="inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-lg px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-lg">
               <Phone className="w-5 h-5" /> {COMPANY.phone}
             </a>
-            <Link href="/about-us/">
+            <a href="/about-us/">
               <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                 About Our Company
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

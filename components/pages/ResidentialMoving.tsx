@@ -16,7 +16,6 @@ import {
   Home, Building2, Users, ChevronDown, ChevronUp, MapPin,
   Package, Truck, DollarSign, Award, Zap
 } from "lucide-react";
-import Link from "next/link";
 
 const FAQS = [
   {
@@ -350,11 +349,11 @@ export default function ResidentialMoving() {
                 On The Go Moving & Storage provides full-service residential moves across the Greater Seattle Eastside. Every move includes a dedicated crew, a clean moving truck, all necessary equipment, and 1 free month of climate-controlled storage at our Redmond, WA facility.
               </p>
               <div className="mt-6 flex gap-3">
-                <Link href="/contact-us/">
+                <a href="/contact-us/">
                   <span className="inline-flex items-center gap-2 bg-brand-green hover:bg-brand-forest text-white font-bold px-5 py-3 rounded-lg transition-all cursor-pointer text-sm">
                     Get Free Quote <ArrowRight size={15} />
                   </span>
-                </Link>
+                </a>
                 <a href={COMPANY.phoneHref} className="inline-flex items-center gap-2 border-2 border-brand-green text-brand-green hover:bg-brand-green hover:text-white font-bold px-5 py-3 rounded-lg transition-all text-sm">
                   <Phone size={15} /> {COMPANY.phone}
                 </a>
@@ -524,11 +523,11 @@ export default function ResidentialMoving() {
             Estimates based on local moves within 18 miles of Redmond, WA. Actual price depends on access, stairs, distance, and add-on services.
           </p>
           <div className="text-center mt-6">
-            <Link href="/how-much-do-movers-cost/">
+            <a href="/how-much-do-movers-cost/">
               <span className="inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:underline cursor-pointer">
                 See the full pricing guide — How Much Do Movers Cost? <ArrowRight size={14} />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -625,20 +624,20 @@ export default function ResidentialMoving() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
             {ALL_LOCATIONS.map((loc) => (
-              <Link key={loc.href} href={loc.href}>
+              <a key={loc.href} href={loc.href}>
                 <div className="bg-white border border-gray-200 hover:border-brand-green rounded-lg px-4 py-3 flex items-center gap-2 group transition-all cursor-pointer">
                   <MapPin className="w-3.5 h-3.5 text-brand-green flex-shrink-0" />
                   <span className="text-gray-700 group-hover:text-brand-green text-xs font-medium transition-colors">{loc.label} Movers</span>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
           <div className="text-center mt-6">
-            <Link href="/we-are-local/">
+            <a href="/we-are-local/">
               <span className="inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:underline cursor-pointer">
                 View full service area map <ArrowRight className="w-4 h-4" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -654,12 +653,12 @@ export default function ResidentialMoving() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {NAV_SERVICES.filter(s => !s.href.includes("residential")).map((s) => (
-              <Link key={s.href} href={s.href}>
+              <a key={s.href} href={s.href}>
                 <div className="bg-gray-50 border border-gray-200 hover:border-brand-green rounded-xl p-4 flex items-center gap-3 group transition-all cursor-pointer">
                   <ArrowRight className="w-4 h-4 text-brand-green flex-shrink-0" />
                   <span className="text-gray-700 group-hover:text-brand-green font-medium text-sm transition-colors">{s.label}</span>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -691,11 +690,11 @@ export default function ResidentialMoving() {
               <Phone className="w-5 h-5" />
               Call {COMPANY.phone}
             </a>
-            <Link href="/contact-us/">
+            <a href="/contact-us/">
               <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-lg transition-all text-base cursor-pointer">
                 Get a Free Quote Online <ArrowRight className="w-5 h-5" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

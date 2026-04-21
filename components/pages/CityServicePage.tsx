@@ -6,7 +6,6 @@
 // Playfair Display headings, Inter body, sticky sidebar with quote CTA.
 // =============================================================================
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { Phone, Star, Shield, CheckCircle, MapPin, Clock, ChevronDown, ChevronUp } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -961,7 +960,7 @@ export default function CityServicePage({ slug }: CityServicePageProps) {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Page Not Found</h1>
-          <Link href="/" className="text-brand-green hover:underline">Return Home</Link>
+          <a href="/" className="text-brand-green hover:underline">Return Home</a>
         </div>
       </div>
     );
@@ -983,9 +982,9 @@ export default function CityServicePage({ slug }: CityServicePageProps) {
         <div className="container relative z-10">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-green-300 text-sm mb-6">
-            <Link href="/"><span className="hover:text-white cursor-pointer transition-colors">Home</span></Link>
+            <a href="/"><span className="hover:text-white cursor-pointer transition-colors">Home</span></a>
             <span className="text-green-500">/</span>
-            <Link href={`/${data.citySlug}-movers/`}><span className="hover:text-white cursor-pointer transition-colors">{data.city} Movers</span></Link>
+            <a href={`/${data.citySlug}-movers/`}><span className="hover:text-white cursor-pointer transition-colors">{data.city} Movers</span></a>
             <span className="text-green-500">/</span>
             <span className="text-white">{data.service}</span>
           </nav>
@@ -1024,11 +1023,11 @@ export default function CityServicePage({ slug }: CityServicePageProps) {
                 <Phone className="w-5 h-5" />
                 Call {COMPANY.phone}
               </a>
-              <Link href="/contact-us/">
+              <a href="/contact-us/">
                 <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                   Get Free Quote
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -1141,12 +1140,12 @@ export default function CityServicePage({ slug }: CityServicePageProps) {
                 <h3 className="font-display font-bold text-brand-forest text-lg mb-4">Related Services</h3>
                 <div className="space-y-2">
                   {data.relatedServices.map(([label, href], i) => (
-                    <Link key={i} href={href}>
+                    <a key={i} href={href}>
                       <span className="flex items-center gap-2 text-brand-green hover:text-brand-forest text-sm font-medium py-1.5 border-b border-gray-100 last:border-0 cursor-pointer transition-colors">
                         <CheckCircle className="w-4 h-4 flex-shrink-0" />
                         {label}
                       </span>
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>

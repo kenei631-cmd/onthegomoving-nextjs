@@ -11,7 +11,6 @@
 import { useEffect } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Link from "next/link";
 import { ALL_LOCATIONS, COMPANY } from "@/lib/siteData";
 import { MapPin, ArrowRight, Shield, Clock, CheckCircle } from "lucide-react";
 
@@ -99,7 +98,7 @@ export default function Locations() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {ALL_LOCATIONS.map((loc) => (
-              <Link key={loc.href} href={loc.href}>
+              <a key={loc.href} href={loc.href}>
                 <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 hover:border-brand-green hover:shadow-md transition-all flex items-center gap-3 group cursor-pointer">
                   <div className="w-9 h-9 bg-brand-green/10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-brand-green/20 transition-colors">
                     <MapPin className="w-4 h-4 text-brand-green" />
@@ -112,7 +111,7 @@ export default function Locations() {
                   </div>
                   <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-brand-green transition-colors flex-shrink-0" />
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -157,11 +156,11 @@ export default function Locations() {
             >
               Call {COMPANY.phone}
             </a>
-            <Link href="/contact-us/">
+            <a href="/contact-us/">
               <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold px-8 py-4 rounded-lg transition-all cursor-pointer">
                 Get a Free Quote
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

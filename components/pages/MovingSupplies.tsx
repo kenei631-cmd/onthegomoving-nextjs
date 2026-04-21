@@ -8,7 +8,6 @@ import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
-import Link from "next/link";
 import { CheckCircle, Package, Phone, ShoppingCart, Truck, Star } from "lucide-react";
 
 const SUPPLIES = [
@@ -209,11 +208,11 @@ export default function MovingSupplies() {
             <a href={COMPANY.phoneHref} className="inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-lg px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-lg">
               <Phone className="w-5 h-5" /> {COMPANY.phone}
             </a>
-            <Link href="/packing-services/">
+            <a href="/packing-services/">
               <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                 View Packing Services
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>

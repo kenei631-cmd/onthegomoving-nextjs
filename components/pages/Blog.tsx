@@ -8,7 +8,6 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowRight, Calendar, Tag, Search } from "lucide-react";
-import Link from "next/link";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { BLOG_POSTS, BLOG_CATEGORIES } from "@/lib/blogPosts";
 import { useSEO, MOVING_COMPANY_SCHEMA } from "@/hooks/useSEO";
@@ -52,7 +51,7 @@ export default function Blog() {
         >
           <div className="container relative z-10">
             <nav className="flex items-center gap-2 text-green-300/70 text-xs mb-5">
-              <Link href="/" className="hover:text-white">Home</Link>
+              <a href="/" className="hover:text-white">Home</a>
               <span>/</span>
               <span className="text-white">Blog</span>
             </nav>
@@ -90,9 +89,9 @@ export default function Blog() {
                   <span className="flex items-center gap-1"><Calendar size={13} />{featured.date}</span>
                   <span>{featured.readTime}</span>
                 </div>
-                <Link href={`/blog/${featured.slug}/`} className="btn-primary inline-flex items-center gap-2">
+                <a href={`/blog/${featured.slug}/`} className="btn-primary inline-flex items-center gap-2">
                   Read Article <ArrowRight size={15} />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -145,7 +144,7 @@ export default function Blog() {
                 <p className="text-sm text-gray-400 mb-6">{filtered.length} article{filtered.length !== 1 ? "s" : ""}{activeCategory !== "All" ? ` in ${activeCategory}` : ""}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {filtered.map((post) => (
-                    <Link key={post.slug} href={`/blog/${post.slug}/`}>
+                    <a key={post.slug} href={`/blog/${post.slug}/`}>
                       <div className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-md transition-shadow group cursor-pointer h-full flex flex-col">
                         <div className="h-44 overflow-hidden">
                           <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
@@ -167,7 +166,7 @@ export default function Blog() {
                           </div>
                         </div>
                       </div>
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </>
@@ -190,15 +189,15 @@ export default function Blog() {
                 { label: "Storage Services", href: "/storage-services/" },
                 { label: "Specialty Moving", href: "/specialty-moving/" },
               ].map(s => (
-                <Link key={s.href} href={s.href} className="bg-[#f5f5f3] rounded-lg px-3 py-3 text-xs font-semibold text-gray-700 hover:shadow-md border border-gray-200 transition-all text-center block">
+                <a key={s.href} href={s.href} className="bg-[#f5f5f3] rounded-lg px-3 py-3 text-xs font-semibold text-gray-700 hover:shadow-md border border-gray-200 transition-all text-center block">
                   {s.label}
-                </Link>
+                </a>
               ))}
             </div>
             <div className="text-center">
-              <Link href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
+              <a href="/contact-us/" className="btn-gold inline-flex items-center gap-2">
                 Get My Free Quote <ArrowRight size={15} />
-              </Link>
+              </a>
             </div>
           </div>
         </section>

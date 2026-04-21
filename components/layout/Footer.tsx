@@ -6,7 +6,6 @@
 // Internal linking: All 26 location pages linked in footer for full link equity
 // ==========================================================================
 
-import Link from "next/link";
 import { COMPANY, NAV_SERVICES, ALL_LOCATIONS } from "@/lib/siteData";
 import { Phone, Mail, MapPin, Star } from "lucide-react";
 import { BRAND_IMAGES } from "@/lib/brandImages";
@@ -82,14 +81,14 @@ export default function Footer() {
                   >
                     <span style={{ color: "#75aa11" }}>→</span>
                     {s.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
               <li>
-                <Link href="/how-much-do-movers-cost/" className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5">
+                <a href="/how-much-do-movers-cost/" className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5">
                   <span style={{ color: "#75aa11" }}>→</span>
                   How Much Do Movers Cost?
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -111,7 +110,7 @@ export default function Footer() {
                   >
                     <span style={{ color: "#75aa11" }}>→</span>
                     {l.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -134,13 +133,13 @@ export default function Footer() {
                   >
                     <span style={{ color: "#75aa11" }}>→</span>
                     {l.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
               <li>
-                <Link href="/we-are-local/" className="text-[#75aa11] hover:text-[#a0d040] text-sm font-semibold transition-colors">
+                <a href="/we-are-local/" className="text-[#75aa11] hover:text-[#a0d040] text-sm font-semibold transition-colors">
                   All Locations →
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -171,7 +170,7 @@ export default function Footer() {
                   >
                     <span style={{ color: "#75aa11" }}>→</span>
                     {l.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
@@ -182,7 +181,7 @@ export default function Footer() {
               className="btn-gold text-sm w-full justify-center"
             >
               Get a Free Quote
-            </Link>
+            </a>
           </div>
         </div>
       </div>
@@ -194,15 +193,15 @@ export default function Footer() {
             © {currentYear} {COMPANY.name}. All rights reserved. | WA License: {COMPANY.license} | USDOT# {COMPANY.usdot}
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/privacy-policy/" className="text-white/50 hover:text-white/80 text-xs transition-colors">
+            <a href="/privacy-policy/" className="text-white/50 hover:text-white/80 text-xs transition-colors">
               Privacy Policy
-            </Link>
-            <Link href="/terms-of-service/" className="text-white/50 hover:text-white/80 text-xs transition-colors">
+            </a>
+            <a href="/terms-of-service/" className="text-white/50 hover:text-white/80 text-xs transition-colors">
               Terms of Service
-            </Link>
-            <Link href="/sitemap/" className="text-white/50 hover:text-white/80 text-xs transition-colors">
+            </a>
+            <a href="/sitemap/" className="text-white/50 hover:text-white/80 text-xs transition-colors">
               Sitemap
-            </Link>
+            </a>
           </div>
         </div>
       </div>

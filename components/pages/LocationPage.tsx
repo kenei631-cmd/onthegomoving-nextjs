@@ -10,7 +10,6 @@
 // ==========================================================================
 
 import { useEffect } from "react";
-import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
@@ -368,7 +367,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Location Not Found</h1>
-          <Link href="/" className="text-brand-green hover:underline">Return Home</Link>
+          <a href="/" className="text-brand-green hover:underline">Return Home</a>
         </div>
       </div>
     );
@@ -395,9 +394,9 @@ export default function LocationPage({ slug }: LocationPageProps) {
         <div className="container py-16 lg:py-20">
           {/* Breadcrumb — AEO: helps LLMs understand page hierarchy */}
           <nav className="flex items-center gap-2 text-sm text-green-200 mb-6" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-white transition-colors">Home</Link>
+            <a href="/" className="hover:text-white transition-colors">Home</a>
             <span>/</span>
-            <Link href="/we-are-local/" className="hover:text-white transition-colors">Locations</Link>
+            <a href="/we-are-local/" className="hover:text-white transition-colors">Locations</a>
             <span>/</span>
             <span className="text-white">{data.city} Movers</span>
           </nav>
@@ -539,7 +538,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
               { icon: Truck, title: "Labor Only Moving", desc: `Have your own truck or PODS container? Hire our professional ${data.city} crew for loading and unloading.`, href: `/${slug}/labor-only/` },
               { icon: Truck, title: "Piano & Specialty Moving", desc: `Piano, safe, antique, and furniture moving in ${data.city}. Specialized equipment and trained crews.`, href: `/${slug}/piano/` },
             ].map((service, i) => (
-              <Link key={i} href={service.href}>
+              <a key={i} href={service.href}>
                 <div className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 hover:border-brand-green hover:shadow-md transition-all group cursor-pointer h-full">
                   <div className="w-10 h-10 bg-brand-green/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-brand-green/20 transition-colors">
                     <service.icon className="w-5 h-5 text-brand-green" />
@@ -550,7 +549,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                     Learn more <ArrowRight className="w-3.5 h-3.5" />
                   </span>
                 </div>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -572,11 +571,11 @@ export default function LocationPage({ slug }: LocationPageProps) {
               </div>
               <h3 className="font-display text-xl font-black mb-4">Apartment & Condo Movers in {data.city}</h3>
               <p className="text-green-100 text-sm leading-relaxed mb-5">{data.apartment}</p>
-              <Link href="/apartment-moving/">
+              <a href="/apartment-moving/">
                 <span className="inline-flex items-center gap-2 text-brand-gold font-semibold text-sm hover:gap-3 transition-all">
                   Get apartment moving quote <ArrowRight className="w-4 h-4" />
                 </span>
-              </Link>
+              </a>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
               <div className="w-12 h-12 bg-brand-green/10 rounded-xl flex items-center justify-center mb-5">
@@ -584,11 +583,11 @@ export default function LocationPage({ slug }: LocationPageProps) {
               </div>
               <h3 className="font-display text-xl font-black text-brand-forest mb-4">Home Movers in {data.city}</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-5">{data.home}</p>
-              <Link href="/residential-moving/">
+              <a href="/residential-moving/">
                 <span className="inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:gap-3 transition-all">
                   Get home moving quote <ArrowRight className="w-4 h-4" />
                 </span>
-              </Link>
+              </a>
             </div>
             <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
               <div className="w-12 h-12 bg-brand-green/10 rounded-xl flex items-center justify-center mb-5">
@@ -596,11 +595,11 @@ export default function LocationPage({ slug }: LocationPageProps) {
               </div>
               <h3 className="font-display text-xl font-black text-brand-forest mb-4">Business Movers in {data.city}</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-5">{data.business}</p>
-              <Link href="/commercial-moving/">
+              <a href="/commercial-moving/">
                 <span className="inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:gap-3 transition-all">
                   Get commercial moving quote <ArrowRight className="w-4 h-4" />
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -635,11 +634,11 @@ export default function LocationPage({ slug }: LocationPageProps) {
           </div>
           <div className="text-center">
             <p className="text-green-200 text-sm mb-4">* Prices include truck, fuel, and equipment. No surprise charges.</p>
-            <Link href="/how-much-do-movers-cost/">
+            <a href="/how-much-do-movers-cost/">
               <span className="inline-flex items-center gap-2 bg-white text-brand-forest font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors">
                 See Full Pricing Guide <ArrowRight className="w-4 h-4" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </section>
@@ -728,15 +727,15 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 </div>
                 <div className="flex flex-wrap gap-1.5">
                   {SERVICE_AREA_CITIES.filter(c => c.slug !== slug).slice(0, 12).map((c, i) => (
-                    <Link key={i} href={`/${c.slug}/`}>
+                    <a key={i} href={`/${c.slug}/`}>
                       <span className="bg-brand-green/8 text-brand-forest text-xs px-2.5 py-1 rounded-full border border-brand-green/20 hover:bg-brand-green/15 transition-colors cursor-pointer">
                         {c.city}
                       </span>
-                    </Link>
+                    </a>
                   ))}
-                  <Link href="/we-are-local/">
+                  <a href="/we-are-local/">
                     <span className="text-brand-green text-xs px-2.5 py-1 hover:underline cursor-pointer">+more cities →</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -827,11 +826,11 @@ export default function LocationPage({ slug }: LocationPageProps) {
               <div className="grid grid-cols-2 gap-x-4 gap-y-1">
                 {SERVICE_AREA_CITIES.map((c, i) => (
                   <div key={i} className="flex items-center justify-between py-1.5 border-b border-gray-100 last:border-0">
-                    <Link href={`/${c.slug}/`}>
+                    <a href={`/${c.slug}/`}>
                       <span className={`text-sm font-medium hover:text-brand-green transition-colors cursor-pointer ${c.slug === slug ? "text-brand-green font-bold" : "text-gray-700"}`}>
                         {c.city}{c.slug === slug ? " ★" : ""}
                       </span>
-                    </Link>
+                    </a>
                     <span className="text-brand-green text-xs font-semibold">{c.drive}</span>
                   </div>
                 ))}
@@ -860,13 +859,13 @@ export default function LocationPage({ slug }: LocationPageProps) {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
             {CANONICAL_SERVICES.map((svc) => (
-              <Link key={svc.key} href={`/${cityPrefix}-movers/${svc.key}/`}>
+              <a key={svc.key} href={`/${cityPrefix}-movers/${svc.key}/`}>
                 <span className="flex items-center gap-2 bg-gray-50 hover:bg-brand-green/10 border border-gray-200 hover:border-brand-green/30 text-gray-700 hover:text-brand-forest text-sm font-medium px-4 py-3 rounded-lg transition-all cursor-pointer group">
                   <span className="text-base leading-none flex-shrink-0">{svc.icon}</span>
                   <span className="flex-1">{svc.label}</span>
                   <ArrowRight className="w-3.5 h-3.5 text-brand-green opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0" />
                 </span>
-              </Link>
+              </a>
             ))}
           </div>
         </div>
@@ -908,11 +907,11 @@ export default function LocationPage({ slug }: LocationPageProps) {
               </p>
               <div className="flex flex-wrap justify-center gap-3">
                 {nearbyCities.map((loc, i) => (
-                  <Link key={i} href={`/${loc.slug}/`}>
+                  <a key={i} href={`/${loc.slug}/`}>
                     <span className="bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm px-4 py-2 rounded-full transition-colors cursor-pointer">
                       {loc.city} Movers
                     </span>
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

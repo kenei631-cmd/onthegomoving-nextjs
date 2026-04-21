@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { FAQS, COMPANY } from "@/lib/siteData";
 import { ChevronDown, ChevronUp, Phone } from "lucide-react";
-import Link from "next/link";
 import { useSEO, buildFAQSchema, MOVING_COMPANY_SCHEMA } from "@/hooks/useSEO";
 
 export default function FAQ() {
@@ -71,7 +70,7 @@ export default function FAQ() {
               <p className="text-gray-600 mb-4">Still have questions? We're happy to help.</p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a href={COMPANY.phoneHref} className="btn-primary"><Phone size={16} /> {COMPANY.phone}</a>
-                <Link href="/contact-us/" className="btn-gold">Get a Free Quote</Link>
+                <a href="/contact-us/" className="btn-gold">Get a Free Quote</a>
               </div>
             </div>
           </div>

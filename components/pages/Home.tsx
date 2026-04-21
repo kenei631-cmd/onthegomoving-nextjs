@@ -10,7 +10,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useSEO, MOVING_COMPANY_SCHEMA, buildFAQSchema } from "@/hooks/useSEO";
-import Link from "next/link";
 import {
   Star, CheckCircle, ArrowRight, Phone, ChevronDown, ChevronUp,
   MapPin, Shield, Award, Clock, Users, Package, Truck, Home as HomeIcon,
@@ -211,9 +210,9 @@ export default function Home() {
 
               {/* Mobile CTA */}
               <div className="flex flex-col sm:flex-row gap-3 lg:hidden">
-                <Link href="/contact-us/" className="btn-gold text-base justify-center">
+                <a href="/contact-us/" className="btn-gold text-base justify-center">
                   Get Free Quote <ArrowRight size={16} />
-                </Link>
+                </a>
                 <a href={COMPANY.phoneHref} className="btn-primary text-base justify-center">
                   <Phone size={16} /> {COMPANY.phone}
                 </a>
@@ -279,7 +278,7 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {SERVICES.map((service) => (
               <FadeSection key={service.slug}>
-                <Link href={service.href}>
+                <a href={service.href}>
                   <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg border border-transparent hover:border-[#75aa11]/20 transition-all duration-200 group h-full">
                     {/* Image with icon accent */}
                     <div className="relative h-44 overflow-hidden">
@@ -308,15 +307,15 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                </Link>
+                </a>
               </FadeSection>
             ))}
           </div>
 
           <FadeSection className="text-center mt-10">
-            <Link href="/residential-moving/" className="btn-primary text-base">
+            <a href="/residential-moving/" className="btn-primary text-base">
               View All Services <ArrowRight size={16} />
-            </Link>
+            </a>
           </FadeSection>
         </div>
       </section>
@@ -386,9 +385,9 @@ export default function Home() {
               </div>
 
               <div className="flex flex-wrap gap-3">
-                <Link href="/about/" className="btn-primary">
+                <a href="/about/" className="btn-primary">
                   About Our Company
-                </Link>
+                </a>
                 <a href={COMPANY.phoneHref} className="btn-gold">
                   <Phone size={16} /> Call Now
                 </a>
@@ -465,9 +464,9 @@ export default function Home() {
               <p className="text-gray-600 leading-relaxed mb-6">
                 Our crews live and work in the communities we serve — giving us unmatched local knowledge and genuine care for every move. We cover 50+ cities within 18 miles of Redmond.
               </p>
-              <Link href="/we-are-local/" className="btn-primary">
+              <a href="/we-are-local/" className="btn-primary">
                 View All Service Areas <ArrowRight size={16} />
-              </Link>
+              </a>
             </FadeSection>
 
             {/* Right: 2-column linked city grid */}
@@ -481,7 +480,7 @@ export default function Home() {
                   >
                     <MapPin size={13} className="text-[#75aa11] shrink-0 group-hover:scale-110 transition-transform" />
                     {loc.label}
-                  </Link>
+                  </a>
                 ))}
               </div>
               <p className="text-xs text-gray-400 mt-3 pl-1">
@@ -576,9 +575,9 @@ export default function Home() {
             </FadeSection>
 
             <FadeSection className="flex flex-col sm:flex-row gap-4 shrink-0">
-              <Link href="/contact-us/" className="btn-gold text-lg px-8 py-3.5 whitespace-nowrap">
+              <a href="/contact-us/" className="btn-gold text-lg px-8 py-3.5 whitespace-nowrap">
                 Get Free Quote <ArrowRight size={18} />
-              </Link>
+              </a>
               <a
                 href={COMPANY.phoneHref}
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-lg px-8 py-3.5 rounded-md transition-colors whitespace-nowrap"

@@ -12,7 +12,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { COMPANY } from "@/lib/siteData";
-import Link from "next/link";
 import { CheckCircle, ArrowRight, Phone, Star, AlertCircle, TrendingDown, TrendingUp, Clock } from "lucide-react";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { useSEO, MOVING_COMPANY_SCHEMA, buildFAQSchema } from "@/hooks/useSEO";
@@ -136,7 +135,7 @@ export default function HowMuchDoMoversCost() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
               <div>
                 <nav className="flex items-center gap-2 text-green-300/70 text-xs mb-5">
-                  <Link href="/" className="hover:text-white">Home</Link>
+                  <a href="/" className="hover:text-white">Home</a>
                   <span>/</span>
                   <span className="text-white">How Much Do Movers Cost?</span>
                 </nav>
@@ -231,7 +230,7 @@ export default function HowMuchDoMoversCost() {
             </div>
             <p className="text-xs text-gray-400 mt-3 text-center">
               Rates current as of April 2026. Final cost depends on actual move conditions.{" "}
-              <Link href="/contact-us/" className="underline" style={{ color: "#75aa11" }}>Get an exact quote →</Link>
+              <a href="/contact-us/" className="underline" style={{ color: "#75aa11" }}>Get an exact quote →</a>
             </p>
           </div>
         </section>
@@ -396,7 +395,7 @@ export default function HowMuchDoMoversCost() {
                 >
                   <ArrowRight size={14} style={{ color: "#75aa11" }} />
                   {city} Movers
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -418,9 +417,9 @@ export default function HowMuchDoMoversCost() {
               No obligation. We respond within 1 hour with a flat-rate quote — no hidden fees, no surprises on move day.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact-us/" className="btn-gold text-base px-8 py-3 inline-flex items-center gap-2">
+              <a href="/contact-us/" className="btn-gold text-base px-8 py-3 inline-flex items-center gap-2">
                 Get My Free Quote <ArrowRight size={16} />
-              </Link>
+              </a>
               <a href={COMPANY.phoneHref} className="btn-primary text-base px-8 py-3 inline-flex items-center gap-2">
                 <Phone size={16} /> {COMPANY.phone}
               </a>

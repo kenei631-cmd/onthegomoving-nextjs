@@ -19,7 +19,6 @@
 // =============================================================================
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import {
   Phone, Star, Shield, CheckCircle, MapPin, Clock,
   ChevronDown, ChevronUp, ArrowRight, Home, Building2,
@@ -745,9 +744,9 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-800 mb-4">Service Not Found</h1>
-          <Link href={`/${cityMoverSlug}/`} className="text-brand-green hover:underline">
+          <a href={`/${cityMoverSlug}/`} className="text-brand-green hover:underline">
             Back to {city} Movers
-          </Link>
+          </a>
         </div>
       </div>
     );
@@ -773,9 +772,9 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
         <div className="container relative z-10">
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 text-green-300 text-sm mb-6" aria-label="Breadcrumb">
-            <Link href="/"><span className="hover:text-white cursor-pointer transition-colors">Home</span></Link>
+            <a href="/"><span className="hover:text-white cursor-pointer transition-colors">Home</span></a>
             <span className="text-green-500">/</span>
-            <Link href={`/${cityMoverSlug}/`}><span className="hover:text-white cursor-pointer transition-colors">{city} Movers</span></Link>
+            <a href={`/${cityMoverSlug}/`}><span className="hover:text-white cursor-pointer transition-colors">{city} Movers</span></a>
             <span className="text-green-500">/</span>
             <span className="text-white">{serviceDef.label}</span>
           </nav>
@@ -817,11 +816,11 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                 <Phone className="w-5 h-5" />
                 Call {COMPANY.phone}
               </a>
-              <Link href="/contact-us/">
+              <a href="/contact-us/">
                 <span className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 text-white font-bold text-lg px-8 py-4 rounded-lg transition-all cursor-pointer">
                   Get Free Quote
                 </span>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -860,11 +859,11 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                   <ExternalLink className="w-4 h-4 text-brand-green flex-shrink-0" />
                   <p className="text-sm text-gray-600">
                     Want to learn more about how {serviceDef.label.toLowerCase()} works?{" "}
-                    <Link href={serviceDef.hubSlug}>
+                    <a href={serviceDef.hubSlug}>
                       <span className="text-brand-green font-semibold hover:underline cursor-pointer">
                         Read our complete {serviceDef.label} guide →
                       </span>
-                    </Link>
+                    </a>
                   </p>
                 </div>
               </div>
@@ -939,12 +938,12 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                       const nearbyData = LOCATION_DATA[`${nearbyCity}-movers`];
                       const nearbyName = nearbyData?.city || nearbyCity.split("-").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
                       return (
-                        <Link key={nearbyCity} href={`/${nearbyCity}-movers/${serviceKey}/`}>
+                        <a key={nearbyCity} href={`/${nearbyCity}-movers/${serviceKey}/`}>
                           <span className="flex items-center gap-2 p-3 border border-gray-200 rounded-xl hover:border-brand-green hover:bg-green-50 transition-all cursor-pointer text-sm font-medium text-brand-forest">
                             <MapPin className="w-3.5 h-3.5 text-brand-green flex-shrink-0" />
                             {nearbyName}
                           </span>
-                        </Link>
+                        </a>
                       );
                     })}
                   </div>
@@ -984,9 +983,9 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                   All Services in {city}
                 </h3>
                 <p className="text-xs text-gray-500 mb-4">
-                  <Link href={`/${cityMoverSlug}/`}>
+                  <a href={`/${cityMoverSlug}/`}>
                     <span className="text-brand-green hover:underline cursor-pointer">View {city} Movers hub →</span>
-                  </Link>
+                  </a>
                 </p>
                 <div className="space-y-1">
                   {SERVICE_ORDER.map((svcKey) => {
@@ -994,7 +993,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                     if (!svc) return null;
                     const isActive = svcKey === serviceKey;
                     return (
-                      <Link key={svcKey} href={`/${cityMoverSlug}/${svcKey}/`}>
+                      <a key={svcKey} href={`/${cityMoverSlug}/${svcKey}/`}>
                         <span className={`flex items-center gap-2 text-sm py-1.5 px-2 rounded-lg transition-colors cursor-pointer ${
                           isActive
                             ? "bg-brand-green/10 text-brand-green font-semibold"
@@ -1004,7 +1003,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                           {svc.label}
                           {isActive && <CheckCircle className="w-3.5 h-3.5 ml-auto" />}
                         </span>
-                      </Link>
+                      </a>
                     );
                   })}
                 </div>
