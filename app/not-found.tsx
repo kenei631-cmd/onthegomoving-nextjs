@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 // Force dynamic rendering to avoid prerender issues with LayoutRouterContext
-export const dynamic = "force-dynamic";
 
 export default function NotFoundPage() {
   return (

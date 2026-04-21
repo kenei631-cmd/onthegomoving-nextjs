@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import MovingSupplies from "@/components/pages/MovingSupplies";
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: "Moving Supplies in Seattle | Boxes, Tape & Packing Materials",

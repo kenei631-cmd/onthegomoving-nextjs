@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import BlogPage from "@/components/pages/Blog";
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: "Moving Tips & Resources Blog | On The Go Moving & Storage",

@@ -3,8 +3,6 @@ import { notFound } from "next/navigation";
 import { POSTS_DATA } from "@/lib/blogData";
 import BlogPost from "@/components/pages/BlogPost";
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';
 
 export async function generateStaticParams() {
   return Object.keys(POSTS_DATA).map((slug) => ({ slug }));

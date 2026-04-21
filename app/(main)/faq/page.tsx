@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import FAQ from "@/components/pages/FAQ";
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: "Moving FAQ | Common Questions Answered | On The Go Moving",

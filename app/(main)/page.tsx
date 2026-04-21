@@ -20,5 +20,3 @@ export default function HomePage() {
   return <HomePageContent />;
 }
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';

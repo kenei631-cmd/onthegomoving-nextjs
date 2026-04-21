@@ -3,8 +3,6 @@ import { notFound } from "next/navigation";
 import { LOCATION_DATA } from "@/lib/locationData";
 import LocationPage from "@/components/pages/LocationPage";
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';
 
 // All valid location slugs for static generation
 const LOCATION_SLUGS = Object.keys(LOCATION_DATA);

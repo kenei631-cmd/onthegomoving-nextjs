@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Locations from "@/components/pages/Locations";
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: "Moving Service Locations | On The Go Moving & Storage",

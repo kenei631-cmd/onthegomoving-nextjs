@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import HowMuchDoMoversCost from "@/components/pages/HowMuchDoMoversCost";
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: "How Much Do Movers Cost in Seattle? | 2025 Price Guide",

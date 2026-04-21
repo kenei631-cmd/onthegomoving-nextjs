@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import PrivacyPolicy from "@/components/pages/PrivacyPolicy";
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';
 
 export const metadata: Metadata = {
   title: "Privacy Policy | On The Go Moving & Storage",

@@ -3,8 +3,6 @@ import { notFound } from "next/navigation";
 import { LOCATION_DATA } from "@/lib/locationData";
 import CityServiceSubPage from "@/components/pages/CityServiceSubPage";
 
-// Force SSR on-demand — page components use React hooks (use client)
-export const dynamic = 'force-dynamic';
 
 // All valid service keys
 const SERVICE_KEYS = [
