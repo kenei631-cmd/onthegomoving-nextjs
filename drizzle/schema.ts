@@ -1,5 +1,4 @@
 import { int, mysqlEnum, mysqlTable, text, timestamp, varchar } from "drizzle-orm/mysql-core";
-
 /**
  * Core user table backing auth flow.
  * Extend this file with additional tables as your product grows.
@@ -21,12 +20,9 @@ export const users = mysqlTable("users", {
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
   lastSignedIn: timestamp("lastSignedIn").defaultNow().notNull(),
 });
-
 export type User = typeof users.$inferSelect;
 export type InsertUser = typeof users.$inferInsert;
-
 // TODO: Add your tables here
-
 /**
  * Leads table — every quote form submission is logged here.
  * webhookStatus tracks whether the Zapier/SuperMove webhook succeeded.
@@ -40,6 +36,8 @@ export const leads = mysqlTable("leads", {
   // Move details
   moveDate: varchar("moveDate", { length: 32 }),
   moveType: varchar("moveType", { length: 64 }),
+  moveSize: varchar("moveSize", { length: 64 }),   // e.g. '1 Bedroom', '2 Bedrooms', 'Studio'
+  squareFeet: varchar("squareFeet", { length: 32 }), // Commercial only
   fromZip: varchar("fromZip", { length: 16 }),
   toZip: varchar("toZip", { length: 16 }),
   wantsStorage: int("wantsStorage").default(0).notNull(), // 0 = no, 1 = yes
@@ -54,6 +52,5 @@ export const leads = mysqlTable("leads", {
   createdAt: timestamp("createdAt").defaultNow().notNull(),
   updatedAt: timestamp("updatedAt").defaultNow().onUpdateNow().notNull(),
 });
-
 export type Lead = typeof leads.$inferSelect;
 export type InsertLead = typeof leads.$inferInsert;
