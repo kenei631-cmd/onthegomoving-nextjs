@@ -90,7 +90,7 @@ export default function StorageServicesLanding() {
       {/* ── Hero ── */}
       <section className="relative bg-[#1a2e0a] text-white overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-35"
           style={{ backgroundImage: `url(${BRAND_IMAGES.storageWarehouse})` }}
         />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
@@ -108,15 +108,23 @@ export default function StorageServicesLanding() {
                 Unlike self-storage units, our private storage vaults are held in a secured Redmond warehouse — only accessible by our team. We pick up, store, and deliver your items. No hauling required.
               </p>
 
-              {/* Phone CTA */}
-              <a
-                href={COMPANY.phoneHref}
-                onClick={() => pushPhoneClickEvent("storage-hero")}
-                className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-xl px-8 py-4 rounded-xl transition-colors shadow-lg mb-6"
-              >
-                <Phone size={22} />
-                {COMPANY.phone}
-              </a>
+              {/* Phone CTA + scroll-to-form anchor */}
+              <div className="flex flex-wrap gap-3 mb-6">
+                <a
+                  href={COMPANY.phoneHref}
+                  onClick={() => pushPhoneClickEvent("storage-hero")}
+                  className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-xl px-8 py-4 rounded-xl transition-colors shadow-lg"
+                >
+                  <Phone size={22} />
+                  {COMPANY.phone}
+                </a>
+                <a
+                  href="#quote-form"
+                  className="lg:hidden inline-flex items-center gap-2 bg-[#fbc319] hover:bg-[#f5b800] text-[#1a1a1a] font-bold text-base px-6 py-4 rounded-xl transition-colors shadow-lg"
+                >
+                  Get a Quote &rarr;
+                </a>
+              </div>
 
               {/* Trust badges */}
               <div className="grid grid-cols-2 gap-3 mt-2">

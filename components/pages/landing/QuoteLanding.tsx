@@ -87,7 +87,7 @@ export default function QuoteLanding() {
       {/* ── Hero ── */}
       <section className="relative bg-[#1a2e0a] text-white overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
+          className="absolute inset-0 bg-cover bg-center opacity-35"
           style={{ backgroundImage: `url(${BRAND_IMAGES.teamFleet})` }}
         />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
@@ -105,15 +105,23 @@ export default function QuoteLanding() {
                 On The Go Moving &amp; Storage has served the Greater Seattle area since {COMPANY.founded}. Tell us about your move and we'll give you a flat-rate quote — no obligation, no surprises.
               </p>
 
-              {/* Phone CTA */}
-              <a
-                href={COMPANY.phoneHref}
-                onClick={() => pushPhoneClickEvent("quote-hero")}
-                className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-xl px-8 py-4 rounded-xl transition-colors shadow-lg mb-6"
-              >
-                <Phone size={22} />
-                {COMPANY.phone}
-              </a>
+              {/* Phone CTA + scroll-to-form anchor */}
+              <div className="flex flex-wrap gap-3 mb-6">
+                <a
+                  href={COMPANY.phoneHref}
+                  onClick={() => pushPhoneClickEvent("quote-hero")}
+                  className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-xl px-8 py-4 rounded-xl transition-colors shadow-lg"
+                >
+                  <Phone size={22} />
+                  {COMPANY.phone}
+                </a>
+                <a
+                  href="#quote-form"
+                  className="lg:hidden inline-flex items-center gap-2 bg-[#fbc319] hover:bg-[#f5b800] text-[#1a1a1a] font-bold text-base px-6 py-4 rounded-xl transition-colors shadow-lg"
+                >
+                  Get a Quote &rarr;
+                </a>
+              </div>
 
               {/* Trust badges */}
               <div className="grid grid-cols-2 gap-3 mt-2">
@@ -174,7 +182,7 @@ export default function QuoteLanding() {
           </h2>
           <div className="grid sm:grid-cols-2 gap-6">
             {SERVICES.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex gap-4">
+              <div key={title} className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg border border-gray-100 flex gap-4 transition-shadow duration-200">
                 <div className="w-12 h-12 bg-[#e8f4d0] rounded-xl flex items-center justify-center flex-shrink-0">
                   <Icon size={22} className="text-[#75aa11]" />
                 </div>

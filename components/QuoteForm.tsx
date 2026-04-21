@@ -215,7 +215,7 @@ export default function QuoteForm({
     );
   }
 
-  const labelClass = "block text-xs font-bold text-gray-600 mb-1 uppercase tracking-wide transition-colors duration-200";
+  const labelClass = "block text-xs font-semibold text-gray-500 mb-1 tracking-wide transition-colors duration-200";
 
   const fieldWrap = (name: string) =>
     `relative transition-all duration-200 ${focused === name ? "pl-2" : ""}`;
@@ -256,13 +256,13 @@ export default function QuoteForm({
       {variant === "hero" && (
         <div className="mb-5">
           <h2
-            className="text-2xl font-extrabold"
+            className="text-[1.6rem] font-extrabold leading-tight"
             style={{ fontFamily: "'Barlow Condensed', sans-serif", color: "#1e3a0f" }}
           >
             Get Your Free Moving Quote
           </h2>
           <p className="text-gray-500 text-sm mt-1">
-            No obligation. Response within 1 hour.
+            No obligation. We respond within 1 hour.
           </p>
         </div>
       )}
@@ -447,7 +447,7 @@ export default function QuoteForm({
               className={inputClass("moveSize")}
               {...focusProps("moveSize")}
             >
-              <option value="">Move Size*</option>
+              <option value="">Select size…</option>
               {MOVE_SIZES.map((size) => (
                 <option key={size} value={size}>{size}</option>
               ))}
