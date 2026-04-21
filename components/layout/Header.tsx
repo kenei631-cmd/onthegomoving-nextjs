@@ -515,9 +515,8 @@ export default function Header() {
       {/* Backdrop overlay — dims page behind open mega panel */}
       {activePanel && (
         <div
-          className="fixed inset-0 bg-black/40 z-40 animate-in fade-in duration-150"
+          className="fixed inset-0 bg-black/40 z-40 animate-in fade-in duration-150 pointer-events-none"
           style={{ top: "96px" }} // below the header (top bar ~32px + nav bar ~64px)
-          onClick={closePanel}
           aria-hidden="true"
         />
       )}
