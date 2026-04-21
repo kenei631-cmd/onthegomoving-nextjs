@@ -1,9 +1,9 @@
-import { ClientProviders } from "@/components/ClientProviders";
+import { ClientProvidersWrapper } from "@/components/ClientProvidersWrapper";
 
 export default function MainLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <ClientProviders>{children}</ClientProviders>;
+  return <ClientProvidersWrapper>{children}</ClientProvidersWrapper>;
 }
