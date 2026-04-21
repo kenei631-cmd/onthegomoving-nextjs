@@ -16,7 +16,7 @@ import {
   Phone, Menu, X, ChevronDown, ArrowRight,
   Home as HomeIcon, Building2, Package, Archive,
   Dumbbell, Music, Users, Briefcase, Sofa,
-  MapPin, Star, CheckCircle, Search,
+  MapPin, Star, CheckCircle, Search, Gem,
 } from "lucide-react";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 
@@ -27,7 +27,7 @@ const SERVICE_ICONS: Record<string, React.ReactNode> = {
   "/packing-services/":     <Package size={16} />,
   "/storage-services/":     <Archive size={16} />,
   "/labor-only-moving/":    <Dumbbell size={16} />,
-  "/specialty-moving/":     <Music size={16} />,
+  "/specialty-moving/":     <Gem size={16} />,
   "/apartment-moving/":     <HomeIcon size={16} />,
   "/senior-moving/":        <Users size={16} />,
   "/moving-supplies/":      <Briefcase size={16} />,

@@ -14,7 +14,7 @@ import {
   Star, CheckCircle, ArrowRight, Phone, ChevronDown, ChevronUp,
   MapPin, Shield, Award, Clock, Users, Package, Truck, Home as HomeIcon,
   Building2, Archive, Dumbbell, Music, Sofa, Landmark, Briefcase,
-  Quote,
+  Quote, Gem,
 } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -61,7 +61,7 @@ const SERVICE_ICONS: Record<string, React.ReactNode> = {
   "packing-services": <Package size={18} />,
   "storage-services": <Archive size={18} />,
   "labor-only-moving": <Dumbbell size={18} />,
-  "specialty-moving": <Music size={18} />,
+  "specialty-moving": <Gem size={18} />,
   "apartment-moving": <HomeIcon size={18} />,
   "senior-moving": <Users size={18} />,
   "office-moving": <Briefcase size={18} />,
