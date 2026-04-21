@@ -1,10 +1,10 @@
 "use client";
 
 // ==========================================================================
-// ON THE GO MOVING — Quote Form Component (Single Source of Truth)
-// All submissions go through trpc.leads.submit:
-//   1. Saved to MySQL leads table (permanent audit trail)
-//   2. SuperMove webhook fired server-side (key never exposed to browser)
+// ON THE GO MOVING — Quote Form Component (Static Export Version)
+// All submissions go through /.netlify/functions/submit-lead:
+//   1. SuperMove webhook fired server-side (key never exposed to browser)
+//   2. Netlify Forms captures every submission as backup (email notification)
 //
 // Field order matches live site:
 //   Row 1: Full Name | Phone
@@ -19,7 +19,6 @@
 
 import { useState, useEffect } from "react";
 import { ArrowLeftRight, ArrowRight, CheckCircle, Loader2, Lock } from "lucide-react";
-import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 
 interface QuoteFormProps {
@@ -43,14 +42,15 @@ const MOVE_SIZES = [
 
 export default function QuoteForm({ variant = "hero", className = "", sourceLabel, defaultFreeStorage = false }: QuoteFormProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [focused, setFocused] = useState<string | null>(null);
   const [today, setToday] = useState("");
 
   // Set today's date on the client only to avoid SSR/client hydration mismatch
-  // (new Date() differs between server render time and client hydration time)
   useEffect(() => {
     setToday(new Date().toISOString().split("T")[0]);
   }, []);
+
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -62,26 +62,6 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
     moveSize: "",   // Studio, 1 Bedroom, 2 Bedrooms … (apartment/house only)
     squareFeet: "", // commercial only
     freeStorage: defaultFreeStorage,
-  });
-
-  const submitLead = trpc.leads.submit.useMutation({
-    onSuccess: () => {
-      // Push GTM event if dataLayer is available
-      if (typeof window !== "undefined" && (window as any).dataLayer) {
-        (window as any).dataLayer.push({
-          event: "quote_form_submit",
-          formData: { moveType: formData.moveType, moveSize: formData.moveSize, zipFrom: formData.zipFrom },
-        });
-      }
-      setSubmitted(true);
-      setTimeout(() => {
-        window.location.href = "/thank-you-get-a-quote-services/";
-      }, 1500);
-    },
-    onError: (err) => {
-      console.error("[QuoteForm] Submission error:", err);
-      toast.error("Something went wrong. Please call us at (425) 761-8500.");
-    },
   });
 
   const handleChange = (
@@ -112,20 +92,50 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    submitLead.mutate({
-      fullName: formData.fullName,
-      phone: formData.phone,
-      email: formData.email,
-      moveDate: formData.moveDate || undefined,
-      moveType: formData.moveType || undefined,
-      moveSize: formData.moveSize || undefined,
-      squareFeet: formData.squareFeet || undefined,
-      fromZip: formData.zipFrom || undefined,
-      toZip: formData.zipTo || undefined,
-      wantsStorage: formData.freeStorage,
-      sourcePage: typeof window !== "undefined" ? window.location.pathname : undefined,
-      sourceLabel: sourceLabel,
-    });
+    setLoading(true);
+
+    try {
+      const response = await fetch("/.netlify/functions/submit-lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          phone: formData.phone,
+          email: formData.email,
+          moveDate: formData.moveDate || undefined,
+          moveType: formData.moveType || undefined,
+          moveSize: formData.moveSize || undefined,
+          squareFeet: formData.squareFeet || undefined,
+          fromZip: formData.zipFrom || undefined,
+          toZip: formData.zipTo || undefined,
+          wantsStorage: formData.freeStorage,
+          sourcePage: typeof window !== "undefined" ? window.location.pathname : undefined,
+          sourceLabel: sourceLabel,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}`);
+      }
+
+      // Push GTM event if dataLayer is available
+      if (typeof window !== "undefined" && (window as any).dataLayer) {
+        (window as any).dataLayer.push({
+          event: "quote_form_submit",
+          formData: { moveType: formData.moveType, moveSize: formData.moveSize, zipFrom: formData.zipFrom },
+        });
+      }
+
+      setSubmitted(true);
+      setTimeout(() => {
+        window.location.href = "/thank-you-get-a-quote-services/";
+      }, 1500);
+    } catch (err) {
+      console.error("[QuoteForm] Submission error:", err);
+      toast.error("Something went wrong. Please call us at (425) 761-8500.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   if (submitted) {
@@ -164,8 +174,6 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
     onBlur: () => setFocused(null),
   });
 
-  const loading = submitLead.isPending;
-
   // Determine which secondary field to show based on move type
   const showMoveSize = formData.moveType === "apartment" || formData.moveType === "house";
   const showSquareFeet = formData.moveType === "commercial";
@@ -173,6 +181,8 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
   return (
     <form
       onSubmit={handleSubmit}
+      name="quote-request"
+      data-netlify="true"
       suppressHydrationWarning
       className={[
         "bg-white rounded-xl p-6 transition-all duration-300",
@@ -180,6 +190,9 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
         className,
       ].join(" ")}
     >
+      {/* Hidden input required by Netlify Forms */}
+      <input type="hidden" name="form-name" value="quote-request" />
+
       {variant === "hero" && (
         <div className="mb-5">
           <h2
@@ -301,8 +314,8 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
             type="button"
             onClick={handleSwapZip}
             aria-label="Swap zip codes"
-            className="absolute left-1/2 -translate-x-1/2 bottom-2 z-10 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95"
-            style={{ backgroundColor: "#f5c518", color: "#1a1a1a" }}
+            className="absolute left-1/2 -translate-x-1/2 bottom-2 z-10 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110"
+            style={{ backgroundColor: "#fbc319", color: "#1a1a1a" }}
           >
             <ArrowLeftRight size={14} />
           </button>

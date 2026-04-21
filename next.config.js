@@ -1,20 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
   reactStrictMode: true,
-  // Ensure these packages are transpiled correctly for SSR
+  // Ensure these packages are transpiled correctly
   transpilePackages: ['lucide-react', 'framer-motion'],
-  // Allow images from CDN
+  // Static export requires unoptimized images
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**.manus.space',
-      },
-      {
-        protocol: 'https',
-        hostname: '**.amazonaws.com',
-      },
-    ],
+    unoptimized: true,
   },
   // Trailing slash for SEO consistency
   trailingSlash: true,
