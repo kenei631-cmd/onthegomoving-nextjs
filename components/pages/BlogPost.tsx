@@ -107,17 +107,15 @@ function RelatedPosts({ currentSlug, category }: { currentSlug: string; category
   return (
     <div className="bg-[#f5f5f3] rounded-xl p-5">
       <h3 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-widest">Related Articles</h3>
-      <div className="space-y-4">
+      <div className="flex flex-col gap-3">
         {posts.map(p => (
-          <a key={p.slug} href={`/${p.slug}/`}>
-            <div className="flex gap-3 group cursor-pointer">
-              <div className="w-16 h-14 rounded-lg overflow-hidden flex-shrink-0">
-                <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-              </div>
-              <div>
-                <p className="text-xs font-semibold text-gray-800 group-hover:text-[#75aa11] transition-colors leading-snug line-clamp-2">{p.title}</p>
-                <p className="text-xs text-gray-400 mt-1">{p.readTime}</p>
-              </div>
+          <a key={p.slug} href={`/${p.slug}/`} className="group block bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+            <div className="w-full h-28 overflow-hidden">
+              <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div className="p-3">
+              <p className="text-xs font-semibold text-gray-800 group-hover:text-[#75aa11] transition-colors leading-snug line-clamp-2">{p.title}</p>
+              <p className="text-xs text-gray-400 mt-1">{p.readTime}</p>
             </div>
           </a>
         ))}
@@ -499,7 +497,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
               </article>
 
               {/* SIDEBAR */}
-              <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start">
+              <aside className="space-y-6 lg:sticky lg:top-24 lg:self-start lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto lg:pr-1 scrollbar-thin">
                 <QuoteCTA />
                 <RelatedPosts currentSlug={slug} category={post.category} />
 
