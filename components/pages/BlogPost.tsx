@@ -25,7 +25,7 @@ function RelatedPosts({ currentSlug, category }: { currentSlug: string; category
       <h3 className="font-bold text-gray-900 mb-4 text-sm uppercase tracking-widest">Related Articles</h3>
       <div className="space-y-4">
         {posts.map(p => (
-          <Link key={p.slug} href={`/${p.slug}/`}>
+          <Link key={p.slug} href={`/blog/${p.slug}/`}>
             <div className="flex gap-3 group cursor-pointer">
               <div className="w-16 h-14 rounded-lg overflow-hidden flex-shrink-0">
                 <img src={p.image} alt={p.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />

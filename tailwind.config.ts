@@ -12,9 +12,13 @@ const config: Config = {
       colors: {
         // On The Go Moving brand colors
         brand: {
-          green: "#4a7c3f",
-          "green-dark": "#3a6230",
-          "green-light": "#5a9c4f",
+          green: "#75aa11",
+          "green-dark": "#5d8a0d",
+          "green-light": "#e8f4d0",
+          gold: "#fbc319",
+          "gold-dark": "#e0a800",
+          forest: "#1e3a0f",
+          "forest-light": "#2a4f18",
           yellow: "#f5c842",
           "yellow-dark": "#e0b030",
           dark: "#1a2a1a",

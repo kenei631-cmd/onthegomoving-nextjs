@@ -17,7 +17,7 @@
 // Move Size values map 1:1 to Supermove's PROJECT_SIZE enum.
 // ==========================================================================
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowLeftRight, ArrowRight, CheckCircle, Loader2, Lock } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
@@ -44,6 +44,13 @@ const MOVE_SIZES = [
 export default function QuoteForm({ variant = "hero", className = "", sourceLabel, defaultFreeStorage = false }: QuoteFormProps) {
   const [submitted, setSubmitted] = useState(false);
   const [focused, setFocused] = useState<string | null>(null);
+  const [today, setToday] = useState("");
+
+  // Set today's date on the client only to avoid SSR/client hydration mismatch
+  // (new Date() differs between server render time and client hydration time)
+  useEffect(() => {
+    setToday(new Date().toISOString().split("T")[0]);
+  }, []);
   const [formData, setFormData] = useState({
     fullName: "",
     phone: "",
@@ -166,6 +173,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
   return (
     <form
       onSubmit={handleSubmit}
+      suppressHydrationWarning
       className={[
         "bg-white rounded-xl p-6 transition-all duration-300",
         "shadow-xl hover:shadow-2xl hover:-translate-y-0.5",
@@ -261,7 +269,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
             value={formData.moveDate}
             onChange={handleChange}
             className={inputClass("moveDate")}
-            min={new Date().toISOString().split("T")[0]}
+            min={today}
             {...focusProps("moveDate")}
           />
         </div>
