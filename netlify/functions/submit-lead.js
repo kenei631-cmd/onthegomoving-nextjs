@@ -60,6 +60,41 @@ function buildSupermovePayload(lead) {
   };
 }
 
+/**
+ * Submit to Netlify Forms so the submission appears in the Netlify dashboard
+ * and triggers email notifications. Netlify Forms only captures native HTML
+ * form POSTs, so we replicate that POST here from the server side.
+ */
+async function submitToNetlifyForms(lead, siteUrl) {
+  try {
+    const formData = new URLSearchParams();
+    formData.append("form-name", "quote-request");
+    formData.append("fullName", lead.fullName || "");
+    formData.append("phone", lead.phone || "");
+    formData.append("email", lead.email || "");
+    formData.append("moveDate", lead.moveDate || "");
+    formData.append("zipFrom", lead.fromZip || "");
+    formData.append("zipTo", lead.toZip || "");
+    formData.append("moveType", lead.moveType || "");
+    formData.append("moveSize", lead.moveSize || "");
+    formData.append("squareFeet", lead.squareFeet || "");
+    formData.append("wantsStorage", lead.wantsStorage ? "yes" : "no");
+    formData.append("sourcePage", lead.sourcePage || "");
+    formData.append("sourceLabel", lead.sourceLabel || "");
+
+    const netlifyFormsUrl = siteUrl || "https://on-the-go-moving.netlify.app";
+    await fetch(netlifyFormsUrl + "/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: formData.toString(),
+      signal: AbortSignal.timeout(8_000),
+    });
+  } catch (err) {
+    // Non-fatal — SuperMove is the primary destination
+    console.warn("[submit-lead] Netlify Forms submission failed:", err.message);
+  }
+}
+
 export const handler = async (event) => {
   if (event.httpMethod !== "POST") {
     return { statusCode: 405, body: "Method Not Allowed" };
@@ -89,10 +124,14 @@ export const handler = async (event) => {
     };
   }
 
+  // Determine site URL for Netlify Forms POST (use deploy URL if available)
+  const siteUrl = process.env.URL || process.env.DEPLOY_URL || "https://on-the-go-moving.netlify.app";
+
   const payload = buildSupermovePayload(lead);
 
-  try {
-    const response = await fetch(webhookUrl, {
+  // Fire both in parallel — SuperMove webhook + Netlify Forms capture
+  const [supermoveResult] = await Promise.allSettled([
+    fetch(webhookUrl, {
       method: "POST",
       headers: {
         "Content-Type": "text/plain;charset=UTF-8",
@@ -100,23 +139,20 @@ export const handler = async (event) => {
       },
       body: JSON.stringify(payload),
       signal: AbortSignal.timeout(10_000),
-    });
+    }),
+    submitToNetlifyForms(lead, siteUrl),
+  ]);
 
-    const responseText = await response.text();
-    if (response.ok) {
-      return {
-        statusCode: 200,
-        body: JSON.stringify({ success: true }),
-      };
-    } else {
-      console.error("[submit-lead] SuperMove error:", response.status, responseText);
-      return {
-        statusCode: 200, // Return 200 to client so form still shows success
-        body: JSON.stringify({ success: true, webhookStatus: "failed" }),
-      };
-    }
-  } catch (err) {
-    console.error("[submit-lead] SuperMove fetch failed:", err);
+  if (supermoveResult.status === "fulfilled" && supermoveResult.value.ok) {
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ success: true }),
+    };
+  } else {
+    const errMsg = supermoveResult.status === "rejected"
+      ? supermoveResult.reason?.message
+      : await supermoveResult.value?.text?.();
+    console.error("[submit-lead] SuperMove error:", errMsg);
     return {
       statusCode: 200, // Return 200 to client so form still shows success
       body: JSON.stringify({ success: true, webhookStatus: "failed" }),
