@@ -95,27 +95,52 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
     setLoading(true);
 
     try {
-      const response = await fetch("/.netlify/functions/submit-lead", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          fullName: formData.fullName,
-          phone: formData.phone,
-          email: formData.email,
-          moveDate: formData.moveDate || undefined,
-          moveType: formData.moveType || undefined,
-          moveSize: formData.moveSize || undefined,
-          squareFeet: formData.squareFeet || undefined,
-          fromZip: formData.zipFrom || undefined,
-          toZip: formData.zipTo || undefined,
-          wantsStorage: formData.freeStorage,
-          sourcePage: typeof window !== "undefined" ? window.location.pathname : undefined,
-          sourceLabel: sourceLabel,
-        }),
-      });
+      // Build the Netlify Forms payload (URL-encoded, browser-native)
+      const netlifyFormData = new URLSearchParams();
+      netlifyFormData.append("form-name", "quote-request");
+      netlifyFormData.append("fullName", formData.fullName);
+      netlifyFormData.append("phone", formData.phone);
+      netlifyFormData.append("email", formData.email);
+      netlifyFormData.append("moveDate", formData.moveDate || "");
+      netlifyFormData.append("zipFrom", formData.zipFrom || "");
+      netlifyFormData.append("zipTo", formData.zipTo || "");
+      netlifyFormData.append("moveType", formData.moveType || "");
+      netlifyFormData.append("moveSize", formData.moveSize || "");
+      netlifyFormData.append("squareFeet", formData.squareFeet || "");
+      netlifyFormData.append("wantsStorage", formData.freeStorage ? "yes" : "no");
+      netlifyFormData.append("sourcePage", window.location.pathname);
+      netlifyFormData.append("sourceLabel", sourceLabel || "");
 
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
+      // Fire both in parallel: SuperMove (via function) + Netlify Forms (browser POST)
+      const [supermoveRes] = await Promise.allSettled([
+        fetch("/.netlify/functions/submit-lead", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            fullName: formData.fullName,
+            phone: formData.phone,
+            email: formData.email,
+            moveDate: formData.moveDate || undefined,
+            moveType: formData.moveType || undefined,
+            moveSize: formData.moveSize || undefined,
+            squareFeet: formData.squareFeet || undefined,
+            fromZip: formData.zipFrom || undefined,
+            toZip: formData.zipTo || undefined,
+            wantsStorage: formData.freeStorage,
+            sourcePage: window.location.pathname,
+            sourceLabel: sourceLabel,
+          }),
+        }),
+        // Silent Netlify Forms capture — browser POST so it's accepted
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: netlifyFormData.toString(),
+        }).catch(() => { /* non-fatal */ }),
+      ]);
+
+      if (supermoveRes.status === "rejected" || !(supermoveRes.value as Response).ok) {
+        throw new Error("Function returned error");
       }
 
       // Push GTM event if dataLayer is available
