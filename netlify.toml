@@ -6,3 +6,685 @@
 [build.environment]
   NODE_VERSION = "20"
   PNPM_VERSION = "9"
+
+# ─── 301 Redirects for pruned blog posts ──────────────────────────────────────
+# These redirect old WordPress blog post URLs to the most relevant page
+# on the new site, preserving link equity and preventing 404s at domain cutover.
+
+[[redirects]]
+  from = "/10-moving-tips-for-making-your-family/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/10-things-to-know-for-moving-during-covid/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/10-things-to-remember-when-moving/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/10-tips-things-most-families-forget-during-move/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/12-modern-interior-design-tips-for-decorating-small-spaces/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/12-seattle-moving-tasks-that-are-easily-forgotten/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/3-things-to-expect-when-moving-your-house-across-town/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/3-unexpected-challenges-of-moving-across-town/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/4-common-moving-mistakes/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/4-things-you-didnt-know-about-kirkland/"
+  to = "/kirkland-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-easy-ways-to-reduce-moving-stress/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-helpful-tips-for-moving-with-kids/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-moving-tips-for-seniors/"
+  to = "/senior-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-things-to-know-before-moving-to-kirkland/"
+  to = "/kirkland-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-things-to-know-before-moving-to-redmond/"
+  to = "/redmond-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/5-tips-for-packing-and-moving-your-kitchen/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/6-things-to-know-before-moving-to-bellevue/"
+  to = "/bellevue-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/7-tips-for-moving-with-pets/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/8-tips-for-moving-on-a-budget/"
+  to = "/how-much-do-movers-cost/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-guide-to-moving-during-winter/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-guide-to-packing-your-bathroom-for-a-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-guide-to-packing-your-bedroom-for-a-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-guide-to-packing-your-living-room-for-a-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-guide-to-storage-units-what-you-need-to-know-before-renting/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-guide-to-using-storage-during-your-move/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/a-moving-checklist-for-seniors/"
+  to = "/senior-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/affordable-moving-tips/"
+  to = "/how-much-do-movers-cost/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apartment-moving-checklist/"
+  to = "/apartment-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/are-you-moving-to-sammamish/"
+  to = "/sammamish-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/benefits-of-using-climate-controlled-storage-during-your-move/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/best-days-of-week-to-move-seattle/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/best-things-to-do-in-fremont-seattle-wa/"
+  to = "/fremont-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/best-time-of-year-to-move/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/business-moving-hacks-tips-on-how-to-successfully-move-your-office-space/"
+  to = "/commercial-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cheap-packing-materials-for-a-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/choosing-right-local-movers/"
+  to = "/faq/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/choosing-the-best-storage-unit-for-you/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/climate-controlled-storage-unit/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/comparing-self-storage-and-full-service-storage-options/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/cost-saving-strategies-for-a-budget-friendly-move/"
+  to = "/how-much-do-movers-cost/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/covid-19-on-the-go-ensures-your-move-is-healthy-and-safe/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/declutter-your-home-7-items-you-need-to-ditch-before-your-move/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/declutter-your-home-checklist-for-moving/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/decluttering-tricks-before-you-move/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/easily-declutter-house/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/easing-transition-when-moving-senior/"
+  to = "/senior-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/fill-two-needs-with-one-deed-moving-and-storage/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/first-time-moving-tips/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/forgetting-something-5-things-moving/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/get-your-security-deposit-back/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/helping-your-elderly-parents-or-grandparents-move/"
+  to = "/senior-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/hiring-a-good-moving-crew/"
+  to = "/faq/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/homeward-bound-moving-with-pets/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-can-you-prepare-your-items-for-long-term-storage/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-choose-the-right-moving-company/"
+  to = "/faq/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-downsize-your-home/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-handle-last-minute-moves-successfully/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-help-a-hoarder-move/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-keep-your-identity-safe-when-moving-to-bellevue/"
+  to = "/bellevue-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-make-a-new-apartment-feel-like-home/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-move-efficiently-with-pets/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-pack-for-a-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-pack-for-moving/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-pack-your-clothes-for-a-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-throw-a-housewarming-party-in-15-easy-steps/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/importance-of-knowing-where-to-get-fast-moving-services/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/innovative-commercial-movers-seattle/"
+  to = "/commercial-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/is-moving-stressful-for-seniors/"
+  to = "/senior-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/know-moving-rental/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/living-in-kirkland-little-known-facts/"
+  to = "/kirkland-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/make-moving-in-with-your-partner-easy/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/make-your-move-easy-temporary-storage/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/most-trusted-movers-residential-seattle/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/move-in-date/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/movers-guide-sammamish/"
+  to = "/sammamish-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-during-the-holidays-tips-for-reducing-stress/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-over-the-holidays-how-to-be-successful-during-holiday-relocation-2/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-tips-the-right-way-to-pack-your-kids-room/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-with-kids/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-with-pets-7-tips/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/office-moves-checklist/"
+  to = "/commercial-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/office-relocation/"
+  to = "/commercial-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/on-the-go-moving-what-we-do-and-why/"
+  to = "/about-us/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/our-new-ultimate-moving-guide-is-now-available/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pack-move-packing-tips-kids-room/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/packing-before-your-move-everything-you-need-in-your-packing-survival-kit/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/packing-like-a-pro-5-tips-to-make-moving-a-breeze/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/packing-tips-easy-steps-to-packing-your-kitchen/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/packrat-panic-tips-to-moving-when-youre-a-packrat/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/parks-in-seattle/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reasons-in-moving-to-ballard/"
+  to = "/ballard-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reasons-to-hire-professional-piano-movers/"
+  to = "/piano-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sammamish-movers-guide/"
+  to = "/sammamish-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/stress-free-long-distance-movers/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/successful-yard-sale/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/taking-back-your-house-9-organizational-tips-for-small-spaces/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/temporary-storage-for-your-small-business/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-3-best-ways-to-pack-clothes-for-a-move/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-benefits-of-hiring-moving-and-storage-services-at-the-same-time/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-first-10-things-you-need-to-do-when-youve-moved-into-a-new-place/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/the-role-of-professional-movers-in-reducing-moving-stress/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tips-for-getting-comfortable-in-your-new-home/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tips-to-choosing-the-best-student-moving-services-in-seattle/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/top-tips-on-how-to-make-a-house-a-home/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-to-expect-when-moving-during-the-off-season/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-to-know-about-living-in-kirkland/"
+  to = "/kirkland-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/white-glove-delivery/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/why-climate-controlled-storage-is-a-winning-choice/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/why-moving-is-the-worst-and-what-to-do-about-it/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/why-should-you-hire-moving-and-storage-services-at-the-same-time/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/why-temporary-storage-is-must-when-moving/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/would-you-trust-a-stranger-with-everything-you-own/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/your-belongings-need-climate-controlled-storage/"
+  to = "/storage-services/"
+  status = 301
+  force = true
