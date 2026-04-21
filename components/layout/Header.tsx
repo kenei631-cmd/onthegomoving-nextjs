@@ -162,18 +162,9 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close panel on outside click — use 'click' (not 'mousedown') so that
-  // the full mousedown→mouseup→click cycle completes on the target link
-  // before we close the panel and re-render the header.
-  useEffect(() => {
-    const handleClickOutside = (e: MouseEvent) => {
-      if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
-        setActivePanel(null);
-      }
-    };
-    document.addEventListener("click", handleClickOutside);
-    return () => document.removeEventListener("click", handleClickOutside);
-  }, []);
+  // No document-level click listener needed — the backdrop overlay handles
+  // outside clicks directly via its onClick handler, which avoids race conditions
+  // with link click events inside the header.
 
   // Escape key closes open panel
   useEffect(() => {
@@ -514,12 +505,18 @@ export default function Header() {
 
   return (
     <>
-      {/* Backdrop overlay — dims page behind open mega panel */}
+      {/* Backdrop overlay — dims page behind open mega panel, closes on click */}
       {activePanel && (
         <div
-          className="fixed inset-0 bg-black/40 z-40 animate-in fade-in duration-150 pointer-events-none"
+          className="fixed inset-0 bg-black/40 z-40 animate-in fade-in duration-150"
           style={{ top: "96px" }} // below the header (top bar ~32px + nav bar ~64px)
           aria-hidden="true"
+          onClick={() => {
+            if (openTimerRef.current) clearTimeout(openTimerRef.current);
+            if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+            setActivePanel(null);
+            setCitySearch("");
+          }}
         />
       )}
 
