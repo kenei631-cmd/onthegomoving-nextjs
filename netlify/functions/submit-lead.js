@@ -20,7 +20,8 @@ function buildSupermovePayload(lead) {
 
   let projectSize = "";
   if (lead.moveType === "commercial") {
-    projectSize = "Commercial";
+    // For commercial, use square footage as the project size if provided
+    projectSize = lead.squareFeet ? `${lead.squareFeet} sq ft` : "Commercial";
   } else if (lead.moveSize) {
     projectSize = lead.moveSize;
   }
