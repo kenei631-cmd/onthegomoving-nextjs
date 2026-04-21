@@ -162,15 +162,17 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close panel on outside click
+  // Close panel on outside click — use 'click' (not 'mousedown') so that
+  // the full mousedown→mouseup→click cycle completes on the target link
+  // before we close the panel and re-render the header.
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
       if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
         setActivePanel(null);
       }
     };
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
+    return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
   // Escape key closes open panel
