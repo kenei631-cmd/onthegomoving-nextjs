@@ -6,16 +6,19 @@
 //   1. Saved to MySQL leads table (permanent audit trail)
 //   2. SuperMove webhook fired server-side (key never exposed to browser)
 //
-// Move Type logic:
-//   - Apartment/Condo → shows Move Size dropdown (Studio … 6+ Bedrooms)
-//   - House           → shows Move Size dropdown (Studio … 6+ Bedrooms)
-//   - Commercial      → shows Square Feet text input
+// Field order matches live site:
+//   Row 1: Full Name | Phone
+//   Row 2: Email | Requested Move Date
+//   Row 3: Zip From | Zip To (with swap button)
+//   Row 4: Move Type (full width)
+//   Row 5: Move Size (full width, apartment/house only) OR Square Feet (commercial only)
+//   Row 6: Free Storage checkbox
 //
 // Move Size values map 1:1 to Supermove's PROJECT_SIZE enum.
 // ==========================================================================
 
 import { useState } from "react";
-import { ArrowRight, CheckCircle, Loader2, Lock } from "lucide-react";
+import { ArrowLeftRight, ArrowRight, CheckCircle, Loader2, Lock } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { toast } from "sonner";
 
@@ -90,6 +93,14 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
       }
       return updated;
     });
+  };
+
+  const handleSwapZip = () => {
+    setFormData((prev) => ({
+      ...prev,
+      zipFrom: prev.zipTo,
+      zipTo: prev.zipFrom,
+    }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -176,8 +187,9 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
       )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {/* Full Name */}
-        <div className={`sm:col-span-2 ${fieldWrap("fullName")}`}>
+
+        {/* Row 1: Full Name | Phone */}
+        <div className={fieldWrap("fullName")}>
           {focused === "fullName" && (
             <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
           )}
@@ -196,7 +208,6 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
           />
         </div>
 
-        {/* Phone */}
         <div className={fieldWrap("phone")}>
           {focused === "phone" && (
             <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
@@ -216,7 +227,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
           />
         </div>
 
-        {/* Email */}
+        {/* Row 2: Email | Requested Move Date */}
         <div className={fieldWrap("email")}>
           {focused === "email" && (
             <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
@@ -236,17 +247,17 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
           />
         </div>
 
-        {/* Move Date */}
         <div className={fieldWrap("moveDate")}>
           {focused === "moveDate" && (
             <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
           )}
           <label className={`${labelClass} ${focused === "moveDate" ? "text-[#75aa11]" : ""}`}>
-            Move Date
+            Requested Move Date *
           </label>
           <input
             type="date"
             name="moveDate"
+            required
             value={formData.moveDate}
             onChange={handleChange}
             className={inputClass("moveDate")}
@@ -255,8 +266,62 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
           />
         </div>
 
-        {/* Move Type */}
-        <div className={fieldWrap("moveType")}>
+        {/* Row 3: Zip From | Zip To with swap button */}
+        <div className="sm:col-span-2 grid grid-cols-2 gap-4 relative">
+          <div className={fieldWrap("zipFrom")}>
+            {focused === "zipFrom" && (
+              <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
+            )}
+            <label className={`${labelClass} ${focused === "zipFrom" ? "text-[#75aa11]" : ""}`}>
+              Zip Code (Moving From) *
+            </label>
+            <input
+              type="text"
+              name="zipFrom"
+              required
+              value={formData.zipFrom}
+              onChange={handleChange}
+              placeholder="98052"
+              maxLength={10}
+              className={inputClass("zipFrom")}
+              {...focusProps("zipFrom")}
+            />
+          </div>
+
+          {/* Swap button — centered between the two zip fields */}
+          <button
+            type="button"
+            onClick={handleSwapZip}
+            aria-label="Swap zip codes"
+            className="absolute left-1/2 -translate-x-1/2 bottom-2 z-10 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95"
+            style={{ backgroundColor: "#f5c518", color: "#1a1a1a" }}
+          >
+            <ArrowLeftRight size={14} />
+          </button>
+
+          <div className={fieldWrap("zipTo")}>
+            {focused === "zipTo" && (
+              <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
+            )}
+            <label className={`${labelClass} ${focused === "zipTo" ? "text-[#75aa11]" : ""}`}>
+              Zip Code (Moving To) *
+            </label>
+            <input
+              type="text"
+              name="zipTo"
+              required
+              value={formData.zipTo}
+              onChange={handleChange}
+              placeholder="98101"
+              maxLength={10}
+              className={inputClass("zipTo")}
+              {...focusProps("zipTo")}
+            />
+          </div>
+        </div>
+
+        {/* Row 4: Move Type (full width) */}
+        <div className={`sm:col-span-2 ${fieldWrap("moveType")}`}>
           {focused === "moveType" && (
             <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
           )}
@@ -278,9 +343,9 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
           </select>
         </div>
 
-        {/* Move Size — shown for apartment/house */}
+        {/* Row 5a: Move Size — shown for apartment/house (full width) */}
         {showMoveSize && (
-          <div className={fieldWrap("moveSize")}>
+          <div className={`sm:col-span-2 ${fieldWrap("moveSize")}`}>
             {focused === "moveSize" && (
               <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
             )}
@@ -303,9 +368,9 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
           </div>
         )}
 
-        {/* Square Feet — shown for commercial */}
+        {/* Row 5b: Square Feet — shown for commercial (full width) */}
         {showSquareFeet && (
-          <div className={fieldWrap("squareFeet")}>
+          <div className={`sm:col-span-2 ${fieldWrap("squareFeet")}`}>
             {focused === "squareFeet" && (
               <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
             )}
@@ -325,47 +390,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
           </div>
         )}
 
-        {/* Zip From */}
-        <div className={fieldWrap("zipFrom")}>
-          {focused === "zipFrom" && (
-            <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
-          )}
-          <label className={`${labelClass} ${focused === "zipFrom" ? "text-[#75aa11]" : ""}`}>
-            Moving From (Zip)
-          </label>
-          <input
-            type="text"
-            name="zipFrom"
-            value={formData.zipFrom}
-            onChange={handleChange}
-            placeholder="98052"
-            maxLength={10}
-            className={inputClass("zipFrom")}
-            {...focusProps("zipFrom")}
-          />
-        </div>
-
-        {/* Zip To */}
-        <div className={fieldWrap("zipTo")}>
-          {focused === "zipTo" && (
-            <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
-          )}
-          <label className={`${labelClass} ${focused === "zipTo" ? "text-[#75aa11]" : ""}`}>
-            Moving To (Zip)
-          </label>
-          <input
-            type="text"
-            name="zipTo"
-            value={formData.zipTo}
-            onChange={handleChange}
-            placeholder="98101"
-            maxLength={10}
-            className={inputClass("zipTo")}
-            {...focusProps("zipTo")}
-          />
-        </div>
-
-        {/* Free Storage checkbox */}
+        {/* Row 6: Free Storage checkbox */}
         <div className="sm:col-span-2">
           <label className="group flex items-start gap-2.5 cursor-pointer">
             <div className="relative mt-0.5 flex-shrink-0">
@@ -383,6 +408,7 @@ export default function QuoteForm({ variant = "hero", className = "", sourceLabe
             </span>
           </label>
         </div>
+
       </div>
 
       {/* Submit button */}
