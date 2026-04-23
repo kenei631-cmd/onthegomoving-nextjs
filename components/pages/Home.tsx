@@ -126,64 +126,7 @@ export default function Home() {
           />
         </div>
 
-        {/* ── TRUCK SWEEP: diagonal green arc — lower third, widens toward bottom-right form corner ── */}
-        <svg
-          className="absolute inset-0 w-full h-full pointer-events-none hidden lg:block"
-          viewBox="0 0 1440 700"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          {/* Outer glow — wide, very soft */}
-          <path
-            d="M -60 700 Q 300 640 600 590 Q 900 540 1200 460 Q 1380 420 1500 620"
-            fill="none"
-            stroke="#75aa11"
-            strokeWidth="200"
-            strokeOpacity="0.055"
-            strokeLinecap="round"
-          />
-          {/* Mid band */}
-          <path
-            d="M -60 700 Q 300 648 600 600 Q 900 552 1200 472 Q 1380 432 1500 630"
-            fill="none"
-            stroke="#75aa11"
-            strokeWidth="90"
-            strokeOpacity="0.09"
-            strokeLinecap="round"
-          />
-          {/* Core sweep — crisp, moderate opacity */}
-          <path
-            d="M -60 700 Q 300 656 600 610 Q 900 562 1200 482 Q 1380 442 1500 638"
-            fill="none"
-            stroke="#8fc820"
-            strokeWidth="28"
-            strokeOpacity="0.18"
-            strokeLinecap="round"
-          />
-          {/* Bright highlight edge — the "chrome line" on the truck */}
-          <path
-            d="M -60 700 Q 300 660 600 615 Q 900 567 1200 487 Q 1380 447 1500 642"
-            fill="none"
-            stroke="#b8e040"
-            strokeWidth="3.5"
-            strokeOpacity="0.42"
-            strokeLinecap="round"
-          />
-        </svg>
 
-        {/* Mobile: horizontal sweep band at bottom of hero */}
-        <svg
-          className="absolute bottom-0 left-0 w-full pointer-events-none lg:hidden"
-          viewBox="0 0 390 60"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-          aria-hidden="true"
-        >
-          <path d="M 0 40 Q 195 10 390 30 L 390 60 L 0 60 Z" fill="#75aa11" fillOpacity="0.18" />
-          <path d="M 0 48 Q 195 20 390 38 L 390 60 L 0 60 Z" fill="#8fc820" fillOpacity="0.12" />
-          <path d="M 0 54 Q 195 30 390 46" fill="none" stroke="#a8d060" strokeWidth="2" strokeOpacity="0.40" />
-        </svg>
 
         <div className="container relative z-10 py-14 lg:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
