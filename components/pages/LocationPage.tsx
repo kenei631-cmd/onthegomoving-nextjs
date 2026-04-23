@@ -621,8 +621,8 @@ export default function LocationPage({ slug }: LocationPageProps) {
             {[
               { label: "Studio", price: data.pricing.studio },
               { label: "1 Bedroom", price: data.pricing.oneBed },
-              { label: "2 Bedroom", price: data.pricing.twoBed, highlight: true },
-              { label: "3 Bedroom", price: data.pricing.threeBed },
+              { label: "2 Bedroom", price: data.pricing.twoBed },
+              { label: "3 Bedroom", price: data.pricing.threeBed, highlight: true },
               { label: "Hourly Rate", price: data.pricing.hourlyRate },
             ].map((item, i) => (
               <div key={i} className={`rounded-xl p-5 text-center border ${(item as any).highlight ? "bg-brand-gold border-brand-gold shadow-lg scale-105" : "bg-white/10 backdrop-blur-sm border-white/20"}`}>

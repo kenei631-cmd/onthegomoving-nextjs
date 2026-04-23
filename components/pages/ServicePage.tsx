@@ -138,8 +138,8 @@ const SERVICE_DATA: Record<string, {
     ],
     pricing: [
       { size: "Studio / 1-Bedroom", crew: "1–2 packers", duration: "2–4 hrs", cost: "$200–$450" },
-      { size: "2-Bedroom Home", crew: "2 packers", duration: "4–6 hrs", cost: "$400–$700", highlight: true },
-      { size: "3-Bedroom Home", crew: "2–3 packers", duration: "6–8 hrs", cost: "$600–$1,000" },
+      { size: "2-Bedroom Home", crew: "2 packers", duration: "4–6 hrs", cost: "$400–$700" },
+      { size: "3-Bedroom Home", crew: "2–3 packers", duration: "6–8 hrs", cost: "$600–$1,000", highlight: true },
       { size: "4+ Bedroom Home", crew: "3+ packers", duration: "8–12 hrs", cost: "$900–$1,500+" },
     ],
     pricingNote: "Packing pricing includes all materials (boxes, tape, bubble wrap, packing paper). Actual cost depends on home size, number of fragile items, and whether unpacking is included.",
@@ -1309,9 +1309,9 @@ export default function ServicePage({ slug }: ServicePageProps) {
                 key={i}
                 className={`grid grid-cols-4 px-5 py-4 border-b border-gray-100 last:border-0 items-center ${row.highlight ? "bg-green-50 border-l-4 border-l-brand-green" : "bg-white"}`}
               >
-                <div className={`font-semibold text-sm ${row.highlight ? "text-brand-forest" : "text-gray-800"}`}>
-                  {row.size}
-                  {row.highlight && <span className="ml-2 text-xs bg-brand-green text-white px-2 py-0.5 rounded-full font-bold">Most Common</span>}
+                <div className={`font-semibold text-sm flex flex-col gap-1 ${row.highlight ? "text-brand-forest" : "text-gray-800"}`}>
+                  <span>{row.size}</span>
+                  {row.highlight && <span className="inline-block self-start text-xs bg-brand-green text-white px-2 py-0.5 rounded-full font-bold whitespace-nowrap">Most Common</span>}
                 </div>
                 <div className="text-center text-gray-600 text-sm">{row.crew}</div>
                 <div className="text-center text-gray-600 text-sm">{row.duration}</div>

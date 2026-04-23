@@ -137,8 +137,8 @@ const TESTIMONIALS = [
 
 const PRICING = [
   { size: "Studio / 1-Bedroom", crew: "2 movers", duration: "2–4 hrs", cost: "$250–$550" },
-  { size: "2-Bedroom Apt or Home", crew: "2–3 movers", duration: "4–6 hrs", cost: "$550–$1,000", highlight: true },
-  { size: "3-Bedroom Home", crew: "3 movers", duration: "5–8 hrs", cost: "$800–$1,400" },
+  { size: "2-Bedroom Apt or Home", crew: "2–3 movers", duration: "4–6 hrs", cost: "$550–$1,000" },
+  { size: "3-Bedroom Home", crew: "3 movers", duration: "5–8 hrs", cost: "$800–$1,400", highlight: true },
   { size: "4–5 Bedroom Home", crew: "3–4 movers", duration: "7–10 hrs", cost: "$1,200–$2,000+" },
 ];
 
@@ -509,9 +509,9 @@ export default function ResidentialMoving() {
                 key={i}
                 className={`grid grid-cols-4 px-5 py-4 border-b border-gray-100 last:border-0 items-center ${row.highlight ? "bg-green-50 border-l-4 border-l-brand-green" : "bg-white"}`}
               >
-                <div className={`font-semibold text-sm ${row.highlight ? "text-brand-forest" : "text-gray-800"}`}>
-                  {row.size}
-                  {row.highlight && <span className="ml-2 text-xs bg-brand-green text-white px-2 py-0.5 rounded-full font-bold">Most Common</span>}
+                <div className={`font-semibold text-sm flex flex-col gap-1 ${row.highlight ? "text-brand-forest" : "text-gray-800"}`}>
+                  <span>{row.size}</span>
+                  {row.highlight && <span className="inline-block self-start text-xs bg-brand-green text-white px-2 py-0.5 rounded-full font-bold whitespace-nowrap">Most Common</span>}
                 </div>
                 <div className="text-center text-gray-600 text-sm">{row.crew}</div>
                 <div className="text-center text-gray-600 text-sm">{row.duration}</div>
