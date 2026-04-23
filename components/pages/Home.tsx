@@ -102,15 +102,25 @@ export default function Home() {
             backgroundImage: `linear-gradient(to right, rgba(10,30,6,0.88) 48%, rgba(10,30,6,0.50) 100%), url(${BRAND_IMAGES.threeCrewLoadingTruck})`,
           }}
         />
-        {/* YouTube autoplay muted video — desktop only, fades in once ready */}
+        {/* YouTube autoplay muted video — desktop only */}
+        {/* Uses fixed 1920x1080 dimensions so YouTube serves full HD stream (no pixelation) */}
         <div className="absolute inset-0 hidden lg:block overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1e06]/90 via-[#0a1e06]/60 to-[#0a1e06]/30 z-10" />
           <iframe
-            src="https://www.youtube.com/embed/tzbLryXHMrU?autoplay=1&mute=1&loop=1&playlist=tzbLryXHMrU&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3"
+            src="https://www.youtube.com/embed/tzbLryXHMrU?autoplay=1&mute=1&loop=1&playlist=tzbLryXHMrU&controls=0&disablekb=1&playsinline=1&rel=0&showinfo=0&modestbranding=1&iv_load_policy=3&vq=hd1080"
             allow="autoplay; encrypted-media"
             allowFullScreen={false}
-            className="absolute w-[300%] h-[300%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
-            style={{ border: 0, opacity: 0.85 }}
+            width="1920"
+            height="1080"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            style={{
+              border: 0,
+              opacity: 0.9,
+              minWidth: "100%",
+              minHeight: "100%",
+              width: "calc(100vh * 16 / 9)",
+              height: "calc(100vw * 9 / 16)",
+            }}
             title="On The Go Moving crew video background"
             aria-hidden="true"
           />
