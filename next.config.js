@@ -10,5 +10,12 @@ const nextConfig = {
   },
   // Trailing slash for SEO consistency
   trailingSlash: true,
+  // Workaround for Next.js 15.3.x SWC minifier bug that causes
+  // "Cannot read properties of undefined (reading 'env')" during static export.
+  // See: https://github.com/vercel/next.js/issues/79088
+  webpack: (config) => {
+    config.optimization.minimize = false;
+    return config;
+  },
 };
 module.exports = nextConfig;

@@ -1,4 +1,4 @@
-
+"use client";
 // ==========================================================================
 // ON THE GO MOVING — Services Overview Page (/services/)
 // Design: Mirrors the We Are Local hub layout — forest green hero, card grid
