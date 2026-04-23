@@ -255,7 +255,7 @@ export default function Header() {
             {/* View All Services footer link */}
             <div className="mt-4 pt-3 border-t border-gray-100">
               <a
-                href="/residential-moving/"
+                href="/services/"
                 onClick={closePanel}
                 className="inline-flex items-center gap-1.5 text-sm font-bold text-[#75aa11] hover:text-[#1e3a0f] transition-colors"
               >

@@ -55,8 +55,8 @@ export default function Locations() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      {/* Hero */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: "#1e3a0f" }}>
+      {/* Hero — pt accounts for fixed header (~96px: 32px top bar + 64px nav) */}
+      <section className="pt-28 pb-16 lg:pt-32 lg:pb-20" style={{ backgroundColor: "#1e3a0f" }}>
         <div className="container text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-green-300 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
             <MapPin className="w-3.5 h-3.5" />
