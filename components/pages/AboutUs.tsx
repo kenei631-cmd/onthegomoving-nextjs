@@ -8,7 +8,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { COMPANY } from "@/lib/siteData";
-import { Phone, ArrowRight, CheckCircle, Star, Award, Users, Heart, Shield } from "lucide-react";
+import { Phone, ArrowRight, CheckCircle, Star, Award, Users, Heart, Shield, Zap } from "lucide-react";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { useSEO, MOVING_COMPANY_SCHEMA } from "@/hooks/useSEO";
 
@@ -35,12 +35,12 @@ const TEAM = [
 ];
 
 const VALUES = [
-  { icon: Shield, title: "Honesty", desc: "Flat-rate quotes with no hidden fees. What we quote is what you pay — period." },
-  { icon: Heart, title: "Care", desc: "We treat every item as if it were our own. From a box of dishes to a family heirloom, it all matters." },
-  { icon: CheckCircle, title: "Reliability", desc: "We show up on time, every time. Your move day is too important for excuses." },
-  { icon: Users, title: "Professionalism", desc: "Background-checked, trained, and uniformed crews. You'll know exactly who's in your home." },
-  { icon: Award, title: "Community", desc: "We're Eastside locals. We give back to the communities we serve through donations and volunteer work." },
-  { icon: Star, title: "Excellence", desc: "Over 1,562 five-star reviews don't happen by accident. We earn every one of them." },
+  { icon: Star, title: "Hard Work", desc: "We show up ready to give 100% every day, going the extra mile to get the job done right." },
+  { icon: Shield, title: "Integrity", desc: "We do what's right — even when it's not the easiest option — earning trust through honesty and accountability." },
+  { icon: Zap, title: "Efficiency", desc: "We stay focused, organized, and productive to complete every move with speed and precision." },
+  { icon: Users, title: "Teamwork", desc: "We support one another and communicate clearly to get the job done safely and smoothly." },
+  { icon: CheckCircle, title: "Safety", desc: "We prioritize the well-being of our team, our clients, and their belongings on every move." },
+  { icon: Heart, title: "Respect", desc: "We treat our customers, their homes, and our teammates with professionalism and courtesy at all times." },
 ];
 
 const FAQS = [
