@@ -211,7 +211,10 @@ export default function Header() {
     : null;
 
   // ── MEGA PANEL: SERVICES ──────────────────────────────────────────────────
-  const ServicesPanel = () => (
+  // NOTE: Panels are rendered as inline JSX (not inner components) to prevent
+  // React from unmounting/remounting on each render, which caused the city
+  // filter input to lose focus on every keystroke.
+  const servicesPanelJSX = (
     <PanelWrapper onMouseEnter={cancelClose} onMouseLeave={handleMouseLeave}>
       <div className="container py-8">
         <div className="grid grid-cols-4 gap-8">
@@ -300,7 +303,7 @@ export default function Header() {
   );
 
   // ── MEGA PANEL: WE ARE LOCAL ──────────────────────────────────────────────
-  const LocationsPanel = () => (
+  const locationsPanelJSX = (
     <PanelWrapper onMouseEnter={cancelClose} onMouseLeave={handleMouseLeave}>
       <div className="container py-8">
         <div className="grid grid-cols-4 gap-8">
@@ -420,7 +423,7 @@ export default function Header() {
   );
 
   // ── MEGA PANEL: ABOUT ─────────────────────────────────────────────────────
-  const AboutPanel = () => (
+  const aboutPanelJSX = (
     <PanelWrapper onMouseEnter={cancelClose} onMouseLeave={handleMouseLeave}>
       <div className="container py-6">
         <div className="grid grid-cols-4 gap-8">
@@ -623,9 +626,9 @@ export default function Header() {
         </div>
 
         {/* ── MEGA PANELS (desktop only) ── */}
-        {activePanel === "Services" && <ServicesPanel />}
-        {activePanel === "We Are Local" && <LocationsPanel />}
-        {activePanel === "About" && <AboutPanel />}
+        {activePanel === "Services" && servicesPanelJSX}
+        {activePanel === "We Are Local" && locationsPanelJSX}
+        {activePanel === "About" && aboutPanelJSX}
 
         {/* ── MOBILE MENU (accordion, unchanged) ── */}
         {mobileOpen && (
