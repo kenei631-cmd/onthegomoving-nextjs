@@ -192,15 +192,15 @@ export default function AboutUs() {
         <section className="py-16 bg-[#f5f5f3]">
           <div className="container">
             <div className="text-center mb-8">
-              <p className="section-label text-brand-green mb-2">See What We're About</p>
+              <p className="section-label text-brand-green mb-2">See Us In Action</p>
               <h2
                 className="text-4xl font-extrabold text-gray-900 mb-3"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
-                Watch Our Story
+                Moving You Can Rely On
               </h2>
               <p className="text-gray-500 max-w-xl mx-auto">
-                A quick look at who we are, how we work, and why thousands of Eastside families trust On The Go Moving.
+                Watch our crews in action — the same professional team that shows up to every move, uniformed and ready.
               </p>
             </div>
             <div className="max-w-3xl mx-auto">
@@ -209,8 +209,8 @@ export default function AboutUs() {
                 style={{ paddingBottom: "56.25%", height: 0 }}
               >
                 <iframe
-                  src="https://www.youtube.com/embed/zft8gHG4ZnI?rel=0&controls=1&showinfo=0"
-                  title="On The Go Moving & Storage — Company Overview"
+                  src="https://www.youtube.com/embed/N7raNcqprkQ?rel=0&controls=1&showinfo=0&modestbranding=1"
+                  title="On The Go Moving & Storage — Moving You Can Rely On"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                   className="absolute inset-0 w-full h-full"
