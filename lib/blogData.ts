@@ -44,7 +44,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2016-12-16",
     category: "Packing Tips",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewCarryingFurniture,
     intro: `Garages and storage areas are always packed last because most people are not sure how to pack their garage for moving. One thing is certain: it poses more of a challenge than the rest of your house. Sharp objects, dirt accumulation, and awkwardly-shaped items are all common inhabitants of a garage. However, with a bit of planning, you can work out how to pack up your garage smoothly and make your residential moving chores a tad easier.`,
     sections: [
@@ -81,7 +81,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-11-15",
     category: "Packing Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewWrappingFurniture,
     intro: `The safest way to pack a TV for moving is in its original box with the original foam inserts. If you don't have the original box, use a TV moving box (available at moving supply stores for $20–$50) or wrap the TV in moving blankets and transport it upright — never lay a flat-screen TV flat, as this can crack the screen. TVs 55 inches and larger should always be transported in a box or crate.`,
     sections: [
@@ -111,7 +111,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2018-10-08",
     category: "Moving Costs",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewHoodieAtTruck,
     intro: `This guest post is from Angela Pearse, a blogger for Zumper who frequently combines travel with freelance writing. She’s passionate about Art Deco hotels, historical novels, Netflix, hiking and healthy living. Moving is hard at the best of times. But, add moving in bad weather into the mix and you have a whole new host of problems to deal with.`,
     sections: [
@@ -137,7 +137,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2016-09-30",
     category: "Moving Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewHoodieAtTruck,
     intro: `Moving, either permanently or temporarily , often means starting fresh. New house, new neighborhood, new friends, and, of course, new address, which brings us to our next point: change of address notifications. Changing your address seems pretty straightforward, as we remember to notify frequently contacted institutions and close friends and family. However, it’s easy to forget to notify certain businesses, friends, or relatives, which can lead to anything from small nuisances to identity theft...`,
     sections: [
@@ -174,7 +174,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2016-10-07",
     category: "Packing Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewWrappingEntryway,
     intro: `We’ve noticed that packing the bathroom seems to be lowest on the list of priorities for many moving families . After all, a bathroom is full of essentials that are needed right up to the last minute — no need to waste your precious brain power and time focusing on such a small area of the home, right? As true as that may be, a bathroom is arguably the most difficult room in the house to pack — for all the same reasons that so many of us avoid tackling it until the last minute. Not only is it...`,
     sections: [
@@ -203,7 +203,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2018-08-17",
     category: "Packing Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.warehouseInterior,
     intro: `The late, great comedian George Carlin once said that “A house is just a place to keep your stuff while you go out and get more stuff.” While we’d like to think that there’s a lot more to home ownership than just collecting stuff, it’s true that as you live, you tend to collect things. Many of these items are important and precious to us, but ultimately start to clutter our homes. When this happens, it’s natural to consider getting a storage container .`,
     sections: [
@@ -227,7 +227,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-03-27",
     category: "Packing Tips",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.warehouseCrates,
     intro: `Moving is a busy and at times stressful season. But it doesn’t have to be! Our team of moving experts here at On The Go Moving believes that moving doesn’t have to be a huge ordeal. With adequate prepping, packing, and organized storage , your relocation can pass with minimal stress. If you are in the process of packing boxes to go in your storage unit, this article will detail our top tips on how to pack a storage unit.`,
     sections: [
@@ -255,7 +255,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-07-16",
     category: "Moving Costs",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.storageWarehouse,
     intro: `Storage unit prices depend on a number of factors. These include the type of item being stored, the length of time, what type of unit is being leased, and more. Whether you’re in the middle of downsizing, are looking for a temporary storage solution for while you’re between homes, or need a long-term storage solution, continue reading to learn more about storage rental prices and what storage solutions are available to you.`,
     sections: [
@@ -282,7 +282,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2017-06-26",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewRollingRug,
     intro: `We've all moved locations at one point or another, and the process of doing so always involves taking stock of what possessions are most important to us. While this can turn into a bit of an existential exercise, most of the time it's related to our physical objects. Over time we tend to collect a lot of items that may or may not hold value to us all the time, and when we move we're forced to make some hard decisions. To keep, or not to keep? Take the process of moving as an opportunity to rid...`,
     sections: [
@@ -305,7 +305,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-10-28",
     category: "Packing Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewWrappingFurniture,
     intro: `Dealing with a fragile package is one of the most anxiety-inducing parts of moving. Few things are more disheartening than opening up a box only to find your possessions cracked or completely shattered. Fortunately, there are solutions that can help you create safe, stress-free, and effective ways of transporting your fragile belongings.`,
     sections: [
@@ -335,7 +335,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-03-16",
     category: "Moving Costs",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewHoodieAtTruck,
     intro: `Regardless of the season, moving can be an incredibly stressful and overwhelming process. From high demand to more expensive pricing, moving in the summer months can cause extra stress for anyone involved. While most moves take place during the summer, you may want to consider winter moving. Here are our best winter moving tips from our team at On The Go Moving in Seattle, WA.`,
     sections: [
@@ -365,7 +365,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2018-01-16",
     category: "Packing Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckInteriorPacked,
     intro: `If you're getting ready to move for the first time, you may be considering moving your belongings from your old home to your new one with only your car. It can be really difficult to pack and move with only a small car, but it is possible if you have a small amount of stuff. If you're looking to move using only your vehicle, we've got some handy tips for you on how to pack a car for moving. There are several things that you need to have in order before you even start packing or moving anything....`,
     sections: [
@@ -392,7 +392,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2017-03-30",
     category: "Storage",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.storageWarehouse,
     intro: `Chances are, you’ve seen plenty of outdoor storage units before, identifiable by their rows and rows of brightly colored sheds surrounded by a chain link fence. If it's a nice facility, you might even see a security camera monitoring the front gate. Climate-controlled storage units are a different animal. These type of storage units are behind locked doors and in a secure facility. Not just anyone can drive up to a climate-controlled storage unit, one of their many benefits. The Benefits of...`,
     sections: [
@@ -422,7 +422,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2016-10-21",
     category: "Packing Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewEntryway2,
     intro: `Moving into a house is exciting, but the packing process can be dreadful. It’s no surprise that many people let unpacking drag on for many days, and even weeks. Some people never finish unpacking! The smartest thing you can do after moving is to unpack everything as soon as possible — don’t you want to start enjoying your new place? The size of your house, number of residents, and home accessibility are huge factors, but an efficient unpacking job can usually be completed in two days. Here are...`,
     sections: [
@@ -445,7 +445,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-11-30",
     category: "Moving Tips",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewFrontDoorExit,
     intro: `The first things to do when moving into a new house are: change the locks, locate the main water shutoff and electrical panel, do a thorough cleaning before furniture arrives, and set up your bedroom first so you have a functional space to sleep on night one. These four steps prevent the most common new-homeowner headaches in the first 48 hours.`,
     sections: [
@@ -482,7 +482,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-12-01",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.threeCrewRampLoading,
     intro: `If you’re about to go through the long, arduous process of moving to a new home, you’ll need to decide between hiring professional movers vs. moving yourself. Whether you should hire professional movers or attempt the job yourself is a crucial decision. Don’t worry, we will answer your question, “Should I move myself or hire movers?”`,
     sections: [
@@ -512,7 +512,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-09-27",
     category: "Specialty Moving",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewOverheadEntrance,
     intro: `You’ve just moved in and now it’s time to introduce your friends and family to your new home. What an exciting time!`,
     sections: [
@@ -542,7 +542,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2017-08-22",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewCarryingUpRamp,
     intro: `If you're moving for the first time, the most important thing to know is that preparation starts 6–8 weeks before your move date — not the week before. A first-time move checklist covers four phases: planning (8 weeks out), packing (4–2 weeks out), moving day logistics (1 week out), and settling in (first week at new home). Following a structured checklist prevents the most common first-timer mistakes: forgetting to transfer utilities, not booking movers early enough, and underestimating how long packing takes.`,
     sections: [
@@ -569,7 +569,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-09-27",
     category: "Packing Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewWrappingFurniture,
     intro: `Packing dishes for a move is a tricky undertaking. While packing pots and pans seems simple, other aspects of packing your kitchen require more thought. Dishes are fragile and unless they are packed correctly, you might show up at your new home with broken plates or cups. In today’s guide, I’m going to walk you through the dish-packing process so that you can rest easy knowing your dishes are safe while you move.`,
     sections: [
@@ -599,7 +599,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-01-18",
     category: "Storage",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.storageWarehouse,
     intro: `Moving to a new home can be a stressful experience regardless of whether you're moving up the street or across the country. One of the most difficult challenges as your moving date approaches is figuring out what to do with any extra stuff that won’t fit on the truck. What should you do to handle this crisis? Find the best temporary storage in your area and drop those items off so you can sort through them later and decide what to keep, sell, or donate at your leisure. Choosing the right...`,
     sections: [
@@ -624,7 +624,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2018-08-07",
     category: "Packing Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewCarryingOut,
     intro: `Most people assume that a professional moving company will transport anything that the consumers ask them to. However, what many people don’t know is that most moving companies have a list of non-allowable items that they cannot transport. Today we are going to give you a list of non-allowable items, as well as let you know why movers can’t transport them. Use this list to help you pack and prepare for moving day.`,
     sections: [
@@ -650,7 +650,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-03-18",
     category: "Moving Costs",
     readTime: "7 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.customerHandshake,
     intro: `The standard tip for movers is $20–$50 per mover for a local move, or 15–20% of the total bill split among the crew. For a 3-person crew on a 6-hour move, that's typically $60–$150 total. Tip in cash at the end of the move, directly to each crew member — not to the company. You should tip more for difficult moves involving stairs, heavy items, or exceptional service.`,
     sections: [
@@ -686,7 +686,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2017-06-05",
     category: "Moving Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: `Are you preparing for a long move ? Moving from one place to another presents unique challenges to your family, especially when the move is a far one. However, there are several things you can do to make moving over long distances easier and more enjoyable.`,
     sections: [
@@ -714,7 +714,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-09-27",
     category: "Moving Tips",
     readTime: "6 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewEntryway2,
     intro: `The most effective strategy for organizing a small space is to maximize vertical storage, eliminate duplicate items, and assign every object a dedicated home. In small apartments and homes, the biggest gains come from under-bed storage, wall-mounted shelving, and furniture that doubles as storage — like ottomans with hidden compartments and beds with built-in drawers.`,
     sections: [
@@ -751,7 +751,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-04-04",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `As exciting as relocating to a new city may sound, pinpointing exactly where in that city you’ll be living is not the easiest decision. It is natural to be attracted to the idea of living downtown, in the center of the city, close to all the stores, coffee shops, and work. But unfortunately, that isn’t always the most viable option. High housing prices, noise, tiny yards- or no yards at all- and just an overall fast-paced lifestyle might not always be the most appealing alternative. For this...`,
     sections: [
@@ -772,7 +772,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2017-01-17",
     category: "Packing Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewWrappingOffice,
     intro: `Since the shift of the century, electronic gadgets have started to take up more space in our house. We don’t usually realize we have as many gadgets as we do until it’s time to move. Keeping your home healthy and clean is one thing, but packing is another entirely. Electronics are usually expensive, fragile, and sensitive to temperature. You need to make sure they are packed properly and can withstand the trip to your new home without breaking. The key to moving all your electronics is...`,
     sections: [
@@ -797,7 +797,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2015-09-23",
     category: "Commercial Moving",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.officeMoveAction,
     intro: `Hiring a moving company is a big decision — you're trusting strangers with everything you own. Before you sign a contract with any mover in the Seattle area, ask these five questions. The answers will tell you quickly whether you're dealing with a professional operation or a company that will cause you headaches on move day.`,
     sections: [
@@ -822,7 +822,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2023-08-08",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewCarryingFurniture,
     intro: `The most effective moving hacks focus on reducing box count, protecting fragile items without buying bubble wrap, and staying organized so nothing gets lost. Using wardrobe boxes for hanging clothes, color-coding boxes by room, and packing a 'first night' bag are three changes that make the biggest difference on moving day.`,
     sections: [
@@ -859,7 +859,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2018-12-20",
     category: "Moving Costs",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewHoodieAtTruck,
     intro: `Moving is a big summertime activity. When the kids are on break and out of school, it's the perfect time to move into your brand new home. The only issue is that if you're making plans to move in the summer, everyone else is planning on doing the same thing too! With the high demand in the moving market during the majority of the summer months, we often see a rise in demand for movers and trucks, which means there is typically less availability with storage units , higher pricing due to the...`,
     sections: [
@@ -888,7 +888,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-12-01",
     category: "Moving Costs",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewCarryingUpRamp,
     intro: `You probably already know that moving by yourself isn’t an easy process, but sometimes it’s the better choice. Organizing a DIY move is an excellent option if you’re on a tight budget, not moving very far away, or don’t have many belongings. To start, make a checklist and read through our 11 tips for an easy DIY move that’s as stress-free as possible.`,
     sections: [
@@ -918,7 +918,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2018-03-19",
     category: "Moving Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewEntryway1,
     intro: `The 10 most essential things to have ready when moving into a new home are: a toolkit (screwdriver, hammer, Allen wrench set), cleaning supplies, toilet paper and paper towels, a shower curtain and liner, bedding for your first night, a phone charger, a box cutter, trash bags, basic kitchen supplies (coffee maker, a few dishes), and a first aid kit. These items should be in a separate 'open first' box that travels with you — not on the moving truck.`,
     sections: [
@@ -951,7 +951,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2023-03-26",
     category: "Moving Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.brandedTruck,
     intro: `The main advantages of warehousing during a move are flexibility (you can move out before your new home is ready), security (professional storage facilities have 24/7 monitoring and climate control), and cost savings compared to rush moves or short-term rentals. For people in between homes, in the middle of a renovation, or relocating for work before finding permanent housing, warehousing provides a practical bridge solution.`,
     sections: [
@@ -987,7 +987,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-05-30",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.customerHandshake,
     intro: `Hiring bad movers makes an already stressful experience much worse. Unfortunately, considering the several moving company options out there, avoiding bad moving companies isn’t as easy as you’d like it to be. However, some signs can help you steer clear of the worst moving companies.`,
     sections: [
@@ -1017,7 +1017,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-01-11",
     category: "Packing Tips",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewWrappingEntryway,
     intro: `When moving, start packing the rooms and items you use least — typically storage areas, seasonal décor, and spare bedrooms. Work backward from move day, leaving everyday essentials like bedding, toiletries, and kitchen basics for the final 24 hours. This approach keeps your home functional right up to moving day and reduces last-minute chaos.`,
     sections: [
@@ -1054,7 +1054,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-09-27",
     category: "Moving Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewOverheadEntrance,
     intro: `The easiest way to meet new neighbors is to introduce yourself within the first week of moving in — a simple knock on the door with a brief introduction is all it takes. Studies show that neighbors who know each other by name report higher satisfaction with their neighborhood and feel safer in their homes. Don't overthink it: a friendly wave and a 30-second introduction is enough to start.`,
     sections: [
@@ -1088,7 +1088,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2024-12-21",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.threeCrewLoadingTruck,
     intro: `The number of moving truck trips for local moves depends on home size, truck size, and packing strategy. Decluttering and professional packing reduce how many trips for a local move are needed. Selecting the right truck size helps streamline typical local move time. Many local moves can be completed in one day, cutting down on trips and stress. A smooth, efficient move starts with careful planning—especially when it comes to figuring out how many trips your local move will require. Whether...`,
     sections: [
@@ -1109,7 +1109,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2024-03-21",
     category: "Storage",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.storageWarehouse,
     intro: `For storing furniture, climate-controlled storage units are strongly recommended — especially for wood furniture, upholstered pieces, and antiques. Temperature and humidity fluctuations cause wood to warp, glue joints to fail, and fabric to mold. A 10×10 storage unit ($100–$200/month) holds the contents of a 1-bedroom apartment; a 10×20 unit ($150–$300/month) holds a 2–3 bedroom home's furniture.`,
     sections: [
@@ -1146,7 +1146,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2015-03-16",
     category: "Moving Costs",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.threeCrewLoadingTruck,
     intro: `Moving days have a notorious reputation for being stressful, exhausting, and overwhelming. This doesn’t have to be the case, however, and we work hard to ensure that your moving day goes smoothly and even fun and memorable experience. Moving Day Tips`,
     sections: [
@@ -1174,7 +1174,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2024-01-01",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `Mercer Island sits in the middle of Lake Washington between Seattle and Bellevue, connected to both by I-90. It's one of the most sought-after addresses in the Seattle metro — a quiet, tree-lined community with top-rated schools, waterfront parks, and a small-town feel just minutes from two major cities. Here's what you should know before making Mercer Island your home.`,
     sections: [],
@@ -1198,7 +1198,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-01-01",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBrickBuilding,
     intro: ``,
     sections: [
@@ -1228,7 +1228,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-01-06",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: ``,
     sections: [
@@ -1258,7 +1258,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-07-15",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `The majestic city of Bellevue is located 15 miles east of Seattle, Washington, and has more than 5,200 acres of rich land, making it a metropolis. It has grown into one of the largest cities in Washington, serving as a major hub for technology and business. Major brands and household names like Microsoft, Expedia.com, T-Mobile, and The Motley Fool call Bellevue home.`,
     sections: [
@@ -1283,7 +1283,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-11-29",
     category: "Commercial Moving",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.officeMoveAction,
     intro: `Announcing an office relocation effectively requires communicating early, clearly, and through multiple channels. The most important elements are: giving employees at least 60–90 days notice, sending a formal announcement to clients and vendors, updating your Google Business Profile and website immediately on move day, and creating a FAQ document that addresses the most common employee concerns about the move.`,
     sections: [],
@@ -1307,7 +1307,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-09-01",
     category: "Specialty Moving",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewEntryway1,
     intro: `At On The Go Moving & Storage, our experts answer hundreds of questions about the best time to rent an apartment. People want to learn the best time of the year to rent an apartment so they can have ample time to move, avoid higher rent, examine floor plans, and get favorable lease terms, even in low-traffic winter months. In this article, our moving professionals will use their industry knowledge to help you decide.`,
     sections: [
@@ -1332,7 +1332,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2023-03-26",
     category: "Packing Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewWrappingEntryway,
     intro: `After closing on a new home, you need to know how to fold clothes for packing so you can move in smoothly with a ready-to-go wardrobe. You can avoid wrinkles and save space in your suitcases and luggage by learning a few new ways to fold, roll, and bundle your clothing. Keep reading to learn more about how to fold clothes small for packing.`,
     sections: [
@@ -1357,7 +1357,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2024-08-22",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewLoadingTruckRamp,
     intro: `Stock up on essential packing supplies like sturdy boxes, bubble wrap, and packing tape for a secure move. Use a heavy duty dolly to safely transport large items without the back strain. Secure your load with heavy duty ratchet straps to prevent shifting and damage during transit. Consider a counterbalance forklift for moving exceptionally heavy or bulky items efficiently. When planning a move, having the right tools can make the difference between a chaotic process and a smooth transition....`,
     sections: [
@@ -1379,7 +1379,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2024-12-21",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewFrontDoorExit,
     intro: `Use eco-friendly moving tips like renting reusable bins and recycling materials. Green moving companies reduce waste with sustainable practices. Choose environmentally friendly moving boxes to minimize your carbon footprint. Declutter and donate to lighten your load and lower emissions. Moving doesn’t have to mean wasteful packing and endless cardboard. More people today are searching for sustainable moving practices to reduce their environmental impact during relocations. Fortunately, small...`,
     sections: [
@@ -1405,7 +1405,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-05-15",
     category: "Senior Moving",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.residentialService,
     intro: `For your elderly parents, a relocation can be a wake-up call that they are getting up there in years. It’s uncomfortable to realize that your age is at last catching up to you and that you’re now less capable of taking care of yourself than you used to be. For these reasons, moving your parents to a new house can be a trying time, emotionally and physically. To help you navigate this new life stage, we’ve assembled this guide to share our best tips (learned over years of moving experience) for...`,
     sections: [
@@ -1426,7 +1426,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2017-12-26",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `There are tons of great communities within Seattle. Whether you're single and looking for a fun new place to live, or you are looking for a wonderful place to raise a family, Washington State has a lot to offer. Today, we are going to be taking a look at a hidden gem on the northern outskirts of the Emerald City, Ballard.`,
     sections: [
@@ -1454,7 +1454,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-09-28",
     category: "Packing Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewDoorway2,
     intro: `Packing for an upcoming move is a busy time for homeowners. Many homeowners prepare their kitchens, bathrooms, and more but neglect preparing their wardrobes for the approaching move.`,
     sections: [
@@ -1482,7 +1482,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-07-23",
     category: "Moving Tips",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewEntryway2,
     intro: `Renting a house for the first time involves more responsibilities than renting an apartment — you're typically responsible for lawn care, snow removal, and sometimes minor maintenance. Before signing a lease on a house, clarify who handles repairs, whether utilities are included, and what the rules are for pets, parking, and modifications. The biggest first-time renter mistakes are not reading the lease carefully, skipping a walkthrough inspection, and not documenting existing damage in writing.`,
     sections: [
@@ -1517,7 +1517,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-01-22",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: ``,
     sections: [
@@ -1547,7 +1547,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-04-16",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `If you are considering moving to West Bellevue and want to know what it’s like before making the final relocation decision, this article is for you. There are a number of reasons why you might choose to live in West Bellevue instead of Downtown Bellevue or Seattle.`,
     sections: [
@@ -1575,7 +1575,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-09-01",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBrickBuilding,
     intro: `Everett, WA is Snohomish County's largest city and a growing alternative to expensive Seattle suburbs, offering significantly lower housing costs, a revitalized waterfront, and a strong manufacturing economy anchored by Boeing's largest assembly plant. The city is 25 miles north of Seattle with direct Sounder commuter train service, making it an increasingly popular choice for Seattle workers priced out of King County.`,
     sections: [
@@ -1611,7 +1611,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-04-13",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: `Is Bothell, Washington, a good place to live? If you’ve been toying with the idea of moving to Bothell in the near future but want to weigh the pros and cons of relocation first, then this article is for you.`,
     sections: [
@@ -1636,7 +1636,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-01-07",
     category: "Moving Costs",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewFrontDoorExit,
     intro: `As Earth Day approaches, Seattle movers are considering how they can make their upcoming relocation as eco-friendly as possible.`,
     sections: [
@@ -1666,7 +1666,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-03-03",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckKirklandHouse,
     intro: `For those currently planning a move to the Seattle, Bellevue, or moving to Redmond area, finding a place to live that still has a small-town feel so close to the big city can be a difficult proposition – that is unless you are familiar with Woodinville, WA. Woodinville is a delightful community that lies roughly 20 miles to the Northeast of Seattle. Let’s take a look at the 10 things everyone needs to know about living in Woodinville.`,
     sections: [
@@ -1696,7 +1696,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-09-02",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBrickBuilding,
     intro: `Located only 16 miles from Seattle, Lynnwood has a prime position on North Puget Sound. The city's 39,000 residents enjoy sweeping views of the Cascades and the Olympic Mountains, breathtaking natural scenery, and a thriving suburban center with shopping, dining, arts, and culture. No matter whether you're planning a visit or planning to stay, you can count on a variety of fun things to do in Lynnwood, Washington.`,
     sections: [
@@ -1726,7 +1726,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-08-04",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialBuilding,
     intro: `Renton, WA is a rapidly growing city of 106,000 on the south shore of Lake Washington, known for its Boeing manufacturing presence, affordable housing relative to Seattle, and easy access to both the city and the Cascade foothills. Renton offers a genuine mix of urban amenities and outdoor recreation, with the Renton Landing shopping district, Cedar River Trail, and Lake Washington waterfront all within city limits.`,
     sections: [
@@ -1763,7 +1763,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-09-02",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBrickBuilding,
     intro: `Resting on the shores of Puget Sound, Edmonds, Washington, is conveniently located 20 miles north of Seattle and only 200 miles from the Canadian border. The pristine city features breathtaking scenery, dense forests, untouched beaches, and plenty of hiking trails. From outdoor activities to community-wide Edmonds, WA, events, you can find countless fun things to do in Edmonds.`,
     sections: [
@@ -1793,7 +1793,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-06-02",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `Neatly nested between Seattle and Bellevue, Mercer Island is home to a surprising variety of local businesses, recreational activities, and new experiences for people of all ages. There are countless things to do on Mercer Island! Are you planning a move to Mercer Island in the near future, or just looking to pop in for a visit at a Mercer Island hotel? Whatever the case may be, as your local experts, let us guide you through all of the best things to do in Mercer Island. Find more about Living...`,
     sections: [
@@ -1817,7 +1817,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-02-07",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialBuilding,
     intro: `Planning a move soon and looking for things to do in Sammamish WA? You’ll be glad to know that between community-run events, parks, and many Lake Sammamish activities, you’ll never lack entertainment in this beautiful city. Continue reading to learn more about fun things to do in Sammamish or give On The Go Moving a call if you have questions about moving to this PNW gem.`,
     sections: [
@@ -1842,7 +1842,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-10-01",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckKirklandHouse,
     intro: `Moving to Kirkland in the near future and looking for fun things to do there? You’re in luck! Kirkland is home to gorgeous parks, delightful waterfront restaurants, and activities aplenty. Whether you’re moving to Kirkland solo, with your partner, or with a family, you will never lack for fun things to do in this vibrant city.`,
     sections: [
@@ -1872,7 +1872,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-03-03",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckKirklandHouse,
     intro: `Looking for Woodinville things to do? Whether you’re trying to plan your weekend, schedule a group outing with your friends, or think of ideas for how to spend time with your kids, Woodinville has many fun activities to offer. Woodinville has a population of over 12,000 and is one of the neighboring suburbs of Seattle. It is a relatively residential city and is an excellent place to live if you are raising a family or simply want a quiet home outside of the bustling Seattle city center.`,
     sections: [
@@ -1902,7 +1902,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-01-06",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: `Being only a short commute from the Emerald City, Bothell is an ideal location for families or individuals who want to be near the bustling metropolitan without being smack in the center of the action. Bothell, WA is a wonderful area to raise a family and even has lots of fun and free things to do with kids.`,
     sections: [
@@ -1932,7 +1932,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-07-20",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `Bellevue, WA offers a surprising range of activities for a city of its size — from the Bellevue Arts Museum and Meydenbauer Bay Park to the Bellevue Botanical Garden and some of the best shopping in the Pacific Northwest at Bellevue Square. The city sits on the eastern shore of Lake Washington, 10 miles from Seattle, and has developed its own distinct urban identity as one of the fastest-growing tech hubs in the US.`,
     sections: [
@@ -1969,7 +1969,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2023-08-23",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewCarryingUpRamp,
     intro: `To prepare for movers, have all boxes packed and labeled before they arrive, clear pathways through every room, disassemble large furniture you want them to move, and reserve parking for the moving truck. Movers charge by the hour, so every minute of preparation you do beforehand directly reduces your bill.`,
     sections: [
@@ -2006,7 +2006,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2024-12-20",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewWrappingFurniture,
     intro: `Learn how to pack fragile items for moving with proper padding and wrapping techniques. Use dividers and vertical packing to protect glass during a move. Avoid overloading boxes and fill gaps to keep fragile items secure. Double-box delicate items for the best way to move fragile items safely. Moving can be stressful—especially when fragile items are involved. Whether it’s delicate glassware, heirloom dishes, or prized electronics, how to pack fragile items for moving is an art that requires...`,
     sections: [
@@ -2027,7 +2027,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-06-08",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: `As the Pacific Northwest continues to experience an inordinate amount of growth, beautiful cities like Issaquah expand and become up and coming places to live. If you’ve been thinking about a move there, our Issaquah moving company is happy to assist. But once the move has been completed, what do you do as you get used to the new area?`,
     sections: [
@@ -2057,7 +2057,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-01-13",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckKirklandHouse,
     intro: `The city of Kirkland, Washington, is a suburb of Seattle that is fast becoming a residential hub for people who work in the Emerald City. If you are thinking about moving your family to Kirkland but want to go into the move aware of any issues that you might face, here is our list of 10 things you should know about living in Kirkland, Washington.`,
     sections: [
@@ -2087,7 +2087,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2024-12-20",
     category: "Specialty Moving",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewCarryingFurniture,
     intro: `Use proper furniture moving techniques like lifting with your legs, not your back. Always clear paths and use safe ways to move heavy furniture efficiently. Work with a partner and coordinate movements to avoid strain or injury. Tools like straps and dollies make it easier to move heavy furniture upstairs safely. Relocating bulky furniture can feel like a daunting task, but the right strategies make it manageable. Whether you’re moving heavy pieces across town or just rearranging your living...`,
     sections: [
@@ -2109,7 +2109,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2015-11-18",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `As anyone who has spent time in Seattle knows, the Emerald City is saturated with culture, both local and international. It should come as no surprise that Seattle is home to some of the most rewarding dining experiences on the West Coast. Fresh seafood, award-winning grills, authentic French, Italian, and Asian cuisine—the list is impressive. So impressive, in fact, that we have compiled a list of the best Seattle restaurants for those who may be new to the city, or for those who are moving...`,
     sections: [
@@ -2138,7 +2138,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2023-07-04",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Seattle's top attractions include Pike Place Market, the Space Needle, the Museum of Pop Culture (MoPOP), Chihuly Garden and Glass, the Seattle Aquarium, and the Olympic Sculpture Park. For outdoor experiences, Discovery Park, Kerry Park (best city viewpoint), and the waterfront Elliott Bay Trail are local favorites. Seattle's neighborhoods — Capitol Hill, Fremont, Ballard, and Pioneer Square — each have their own distinct character worth exploring on foot.`,
     sections: [
@@ -2174,7 +2174,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2023-03-26",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Seattle's best shopping is concentrated in three areas: Pike Place Market for local food, crafts, and unique gifts; Capitol Hill and the University District for independent boutiques and vintage shops; and Bellevue Square and the Bellevue Collection for upscale retail. Seattle also has a strong online shopping culture given Amazon's headquarters in the city, but the in-person shopping scene — particularly for local makers, Pacific Northwest food products, and outdoor gear — is genuinely distinctive.`,
     sections: [
@@ -2209,7 +2209,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-07-07",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Being a seaport city, on the West Coast - Seattle is the leading city in Washington State. Seattle is one of the fastest budding cities in the country. Pacific Northwest region is growing faster and the development in Seattle is attracting more people to move to one of the prosperous cities of this region. Seattle moving company is a convenient option to move into the city, as we have an excellent team of vigilant movers. After moving to the city, you would love to explore the beautiful Seattle...`,
     sections: [
@@ -2239,7 +2239,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2023-05-16",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Seattle, Washington, is a phenomenal place to live, expand your family, and advance your career. From gorgeous nature sights and attractions to large tech giants, amazing eats, and plenty of beautiful neighborhoods, everyone will find something to love about Seattle, WA. Learn more about seven of the best places to live in Seattle - the city with 100+ neighborhoods.`,
     sections: [
@@ -2265,7 +2265,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-08-31",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Fremont is one of Seattle’s most eclectic, walkable, and culturally vibrant neighborhoods, known for public art installations, a thriving local business scene, and easy access to downtown Seattle. Whether you’re considering moving here or already planning your relocation, this guide breaks down Fremont’s lifestyle, housing, amenities, and what everyday life is like in this dynamic community. Welcome to Fremont! Fremont is a diverse, vibrant, and quirky Seattle neighborhood with more than enough...`,
     sections: [
@@ -2295,7 +2295,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-07-05",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `Bellevue vs Seattle — which city should I choose? Which offers the better cost of living and quality of life experience? If you’re relocating to the area soon and you want to make the best decision for yourself and your future, this article is for you.`,
     sections: [
@@ -2320,7 +2320,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-09-14",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Moving to the Beacon Hill neighborhood of Seattle in the near future? On top of packing and preparing for your upcoming move, you also want to be sure that you know what living in Beacon Hill is like before you move in.`,
     sections: [
@@ -2350,7 +2350,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2016-09-02",
     category: "Packing Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewWrappingFurniture,
     intro: `Preparing for a move is no small task. Cleaning the house, throwing out unwanted items, and hiring a reliable moving team can quickly become overwhelming. For many homeowners, the most daunting task is packing. Everything from valuable heirlooms to children’s playthings needs to be packed into boxes and, somehow, arrive unscathed to the new residence. When it comes to packing safely and efficiently, the question is inevitably asked: plastic bins or cardboard boxes? Everyone knows that tossing...`,
     sections: [
@@ -2371,7 +2371,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-09-27",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Each area in Seattle has a unique vibe. If you were to spend a day in Queen Anne and then a day in the U-District, you would start to notice the difference. Living in Capitol Hill has it's own unique vibe and culture as well, but what is it like?`,
     sections: [
@@ -2401,7 +2401,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2016-07-08",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Seattle is one of the best cities in the US for recent graduates, offering entry-level tech jobs at Amazon, Microsoft, and hundreds of startups, no state income tax, and a vibrant young professional community. The biggest challenge for new grads moving to Seattle is the high cost of housing — expect to pay $1,600–$2,200/month for a 1-bedroom apartment. Capitol Hill, the University District, and Beacon Hill offer the most affordable options close to the city's job centers.`,
     sections: [
@@ -2429,7 +2429,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-10-16",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Belltown is a centrally located Seattle neighborhood known for its urban lifestyle and proximity to downtown, the waterfront, and major employment hubs. Positioned between the city’s core and the shoreline, it offers a dense, energetic environment that appeals to residents who want to be close to work, entertainment, and daily conveniences. Belltown’s location makes it one of the most accessible neighborhoods in the city. Belltown has a population of just over 14,000 people and is one of...`,
     sections: [
@@ -2459,7 +2459,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-10-23",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Queen Anne is one of Seattle’s most recognizable neighborhoods, known for its elevated setting, historic character, and close proximity to downtown. The area blends residential streets with city views, creating a distinct atmosphere that feels both established and connected. Queen Anne’s location and layout make it a long-standing favorite among people who want a neighborhood experience without leaving the city core. Find out more about our Queen Anne movers . Continue reading to learn more...`,
     sections: [
@@ -2489,7 +2489,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-06-03",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `If you want to escape from downtown Seattle’s hustle and bustle, you're in luck. You’ll find plenty of parks near downtown Seattle that offer many opportunities to relax and recharge. Seattle’s downtown parks offer places to picnic, take a walk or jog, read a book, or enjoy the beautiful scenery. These parks in Seattle, Washington have something for everyone. Whatever relaxation you’re looking for, you'll find it at one of these impressive parks.`,
     sections: [
@@ -2512,7 +2512,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-03-15",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Moving to Seattle means joining one of the fastest-growing cities in the US — a place with a booming tech economy, stunning natural surroundings, and neighborhoods as diverse as Capitol Hill, Fremont, and Ballard. Before you pack the truck, here are 30 things locals wish they had known before arriving in the Emerald City.`,
     sections: [
@@ -2549,7 +2549,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-01-07",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: `Enjoy a true taste of Washington by visiting the best restaurants in Redmond, WA. Whether you have a hankering for some comfort food, a gourmet meal, or sizzling street treats, the city offers you a wide variety of dining options. Our team at On The Go Moving & Storage knows which places you should try first. Our thriving city enjoys a rich supply of organic produce and fresh catches. The food in Redmond mirrors the city’s diverse culture. Aside from the standard American cuisine, locals and...`,
     sections: [
@@ -2575,7 +2575,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-06-04",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: ``,
     sections: [
@@ -2605,7 +2605,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2016-03-17",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: `If you're thinking about moving to Redmond, Washington, you probably know a few things already. For example, it's the home of Microsoft. And it's also home to Nintendo. Those are some pretty hefty tech shops. Being so close to Seattle, that's not necessarily surprising, but there's more to this town than that. Here are 10 facts about Redmond that you'll learn more about once you've settled in and started enjoying the mild climate and outdoor-centric community.`,
     sections: [
@@ -2635,7 +2635,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-11-21",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: `Located a convenient, 15-minute drive from Seattle , Shoreline is a medium-sized city with a population of 56,752 people. Shoreline is an ideal blend of urban and suburban, perfect for commuters to Seattle or Bellevue and a prime location to raise a family. Not only is Shoreline in an ideal location, but the Shoreline community is also an active, fun, and passionate bunch.`,
     sections: [
@@ -2665,7 +2665,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-07-11",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `If you are considering relocating to Bellevue, Washington , in the near future then Bellevue movers are the best moving services in the area for the convenient relocation to the city. Bellevue is the best place for you if you're looking to live around plenty of green spaces within the city. Here is a list of some of the best parks in Bellevue. Whether you have a dog and are looking for dog-friendly parks, or family-friendly, recreational parks, Bellevue has green spaces aplenty with activities...`,
     sections: [
@@ -2693,7 +2693,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-05-12",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Seattle is one of the fastest-growing cities in the US. The explosion of tech companies and businesses over the past several years has further propelled the growth of the Emerald City. If you are planning a move specifically to downtown Seattle in the near future, make moving day easier by knowing what to expect from life in the busy downtown Seattle. Related Article: Living In Seattle`,
     sections: [
@@ -2720,7 +2720,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-11-23",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBrickBuilding,
     intro: `Lynnwood, WA, is a small town of under 40,000 residents located in the northernmost part of the Pacific Northwest. There are many parks in Lynnwood worth exploring and various trails and recreation centers to keep any outdoorsy explorer entertained.`,
     sections: [
@@ -2750,7 +2750,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-01-11",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Stop at one of the many acclaimed restaurants in Fremont while pausing your exploration of one of Seattle’s most diverse neighborhoods. Fremont holds plenty of culinary delights for anyone who loves good food. You may argue that Capitol Hill boasts a better food scene, but Fremont can stand its ground in terms of variety. Rediscover the joy of finding new places to whet your appetite. Take your pick from a wide range of cuisines to bring out the gourmand in you. Below, we present a list of the...`,
     sections: [
@@ -2777,7 +2777,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-08-03",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialBuilding,
     intro: `Are you looking for the ideal park in Lake Sammamish? This vibrant suburb of Seattle is bursting with lush parks, peaceful trails, and plenty of outdoor activities for friends, families, couples, and even singles! Continue reading to learn about the best parks and things to do in and around Sammamish, Washington.`,
     sections: [
@@ -2804,7 +2804,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-08-09",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckKirklandHouse,
     intro: `Kirkland Washington is a suburb of Seattle with a population of nearly 90,000 residents. The city of Kirkland is famous for being the birthplace of Costco and the current home of big company branches such as Google, GoDaddy, Wave Broadband, and more. Living in Kirkland is an excellent option for young professionals, families, or seniors who want to be close to Seattle while not being right in the middle of the Emerald City. Commuting from Kirkland to Seattle is just a 22-minute drive, a doable...`,
     sections: [
@@ -2830,7 +2830,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-06-07",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckResidentialStreet,
     intro: `Looking for Redmond park suggestions? Whether you want Redmond parks where you can take your kids or a place for parking your RV, this vibrant city has the green space for you.`,
     sections: [
@@ -2860,7 +2860,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-04-29",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Seattle is known for its iconic Pike Place Market, the original Starbucks, the Space Needle, and a thriving food scene built around fresh Pacific Northwest seafood, craft coffee, and farm-to-table dining. The city is also famous for its tech industry (Amazon, Microsoft), outdoor access to the Cascades and Puget Sound, and a vibrant arts and music culture.`,
     sections: [
@@ -2897,7 +2897,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-11-23",
     category: "Local Guides",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `Quietly located between two busy hubs of Washington state is Mercer Island, home to 25,000 citizens who have come to enjoy the many amenities Mercer Island and its neighboring areas have to offer. For those considering moving to this gem of the Pacific Northwest, we will explore the best Mercer Island restaurants, parks, and recreational sites available on and around the island.`,
     sections: [
@@ -2927,7 +2927,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-11-20",
     category: "Specialty Moving",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewRamp,
     intro: `Moving a piano safely requires at least 3–4 people, a piano dolly, moving straps, and heavy padding — and even then, it's one of the highest-risk items to move without professional help. Upright pianos weigh 400–800 lbs; grand pianos weigh 500–1,200 lbs. A single mistake can result in serious injury or irreparable damage to an instrument worth thousands of dollars. For most homeowners, hiring professional piano movers is the safest and most cost-effective choice.`,
     sections: [
@@ -2962,7 +2962,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-11-02",
     category: "Specialty Moving",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewEntryway1,
     intro: `The best time to move into an apartment is between October and April — the off-peak rental season — when landlords are more willing to negotiate on price and availability is higher. If you need to move in summer, aim for mid-month (around the 15th) rather than the end of the month, when most leases turn over and moving companies are at peak demand.`,
     sections: [
@@ -2999,7 +2999,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2017-08-01",
     category: "Commercial Moving",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.officeMoveAction,
     intro: `Any move comes with its share of stress, but moving an entire office can at first seem overwhelming. Everything from the need to downsize or increase your space or the end of a lease in your current space can force you into moving. Without a plan, things can quickly go from bad to worse.`,
     sections: [
@@ -3029,7 +3029,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-03-23",
     category: "Commercial Moving",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.officeMoveAction,
     intro: `Do you struggle with office organization? We get it. Keeping papers, books, files, and all your other office paraphernalia organized is a serious challenge. No matter what kind of industry you’re in, keeping your office under control is hard. Here at On The Go Moving, we’ve spent years helping Seattle businesses move from one office to another. These thousands of moves have enabled us to develop a number of strategies that we use to help our clients get their office organized after a move.`,
     sections: [
@@ -3057,7 +3057,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2022-02-22",
     category: "Local Guides",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `If you’re planning a trip to Seattle soon, the good news is that there’s no shortage of things to do in downtown Seattle. Brimming with attractions, excellent coffee shops, and fascinating museums, downtown Seattle is an ideal destination for a relaxing weekend getaway or a jam-packed week of sightseeing. While this waterfront city is most known for being the original home of Starbucks, there is an extensive list of things to do in Seattle, even if you’re not a fan of coffee.`,
     sections: [
@@ -3086,7 +3086,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2023-11-28",
     category: "Moving Tips",
     readTime: "4 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.threeCrewLoadingTruck,
     intro: `If you've never hired professional movers before, the list of services can feel overwhelming. What exactly is included in a 'full-service move'? What's optional? What should you handle yourself? This guide breaks down every component of a residential move so Seattle-area homeowners know exactly what they're paying for — and what questions to ask before signing a contract.`,
     sections: [
@@ -3123,7 +3123,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2019-11-29",
     category: "Packing Tips",
     readTime: "6 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewDoorway3,
     intro: `The fastest way to pack clothes for moving is to leave them on hangers and transfer them directly into wardrobe boxes — no folding required. For folded clothes in drawers, simply wrap the entire drawer in plastic wrap and move it as-is (for local moves). This approach can cut clothing packing time from hours to minutes and eliminates the need to refold everything at the new home.`,
     sections: [
@@ -3160,7 +3160,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-05-30",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckBellevueSkyline,
     intro: `When most people think of Bellevue, they tend to think of it as nothing more than a suburb of Seattle. But, while Bellevue is a part of the Seattle metropolitan area, it's a vibrant town in and of its own right, and an attractive place to people from all walks of life. If you’ve been considering moving to Bellevue, you're probably eager to learn a little bit more about it. Read on to discover 10 things to know about living in Bellevue, WA.`,
     sections: [
@@ -3190,7 +3190,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-01-13",
     category: "Moving Tips",
     readTime: "3 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewHoodieAtTruck,
     intro: `Moving to a new city or state is a huge ordeal that many individuals find extremely daunting. Rather than letting it be a stressful time, you should see moving to another state as an opportunity to expand your circle and branch out on your own.`,
     sections: [
@@ -3215,7 +3215,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2021-01-05",
     category: "Local Guides",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.truckSeattleSkyline,
     intro: `Looking for things to do in Seattle during winter? You’re in luck, as the Emerald City has no shortage of fun things to do during the colder months. Whether you’re a Seattle local or are a tourist just visiting for a weekend in the city, this is your comprehensive list for all the things to do in Seattle in winter!`,
     sections: [
@@ -3245,7 +3245,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     dateISO: "2020-05-21",
     category: "Specialty Moving",
     readTime: "5 min read",
-    author: "On The Go Moving Team",
+    author: "Jason Sexton",
     heroImage: BRAND_IMAGES.crewEntryway3,
     intro: `Apartment moves have unique challenges compared to house moves: narrow hallways, elevator reservations, parking restrictions, and building rules about move-in hours. Whether you're moving into a high-rise in Bellevue or a walk-up in Capitol Hill, the key to a smooth apartment move is preparation — starting at least two weeks before your move date.`,
     sections: [

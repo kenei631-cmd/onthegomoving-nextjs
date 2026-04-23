@@ -172,25 +172,39 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
     if (!post) return;
     const articleSchema = {
       "@context": "https://schema.org",
-      "@type": "Article",
+      "@type": "BlogPosting",
       "headline": post.title,
       "description": post.metaDescription,
       "datePublished": post.dateISO,
       "dateModified": post.dateISO,
       "author": {
-        "@type": "Organization",
-        "name": "On The Go Moving & Storage",
-        "url": "https://onthegomoving.com",
+        "@type": "Person",
+        "@id": "https://onthegomoving.com/jason-sexton/#person",
+        "name": "Jason Sexton",
+        "url": "https://onthegomoving.com/jason-sexton/",
+        "jobTitle": "Founder & Owner",
+        "worksFor": {
+          "@type": "LocalBusiness",
+          "name": "On The Go Moving & Storage",
+          "url": "https://onthegomoving.com",
+        },
+        "image": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/wYRLOfBmzfRNeyqa.jpg",
       },
       "publisher": {
         "@type": "Organization",
         "name": "On The Go Moving & Storage",
+        "url": "https://onthegomoving.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://onthegomoving.com/wp-content/uploads/2021/10/on-the-go-moving-logo.png",
+          "url": "https://d2xsxph8kpxj0f.cloudfront.net/310519663327875635/AXcVm6gUw3wWRnzjKLx4pb/logo-1_2b575a68.png",
+          "width": 200,
+          "height": 60,
         },
       },
-      "image": post.heroImage,
+      "image": {
+        "@type": "ImageObject",
+        "url": post.heroImage,
+      },
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": `https://onthegomoving.com/${post.slug}/`,
@@ -338,7 +352,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
               </span>
               <span className="text-xs text-white/60 flex items-center gap-1"><Calendar size={11} /> {post.date}</span>
               <span className="text-xs text-white/60 flex items-center gap-1"><Clock size={11} /> {post.readTime}</span>
-              <span className="text-xs text-white/60 flex items-center gap-1"><User size={11} /> {post.author}</span>
+              <a href="/jason-sexton/" className="text-xs text-white/60 flex items-center gap-1 hover:text-white transition-colors"><User size={11} /> Jason Sexton</a>
             </div>
 
             <h1
@@ -452,15 +466,31 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                 )}
 
                 {/* Author Box */}
-                <div className="mt-12 p-5 rounded-xl bg-[#f5f5f3] flex gap-4 items-start">
-                  <div className="w-12 h-12 rounded-full overflow-hidden flex-shrink-0">
-                    <img src={BRAND_IMAGES.ourCompany} alt="On The Go Moving Team" className="w-full h-full object-cover" />
-                  </div>
-                  <div>
-                    <p className="font-bold text-gray-900 text-sm">{post.author}</p>
-                    <p className="text-gray-500 text-xs mt-0.5">
-                      On The Go Moving & Storage has been serving the Seattle/Eastside area since 2007. Our team of professional movers has completed thousands of residential, apartment, and commercial moves across King and Snohomish counties.
+                <div className="mt-12 p-5 rounded-xl bg-[#f5f5f3] border border-gray-200 flex gap-4 items-start">
+                  <a href="/jason-sexton/" className="flex-shrink-0">
+                    <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#7bc144]">
+                      <img
+                        src={BRAND_IMAGES.jasonSextonHeadshot}
+                        alt="Jason Sexton — Founder & Owner, On The Go Moving & Storage"
+                        className="w-full h-full object-cover object-top"
+                        width={56}
+                        height={56}
+                      />
+                    </div>
+                  </a>
+                  <div className="min-w-0">
+                    <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5">
+                      <a href="/jason-sexton/" className="font-bold text-gray-900 text-sm hover:text-[#75aa11] transition-colors">
+                        Jason Sexton
+                      </a>
+                      <span className="text-xs text-gray-400">Founder &amp; Owner, On The Go Moving &amp; Storage</span>
+                    </div>
+                    <p className="text-gray-500 text-xs mt-1 leading-relaxed">
+                      Jason founded On The Go Moving &amp; Storage in Redmond, WA in 2009 and has personally overseen more than 50,000 moves across Greater Seattle. He holds a Washington State Household Goods Mover license (HG-064180) and writes from direct, hands-on experience in the moving industry.
                     </p>
+                    <a href="/jason-sexton/" className="inline-flex items-center gap-1 text-xs font-semibold text-[#75aa11] hover:underline mt-1.5">
+                      About the author <ArrowRight size={11} />
+                    </a>
                   </div>
                 </div>
 
