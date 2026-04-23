@@ -197,9 +197,9 @@ export default function JasonSexton() {
   return (
     <div className="min-h-screen bg-white font-sans">
       <Header />
-
+      <main className="flex-1 pt-[96px]">
       {/* ── Hero ── */}
-      <section className="bg-[#1a2332] text-white pt-24 pb-16">
+      <section className="bg-[#1a2332] text-white pt-14 pb-16">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-10">
             {/* Photo */}
@@ -459,7 +459,7 @@ export default function JasonSexton() {
           </p>
         </div>
       </section>
-
+      </main>
       <Footer />
     </div>
   );

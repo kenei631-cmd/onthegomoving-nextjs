@@ -38,10 +38,10 @@ export const BRAND_IMAGES = {
   seattleMovingCompany: `${CDN}/seattle-moving-company_58b6726f.png`,
   /** Storage/warehouse interior */
   storageWarehouse: `${CDN}/image2_dd236ebf.jpg`,
-  /** Packing/boxes service image */
-  packingBoxes: `${CDN}/image_2021_10_07T20_51_48_766Z_659ffb38.png`,
-  /** Packing supplies close-up */
-  packingSupplies: `${CDN}/image_2021_10_07T20_51_51_931Z_ac72765c.png`,
+  /** Packing/boxes service image — OTGM crew wrapping furniture with plastic film */
+  packingBoxes: `${CDN}/28_ltg_-0988_copy_644ef179.jpg`,
+  /** Packing supplies close-up — OTGM crew wrapping furniture with plastic in entryway */
+  packingSupplies: `${CDN}/25_ltg_-0963_copy_b2d8c9e7.jpg`,
   /** Map background for service areas */
   mapBackground: `${CDN}/bg-map-1_d237af86.png`,
   /** Moving crew — alternate shot (same as heroMovingCrew, slightly different crop) */
