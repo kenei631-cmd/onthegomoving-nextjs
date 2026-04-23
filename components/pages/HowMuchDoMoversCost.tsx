@@ -26,10 +26,10 @@ const PRICING_TABLE = [
 ];
 
 const HOURLY_RATES = [
-  { crew: "2 Movers + Truck", rate: "$120–$150/hr", best: "Studios, 1-bed apartments" },
-  { crew: "3 Movers + Truck", rate: "$160–$200/hr", best: "1–3 bed apartments, small homes" },
-  { crew: "4 Movers + Truck", rate: "$200–$260/hr", best: "3–4 bed homes, large apartments" },
-  { crew: "5 Movers + 2 Trucks", rate: "$280–$360/hr", best: "Large homes, commercial moves" },
+  { crew: "2 Movers + Truck", rate: "Call for Rate", best: "Studios, 1-bed apartments" },
+  { crew: "3 Movers + Truck", rate: "Call for Rate", best: "1–3 bed apartments, small homes" },
+  { crew: "4 Movers + Truck", rate: "Call for Rate", best: "3–4 bed homes, large apartments" },
+  { crew: "5 Movers + 2 Trucks", rate: "Call for Rate", best: "Large homes, commercial moves" },
 ];
 
 const COST_FACTORS_UP = [
@@ -60,7 +60,7 @@ const FAQS = [
   },
   {
     q: "How much do movers charge per hour?",
-    a: "On The Go Moving charges $120–$150/hr for a 2-mover crew, $160–$200/hr for 3 movers, and $200–$260/hr for 4 movers. All rates include the moving truck, fuel, basic equipment, and standard valuation coverage. There is no travel time charge for moves within our 18-mile service area around Redmond, WA.",
+    a: "On The Go Moving charges by the hour based on crew size. All rates include the moving truck, fuel, basic equipment, and standard valuation coverage. Call us or request a free quote for current rates — pricing varies by season, availability, and move details.",
   },
   {
     q: "Is it cheaper to move yourself or hire movers?",
@@ -107,8 +107,8 @@ export default function HowMuchDoMoversCost() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useSEO({
-    title: "How Much Do Movers Cost in Seattle? | 2025 Pricing Guide",
-    description: "Seattle movers cost $120–$260/hr depending on crew size. See full pricing tables for studio to 4-bed homes, hourly rates, and cost-saving tips from On The Go Moving.",
+    title: "How Much Do Movers Cost in Seattle? | 2026 Pricing Guide",
+    description: "How much do movers cost in Seattle? See typical cost ranges by home size, what affects your price, and cost-saving tips from On The Go Moving.",
     canonical: "https://onthegomoving.com/how-much-do-movers-cost/",
     ogType: "article",
     schema: [
@@ -177,12 +177,12 @@ export default function HowMuchDoMoversCost() {
             <div className="bg-[#f0f7e6] border-l-4 rounded-r-xl p-6 mb-8" style={{ borderColor: "#75aa11" }}>
               <p className="text-xs font-bold uppercase tracking-widest mb-2" style={{ color: "#75aa11" }}>Quick Answer</p>
               <p className="text-gray-800 text-lg leading-relaxed">
-                <strong>Local movers in Seattle and the Eastside charge $120–$260 per hour</strong> depending on crew size. Most moves take 3–7 hours. A typical 2-bedroom move costs <strong>$450–$900</strong>. On The Go Moving charges by the hour with no hidden fees, no travel time charges within our service area, and includes one free month of storage with every move.
+                <strong>Local movers in Seattle and the Eastside charge by the hour</strong> depending on crew size. Most moves take 3–7 hours. A typical 2-bedroom move costs <strong>$450–$900</strong>. On The Go Moving charges by the hour with no hidden fees and includes one free month of storage with every move.
               </p>
             </div>
             <div className="flex flex-wrap gap-4 text-sm text-gray-600">
               <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Flat hourly rate — no hidden fees</div>
-              <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> No travel time charge within service area</div>
+              <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Truck, fuel &amp; equipment included</div>
               <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> 1 free month storage included</div>
               <div className="flex items-center gap-2"><CheckCircle size={16} style={{ color: "#75aa11" }} /> Free quote in 60 seconds</div>
             </div>
@@ -244,21 +244,22 @@ export default function HowMuchDoMoversCost() {
                 className="text-4xl font-extrabold text-gray-900"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
-                On The Go Moving Hourly Rates
+                On The Go Moving — Crew Sizes
               </h2>
+              <p className="text-gray-500 mt-2 max-w-xl mx-auto text-sm">Call or request a free quote for current rates. Pricing varies by season and availability.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
               {HOURLY_RATES.map((r, i) => (
                 <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
                   <p className="text-sm font-bold text-gray-700 mb-2">{r.crew}</p>
-                  <p className="text-3xl font-extrabold mb-1" style={{ fontFamily: "'Barlow Condensed', sans-serif", color: "#75aa11" }}>{r.rate}</p>
+                  <p className="text-xl font-extrabold mb-1" style={{ fontFamily: "'Barlow Condensed', sans-serif", color: "#75aa11" }}>{r.rate}</p>
                   <p className="text-xs text-gray-400">{r.best}</p>
                 </div>
               ))}
             </div>
             <div className="mt-6 bg-white rounded-xl p-5 border border-gray-200 max-w-2xl mx-auto text-center">
               <AlertCircle size={18} className="inline mr-2" style={{ color: "#fbc319" }} />
-              <span className="text-sm text-gray-600">All rates include truck, fuel, equipment, blankets, and standard valuation coverage. No travel time charge within our 18-mile service area.</span>
+              <span className="text-sm text-gray-600">All rates include truck, fuel, equipment, blankets, and standard valuation coverage. Call us for current rates and availability.</span>
             </div>
           </div>
         </section>

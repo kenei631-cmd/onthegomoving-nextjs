@@ -87,7 +87,7 @@ export default function AboutUs() {
           addressCountry: "US",
         },
         telephone: "+14257618500",
-        email: "info@onthegomoving.com",
+        email: "booking@onthegomoving.com",
         sameAs: [
           "https://www.facebook.com/onthegomoving",
           "https://www.instagram.com/onthegomoving",

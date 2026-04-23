@@ -465,6 +465,61 @@ export default function Partners() {
         </div>
       </section>
 
+      {/* ── COMMUNITY & GIVING ─────────────────────────────────────────── */}
+      <section className="py-14 bg-white border-t border-gray-100">
+        <div className="container">
+          <div className="text-center mb-10">
+            <p className="section-label text-brand-green mb-2">Community Giving</p>
+            <h2
+              className="text-4xl font-extrabold text-gray-900"
+              style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+            >
+              Organizations We Support
+            </h2>
+            <p className="text-gray-500 mt-3 max-w-2xl mx-auto">
+              On The Go Moving & Storage is proud to give back to the Greater Seattle community. We actively support these organizations because the families and children they serve are the same families we help move every day.
+            </p>
+          </div>
+          <div className="flex flex-wrap justify-center items-center gap-10 lg:gap-16">
+            <a href="https://www.bennettfoundation.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/hxTkOuafgAoQcNrl.png"
+                alt="The Bennett Foundation"
+                className="h-14 object-contain"
+              />
+            </a>
+            <a href="https://www.marchofdimes.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/InNXDGFdZoqXtPki.png"
+                alt="March for Babies"
+                className="h-14 object-contain"
+              />
+            </a>
+            <a href="https://www.marchofdimes.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/xStVyfbghkiuohZc.png"
+                alt="March of Dimes"
+                className="h-14 object-contain"
+              />
+            </a>
+            <a href="https://www.seattlechildrens.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/JZRGcTYXRtvHKYBi.png"
+                alt="Seattle Children's Hospital"
+                className="h-14 object-contain"
+              />
+            </a>
+            <a href="https://www.girlscouts.org/" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+              <img
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/OFCTzMwqNlNkjzSz.png"
+                alt="Girl Scouts of America"
+                className="h-14 object-contain"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* ── CTA BANNER ───────────────────────────────────────────────────── */}
       <section
         className="py-16"

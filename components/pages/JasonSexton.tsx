@@ -119,7 +119,7 @@ const FAQS = [
   },
   {
     q: "How can I contact Jason Sexton or On The Go Moving?",
-    a: "You can reach On The Go Moving & Storage by phone at (425) 761-8500 or by email at info@onthegomoving.com. The office is located at 16625 Redmond Way #M365, Redmond, WA 98052.",
+    a: "You can reach On The Go Moving & Storage by phone at (425) 761-8500 or by email at booking@onthegomoving.com. The office is located at 16625 Redmond Way #M365, Redmond, WA 98052.",
   },
 ];
 

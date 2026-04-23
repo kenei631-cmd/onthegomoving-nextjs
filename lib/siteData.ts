@@ -9,7 +9,7 @@ export const COMPANY = {
   shortName: "On The Go Moving",
   phone: "(425) 761-8500",
   phoneHref: "tel:+14257618500",
-  email: "info@onthegomoving.com",
+  email: "booking@onthegomoving.com",
   address: "Redmond, WA 98052",
   license: "HG-064180",
   usdot: "2120054",

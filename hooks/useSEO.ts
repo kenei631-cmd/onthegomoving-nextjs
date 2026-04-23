@@ -121,7 +121,7 @@ export const MOVING_COMPANY_SCHEMA = {
   logo: "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-logo.png",
   image: DEFAULT_OG_IMAGE,
   telephone: "+14257618500",
-  email: "info@onthegomoving.com",
+  email: "booking@onthegomoving.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "16625 Redmond Way #M365",
@@ -241,7 +241,7 @@ export const CONTACT_POINT_SCHEMA = {
     "@type": ["MovingCompany", "LocalBusiness"],
     name: "On The Go Moving & Storage",
     telephone: "+14257618500",
-    email: "info@onthegomoving.com",
+    email: "booking@onthegomoving.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "16625 Redmond Way #M365",
