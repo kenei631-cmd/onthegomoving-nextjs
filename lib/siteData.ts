@@ -91,9 +91,10 @@ export const MAIN_NAV = [
   },
   {
     label: "About",
-    href: "/about/",
+    href: "/about-us/",
     children: [
       { label: "About Us", href: "/about-us/" },
+      { label: "Meet Jason Sexton", href: "/jason-sexton/" },
       { label: "Our Team", href: "/about-us/#team" },
       { label: "Partners", href: "/partners/" },
       { label: "Staging Professionals", href: "/staging-professionals/" },

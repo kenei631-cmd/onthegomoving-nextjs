@@ -77,7 +77,7 @@ export default function AboutUs() {
         url: "https://onthegomoving.com",
         logo: "https://onthegomoving.com/wp-content/uploads/2021/01/on-the-go-moving-logo.png",
         foundingDate: "2009",
-        founder: { "@type": "Person", name: "Jason Sexton" },
+        founder: { "@type": "Person", "@id": "https://onthegomoving.com/jason-sexton/#person", name: "Jason Sexton", url: "https://onthegomoving.com/jason-sexton/" },
         address: {
           "@type": "PostalAddress",
           streetAddress: "16625 Redmond Way #M365",
@@ -338,17 +338,39 @@ export default function AboutUs() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {TEAM.map((member) => (
                 <div key={member.name} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
-                  <div className="w-16 h-16 rounded-full bg-brand-green/10 flex items-center justify-center mx-auto mb-4">
-                    <Users size={28} style={{ color: "#75aa11" }} />
-                  </div>
+                  {member.name === "Jason Sexton" ? (
+                    <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4 border-2 border-brand-green">
+                      <img
+                        src={BRAND_IMAGES.jasonSextonHeadshot}
+                        alt="Jason Sexton — Founder & Owner"
+                        className="w-full h-full object-cover object-top"
+                      />
+                    </div>
+                  ) : (
+                    <div className="w-16 h-16 rounded-full bg-brand-green/10 flex items-center justify-center mx-auto mb-4">
+                      <Users size={28} style={{ color: "#75aa11" }} />
+                    </div>
+                  )}
                   <h3
                     className="text-xl font-bold text-gray-900 mb-1"
                     style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
                   >
-                    {member.name}
+                    {member.name === "Jason Sexton" ? (
+                      <a href="/jason-sexton/" className="hover:text-brand-green transition-colors">
+                        {member.name}
+                      </a>
+                    ) : member.name}
                   </h3>
                   <p className="text-xs font-semibold text-brand-green uppercase tracking-widest mb-3">{member.role}</p>
                   <p className="text-gray-500 text-sm leading-relaxed">{member.fact}</p>
+                  {member.name === "Jason Sexton" && (
+                    <a
+                      href="/jason-sexton/"
+                      className="mt-3 inline-flex items-center gap-1 text-xs text-brand-green font-semibold hover:underline"
+                    >
+                      Meet Jason →
+                    </a>
+                  )}
                 </div>
               ))}
             </div>

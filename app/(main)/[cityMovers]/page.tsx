@@ -22,6 +22,7 @@ const EXCLUDED_SLUGS = new Set([
   "freight-forwarding-service",
   "furniture-moving",
   "how-much-do-movers-cost",
+  "jason-sexton",
   "labor-only-moving",
   "locations",
   "moving-supplies",

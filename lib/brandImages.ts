@@ -183,6 +183,8 @@ export const BRAND_IMAGES = {
   crewStaircaseWithBlanket: `${CDN}/49_ltg_-1238_copy_5bb64996.jpg`,
   /** #50 - Two movers carrying blanket-covered item up protected staircase */
   crewStaircaseCarrying: `${CDN}/50_ltg_-1240_copy_afd3b941.jpg`,
+  /** Jason Sexton — founder & owner professional headshot (blue OTGM polo, white background) */
+  jasonSextonHeadshot: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663327875635/wYRLOfBmzfRNeyqa.jpg",
 } as const;
 
 export type BrandImageKey = keyof typeof BRAND_IMAGES;
