@@ -76,7 +76,7 @@ const ALL_SERVICES = [
     popular: false,
     description:
       "Moving and storage services tailored for home stagers. Fast turnaround, flexible scheduling, and secure vault storage between staging projects.",
-    image: BRAND_IMAGES.storageWarehouse,
+    image: BRAND_IMAGES.teamFleet,
     cta: "Learn About Staging Services",
   },
   {

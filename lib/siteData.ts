@@ -163,7 +163,7 @@ export const SERVICES = [
     icon: "🏡",
     description:
       "Moving and storage services tailored for home stagers. Fast turnaround, flexible scheduling, and secure vault storage between staging projects.",
-    image: BRAND_IMAGES.storageWarehouse,
+    image: BRAND_IMAGES.teamFleet,
   },
 ];
 
