@@ -3,13 +3,13 @@ import ServicePage from "@/components/pages/ServicePage";
 
 
 export const metadata: Metadata = {
-  title: "Freight Forwarding Services in Seattle | On The Go Moving",
+  title: "Freight Forwarding Services in Seattle",
   description: "Freight forwarding and logistics services from On The Go Moving & Storage in Redmond, WA. Reliable freight solutions for businesses and individuals.",
   alternates: {
     canonical: "https://onthegomoving.com/freight-forwarding-service/",
   },
   openGraph: {
-    title: "Freight Forwarding Services in Seattle | On The Go Moving",
+    title: "Freight Forwarding Services in Seattle",
     description: "Freight forwarding and logistics services from On The Go Moving & Storage in Redmond, WA. Reliable freight solutions for businesses and individuals.",
     url: "https://onthegomoving.com/freight-forwarding-service/",
   },

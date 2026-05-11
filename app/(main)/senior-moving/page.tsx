@@ -3,13 +3,13 @@ import ServicePage from "@/components/pages/ServicePage";
 
 
 export const metadata: Metadata = {
-  title: "Senior Moving Services in Seattle | On The Go Moving",
+  title: "Senior Moving Services in Seattle",
   description: "Compassionate, patient senior moving services in Seattle and the Puget Sound. We help seniors downsize, pack, and move with care and respect.",
   alternates: {
     canonical: "https://onthegomoving.com/senior-moving/",
   },
   openGraph: {
-    title: "Senior Moving Services in Seattle | On The Go Moving",
+    title: "Senior Moving Services in Seattle",
     description: "Compassionate, patient senior moving services in Seattle and the Puget Sound. We help seniors downsize, pack, and move with care and respect.",
     url: "https://onthegomoving.com/senior-moving/",
   },

@@ -3,13 +3,13 @@ import Team from "@/components/pages/Team";
 
 
 export const metadata: Metadata = {
-  title: "Our Team | On The Go Moving & Storage",
+  title: "Our Team",
   description: "Meet the professional moving team at On The Go Moving & Storage. Experienced, background-checked, and dedicated to making your move stress-free.",
   alternates: {
     canonical: "https://onthegomoving.com/team/",
   },
   openGraph: {
-    title: "Our Team | On The Go Moving & Storage",
+    title: "Our Team",
     description: "Meet the professional moving team at On The Go Moving & Storage. Experienced, background-checked, and dedicated to making your move stress-free.",
     url: "https://onthegomoving.com/team/",
   },

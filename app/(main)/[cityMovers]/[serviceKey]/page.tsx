@@ -82,7 +82,7 @@ export async function generateMetadata({
   const descLabel = serviceDescLabels[serviceKey] || serviceKey;
   const canonical = `https://onthegomoving.com/${cityMovers}/${serviceKey}/`;
 
-  const title = `${pageTitle} | On The Go Moving & Storage`;
+  const title = `${pageTitle}`;
   const description = `Local ${descLabel} in ${city}, WA. Licensed & insured movers serving ${city} and the greater Seattle area. Free quotes — (425) 761-8500.`;
 
   return {

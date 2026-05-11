@@ -3,13 +3,13 @@ import StagingProfessionals from "@/components/pages/StagingProfessionals";
 
 
 export const metadata: Metadata = {
-  title: "Moving Services for Staging Professionals | On The Go Moving",
+  title: "Moving Services for Staging Professionals",
   description: "On The Go Moving & Storage offers specialized moving and storage services for home staging professionals in the Seattle area. Fast, reliable, and careful.",
   alternates: {
     canonical: "https://onthegomoving.com/staging-professionals/",
   },
   openGraph: {
-    title: "Moving Services for Staging Professionals | On The Go Moving",
+    title: "Moving Services for Staging Professionals",
     description: "On The Go Moving & Storage offers specialized moving and storage services for home staging professionals in the Seattle area. Fast, reliable, and careful.",
     url: "https://onthegomoving.com/staging-professionals/",
   },

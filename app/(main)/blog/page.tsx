@@ -3,14 +3,14 @@ import BlogPage from "@/components/pages/Blog";
 
 
 export const metadata: Metadata = {
-  title: "Moving Tips & Resources Blog | On The Go Moving & Storage",
+  title: "Moving Tips & Resources Blog",
   description:
     "Expert moving tips, packing guides, and relocation resources from On The Go Moving & Storage. Serving Seattle, Bellevue, Redmond & the Puget Sound since 2009.",
   alternates: {
     canonical: "https://onthegomoving.com/blog/",
   },
   openGraph: {
-    title: "Moving Tips & Resources Blog | On The Go Moving & Storage",
+    title: "Moving Tips & Resources Blog",
     description:
       "Expert moving tips, packing guides, and relocation resources from On The Go Moving & Storage.",
     url: "https://onthegomoving.com/blog/",

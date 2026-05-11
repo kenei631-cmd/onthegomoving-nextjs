@@ -38,7 +38,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       "moving-tips-how-to-pack-up-your-garage-for-moving": {
     slug: "moving-tips-how-to-pack-up-your-garage-for-moving",
     title: `Moving Tips: How to Pack Up Your Garage for Moving`,
-    metaTitle: `Moving Tips: How to Pack Up Your Garage for... | On The Go Moving`,
+    metaTitle: `Moving Tips: How to Pack Up Your Garage for...`,
     metaDescription: `When it comes to moving, packing up the garage can be quite the project. Here are a few helpful moving tips for making the process go swiftly and smoothly.`,
     date: "December 16, 2016",
     dateISO: "2016-12-16",
@@ -75,7 +75,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "how-to-pack-tv-for-moving": {
     slug: "how-to-pack-tv-for-moving",
     title: `How To Pack Your Flat Screen TV for Moving | 4 Expert Tips`,
-    metaTitle: `How To Pack Your Flat Screen TV for Moving | 4 Expert... | On The Go Moving`,
+    metaTitle: `How To Pack Your Flat Screen TV for Moving | 4 Expert...`,
     metaDescription: `Not sure how to safely pack your TV for moving? Explore four expert tips for quickly and securely transporting your TV to your new home.`,
     date: "November 15, 2019",
     dateISO: "2019-11-15",
@@ -105,7 +105,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
           "8-tips-move-bad-weather": {
     slug: "8-tips-move-bad-weather",
     title: `8 Tips to Help You Move in The Rain`,
-    metaTitle: `8 Tips to Help You Move in The Rain | On The Go Moving`,
+    metaTitle: `8 Tips to Help You Move in The Rain`,
     metaDescription: `Moving in bad weather is never easy. These 8 moving tips will help you cope successfully with moving house or apartment in bad weather.`,
     date: "October 8, 2018",
     dateISO: "2018-10-08",
@@ -131,7 +131,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
         "changing-your-address-essential-checklist": {
     slug: "changing-your-address-essential-checklist",
     title: `An Essential Checklist for Changing Your Address`,
-    metaTitle: `An Essential Checklist for Changing Your Address | On The Go Moving`,
+    metaTitle: `An Essential Checklist for Changing Your Address`,
     metaDescription: `Moving means changing your address. Here's a step by step guide on how to change your address and communicate with people who need your new address.`,
     date: "September 30, 2016",
     dateISO: "2016-09-30",
@@ -168,7 +168,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "moving-tips-the-right-way-to-pack-a-bathroom": {
     slug: "moving-tips-the-right-way-to-pack-a-bathroom",
     title: `Moving Tips: The Right Way to Pack a Bathroom`,
-    metaTitle: `Moving Tips: The Right Way to Pack a Bathroom | On The Go Moving`,
+    metaTitle: `Moving Tips: The Right Way to Pack a Bathroom`,
     metaDescription: `Getting ready for the big move? Here are some helpful moving tips on how to pack your bathroom efficiently and economically.`,
     date: "October 7, 2016",
     dateISO: "2016-10-07",
@@ -197,7 +197,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
           "how-to-efficiently-pack-a-storage-container": {
     slug: "how-to-efficiently-pack-a-storage-container",
     title: `How to Efficiently Pack A Storage Container`,
-    metaTitle: `How to Efficiently Pack A Storage Container | On The Go Moving`,
+    metaTitle: `How to Efficiently Pack A Storage Container`,
     metaDescription: `Looking for ways to maximize the space in your storage container? Explore our four helpful tips to efficiently and securely pack your belongings for storage.`,
     date: "August 17, 2018",
     dateISO: "2018-08-17",
@@ -221,7 +221,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       "how-to-pack-a-storage-unit": {
     slug: "how-to-pack-a-storage-unit",
     title: `How to Pack and Organize a Storage Unit | Best Tips for Ease of Access`,
-    metaTitle: `How to Pack and Organize a Storage Unit | Best Tips... | On The Go Moving`,
+    metaTitle: `How to Pack and Organize a Storage Unit | Best Tips...`,
     metaDescription: `If this is your first time packing a storage unit, our moving experts here at On The Go Moving have compiled a list of 6 helpful, organizational tips for you.`,
     date: "March 27, 2020",
     dateISO: "2020-03-27",
@@ -249,7 +249,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "storage-unit-prices": {
     slug: "storage-unit-prices",
     title: `Storage Unit Prices`,
-    metaTitle: `Storage Unit Prices | On The Go Moving`,
+    metaTitle: `Storage Unit Prices`,
     metaDescription: `Learn more about storage unit prices and what solutions are available to you. Get in touch with On The Go Moving today, for more details.`,
     date: "July 16, 2021",
     dateISO: "2021-07-16",
@@ -276,7 +276,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "leave-behind-moving-5-ways-declutter-house": {
     slug: "leave-behind-moving-5-ways-declutter-house",
     title: `What to Leave Behind When Moving: 5 Ways to Declutter Your House`,
-    metaTitle: `What to Leave Behind When Moving: 5 Ways to Declutter... | On The Go Moving`,
+    metaTitle: `What to Leave Behind When Moving: 5 Ways to Declutter...`,
     metaDescription: `Take the process of moving as an opportunity to rid yourself of the clutter that has collected over the years and start fresh. Whether it’s your first big move `,
     date: "June 26, 2017",
     dateISO: "2017-06-26",
@@ -299,7 +299,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "packing-fragile-items": {
     slug: "packing-fragile-items",
     title: `Packing Fragile Items Prior to Moving`,
-    metaTitle: `Packing Fragile Items Prior to Moving | On The Go Moving`,
+    metaTitle: `Packing Fragile Items Prior to Moving`,
     metaDescription: `Learn about Packing Fragile Items prior to moving, from the cost and types of damages of the items. Give On The Go Moving a call today to learn more.`,
     date: "October 28, 2022",
     dateISO: "2022-10-28",
@@ -329,7 +329,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "best-tips-for-winter-moving": {
     slug: "best-tips-for-winter-moving",
     title: `Best Tips for Winter Moving`,
-    metaTitle: `Best Tips for Winter Moving | On The Go Moving`,
+    metaTitle: `Best Tips for Winter Moving`,
     metaDescription: `Are you planning for winter moving? Find out all of our best moving suggestions to make the process go more smoothly. Visit us now.`,
     date: "March 16, 2022",
     dateISO: "2022-03-16",
@@ -359,7 +359,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "how-to-pack-a-car-for-moving": {
     slug: "how-to-pack-a-car-for-moving",
     title: `Helpful Tips On How to Pack A Car for Moving`,
-    metaTitle: `Helpful Tips On How to Pack A Car for Moving | On The Go Moving`,
+    metaTitle: `Helpful Tips On How to Pack A Car for Moving`,
     metaDescription: `Explore helpful tips on how to pack a car for moving, including tricks and strategies for how you can safely and effectively pack your car for your move.`,
     date: "January 16, 2018",
     dateISO: "2018-01-16",
@@ -386,7 +386,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "benefits-of-climate-controlled-storage": {
     slug: "benefits-of-climate-controlled-storage",
     title: `8 Reasons Climate Controlled Storage Units Are Best For Indoor Storage`,
-    metaTitle: `8 Reasons Climate Controlled Storage Units Are Best... | On The Go Moving`,
+    metaTitle: `8 Reasons Climate Controlled Storage Units Are Best...`,
     metaDescription: `Climate-controlled storage provides many improvements over outdoor storage, and some items even require climate-controlled vaults over outdoor units. Below we’l`,
     date: "March 30, 2017",
     dateISO: "2017-03-30",
@@ -416,7 +416,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "tricks-to-unpack-your-home-in-2-days": {
     slug: "tricks-to-unpack-your-home-in-2-days",
     title: `How To Unpack After Moving In 2 Days`,
-    metaTitle: `How To Unpack After Moving In 2 Days | On The Go Moving`,
+    metaTitle: `How To Unpack After Moving In 2 Days`,
     metaDescription: `How to unpack after a move can be crucial, if you don’t do it the right way it can turn in a daunting experience. Follow our tips to unpack quickly & smoothly!`,
     date: "October 21, 2016",
     dateISO: "2016-10-21",
@@ -439,7 +439,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
           "moving-into-new-house": {
     slug: "moving-into-new-house",
     title: `11 Tips To Do First After Moving Into A New House`,
-    metaTitle: `11 Tips To Do First After Moving Into A New House | On The Go Moving`,
+    metaTitle: `11 Tips To Do First After Moving Into A New House`,
     metaDescription: `Congratuations on your new home! Now what? Explore the first 11 things to do after moving into your new house so you can feel comfortable in your new home as so`,
     date: "November 30, 2019",
     dateISO: "2019-11-30",
@@ -476,7 +476,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "hiring-professional-movers-vs-moving-yourself": {
     slug: "hiring-professional-movers-vs-moving-yourself",
     title: `What To Know About Hiring Professional Movers vs Moving Yourself`,
-    metaTitle: `What To Know About Hiring Professional Movers vs... | On The Go Moving`,
+    metaTitle: `What To Know About Hiring Professional Movers vs...`,
     metaDescription: `Have trouble between hiring a moving company or DIY for moving? Read now for more information about the pros and cons of hiring and DIY moving.`,
     date: "December 1, 2021",
     dateISO: "2021-12-01",
@@ -506,7 +506,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "housewarming-party-ideas-and-food": {
     slug: "housewarming-party-ideas-and-food",
     title: `Ideas For The Ultimate Housewarming Party | Planning Food, Themes, Games, & Drinks`,
-    metaTitle: `Ideas For The Ultimate Housewarming Party | Planning... | On The Go Moving`,
+    metaTitle: `Ideas For The Ultimate Housewarming Party | Planning...`,
     metaDescription: `Planning a housewarming party doesn’t need to be stress-inducing at all. Rather it gives you a fun chance to whip out your creative skills and introduce people.`,
     date: "September 27, 2019",
     dateISO: "2019-09-27",
@@ -536,7 +536,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "first-time-moving-heres-simple-checklist": {
     slug: "first-time-moving-heres-simple-checklist",
     title: `Checklist: First Time Moving Out | Tips For Packing Room By Room`,
-    metaTitle: `Checklist: First Time Moving Out | Tips For Packing... | On The Go Moving`,
+    metaTitle: `Checklist: First Time Moving Out | Tips For Packing...`,
     metaDescription: `Now that you’re ready to move out for the first time, the next step is to get organized and plan your move down to the smallest detail. To make things easier fo`,
     date: "August 22, 2017",
     dateISO: "2017-08-22",
@@ -563,7 +563,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
           "how-to-pack-dishes": {
     slug: "how-to-pack-dishes",
     title: `How To Pack Dishes | Kitchenware, Pots and Pans, and Glasses`,
-    metaTitle: `How To Pack Dishes | Kitchenware, Pots and Pans, and... | On The Go Moving`,
+    metaTitle: `How To Pack Dishes | Kitchenware, Pots and Pans, and...`,
     metaDescription: `The last thing you want is breaking any of your dishes while moving, that's why we've compiled a 5 step process to packing your dishes safely and securely.`,
     date: "September 27, 2019",
     dateISO: "2019-09-27",
@@ -593,7 +593,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
         "how-to-find-the-best-temporary-storage-units-in-your-area": {
     slug: "how-to-find-the-best-temporary-storage-units-in-your-area",
     title: `How to Find the Best Temporary Storage Units in Your Area`,
-    metaTitle: `How to Find the Best Temporary Storage Units in Your... | On The Go Moving`,
+    metaTitle: `How to Find the Best Temporary Storage Units in Your...`,
     metaDescription: `If you're preparing for a move, you are probably realizing that you have more belongings than you thought. Temporary storage can help you organize and keep safe`,
     date: "January 18, 2019",
     dateISO: "2019-01-18",
@@ -618,7 +618,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
             "what-not-to-pack-when-moving-non-allowable-items-explained": {
     slug: "what-not-to-pack-when-moving-non-allowable-items-explained",
     title: `What Not to Pack When Moving: Non-Allowable Items Explained`,
-    metaTitle: `What Not to Pack When Moving: Non-Allowable Items... | On The Go Moving`,
+    metaTitle: `What Not to Pack When Moving: Non-Allowable Items...`,
     metaDescription: `A professional moving company will transport anything that you ask them to, right? Actually, most moving companies have certain items that they cannot transport`,
     date: "August 7, 2018",
     dateISO: "2018-08-07",
@@ -644,7 +644,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "how-much-do-you-tip-movers": {
     slug: "how-much-do-you-tip-movers",
     title: `How Much To Tip Movers?`,
-    metaTitle: `How Much To Tip Movers? | On The Go Moving`,
+    metaTitle: `How Much To Tip Movers?`,
     metaDescription: `Do You Need to Tip Movers? Here are five things to consider when deciding how much to tip movers. Read more on this article!`,
     date: "March 18, 2021",
     dateISO: "2021-03-18",
@@ -680,7 +680,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "simplify-move-turn-move-road-trip": {
     slug: "simplify-move-turn-move-road-trip",
     title: `How to Simplify Your Move: Turn Your Move Into a Road Trip`,
-    metaTitle: `How to Simplify Your Move: Turn Your Move Into a Road... | On The Go Moving`,
+    metaTitle: `How to Simplify Your Move: Turn Your Move Into a Road...`,
     metaDescription: `Moving from one place to another presents unique challenges to your family, especially when the move is a far one. However, there are several things you can do `,
     date: "June 5, 2017",
     dateISO: "2017-06-05",
@@ -708,7 +708,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "organizing-small-spaces": {
     slug: "organizing-small-spaces",
     title: `14 Organizing Tips For Maximizing A Small Space`,
-    metaTitle: `14 Organizing Tips For Maximizing A Small Space | On The Go Moving`,
+    metaTitle: `14 Organizing Tips For Maximizing A Small Space`,
     metaDescription: `Minimalizing and moving to smaller homes is a growing movement in the 21st Century. How do you organize and maximize the space in your house?`,
     date: "September 27, 2019",
     dateISO: "2019-09-27",
@@ -745,7 +745,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
         "how-to-choose-the-best-neighborhood-when-moving-to-a-new-city": {
     slug: "how-to-choose-the-best-neighborhood-when-moving-to-a-new-city",
     title: `How to Choose the Best Neighborhood When Moving to a New City`,
-    metaTitle: `How to Choose the Best Neighborhood When Moving to a... | On The Go Moving`,
+    metaTitle: `How to Choose the Best Neighborhood When Moving to a...`,
     metaDescription: `What should you take into consideration when making the decision to move? Read the most important factors to consider when choosing to live in a city.`,
     date: "April 4, 2019",
     dateISO: "2019-04-04",
@@ -766,7 +766,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "moving-101-how-to-pack-your-electronics-for-moving": {
     slug: "moving-101-how-to-pack-your-electronics-for-moving",
     title: `Moving 101: How to Pack Your Electronics for Moving`,
-    metaTitle: `Moving 101: How to Pack Your Electronics for... | On The Go Moving`,
+    metaTitle: `Moving 101: How to Pack Your Electronics for...`,
     metaDescription: `If you're wondering how to pack your electronics for moving, here's how to safely transport your desk to the new home.`,
     date: "January 17, 2017",
     dateISO: "2017-01-17",
@@ -791,7 +791,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "5-questions-before-hiring-commercial-moving-company": {
     slug: "5-questions-before-hiring-commercial-moving-company",
     title: "5 Questions to Ask Before Hiring a Moving Company (Seattle Checklist)",
-    metaTitle: `Top Questions to Ask Moving Companies | On The Go Moving`,
+    metaTitle: `Top Questions to Ask Moving Companies`,
     metaDescription: `On The Go Moving encourages businesses to look for these qualities in a commercial moving company before hiring them to perform the move.`,
     date: "September 23, 2015",
     dateISO: "2015-09-23",
@@ -816,7 +816,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "moving-hacks": {
     slug: "moving-hacks",
     title: `25 Clever Moving Hacks and Advice to Make Your Move Less Stressful`,
-    metaTitle: `25 Clever Moving Hacks and Advice to Make Your Move... | On The Go Moving`,
+    metaTitle: `25 Clever Moving Hacks and Advice to Make Your Move...`,
     metaDescription: `With the moving hacks here go for a better and faster move. Read to find some great moving tips to avoid stress and save money. Contact us today!`,
     date: "August 8, 2023",
     dateISO: "2023-08-08",
@@ -853,7 +853,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "10-expert-tips-to-make-your-winter-move-an-easier-mission": {
     slug: "10-expert-tips-to-make-your-winter-move-an-easier-mission",
     title: `10 Expert Tips For Easier Moving In The Winter`,
-    metaTitle: `10 Expert Tips For Easier Moving In The Winter | On The Go Moving`,
+    metaTitle: `10 Expert Tips For Easier Moving In The Winter`,
     metaDescription: `Moving in the winter can actually be great timing, check out our tips to make your life easier. Make your plans and prepping ahead and let us help you handle th`,
     date: "December 20, 2018",
     dateISO: "2018-12-20",
@@ -882,7 +882,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
               "11-tips-for-an-easy-diy-move": {
     slug: "11-tips-for-an-easy-diy-move",
     title: `11 Tips For An Easy DIY Move You Should Know`,
-    metaTitle: `11 Tips For An Easy DIY Move You Should Know | On The Go Moving`,
+    metaTitle: `11 Tips For An Easy DIY Move You Should Know`,
     metaDescription: `There are a lot of ways to simplify your DIY move. Here are our top 11 tips for a smooth and easy DIY move. Check out and read now for more information.`,
     date: "December 1, 2021",
     dateISO: "2021-12-01",
@@ -912,7 +912,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "10-things-you-need-when-moving-into-your-new-home": {
     slug: "10-things-you-need-when-moving-into-your-new-home",
     title: `10 Things You Need When Moving Into Your New Home`,
-    metaTitle: `10 Things You Need When Moving Into Your New Home | On The Go Moving`,
+    metaTitle: `10 Things You Need When Moving Into Your New Home`,
     metaDescription: `Are you getting ready to move into a new house, but are not sure if you have everything you need? We've collected an important list of 10 things you may need to`,
     date: "March 19, 2018",
     dateISO: "2018-03-19",
@@ -945,7 +945,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "advantages-of-warehousing": {
     slug: "advantages-of-warehousing",
     title: `Benefits & Advantages of Warehousing`,
-    metaTitle: `Benefits & Advantages of Warehousing | On The Go Moving`,
+    metaTitle: `Benefits & Advantages of Warehousing`,
     metaDescription: `The advantages of warehousing benefit businesses from reduced delivery time to storing benefits. Learn how warehousing helps proprietors & consumers!`,
     date: "March 26, 2023",
     dateISO: "2023-03-26",
@@ -981,7 +981,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "15-signs-of-a-worst-moving-company": {
     slug: "15-signs-of-a-worst-moving-company",
     title: `15 Red Flags to Watch for When Hiring a Moving Company`,
-    metaTitle: `15 Red Flags to Watch for When Hiring a Moving Company | On The Go Moving`,
+    metaTitle: `15 Red Flags to Watch for When Hiring a Moving Company`,
     metaDescription: `Read On The Moving’s blog article about the list of signs of the worst moving companies you should remember before moving.`,
     date: "May 30, 2022",
     dateISO: "2022-05-30",
@@ -1011,7 +1011,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       "what-to-pack-first-moving": {
     slug: "what-to-pack-first-moving",
     title: `Tips For What To Pack First When You're Moving`,
-    metaTitle: `Tips For What To Pack First When You're Moving | On The Go Moving`,
+    metaTitle: `Tips For What To Pack First When You're Moving`,
     metaDescription: `Deciding to what to pack first can feel like a daunting task. To help your move go smoothly and stress-free, we've complied a step by step list.`,
     date: "January 11, 2020",
     dateISO: "2020-01-11",
@@ -1048,7 +1048,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "how-to-meet-your-neighbors": {
     slug: "how-to-meet-your-neighbors",
     title: `How To Meet Your New Neighbors | 7 Non-Awkward Tips For Introducing Yourself`,
-    metaTitle: `How To Meet Your New Neighbors | 7 Non-Awkward Tips... | On The Go Moving`,
+    metaTitle: `How To Meet Your New Neighbors | 7 Non-Awkward Tips...`,
     metaDescription: `A professional moving company will take care of all the packing, loading, and actual moving freeing you up to meet the neighbors!`,
     date: "September 27, 2019",
     dateISO: "2019-09-27",
@@ -1082,7 +1082,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "how-many-trips-does-a-local-move-really-take": {
     slug: "how-many-trips-does-a-local-move-really-take",
     title: `How Many Trips Does a Local Move Really Take?`,
-    metaTitle: `How Many Trips Does a Local Move Really Take? | On The Go Moving`,
+    metaTitle: `How Many Trips Does a Local Move Really Take?`,
     metaDescription: `Planning a move? Discover how many trips for a local move it takes and learn tips to minimize moving truck trips for local moves efficiently`,
     date: "December 21, 2024",
     dateISO: "2024-12-21",
@@ -1103,7 +1103,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "furniture-storage-units": {
     slug: "furniture-storage-units",
     title: `Finding The Furniture Storage Units For Long-Term and Short-Term Storage`,
-    metaTitle: `Finding The Furniture Storage Units For Long-Term and... | On The Go Moving`,
+    metaTitle: `Finding The Furniture Storage Units For Long-Term and...`,
     metaDescription: `When moving, furniture storage units are an excellent way to keep your furniture accessible, safe, and secure. Contact On The Go Moving, for professional assist`,
     date: "March 21, 2024",
     dateISO: "2024-03-21",
@@ -1140,7 +1140,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "top-7-tips-for-a-smooth-move-a-moving-companys-recommendations-for-your-moving-day": {
     slug: "top-7-tips-for-a-smooth-move-a-moving-companys-recommendations-for-your-moving-day",
     title: `Top 7 Moving Day Tips: How To Enjoy Your Moving Day`,
-    metaTitle: `Top 7 Moving Day Tips: How To Enjoy Your Moving... | On The Go Moving`,
+    metaTitle: `Top 7 Moving Day Tips: How To Enjoy Your Moving...`,
     metaDescription: `When it comes to your moving day, you need all the help you can get. In this article we offer great moving tips from the pros on packing, moving`,
     date: "March 16, 2015",
     dateISO: "2015-03-16",
@@ -1168,7 +1168,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
             "mercer-island-movers": {
     slug: "mercer-island-movers",
     title: "Living in Mercer Island, WA: What to Know Before You Move",
-    metaTitle: `Mercer Island Movers – On The Go Moving & Storage | On The Go Moving`,
+    metaTitle: `Mercer Island Movers – On The Go Moving & Storage`,
     metaDescription: `Licensed & insured Mercer Island movers. Full-service residential, commercial & storage solutions in Mercer Island, WA. Request your free quote today!”`,
     date: "2024-01-01",
     dateISO: "2024-01-01",
@@ -1192,7 +1192,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
                                     "best-things-to-do-in-everett-wa": {
     slug: "best-things-to-do-in-everett-wa",
     title: `10 Exciting Things To Do In Everett In 2021`,
-    metaTitle: `10 Exciting Things To Do In Everett In 2021 | On The Go Moving`,
+    metaTitle: `10 Exciting Things To Do In Everett In 2021`,
     metaDescription: `Discover the best things to do in Everett, WA, including waterfront attractions, parks, museums, dining, and family-friendly activities.`,
     date: "January 1, 2021",
     dateISO: "2021-01-01",
@@ -1222,7 +1222,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "living-in-west-seattle": {
     slug: "living-in-west-seattle",
     title: `7 Important Things To Know About Living In West Seattle, WA in 2022`,
-    metaTitle: `7 Important Things To Know About Living In West... | On The Go Moving`,
+    metaTitle: `7 Important Things To Know About Living In West...`,
     metaDescription: `Thinking about living in West Seattle, WA? Discover lifestyle, housing, parks, local culture, commute options, and what makes this neighborhood unique.`,
     date: "January 6, 2021",
     dateISO: "2021-01-06",
@@ -1252,7 +1252,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "reasons-in-moving-to-bellevue-wa": {
     slug: "reasons-in-moving-to-bellevue-wa",
     title: `Reasons in Moving to Bellevue, WA`,
-    metaTitle: `Reasons in Moving to Bellevue, WA | On The Go Moving`,
+    metaTitle: `Reasons in Moving to Bellevue, WA`,
     metaDescription: `Need to know what are the top reasons to move to Bellevue WA? Read this article from On The Go Moving and learn more.`,
     date: "July 15, 2022",
     dateISO: "2022-07-15",
@@ -1277,7 +1277,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "how-to-announce-your-office-relocation-5-great-tips": {
     slug: "how-to-announce-your-office-relocation-5-great-tips",
     title: `How to Announce Your Office Relocation 5 Great Tips`,
-    metaTitle: `How to Announce Your Office Relocation 5 Great... | On The Go Moving`,
+    metaTitle: `How to Announce Your Office Relocation 5 Great...`,
     metaDescription: `Here are the great top five tips on how you can announce your office relocation to your employees. Be positive and upbeat. Check out now for more info.`,
     date: "November 29, 2021",
     dateISO: "2021-11-29",
@@ -1301,7 +1301,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "best-time-to-rent-an-apartment-guide": {
     slug: "best-time-to-rent-an-apartment-guide",
     title: `Best Time to Rent an Apartment An Essential Guide`,
-    metaTitle: `Best Time to Rent an Apartment An Essential Guide | On The Go Moving`,
+    metaTitle: `Best Time to Rent an Apartment An Essential Guide`,
     metaDescription: `Need to know which is the best time to rent an apartment? Read this article from On The Go Moving and learn more.`,
     date: "September 1, 2022",
     dateISO: "2022-09-01",
@@ -1326,7 +1326,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
           "how-to-fold-for-packing": {
     slug: "how-to-fold-for-packing",
     title: `How to Fold Clothes for Packing: Best Way to Fold for Suitcases`,
-    metaTitle: `How to Fold Clothes for Packing: Best Way to Fold for... | On The Go Moving`,
+    metaTitle: `How to Fold Clothes for Packing: Best Way to Fold for...`,
     metaDescription: `Figuring how to fold clothes for packing is important to avoid wrinkles. Find out how to fold, roll & arrange clothes to save space when you travel!`,
     date: "March 26, 2023",
     dateISO: "2023-03-26",
@@ -1351,7 +1351,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
           "essential-tools-needed-for-a-smooth-move": {
     slug: "essential-tools-needed-for-a-smooth-move",
     title: `Essential Tools Needed for a Smooth Move`,
-    metaTitle: `Essential Tools Needed for a Smooth Move | On The Go Moving`,
+    metaTitle: `Essential Tools Needed for a Smooth Move`,
     metaDescription: `Discover essential packing supplies and tools like the heavy duty dolly needed for a smooth move. Ensure your belongings are secure and easy to transport.`,
     date: "August 22, 2024",
     dateISO: "2024-08-22",
@@ -1373,7 +1373,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
         "eco-friendly-moving-sustainable-practices-for-your-next-move": {
     slug: "eco-friendly-moving-sustainable-practices-for-your-next-move",
     title: `Eco-Friendly Moving: Sustainable Practices for Your Next Move`,
-    metaTitle: `Eco-Friendly Moving: Sustainable Practices for Your... | On The Go Moving`,
+    metaTitle: `Eco-Friendly Moving: Sustainable Practices for Your...`,
     metaDescription: `Make your move sustainable with eco-friendly moving tips. Use environmentally friendly moving boxes and hire green movers for a low-waste relocation.`,
     date: "December 21, 2024",
     dateISO: "2024-12-21",
@@ -1399,7 +1399,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "moving-elderly-parents-out-of-their-home": {
     slug: "moving-elderly-parents-out-of-their-home",
     title: `How To Relocate Your Elderly Parents Smoothly For Them`,
-    metaTitle: `How To Relocate Your Elderly Parents Smoothly For... | On The Go Moving`,
+    metaTitle: `How To Relocate Your Elderly Parents Smoothly For...`,
     metaDescription: `It can be hard when it comes time to move your elderly parents. To help the process go smoothly, we've compiled 7 tips for you and them.`,
     date: "May 15, 2019",
     dateISO: "2019-05-15",
@@ -1420,7 +1420,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "10-things-to-know-about-living-in-ballard": {
     slug: "10-things-to-know-about-living-in-ballard",
     title: `10 Things to Know About Living in Ballard`,
-    metaTitle: `10 Things to Know About Living in Ballard | On The Go Moving`,
+    metaTitle: `10 Things to Know About Living in Ballard`,
     metaDescription: `Life in Ballard has a ton to offer in terms of reasonable housing prices, a growing scene for food and nightlife, reputable school systems, safety, and a stable`,
     date: "December 26, 2017",
     dateISO: "2017-12-26",
@@ -1448,7 +1448,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "how-to-pack-shoes-for-moving-8-tips": {
     slug: "how-to-pack-shoes-for-moving-8-tips",
     title: `8 Tips On How To Pack Shoes For Moving`,
-    metaTitle: `8 Tips On How To Pack Shoes For Moving | On The Go Moving`,
+    metaTitle: `8 Tips On How To Pack Shoes For Moving`,
     metaDescription: `Remove the stress of packing your shoe collection, here are 8 simple tips to sort through and pack your shoe for moving. Don't forget to leave a pair out for mo`,
     date: "September 28, 2019",
     dateISO: "2019-09-28",
@@ -1476,7 +1476,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "renting-a-house-for-the-first-time": {
     slug: "renting-a-house-for-the-first-time",
     title: `5 Tips For Renting A House For The First Time`,
-    metaTitle: `5 Tips For Renting A House For The First Time | On The Go Moving`,
+    metaTitle: `5 Tips For Renting A House For The First Time`,
     metaDescription: `Before you sign the lease on your first rental, there are a couple of things you should know. Read more information in our blog post.`,
     date: "July 23, 2019",
     dateISO: "2019-07-23",
@@ -1511,7 +1511,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
             "living-on-mercer-island": {
     slug: "living-on-mercer-island",
     title: `Living On Mercer Island Washington`,
-    metaTitle: `Living On Mercer Island Washington | On The Go Moving`,
+    metaTitle: `Living On Mercer Island Washington`,
     metaDescription: `Want to know what living on Mercer Island is like? Lucky for you, residents that live in Mercer Island Washington have great things to say about their community`,
     date: "January 22, 2021",
     dateISO: "2021-01-22",
@@ -1541,7 +1541,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-west-bellevue-washington": {
     slug: "living-in-west-bellevue-washington",
     title: `Living In West Bellevue Washington`,
-    metaTitle: `Living In West Bellevue Washington | On The Go Moving`,
+    metaTitle: `Living In West Bellevue Washington`,
     metaDescription: `Learn more about the West Bellevue, Washington cost of living, the population of the city, as well as the best things to do in West Bellevue WA. Visit On the go`,
     date: "April 16, 2021",
     dateISO: "2021-04-16",
@@ -1569,7 +1569,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-everett-wa-you-need-to-know": {
     slug: "living-in-everett-wa-you-need-to-know",
     title: `Living in Everett WA: Everything You Need to Know`,
-    metaTitle: `Living in Everett WA: Everything You Need to Know | On The Go Moving`,
+    metaTitle: `Living in Everett WA: Everything You Need to Know`,
     metaDescription: `Are there any advantages to living in Everett, WA? Read this article on On The Go Moving & Storage to find out all the things to know about living here.`,
     date: "September 1, 2022",
     dateISO: "2022-09-01",
@@ -1605,7 +1605,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-bothell-wa": {
     slug: "living-in-bothell-wa",
     title: `Living in Bothell WA`,
-    metaTitle: `Living in Bothell WA | On The Go Moving`,
+    metaTitle: `Living in Bothell WA`,
     metaDescription: `Learn more about the Bothell Washington cost of living, the population of the city, as well as the best things to do in Bothell WA. Visit On the go moving to fi`,
     date: "April 13, 2021",
     dateISO: "2021-04-13",
@@ -1630,7 +1630,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "green-moving-eco-friendly-10-tips": {
     slug: "green-moving-eco-friendly-10-tips",
     title: `Green Moving: 10 Tips How To Make Your Next Move Eco-Friendly for Earth Day 2021`,
-    metaTitle: `Green Moving: 10 Tips How To Make Your Next Move... | On The Go Moving`,
+    metaTitle: `Green Moving: 10 Tips How To Make Your Next Move...`,
     metaDescription: `Learn 10 actionable eco-friendly moving tips to reduce waste and carbon footprint during your next relocation.`,
     date: "January 7, 2021",
     dateISO: "2021-01-07",
@@ -1660,7 +1660,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-woodinville-wa": {
     slug: "living-in-woodinville-wa",
     title: `10 Things to Know About Living in Woodinville`,
-    metaTitle: `10 Things to Know About Living in Woodinville | On The Go Moving`,
+    metaTitle: `10 Things to Know About Living in Woodinville`,
     metaDescription: `Woodinville is a delightful community that lies to the Northeast of Seattle. Let’s take a look at 10 things to know about living in Woodinville.`,
     date: "March 3, 2021",
     dateISO: "2021-03-03",
@@ -1690,7 +1690,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "things-to-do-in-lynnwood-wa": {
     slug: "things-to-do-in-lynnwood-wa",
     title: `Things to Do in Lynnwood WA`,
-    metaTitle: `Things to Do in Lynnwood WA | On The Go Moving`,
+    metaTitle: `Things to Do in Lynnwood WA`,
     metaDescription: `No matter whether you're planning a visit or to stay, you can count on a variety of fun things to do in Lynnwood, Washington. Read more!`,
     date: "September 2, 2021",
     dateISO: "2021-09-02",
@@ -1720,7 +1720,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-renton-wa": {
     slug: "living-in-renton-wa",
     title: `15 Things to Know About Living in Renton`,
-    metaTitle: `15 Things to Know About Living in Renton | On The Go Moving`,
+    metaTitle: `15 Things to Know About Living in Renton`,
     metaDescription: `Thinking about living in Renton, Washington? Here are 15 things you will need to know before you make the big move to the southeast shore of Lake Washington`,
     date: "August 4, 2020",
     dateISO: "2020-08-04",
@@ -1757,7 +1757,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       "things-to-do-in-edmonds-wa": {
     slug: "things-to-do-in-edmonds-wa",
     title: `Things to Do in Edmonds WA`,
-    metaTitle: `Things to Do in Edmonds WA | On The Go Moving`,
+    metaTitle: `Things to Do in Edmonds WA`,
     metaDescription: `From outdoor activities to community-wide events, you can find many fun things to do in Edmonds, WA. They have the best restaurants too! Read more!`,
     date: "September 2, 2021",
     dateISO: "2021-09-02",
@@ -1787,7 +1787,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "things-to-do-on-mercer-island": {
     slug: "things-to-do-on-mercer-island",
     title: `Things to do on Mercer Island`,
-    metaTitle: `Things to do on Mercer Island | On The Go Moving`,
+    metaTitle: `Things to do on Mercer Island`,
     metaDescription: `Don’t forget to share all of your local tips in the comments below and tell us what your favorite thing to do on Mercer Island is!Need help planning a move to M`,
     date: "June 2, 2021",
     dateISO: "2021-06-02",
@@ -1811,7 +1811,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "things-to-do-in-sammamish": {
     slug: "things-to-do-in-sammamish",
     title: `Things To Do In Sammamish`,
-    metaTitle: `Things To Do In Sammamish | On The Go Moving`,
+    metaTitle: `Things To Do In Sammamish`,
     metaDescription: `Sammamish is full of all kind of events and activities to explore. Learn more about the area and the things to do in Sammamish!`,
     date: "February 7, 2021",
     dateISO: "2021-02-07",
@@ -1836,7 +1836,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "things-to-do-in-kirkland-wa": {
     slug: "things-to-do-in-kirkland-wa",
     title: `Things to Do in Kirkland, WA`,
-    metaTitle: `Things to Do in Kirkland, WA | On The Go Moving`,
+    metaTitle: `Things to Do in Kirkland, WA`,
     metaDescription: `Looking for things to do in Kirkland, WA? Explore waterfront parks, dining, shopping, outdoor activities, and local attractions for all ages.`,
     date: "October 1, 2020",
     dateISO: "2020-10-01",
@@ -1866,7 +1866,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "things-to-do-in-woodinville": {
     slug: "things-to-do-in-woodinville",
     title: `Things to Do in Woodinville`,
-    metaTitle: `Things to Do in Woodinville | On The Go Moving`,
+    metaTitle: `Things to Do in Woodinville`,
     metaDescription: `If you are planning to move or visit to Woodinville WA soon, then find out the things to do in while there? When moving across the country to Woodinville or fro`,
     date: "March 3, 2021",
     dateISO: "2021-03-03",
@@ -1896,7 +1896,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "fun-things-to-do-in-bothell-wa": {
     slug: "fun-things-to-do-in-bothell-wa",
     title: `10 Fun Things To Do In Bothell WA in 2021 | Plus Free Things To Do With Kids`,
-    metaTitle: `10 Fun Things To Do In Bothell WA in 2021 | Plus Free... | On The Go Moving`,
+    metaTitle: `10 Fun Things To Do In Bothell WA in 2021 | Plus Free...`,
     metaDescription: `Explore the best things to do in Bothell, WA — from outdoor parks and family activities to local dining and entertainment. Discover top attractions and insider `,
     date: "January 6, 2021",
     dateISO: "2021-01-06",
@@ -1926,7 +1926,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "things-to-do-in-bellevue": {
     slug: "things-to-do-in-bellevue",
     title: `15 Best Things To Do In Bellevue For Fun`,
-    metaTitle: `15 Best Things To Do In Bellevue For Fun | On The Go Moving`,
+    metaTitle: `15 Best Things To Do In Bellevue For Fun`,
     metaDescription: `Bellevue is known for its beautiful sites and downtown skyline of gleaming high-rises. Find things to do in Bellevue WA at night or fun activities with kids. Do`,
     date: "July 20, 2020",
     dateISO: "2020-07-20",
@@ -1963,7 +1963,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "how-to-prepare-for-movers": {
     slug: "how-to-prepare-for-movers",
     title: `How to Prepare for Movers to Arrive?`,
-    metaTitle: `How to Prepare for Movers to Arrive? | On The Go Moving`,
+    metaTitle: `How to Prepare for Movers to Arrive?`,
     metaDescription: `After hiring a moving company for your upcoming move, you must know how to prepare for movers. To prepare for your movers before they arrive on a moving day.`,
     date: "August 23, 2023",
     dateISO: "2023-08-23",
@@ -2000,7 +2000,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "how-to-protect-fragile-items-during-a-move": {
     slug: "how-to-protect-fragile-items-during-a-move",
     title: `How to Protect Fragile Items During a Move`,
-    metaTitle: `How to Protect Fragile Items During a Move | On The Go Moving`,
+    metaTitle: `How to Protect Fragile Items During a Move`,
     metaDescription: `Learn how to pack fragile items for moving safely. Get expert advice on protecting glass during a move and preventing damage with smart packing techniques.`,
     date: "December 20, 2024",
     dateISO: "2024-12-20",
@@ -2021,7 +2021,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "things-to-do-in-issaquah": {
     slug: "things-to-do-in-issaquah",
     title: `15 Top Things To Do In Issaquah`,
-    metaTitle: `15 Top Things To Do In Issaquah | On The Go Moving`,
+    metaTitle: `15 Top Things To Do In Issaquah`,
     metaDescription: `The Pacific Northwest is a beautiful and interesting place to live, and Issaquah is no exception. Here are 15 places to check out after your Issaquah move.`,
     date: "June 8, 2020",
     dateISO: "2020-06-08",
@@ -2051,7 +2051,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-kirkland-wa": {
     slug: "living-in-kirkland-wa",
     title: `10 Things To Know About Living In Kirkland, WA`,
-    metaTitle: `10 Things To Know About Living In Kirkland, WA | On The Go Moving`,
+    metaTitle: `10 Things To Know About Living In Kirkland, WA`,
     metaDescription: `Considering a move to Kirkland, WA? Here are 10 important things you should know about living in Kirkland before taking the big step.`,
     date: "January 13, 2020",
     dateISO: "2020-01-13",
@@ -2081,7 +2081,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "how-to-move-large-furniture-safely-and-efficiently": {
     slug: "how-to-move-large-furniture-safely-and-efficiently",
     title: `How to Move Large Furniture Safely and Efficiently`,
-    metaTitle: `How to Move Large Furniture Safely and... | On The Go Moving`,
+    metaTitle: `How to Move Large Furniture Safely and...`,
     metaDescription: `Learn furniture moving techniques to handle bulky items safely. Discover safe ways to move heavy furniture and tips for moving it upstairs efficiently`,
     date: "December 20, 2024",
     dateISO: "2024-12-20",
@@ -2103,7 +2103,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
         "best-restaurants-in-seattle": {
     slug: "best-restaurants-in-seattle",
     title: `Best Seattle Seafood & International Restaurants to Visit in 2022`,
-    metaTitle: `Best Seattle Seafood & International Restaurants to... | On The Go Moving`,
+    metaTitle: `Best Seattle Seafood & International Restaurants to...`,
     metaDescription: `On The Go Moving shares the names of several wonderful Seattle restaurants so that newcomers can enjoy the beauty and diversity of the city.`,
     date: "November 18, 2015",
     dateISO: "2015-11-18",
@@ -2132,7 +2132,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "attractions-in-seattle": {
     slug: "attractions-in-seattle",
     title: `Seattle Attractions - Places To Visit in the Emerald City`,
-    metaTitle: `Seattle Attractions - Places To Visit in the Emerald... | On The Go Moving`,
+    metaTitle: `Seattle Attractions - Places To Visit in the Emerald...`,
     metaDescription: `Find Seattle attractions to know the best places and the best things to do in Seattle. Know more about the top-rated & must-see attractions. Visit us today!`,
     date: "July 4, 2023",
     dateISO: "2023-07-04",
@@ -2168,7 +2168,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "shopping-in-seattle": {
     slug: "shopping-in-seattle",
     title: `Seattle Shopping: The Best Places for New Residents to Visit`,
-    metaTitle: `Seattle Shopping: The Best Places for New Residents to... | On The Go Moving`,
+    metaTitle: `Seattle Shopping: The Best Places for New Residents to...`,
     metaDescription: `Find the best options while shopping in Seattle. We can show you the best options in the downtown shopping district!`,
     date: "March 26, 2023",
     dateISO: "2023-03-26",
@@ -2203,7 +2203,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "things-to-do-in-seattle-in-summer": {
     slug: "things-to-do-in-seattle-in-summer",
     title: `15 Fun Things To Do In Seattle In Summer`,
-    metaTitle: `15 Fun Things To Do In Seattle In Summer | On The Go Moving`,
+    metaTitle: `15 Fun Things To Do In Seattle In Summer`,
     metaDescription: `Summers in Seattle, the seaport city of the West Coast, are unmatched. Here are 15 fun things to do in the city this summer to truly experience Seattle.`,
     date: "July 7, 2020",
     dateISO: "2020-07-07",
@@ -2233,7 +2233,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "best-places-to-live-in-seattle-neighborhoods-near-the-area": {
     slug: "best-places-to-live-in-seattle-neighborhoods-near-the-area",
     title: `Best Places To Live In Seattle: Neighborhoods Near The Area`,
-    metaTitle: `Best Places To Live In Seattle: Neighborhoods Near The... | On The Go Moving`,
+    metaTitle: `Best Places To Live In Seattle: Neighborhoods Near The...`,
     metaDescription: `Learn about the best places to live in Seattle, we will guide you through the best neighborhoods in the area. Don’t miss our gems for buyers!`,
     date: "May 16, 2023",
     dateISO: "2023-05-16",
@@ -2259,7 +2259,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "living-in-fremont-seattle": {
     slug: "living-in-fremont-seattle",
     title: `Living in Fremont Seattle`,
-    metaTitle: `Living in Fremont Seattle | On The Go Moving`,
+    metaTitle: `Living in Fremont Seattle`,
     metaDescription: `Fremont is situated along the Fremont Cut of the Lake Washington Ship Canal to the north of Queen Anne, Seattle. Fremont has something for everyone, no matter i`,
     date: "August 31, 2020",
     dateISO: "2020-08-31",
@@ -2289,7 +2289,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "bellevue-or-seattle-where-to-live": {
     slug: "bellevue-or-seattle-where-to-live",
     title: `Bellevue or Seattle Where To Live`,
-    metaTitle: `Bellevue or Seattle Where To Live | On The Go Moving`,
+    metaTitle: `Bellevue or Seattle Where To Live`,
     metaDescription: `Learn more about the pros and cons of Bellevue vs Seattle for living, or get in touch with On The Go Moving to speak with a reliable moving service about your r`,
     date: "July 5, 2021",
     dateISO: "2021-07-05",
@@ -2314,7 +2314,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-beacon-hill-seattle": {
     slug: "living-in-beacon-hill-seattle",
     title: `Living in Beacon Hill, Seattle: A Neighborhood Overview`,
-    metaTitle: `Living in Beacon Hill, Seattle: A Neighborhood... | On The Go Moving`,
+    metaTitle: `Living in Beacon Hill, Seattle: A Neighborhood...`,
     metaDescription: `Considering living in Beacon Hill, Seattle? Learn about housing, lifestyle, parks, transit, and what makes this neighborhood a great place to live.`,
     date: "September 14, 2020",
     dateISO: "2020-09-14",
@@ -2344,7 +2344,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "seattle-packing-tips-plastic-bins-or-cardboard-boxes": {
     slug: "seattle-packing-tips-plastic-bins-or-cardboard-boxes",
     title: `Seattle Packing Tips: Plastic Bins or Cardboard Boxes?`,
-    metaTitle: `Seattle Packing Tips: Plastic Bins or Cardboard... | On The Go Moving`,
+    metaTitle: `Seattle Packing Tips: Plastic Bins or Cardboard...`,
     metaDescription: `Are you packing for a move? Here are the pros and cons between cardboard boxes and plastic bins. Read on for helpful Seattle packing tips:`,
     date: "September 2, 2016",
     dateISO: "2016-09-02",
@@ -2365,7 +2365,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-capitol-hill-seattle": {
     slug: "living-in-capitol-hill-seattle",
     title: `12 Interesting Things You Should Know About Living In Capitol Hill, Seattle`,
-    metaTitle: `12 Interesting Things You Should Know About Living In... | On The Go Moving`,
+    metaTitle: `12 Interesting Things You Should Know About Living In...`,
     metaDescription: `Are you considering a move to the Capitol Hill neighborhood of Seattle, Washington? If so, then here are 12 things you should know about your new home town.`,
     date: "September 27, 2019",
     dateISO: "2019-09-27",
@@ -2395,7 +2395,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       "moving-to-seattle-after-graduation": {
     slug: "moving-to-seattle-after-graduation",
     title: `What Is Living in Seattle As Young Adult Like?`,
-    metaTitle: `What Is Living in Seattle As Young Adult Like? | On The Go Moving`,
+    metaTitle: `What Is Living in Seattle As Young Adult Like?`,
     metaDescription: `Seattle has a triving young adult culture and that's a main reason so many millennials are deciding to live and work in Seattle. Is it right for you?`,
     date: "July 8, 2016",
     dateISO: "2016-07-08",
@@ -2423,7 +2423,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-belltown-seattle-wa": {
     slug: "living-in-belltown-seattle-wa",
     title: `Living in Belltown, Seattle, WA: A Neighborhood Overview`,
-    metaTitle: `Living in Belltown, Seattle, WA: A Neighborhood... | On The Go Moving`,
+    metaTitle: `Living in Belltown, Seattle, WA: A Neighborhood...`,
     metaDescription: `Thinking about living in Belltown, Seattle, WA? Learn about housing, lifestyle, walkability, nightlife, and what daily life is like in Belltown.`,
     date: "October 16, 2020",
     dateISO: "2020-10-16",
@@ -2453,7 +2453,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-queen-anne-seattle": {
     slug: "living-in-queen-anne-seattle",
     title: `Living in Queen Anne Seattle`,
-    metaTitle: `Living in Queen Anne Seattle | On The Go Moving`,
+    metaTitle: `Living in Queen Anne Seattle`,
     metaDescription: `Thinking about living in Queen Anne, Seattle? Learn about housing, views, walkability, parks, and what daily life is like in this iconic neighborhood.`,
     date: "October 23, 2020",
     dateISO: "2020-10-23",
@@ -2483,7 +2483,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "parks-near-downtown-seattle": {
     slug: "parks-near-downtown-seattle",
     title: `Parks Near Downtown Seattle, WA`,
-    metaTitle: `Parks Near Downtown Seattle, WA | On The Go Moving`,
+    metaTitle: `Parks Near Downtown Seattle, WA`,
     metaDescription: `Welcome to the official On The Go Moving site. Go through the blog post to see the best Parks Near Downtown Seattle, WA that makes Seattle such an exciting urba`,
     date: "June 3, 2022",
     dateISO: "2022-06-03",
@@ -2506,7 +2506,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "moving-to-seattle": {
     slug: "moving-to-seattle",
     title: "30 Things to Know Before Moving to Seattle | Eastside Relocation Guide",
-    metaTitle: `30 Things You Should Know About Living In Seattle... | On The Go Moving`,
+    metaTitle: `30 Things You Should Know About Living In Seattle...`,
     metaDescription: `Planning on moving to Seattle? Learn about the cost of living, best neighborhoods, weather, and expert tips to make your Seattle move stress-free.`,
     date: "March 15, 2021",
     dateISO: "2021-03-15",
@@ -2543,7 +2543,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "restaurant-in-redmond": {
     slug: "restaurant-in-redmond",
     title: `Best Restaurants in Redmond WA`,
-    metaTitle: `Best Restaurants in Redmond WA | On The Go Moving`,
+    metaTitle: `Best Restaurants in Redmond WA`,
     metaDescription: `Looking for the best restaurant around Redmond that offers healthy and delicious foods? This article is what you're looking for! Read more and call us today!`,
     date: "January 7, 2022",
     dateISO: "2022-01-07",
@@ -2569,7 +2569,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       "best-things-to-do-in-redmond": {
     slug: "best-things-to-do-in-redmond",
     title: `22 Top Things To Do in Redmond`,
-    metaTitle: `22 Top Things To Do in Redmond | On The Go Moving`,
+    metaTitle: `22 Top Things To Do in Redmond`,
     metaDescription: `Explore the best things to do in Redmond, WA — parks, trails, tech attractions, family fun, shopping, and local experiences for residents and visitors.`,
     date: "June 4, 2021",
     dateISO: "2021-06-04",
@@ -2599,7 +2599,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "10-things-you-should-know-about-living-in-redmond-washington": {
     slug: "10-things-you-should-know-about-living-in-redmond-washington",
     title: `10 Things You Should Know About Living in Redmond, Washington`,
-    metaTitle: `10 Things You Should Know About Living in Redmond,... | On The Go Moving`,
+    metaTitle: `10 Things You Should Know About Living in Redmond,...`,
     metaDescription: `If you're thinking about moving to Redmond, On The Go Moving has a list of 10 things you should know. `,
     date: "March 17, 2016",
     dateISO: "2016-03-17",
@@ -2629,7 +2629,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "things-to-do-in-shoreline-wa": {
     slug: "things-to-do-in-shoreline-wa",
     title: `Things to Do in Shoreline, WA: Parks, Attractions & Activities`,
-    metaTitle: `Things to Do in Shoreline, WA: Parks, Attractions &... | On The Go Moving`,
+    metaTitle: `Things to Do in Shoreline, WA: Parks, Attractions &...`,
     metaDescription: `Discover the best things to do in Shoreline, WA, including parks, outdoor activities, dining, and local attractions for all ages.`,
     date: "November 21, 2020",
     dateISO: "2020-11-21",
@@ -2659,7 +2659,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "parks-in-bellevue": {
     slug: "parks-in-bellevue",
     title: `Parks In Bellevue WA | Water Recreation, Park Near Bellevue Square`,
-    metaTitle: `Parks In Bellevue WA | Water Recreation, Park Near... | On The Go Moving`,
+    metaTitle: `Parks In Bellevue WA | Water Recreation, Park Near...`,
     metaDescription: `Bellevue is known for having some beautiful parks. Form lushish green to refreshing water, check out the top 7 parks to visit in the Bellevue area!`,
     date: "July 11, 2020",
     dateISO: "2020-07-11",
@@ -2687,7 +2687,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-downtown-seattle": {
     slug: "living-in-downtown-seattle",
     title: `What Is It Like Living in Downtown Seattle? | Cost of Living, Parking, Traffic,`,
-    metaTitle: `What Is It Like Living in Downtown Seattle? | Cost of... | On The Go Moving`,
+    metaTitle: `What Is It Like Living in Downtown Seattle? | Cost of...`,
     metaDescription: `Downtown Seattle can be an exciting place to live! Before you take the leap to live in the center of the Emerald City, here are four things you should know.`,
     date: "May 12, 2020",
     dateISO: "2020-05-12",
@@ -2714,7 +2714,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "parks-in-lynnwood": {
     slug: "parks-in-lynnwood",
     title: `Best Parks in Lynnwood`,
-    metaTitle: `Best Parks in Lynnwood | On The Go Moving`,
+    metaTitle: `Best Parks in Lynnwood`,
     metaDescription: `Discover the best trails, hiking and other outdoor activities in the best parks in lynnwood. On the Go moving has different locations to explore.`,
     date: "November 23, 2021",
     dateISO: "2021-11-23",
@@ -2744,7 +2744,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "seattle-restaurant-fremont": {
     slug: "seattle-restaurant-fremont",
     title: `Best Restaurants in Fremont Seattle, WA`,
-    metaTitle: `Best Restaurants in Fremont Seattle, WA | On The Go Moving`,
+    metaTitle: `Best Restaurants in Fremont Seattle, WA`,
     metaDescription: `Are you looking for the best restaurants in Fremont, Seattle that will satisfy your cravings? This article is for you. Read more to find out!`,
     date: "January 11, 2022",
     dateISO: "2022-01-11",
@@ -2771,7 +2771,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "lake-sammamish-parks": {
     slug: "lake-sammamish-parks",
     title: `Lake Sammamish Parks`,
-    metaTitle: `Lake Sammamish Parks | On The Go Moving`,
+    metaTitle: `Lake Sammamish Parks`,
     metaDescription: `Are you looking for the ideal park in Lake Sammamish? Visit On The Go Moving, to learn about the best parks & things to do in and around Sammamish, Washington.`,
     date: "August 3, 2021",
     dateISO: "2021-08-03",
@@ -2798,7 +2798,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "kirkland-waterfront": {
     slug: "kirkland-waterfront",
     title: `Kirkland Waterfront`,
-    metaTitle: `Kirkland Waterfront | On The Go Moving`,
+    metaTitle: `Kirkland Waterfront`,
     metaDescription: `Learn more about the Kirkland's iconic waterfront, find the best parks, trails, and waterfront restaurants in the area. Visit On The Go Moving for more details.`,
     date: "August 9, 2021",
     dateISO: "2021-08-09",
@@ -2824,7 +2824,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "parks-in-redmond-wa": {
     slug: "parks-in-redmond-wa",
     title: `Redmond Parks`,
-    metaTitle: `Redmond Parks | On The Go Moving`,
+    metaTitle: `Redmond Parks`,
     metaDescription: `Discover the best parks in Redmond WA, from trails to family-friendly spaces, plus local tips for living and moving in Redmond.`,
     date: "June 7, 2021",
     dateISO: "2021-06-07",
@@ -2854,7 +2854,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "what-is-seattle-known-for-food-sights": {
     slug: "what-is-seattle-known-for-food-sights",
     title: `What Seattle Is Known For — Best Food & Iconic Sights`,
-    metaTitle: `What Seattle Is Known For — Best Food & Iconic... | On The Go Moving`,
+    metaTitle: `What Seattle Is Known For — Best Food & Iconic...`,
     metaDescription: `Explore what Seattle is known for — iconic food and best sights from Pike Place Market to Space Needle, plus local travel tips and moving insights.`,
     date: "April 29, 2021",
     dateISO: "2021-04-29",
@@ -2891,7 +2891,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "mercer-island-restaurants": {
     slug: "mercer-island-restaurants",
     title: `The Best Restaurants, Parks, & Recreation Centers in Mercer Island`,
-    metaTitle: `The Best Restaurants, Parks, & Recreation Centers in... | On The Go Moving`,
+    metaTitle: `The Best Restaurants, Parks, & Recreation Centers in...`,
     metaDescription: `Looking for best restaurants, parks and recreation center in Mercer Island?On the Go moving has different locations to explore. Learn more.`,
     date: "November 23, 2021",
     dateISO: "2021-11-23",
@@ -2921,7 +2921,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "how-to-move-a-piano": {
     slug: "how-to-move-a-piano",
     title: `Do It Yourself: Best Way To Move A Piano`,
-    metaTitle: `Do It Yourself: Best Way To Move A Piano | On The Go Moving`,
+    metaTitle: `Do It Yourself: Best Way To Move A Piano`,
     metaDescription: `Moving your piano can be daunting task. Here are our expert tips to make sure your piano and your back both remain intact throughout the process.`,
     date: "November 20, 2019",
     dateISO: "2019-11-20",
@@ -2956,7 +2956,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       "when-is-the-best-time-to-move-into-an-apartment": {
     slug: "when-is-the-best-time-to-move-into-an-apartment",
     title: `When Is the Best Time to Move Into an Apartment?`,
-    metaTitle: `When Is the Best Time to Move Into an Apartment? | On The Go Moving`,
+    metaTitle: `When Is the Best Time to Move Into an Apartment?`,
     metaDescription: `Need to know which is the best time to move into an apartment? Read this article from On The Go Moving and learn more.`,
     date: "November 2, 2022",
     dateISO: "2022-11-02",
@@ -2993,7 +2993,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       "office-moving-tips": {
     slug: "office-moving-tips",
     title: `How To Keep Your Office Moving Organized And Easy`,
-    metaTitle: `How To Keep Your Office Moving Organized And Easy | On The Go Moving`,
+    metaTitle: `How To Keep Your Office Moving Organized And Easy`,
     metaDescription: `Moving an entire office can at first seem overwhelming. To combat potential chaos, we've created a month by month office moving plan to keep you organized.`,
     date: "August 1, 2017",
     dateISO: "2017-08-01",
@@ -3023,7 +3023,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "best-office-organization-systems": {
     slug: "best-office-organization-systems",
     title: `Office Organization Systems | How To Organize An Office Space | Tips For Arranging Your Work`,
-    metaTitle: `Office Organization Systems | How To Organize An... | On The Go Moving`,
+    metaTitle: `Office Organization Systems | How To Organize An...`,
     metaDescription: `Struggling to keep your office organized? Follow our eight easy steps to arrange your space into a system that works for you and your team.`,
     date: "March 23, 2020",
     dateISO: "2020-03-23",
@@ -3051,7 +3051,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "things-to-do-in-downtown-seattle-washington": {
     slug: "things-to-do-in-downtown-seattle-washington",
     title: `Things to Do in Downtown Seattle WA`,
-    metaTitle: `Things to Do in Downtown Seattle WA | On The Go Moving`,
+    metaTitle: `Things to Do in Downtown Seattle WA`,
     metaDescription: `Wondering what to do in Seattle, WA? Check out these exciting and fun things to do in Downtown Seattle, WA for an epic travel adventure.`,
     date: "February 22, 2022",
     dateISO: "2022-02-22",
@@ -3080,7 +3080,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     "residential-moving-services-guide": {
     slug: "residential-moving-services-guide",
     title: "What's Included in a Residential Move? A Plain-English Guide for Seattle Homeowners",
-    metaTitle: `A Complete Guide For Residential Moving Services | On The Go Moving`,
+    metaTitle: `A Complete Guide For Residential Moving Services`,
     metaDescription: `If you are looking for guidance on smoothing out your moving process. Well, you have come to the right place. This guide will help you navigate the moving proce`,
     date: "November 28, 2023",
     dateISO: "2023-11-28",
@@ -3117,7 +3117,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
       "how-to-pack-clothes-for-moving": {
     slug: "how-to-pack-clothes-for-moving",
     title: `How to Pack Clothes For Moving | Best Way To Move Clothes`,
-    metaTitle: `How to Pack Clothes For Moving | Best Way To Move... | On The Go Moving`,
+    metaTitle: `How to Pack Clothes For Moving | Best Way To Move...`,
     metaDescription: `Packing clothes for moving can seem like a daunting task, make it easy for yourself by exploring our best tips for how to pack your clothes efficiently and simp`,
     date: "November 29, 2019",
     dateISO: "2019-11-29",
@@ -3154,7 +3154,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "living-in-bellevue-wa": {
     slug: "living-in-bellevue-wa",
     title: `20 Things You Should Know Before Moving To Bellevue, WA`,
-    metaTitle: `20 Things You Should Know Before Moving To Bellevue,... | On The Go Moving`,
+    metaTitle: `20 Things You Should Know Before Moving To Bellevue,...`,
     metaDescription: `When most people think of Bellevue, they tend to think of it as a suburb of Seattle. If you’ve been considering moving to Bellevue, you’re probably eager to lea`,
     date: "May 30, 2021",
     dateISO: "2021-05-30",
@@ -3184,7 +3184,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
   "moving-to-a-new-city-alone": {
     slug: "moving-to-a-new-city-alone",
     title: `Moving To A New City Alone | What To Do & How To Face The Challenges Of Moving Out Of State`,
-    metaTitle: `Moving To A New City Alone | What To Do & How To Face... | On The Go Moving`,
+    metaTitle: `Moving To A New City Alone | What To Do & How To Face...`,
     metaDescription: `Moving to a new city alone can feel frightening and lonely. Sometimes you feel you just don't know what to do next or how to fit in. To help make this next exci`,
     date: "January 13, 2020",
     dateISO: "2020-01-13",
@@ -3209,7 +3209,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
         "things-to-do-in-seattle-in-winter": {
     slug: "things-to-do-in-seattle-in-winter",
     title: `Things To Do in Seattle in Winter`,
-    metaTitle: `Things To Do in Seattle in Winter | On The Go Moving`,
+    metaTitle: `Things To Do in Seattle in Winter`,
     metaDescription: `If you're looking for things to do in Seattle during winter, then time to discover all Seattle has to offer. Seattle has no shortage of fun things to do during `,
     date: "January 5, 2021",
     dateISO: "2021-01-05",
@@ -3239,7 +3239,7 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
         "apartment-moving-tips": {
     slug: "apartment-moving-tips",
     title: "Apartment Moving Tips: What Renters Need to Know Before Move Day",
-    metaTitle: `Apartment Moving Tips | How To Move Into An... | On The Go Moving`,
+    metaTitle: `Apartment Moving Tips | How To Move Into An...`,
     metaDescription: `Moving into a new apartment can be tough, so our team offers some easy tips to make the moving process simple and efficient.`,
     date: "May 21, 2020",
     dateISO: "2020-05-21",
