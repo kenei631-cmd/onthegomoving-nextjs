@@ -41,27 +41,49 @@ export async function generateMetadata({
   if (!locationData) return {};
 
   const city = locationData.city;
-  const serviceLabels: Record<string, string> = {
-    residential: "Residential Moving",
-    apartment: "Apartment Moving",
-    packing: "Packing Services",
-    storage: "Storage Services",
-    office: "Office Moving",
-    commercial: "Commercial Moving",
-    senior: "Senior Moving",
-    furniture: "Furniture Moving",
-    piano: "Piano Moving",
-    condo: "Condo Moving",
-    appliance: "Appliance Moving",
-    unpacking: "Unpacking Services",
-    warehousing: "Warehousing Services",
+
+  // City-first title format — differentiates from hub service pages to prevent
+  // keyword cannibalization. Hub pages own the generic term (e.g. "Apartment Moving");
+  // city sub-pages own the geo-modified term (e.g. "Seattle Apartment Movers").
+  const serviceTitles: Record<string, string> = {
+    residential: `${city} Residential Movers`,
+    apartment:   `${city} Apartment Movers`,
+    packing:     `${city} Packing Services`,
+    storage:     `${city} Storage Services`,
+    office:      `${city} Office Movers`,
+    commercial:  `${city} Commercial Movers`,
+    senior:      `${city} Senior Movers`,
+    furniture:   `${city} Furniture Movers`,
+    piano:       `${city} Piano Movers`,
+    condo:       `${city} Condo Movers`,
+    appliance:   `${city} Appliance Movers`,
+    unpacking:   `${city} Unpacking Services`,
+    warehousing: `${city} Warehousing Services`,
   };
 
-  const serviceLabel = serviceLabels[serviceKey] || serviceKey;
+  // Lowercase labels used in meta descriptions
+  const serviceDescLabels: Record<string, string> = {
+    residential: "residential moving",
+    apartment:   "apartment moving",
+    packing:     "packing services",
+    storage:     "storage services",
+    office:      "office moving",
+    commercial:  "commercial moving",
+    senior:      "senior moving",
+    furniture:   "furniture moving",
+    piano:       "piano moving",
+    condo:       "condo moving",
+    appliance:   "appliance moving",
+    unpacking:   "unpacking services",
+    warehousing: "warehousing services",
+  };
+
+  const pageTitle = serviceTitles[serviceKey] || `${city} ${serviceKey}`;
+  const descLabel = serviceDescLabels[serviceKey] || serviceKey;
   const canonical = `https://onthegomoving.com/${cityMovers}/${serviceKey}/`;
 
-  const title = `${serviceLabel} in ${city} | On The Go Moving & Storage`;
-  const description = `Professional ${serviceLabel.toLowerCase()} in ${city}, WA. Licensed & insured movers serving ${city} and the greater Seattle area. Free quotes — (425) 761-8500.`;
+  const title = `${pageTitle} | On The Go Moving & Storage`;
+  const description = `Local ${descLabel} in ${city}, WA. Licensed & insured movers serving ${city} and the greater Seattle area. Free quotes — (425) 761-8500.`;
 
   return {
     title,
