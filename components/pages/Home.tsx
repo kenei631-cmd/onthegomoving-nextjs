@@ -75,6 +75,7 @@ const TOP_LOCATIONS = ALL_LOCATIONS.slice(0, 12);
 
 export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
+  const [videoReady, setVideoReady] = useState(false);
 
   useSEO({
     title: "On The Go Moving & Storage | Seattle Movers Since 2009",
@@ -103,7 +104,8 @@ export default function Home() {
           }}
         />
         {/* YouTube autoplay muted video — desktop only */}
-        {/* Uses fixed 1920x1080 dimensions so YouTube serves full HD stream (no pixelation) */}
+        {/* Starts invisible; fades in after a 900ms delay on load to hide the brief
+            YouTube control flash that appears before controls=0 takes effect */}
         <div className="absolute inset-0 hidden lg:block overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a1e06]/90 via-[#0a1e06]/60 to-[#0a1e06]/30 z-10" />
           <iframe
@@ -113,23 +115,21 @@ export default function Home() {
             width="1920"
             height="1080"
             className="absolute top-1/2 left-1/2"
+            onLoad={() => {
+              // Delay reveal so YouTube finishes suppressing its control UI
+              setTimeout(() => setVideoReady(true), 900);
+            }}
             style={{
               border: 0,
-              opacity: 0.9,
-              /*
-               * Consistent vw-based sizing keeps the 16:9 aspect ratio intact.
-               * 177.78vw = 100vw * (16/9) — makes the iframe exactly fill the
-               * viewport height when the viewport is wider than tall (landscape).
-               * The extra scale(1.4) adds 40% headroom so the YouTube control bar
-               * (~8% of player height) is always well below the overflow-hidden
-               * container boundary regardless of viewport aspect ratio.
-               */
               width: "177.78vw",
               height: "100vw",
               minWidth: "177.78vw",
               minHeight: "100vw",
-              transform: "translate(-50%, -50%) scale(1.4)",
+              transform: "translate(-50%, -50%) scale(1.2)",
               transformOrigin: "center center",
+              // Hidden until ready; transition fades it in smoothly
+              opacity: videoReady ? 0.9 : 0,
+              transition: "opacity 0.8s ease-in",
             }}
             title="On The Go Moving crew video background"
             aria-hidden="true"
