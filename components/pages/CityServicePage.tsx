@@ -682,12 +682,6 @@ for (const [city, citySlug] of CITIES) {
   CITY_SERVICE_DATA[appliance.slug] = appliance;
 }
 
-// Moving supplies entries
-for (const [city, citySlug] of CITIES) {
-  const supplies = makeMovingSuppliesEntry(city, citySlug);
-  CITY_SERVICE_DATA[supplies.slug] = supplies;
-}
-
 // Unpacking entries
 for (const [city, citySlug] of CITIES) {
   const unpacking = makeUnpackingEntry(city, citySlug);
