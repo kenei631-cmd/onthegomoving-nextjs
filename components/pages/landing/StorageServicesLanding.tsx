@@ -12,6 +12,11 @@ import { Phone, CheckCircle, Package, Shield, Lock, Star, ChevronDown, ChevronUp
 
 const COMPARISON = [
   {
+    feature: "Vault size",
+    us: "7 ft tall × 5 ft wide × 7 ft deep",
+    them: "Varies — often smaller or oddly shaped",
+  },
+  {
     feature: "Storage type",
     us: "Private vault — your items only",
     them: "Open unit — shared access",
@@ -48,7 +53,7 @@ const TRUST_ITEMS = [
 const FAQS = [
   {
     q: "What's the difference between vault storage and self-storage?",
-    a: "With our vault storage, your belongings are loaded into a private wooden vault at our secure Redmond facility — no other customers' items share your space. Self-storage units are open rooms in a shared building where anyone with a unit can walk past your belongings.",
+    a: "With our vault storage, your belongings are loaded into a private wooden vault measuring 7 ft tall × 5 ft wide × 7 ft deep at our secure Redmond facility — no other customers' items share your space. Self-storage units are open rooms in a shared building where anyone with a unit can walk past your belongings.",
   },
   {
     q: "How does the 1 free month of storage work?",
@@ -105,7 +110,7 @@ export default function StorageServicesLanding() {
                 <span className="text-[#75aa11]">in Redmond, WA</span>
               </h1>
               <p className="text-lg text-gray-200 mb-6 max-w-lg">
-                Unlike self-storage units, our private storage vaults are held in a secured Redmond warehouse — only accessible by our team. We pick up, store, and deliver your items. No hauling required.
+                Unlike self-storage units, our private storage vaults (7 ft tall × 5 ft wide × 7 ft deep) are held in a secured Redmond warehouse — only accessible by our team. We pick up, store, and deliver your items. No hauling required.
               </p>
 
               {/* Phone CTA + scroll-to-form anchor */}
@@ -227,7 +232,7 @@ export default function StorageServicesLanding() {
               <ul className="space-y-4">
                 {[
                   "We pick up your items from your home or office",
-                  "Items are loaded into a private vault at our Redmond facility",
+                  "Items are loaded into a private vault (7 ft tall × 5 ft wide × 7 ft deep) at our Redmond facility",
                   "Your vault is sealed — only accessible by our team",
                   "When you're ready, we deliver directly to your new location",
                   "1 free month of storage included with any move",

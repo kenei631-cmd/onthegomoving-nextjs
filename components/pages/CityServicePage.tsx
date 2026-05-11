@@ -125,11 +125,12 @@ function makeStorageEntry(city: string, citySlug: string): CityServiceData {
     [
       "We pick up your items from your home or office in " + city,
       "Items are carefully inventoried and photographed",
-      "Your belongings are loaded into dedicated storage vaults at our secure, climate-controlled Redmond facility",
+      "Your belongings are loaded into dedicated storage vaults (7 ft tall × 5 ft wide × 7 ft deep) at our secure, climate-controlled Redmond facility",
       "Access your inventory list anytime online",
       "We deliver your items back when you're ready",
     ],
     [
+      "Standard vault size: 7 ft tall × 5 ft wide × 7 ft deep — holds a full room's worth of belongings",
       "Storage vaults in a climate-controlled warehouse — no temperature extremes",
       "24/7 security monitoring and access control",
       "Flexible month-to-month terms — no long-term contracts",
@@ -139,7 +140,7 @@ function makeStorageEntry(city: string, citySlug: string): CityServiceData {
     ],
     [
       { q: `How much does storage cost for ${city} residents?`, a: `Storage rates depend on the volume of items. A typical 1-bedroom home's contents cost $150–$250/month to store. A 3-bedroom home runs $300–$500/month. We provide exact quotes after inventorying your items.` },
-      { q: "What is a storage vault?", a: "A storage vault is a large, enclosed container that holds an entire room's worth of belongings. Your items are loaded into the vault by our crew, stored in our climate-controlled Redmond warehouse, and retrieved by forklift when you need access. It's a fully managed alternative to traditional self-serve storage units." },
+      { q: "What is a storage vault?", a: "A storage vault is a large, enclosed container measuring 7 ft tall × 5 ft wide × 7 ft deep — enough to hold an entire room's worth of belongings. Your items are loaded into the vault by our crew, stored in our climate-controlled Redmond warehouse, and retrieved by forklift when you need access. It's a fully managed alternative to traditional self-serve storage units." },
       { q: "How long can I store my belongings?", a: "As long as you need. We offer flexible month-to-month storage with no long-term contracts. Most customers store for 1–3 months during a move, but we have customers who have stored with us for years." },
       { q: "Do I get 1 free month of storage with my move?", a: "Yes. Every move with On The Go Moving & Storage includes 1 free month of vault storage at our climate-controlled Redmond facility. This is especially useful if your new home isn't ready when you move out." },
     ],
