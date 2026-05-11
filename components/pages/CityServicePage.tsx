@@ -788,6 +788,65 @@ CITY_SERVICE_DATA["redmond-commercial-moving"] = { ...makeBusinessEntry("Redmond
 CITY_SERVICE_DATA["seattle-commercial-moving"] = { ...makeBusinessEntry("Seattle", "seattle", "Commercial Moving", "commercial-moving"), slug: "seattle-commercial-moving" };
 
 // ---------------------------------------------------------------------------
+// New apartment + senior city pages — added for all missing cities
+// ---------------------------------------------------------------------------
+// Apartment pages
+CITY_SERVICE_DATA["seattle-apartment-moving"] = { ...makeApartmentEntry("Seattle", "seattle"), slug: "seattle-apartment-moving" };
+CITY_SERVICE_DATA["bellevue-apartment-moving"] = { ...makeApartmentEntry("Bellevue", "bellevue"), slug: "bellevue-apartment-moving" };
+CITY_SERVICE_DATA["kirkland-apartment-moving"] = { ...makeApartmentEntry("Kirkland", "kirkland"), slug: "kirkland-apartment-moving" };
+CITY_SERVICE_DATA["issaquah-apartment-moving"] = { ...makeApartmentEntry("Issaquah", "issaquah"), slug: "issaquah-apartment-moving" };
+CITY_SERVICE_DATA["woodinville-apartment-moving"] = { ...makeApartmentEntry("Woodinville", "woodinville"), slug: "woodinville-apartment-moving" };
+CITY_SERVICE_DATA["kenmore-apartment-moving"] = { ...makeApartmentEntry("Kenmore", "kenmore"), slug: "kenmore-apartment-moving" };
+CITY_SERVICE_DATA["bothell-apartment-moving"] = { ...makeApartmentEntry("Bothell", "bothell"), slug: "bothell-apartment-moving" };
+CITY_SERVICE_DATA["mercer-island-apartment-moving"] = { ...makeApartmentEntry("Mercer Island", "mercer-island"), slug: "mercer-island-apartment-moving" };
+CITY_SERVICE_DATA["newcastle-apartment-moving"] = { ...makeApartmentEntry("Newcastle", "newcastle"), slug: "newcastle-apartment-moving" };
+CITY_SERVICE_DATA["lake-forest-park-apartment-moving"] = { ...makeApartmentEntry("Lake Forest Park", "lake-forest-park"), slug: "lake-forest-park-apartment-moving" };
+CITY_SERVICE_DATA["tukwila-apartment-moving"] = { ...makeApartmentEntry("Tukwila", "tukwila"), slug: "tukwila-apartment-moving" };
+CITY_SERVICE_DATA["mountlake-terrace-apartment-moving"] = { ...makeApartmentEntry("Mountlake Terrace", "mountlake-terrace"), slug: "mountlake-terrace-apartment-moving" };
+CITY_SERVICE_DATA["lynnwood-apartment-moving"] = { ...makeApartmentEntry("Lynnwood", "lynnwood"), slug: "lynnwood-apartment-moving" };
+CITY_SERVICE_DATA["mukilteo-apartment-moving"] = { ...makeApartmentEntry("Mukilteo", "mukilteo"), slug: "mukilteo-apartment-moving" };
+CITY_SERVICE_DATA["burien-apartment-moving"] = { ...makeApartmentEntry("Burien", "burien"), slug: "burien-apartment-moving" };
+CITY_SERVICE_DATA["snoqualmie-apartment-moving"] = { ...makeApartmentEntry("Snoqualmie", "snoqualmie"), slug: "snoqualmie-apartment-moving" };
+CITY_SERVICE_DATA["duvall-apartment-moving"] = { ...makeApartmentEntry("Duvall", "duvall"), slug: "duvall-apartment-moving" };
+CITY_SERVICE_DATA["carnation-apartment-moving"] = { ...makeApartmentEntry("Carnation", "carnation"), slug: "carnation-apartment-moving" };
+CITY_SERVICE_DATA["fall-city-apartment-moving"] = { ...makeApartmentEntry("Fall City", "fall-city"), slug: "fall-city-apartment-moving" };
+CITY_SERVICE_DATA["maple-valley-apartment-moving"] = { ...makeApartmentEntry("Maple Valley", "maple-valley"), slug: "maple-valley-apartment-moving" };
+CITY_SERVICE_DATA["covington-apartment-moving"] = { ...makeApartmentEntry("Covington", "covington"), slug: "covington-apartment-moving" };
+CITY_SERVICE_DATA["medina-apartment-moving"] = { ...makeApartmentEntry("Medina", "medina"), slug: "medina-apartment-moving" };
+CITY_SERVICE_DATA["clyde-hill-apartment-moving"] = { ...makeApartmentEntry("Clyde Hill", "clyde-hill"), slug: "clyde-hill-apartment-moving" };
+CITY_SERVICE_DATA["capitol-hill-apartment-moving"] = { ...makeApartmentEntry("Capitol Hill", "capitol-hill"), slug: "capitol-hill-apartment-moving" };
+CITY_SERVICE_DATA["queen-anne-apartment-moving"] = { ...makeApartmentEntry("Queen Anne", "queen-anne"), slug: "queen-anne-apartment-moving" };
+CITY_SERVICE_DATA["fremont-apartment-moving"] = { ...makeApartmentEntry("Fremont", "fremont"), slug: "fremont-apartment-moving" };
+CITY_SERVICE_DATA["juanita-apartment-moving"] = { ...makeApartmentEntry("Juanita", "juanita"), slug: "juanita-apartment-moving" };
+CITY_SERVICE_DATA["olympia-apartment-moving"] = { ...makeApartmentEntry("Olympia", "olympia"), slug: "olympia-apartment-moving" };
+// Senior pages
+CITY_SERVICE_DATA["seattle-senior-moving"] = { ...makeSeniorEntry("Seattle", "seattle"), slug: "seattle-senior-moving" };
+CITY_SERVICE_DATA["bellevue-senior-moving"] = { ...makeSeniorEntry("Bellevue", "bellevue"), slug: "bellevue-senior-moving" };
+CITY_SERVICE_DATA["kirkland-senior-moving"] = { ...makeSeniorEntry("Kirkland", "kirkland"), slug: "kirkland-senior-moving" };
+CITY_SERVICE_DATA["issaquah-senior-moving"] = { ...makeSeniorEntry("Issaquah", "issaquah"), slug: "issaquah-senior-moving" };
+CITY_SERVICE_DATA["woodinville-senior-moving"] = { ...makeSeniorEntry("Woodinville", "woodinville"), slug: "woodinville-senior-moving" };
+CITY_SERVICE_DATA["kenmore-senior-moving"] = { ...makeSeniorEntry("Kenmore", "kenmore"), slug: "kenmore-senior-moving" };
+CITY_SERVICE_DATA["mercer-island-senior-moving"] = { ...makeSeniorEntry("Mercer Island", "mercer-island"), slug: "mercer-island-senior-moving" };
+CITY_SERVICE_DATA["newcastle-senior-moving"] = { ...makeSeniorEntry("Newcastle", "newcastle"), slug: "newcastle-senior-moving" };
+CITY_SERVICE_DATA["lake-forest-park-senior-moving"] = { ...makeSeniorEntry("Lake Forest Park", "lake-forest-park"), slug: "lake-forest-park-senior-moving" };
+CITY_SERVICE_DATA["tukwila-senior-moving"] = { ...makeSeniorEntry("Tukwila", "tukwila"), slug: "tukwila-senior-moving" };
+CITY_SERVICE_DATA["mountlake-terrace-senior-moving"] = { ...makeSeniorEntry("Mountlake Terrace", "mountlake-terrace"), slug: "mountlake-terrace-senior-moving" };
+CITY_SERVICE_DATA["lynnwood-senior-moving"] = { ...makeSeniorEntry("Lynnwood", "lynnwood"), slug: "lynnwood-senior-moving" };
+CITY_SERVICE_DATA["mukilteo-senior-moving"] = { ...makeSeniorEntry("Mukilteo", "mukilteo"), slug: "mukilteo-senior-moving" };
+CITY_SERVICE_DATA["burien-senior-moving"] = { ...makeSeniorEntry("Burien", "burien"), slug: "burien-senior-moving" };
+CITY_SERVICE_DATA["snoqualmie-senior-moving"] = { ...makeSeniorEntry("Snoqualmie", "snoqualmie"), slug: "snoqualmie-senior-moving" };
+CITY_SERVICE_DATA["duvall-senior-moving"] = { ...makeSeniorEntry("Duvall", "duvall"), slug: "duvall-senior-moving" };
+CITY_SERVICE_DATA["carnation-senior-moving"] = { ...makeSeniorEntry("Carnation", "carnation"), slug: "carnation-senior-moving" };
+CITY_SERVICE_DATA["fall-city-senior-moving"] = { ...makeSeniorEntry("Fall City", "fall-city"), slug: "fall-city-senior-moving" };
+CITY_SERVICE_DATA["maple-valley-senior-moving"] = { ...makeSeniorEntry("Maple Valley", "maple-valley"), slug: "maple-valley-senior-moving" };
+CITY_SERVICE_DATA["covington-senior-moving"] = { ...makeSeniorEntry("Covington", "covington"), slug: "covington-senior-moving" };
+CITY_SERVICE_DATA["medina-senior-moving"] = { ...makeSeniorEntry("Medina", "medina"), slug: "medina-senior-moving" };
+CITY_SERVICE_DATA["clyde-hill-senior-moving"] = { ...makeSeniorEntry("Clyde Hill", "clyde-hill"), slug: "clyde-hill-senior-moving" };
+CITY_SERVICE_DATA["queen-anne-senior-moving"] = { ...makeSeniorEntry("Queen Anne", "queen-anne"), slug: "queen-anne-senior-moving" };
+CITY_SERVICE_DATA["fremont-senior-moving"] = { ...makeSeniorEntry("Fremont", "fremont"), slug: "fremont-senior-moving" };
+CITY_SERVICE_DATA["juanita-senior-moving"] = { ...makeSeniorEntry("Juanita", "juanita"), slug: "juanita-senior-moving" };
+CITY_SERVICE_DATA["olympia-senior-moving"] = { ...makeSeniorEntry("Olympia", "olympia"), slug: "olympia-senior-moving" };
+// ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
 interface CityServicePageProps {

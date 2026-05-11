@@ -259,7 +259,7 @@ export default function Header() {
                 onClick={closePanel}
                 className="inline-flex items-center gap-1.5 text-sm font-bold text-[#75aa11] hover:text-[#1e3a0f] transition-colors"
               >
-                Browse all 9 services <ArrowRight size={14} />
+                Browse all services <ArrowRight size={14} />
               </a>
             </div>
           </div>

@@ -284,7 +284,7 @@ export default function Home() {
           </div>
 
           <FadeSection className="text-center mt-10">
-            <a href="/residential-moving/" className="btn-primary text-base">
+            <a href="/services/" className="btn-primary text-base">
               View All Services <ArrowRight size={16} />
             </a>
           </FadeSection>

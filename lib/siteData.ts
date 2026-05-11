@@ -24,7 +24,6 @@ export const NAV_SERVICES = [
   { label: "Residential Moving", href: "/residential-moving/" },
   { label: "Commercial Moving", href: "/commercial-moving/" },
   { label: "Storage Services", href: "/storage-services/" },
-  { label: "Packing Services", href: "/packing-services/" },
   { label: "Apartment Moving", href: "/apartment-moving/" },
   { label: "Senior Moving", href: "/senior-moving/" },
   { label: "Staging Professionals", href: "/staging-professionals/" },

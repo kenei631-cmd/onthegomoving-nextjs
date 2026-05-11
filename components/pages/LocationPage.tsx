@@ -29,6 +29,7 @@ import {
   Building2,
   Truck,
   Package,
+  Users,
   ArrowRight,
 } from "lucide-react";
 import { useState } from "react";
@@ -522,8 +523,9 @@ export default function LocationPage({ slug }: LocationPageProps) {
             {[
               { icon: Home, title: "Residential Moving", desc: `Full-service home moves for houses, condos, and townhomes throughout ${data.city}.`, href: `/${slug}/residential/` },
               { icon: Building2, title: "Commercial Moving", desc: `Office and business relocations in ${data.city} with minimal downtime. We work around your schedule.`, href: `/${slug}/commercial/` },
-              { icon: Package, title: "Packing Services", desc: `Professional packing in ${data.city} — all materials included, full-pack or fragile-only.`, href: `/${slug}/packing/` },
               { icon: Truck, title: "Storage Services", desc: `Secure storage vaults at our climate-controlled Redmond facility. Full-service pickup and delivery for ${data.city} residents. First month free with any move.`, href: `/${slug}/storage/` },
+              { icon: Package, title: "Apartment Moving", desc: `Elevator coordination, HOA certificates, and stress-free apartment moves throughout ${data.city}.`, href: `/${slug}/apartment/` },
+              { icon: Users, title: "Senior Moving", desc: `Patient, compassionate crews for senior moves in ${data.city}. We work at your pace and coordinate with family.`, href: `/${slug}/senior/` },
               { icon: Truck, title: "Staging Professionals", desc: `Real estate staging services in ${data.city}. We work with staging professionals to make your home show-ready.`, href: `/staging-professionals/` },
             ].map((service, i) => (
               <a key={i} href={service.href}>
@@ -539,6 +541,14 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 </div>
               </a>
             ))}
+          </div>
+          <div className="text-center mt-6">
+            <p className="text-gray-500 text-sm">
+              Also available:{" "}
+              <a href={`/${slug}/packing/`} className="text-brand-green font-semibold hover:underline">
+                Packing Services in {data.city} →
+              </a>
+            </p>
           </div>
         </div>
       </section>
