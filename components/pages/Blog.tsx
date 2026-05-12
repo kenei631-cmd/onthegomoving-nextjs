@@ -20,7 +20,7 @@ export default function Blog() {
 
   useSEO({
     title: "Moving Tips & Guides Blog | On The Go Moving & Storage",
-    description: "Expert moving tips, packing guides, and local Seattle area advice from On The Go Moving & Storage. 50,000+ moves completed since 2009.",
+    description: "Expert moving tips, packing guides, and local Seattle area advice from On The Go Moving & Storage. 25,000+ moves completed since 2009.",
     canonical: "https://onthegomoving.com/blog/",
     ogType: "website",
     schema: [MOVING_COMPANY_SCHEMA],

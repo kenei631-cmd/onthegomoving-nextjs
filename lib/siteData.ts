@@ -207,7 +207,7 @@ export const TESTIMONIALS = [
 export const STATS = [
   { value: "15+", label: "Years in Business" },
   { value: "1,562", label: "5-Star Google Reviews" },
-  { value: "50,000+", label: "Successful Moves" },
+  { value: "25,000+", label: "Successful Moves" },
   { value: "4.8★", label: "Average Rating" },
 ];
 

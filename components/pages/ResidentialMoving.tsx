@@ -369,7 +369,7 @@ export default function ResidentialMoving() {
               />
               {/* Floating stat card */}
               <div className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-lg px-5 py-4 border-l-4 border-brand-green">
-                <div className="text-3xl font-extrabold text-brand-green" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>50,000+</div>
+                <div className="text-3xl font-extrabold text-brand-green" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>25,000+</div>
                 <div className="text-gray-600 text-xs font-medium">Successful Moves Since 2009</div>
               </div>
             </div>

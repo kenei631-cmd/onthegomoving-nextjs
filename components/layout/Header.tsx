@@ -459,7 +459,7 @@ export default function Header() {
                 Seattle's most trusted local movers
               </p>
               <p className="text-gray-500 text-xs leading-relaxed mb-3">
-                Over 50,000 successful moves. Licensed, bonded, and insured. Background-checked crews who treat your belongings like their own.
+                Over 25,000 successful moves. Licensed, bonded, and insured. Background-checked crews who treat your belongings like their own.
               </p>
               <div className="flex items-center gap-1.5">
                 {[1,2,3,4,5].map(i => <Star key={i} size={13} fill="#fbc319" color="#fbc319" />)}

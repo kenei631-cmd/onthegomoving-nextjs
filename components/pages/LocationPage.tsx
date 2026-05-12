@@ -493,7 +493,7 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 ))}
               </div>
               <div className="border-l-4 border-brand-green bg-brand-green/5 rounded-r-xl px-5 py-4">
-                <p className="text-brand-forest font-semibold text-sm italic">"We've completed 50,000+ moves across Greater Seattle since 2009. Every crew member is background-checked and professionally trained."</p>
+                <p className="text-brand-forest font-semibold text-sm italic">"We've completed 25,000+ moves across Greater Seattle since 2009. Every crew member is background-checked and professionally trained."</p>
               </div>
             </div>
             <div className="relative">

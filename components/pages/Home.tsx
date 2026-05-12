@@ -157,7 +157,7 @@ export default function Home() {
               </h1>
 
               <p className="text-green-100 text-lg leading-relaxed mb-7 max-w-lg">
-             Flat-rate pricing, professional crews, and 1 free month of storage — trusted by 50,000+ Seattle families since 2009.
+             Flat-rate pricing, professional crews, and 1 free month of storage — trusted by 25,000+ Seattle families since 2009.
               </p>
 
               {/* Single consolidated trust strip */}
@@ -312,7 +312,7 @@ export default function Home() {
                 {/* Floating stat badge */}
                 <div className="absolute -bottom-4 -right-4 bg-[#75aa11] text-white rounded-xl px-5 py-3 shadow-xl text-center hidden sm:block">
                   <div className="text-3xl font-extrabold leading-none" style={{ fontFamily: "'Barlow Condensed', sans-serif" }}>
-                    50,000+
+                    25,000+
                   </div>
                   <div className="text-xs font-semibold uppercase tracking-wide opacity-90 mt-0.5">Moves Completed</div>
                 </div>
@@ -329,7 +329,7 @@ export default function Home() {
                 Seattle's Most Trusted Moving Company
               </h2>
               <p className="text-gray-600 leading-relaxed mb-6">
-                Since {COMPANY.founded}, we've built our reputation one move at a time — with over {COMPANY.googleReviewCount.toLocaleString()} five-star Google reviews and 50,000+ successful moves.
+                Since {COMPANY.founded}, we've built our reputation one move at a time — with over {COMPANY.googleReviewCount.toLocaleString()} five-star Google reviews and 25,000+ successful moves.
               </p>
 
               {/* Two-column checklist */}

@@ -240,7 +240,7 @@ export default function Services() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { stat: "50,000+", label: "Successful Moves", desc: "Residential, commercial, and specialty moves completed across Greater Seattle." },
+              { stat: "25,000+", label: "Successful Moves", desc: "Residential, commercial, and specialty moves completed across Greater Seattle." },
               { stat: "4.8★", label: "Google Rating", desc: "1,562 verified reviews from real customers in Seattle, Bellevue, Redmond, and beyond." },
               { stat: "15+ yrs", label: "In Business", desc: "Locally owned and operated since 2009. We're part of the community we serve." },
               { stat: "1 mo free", label: "Storage Included", desc: "Every move includes one free month of secure vault storage at our Redmond facility." },

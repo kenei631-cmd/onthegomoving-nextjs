@@ -42,8 +42,8 @@ const CREDENTIALS = [
   },
   {
     icon: Truck,
-    title: "50,000+ Moves Completed",
-    desc: "Under Jason's leadership, On The Go Moving has completed more than 50,000 residential and commercial moves across the Greater Seattle area, making the company one of the most experienced local movers in the Pacific Northwest.",
+    title: "25,000+ Moves Completed",
+    desc: "Under Jason's leadership, On The Go Moving has completed more than 25,000 residential and commercial moves across the Greater Seattle area, making the company one of the most experienced local movers in the Pacific Northwest.",
   },
   {
     icon: Shield,
@@ -96,7 +96,7 @@ const TIMELINE = [
   {
     year: "2024",
     event:
-      "Over 50,000 moves completed. 1,562 five-star Google reviews and counting. Jason remains active in daily operations, customer escalations, and team development.",
+      "Over 25,000 moves completed. 1,562 five-star Google reviews and counting. Jason remains active in daily operations, customer escalations, and team development.",
   },
 ];
 
@@ -107,7 +107,7 @@ const FAQS = [
   },
   {
     q: "How long has Jason Sexton been in the moving industry?",
-    a: "Jason has been in the moving industry since 2009 — over 15 years. He started On The Go Moving at age 26 and has personally overseen more than 50,000 residential and commercial moves across the Greater Seattle area.",
+    a: "Jason has been in the moving industry since 2009 — over 15 years. He started On The Go Moving at age 26 and has personally overseen more than 25,000 residential and commercial moves across the Greater Seattle area.",
   },
   {
     q: "Is Jason Sexton involved in day-to-day operations?",
@@ -127,7 +127,7 @@ export default function JasonSexton() {
   useSEO({
     title: "Jason Sexton — Founder & Owner | On The Go Moving & Storage",
     description:
-      "Meet Jason Sexton, founder and owner of On The Go Moving & Storage since 2009. 15+ years of experience, 50,000+ moves completed, licensed & insured in Washington State.",
+      "Meet Jason Sexton, founder and owner of On The Go Moving & Storage since 2009. 15+ years of experience, 25,000+ moves completed, licensed & insured in Washington State.",
     canonical: "https://onthegomoving.com/jason-sexton/",
     ogType: "profile",
     ogImage: BRAND_IMAGES.jasonSextonHeadshot,
@@ -140,7 +140,7 @@ export default function JasonSexton() {
         name: "Jason Sexton",
         jobTitle: "Founder & Owner",
         description:
-          "Jason Sexton is the founder and owner of On The Go Moving & Storage, a licensed and insured moving company based in Redmond, WA. He has been in the moving industry since 2009 and has overseen more than 50,000 residential and commercial moves across the Greater Seattle area.",
+          "Jason Sexton is the founder and owner of On The Go Moving & Storage, a licensed and insured moving company based in Redmond, WA. He has been in the moving industry since 2009 and has overseen more than 25,000 residential and commercial moves across the Greater Seattle area.",
         url: "https://onthegomoving.com/jason-sexton/",
         image: BRAND_IMAGES.jasonSextonHeadshot,
         worksFor: {
@@ -239,7 +239,7 @@ export default function JasonSexton() {
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Truck className="w-4 h-4 text-[#7bc144]" />
-                  50,000+ moves completed
+                  25,000+ moves completed
                 </span>
               </div>
             </div>
@@ -256,7 +256,7 @@ export default function JasonSexton() {
               On The Go Moving &amp; Storage
             </a>
             , a licensed (HG-064180) and insured moving company headquartered in Redmond, WA. He has
-            been actively running the company since 2009, personally overseeing more than 50,000
+            been actively running the company since 2009, personally overseeing more than 25,000
             residential and commercial moves across the Greater Seattle and Eastside area. Jason is
             the author of moving guides and service content published on this site.
           </p>

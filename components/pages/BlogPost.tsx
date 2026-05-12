@@ -484,7 +484,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                       <span className="text-xs text-gray-400">Founder &amp; Owner, On The Go Moving &amp; Storage</span>
                     </div>
                     <p className="text-gray-500 text-xs mt-1 leading-relaxed">
-                      Jason founded On The Go Moving &amp; Storage in Redmond, WA in 2009 and has personally overseen more than 50,000 moves across Greater Seattle. He holds a Washington State Household Goods Mover license (HG-064180) and writes from direct, hands-on experience in the moving industry.
+                      Jason founded On The Go Moving &amp; Storage in Redmond, WA in 2009 and has personally overseen more than 25,000 moves across Greater Seattle. He holds a Washington State Household Goods Mover license (HG-064180) and writes from direct, hands-on experience in the moving industry.
                     </p>
                     <a href="/jason-sexton/" className="inline-flex items-center gap-1 text-xs font-semibold text-[#75aa11] hover:underline mt-1.5">
                       About the author <ArrowRight size={11} />

@@ -207,7 +207,7 @@ export default function Partners() {
                     { icon: Shield, label: "Fully licensed & insured", sub: "WA HG-064180 · USDOT# 2120054" },
                     { icon: Users, label: "Priority scheduling for referrals", sub: "Dedicated partner contact" },
                     { icon: Award, label: "1 free month of storage", sub: "Included on every move" },
-                    { icon: Clock, label: "On-time, every time", sub: "15+ years, 50,000+ moves" },
+                    { icon: Clock, label: "On-time, every time", sub: "15+ years, 25,000+ moves" },
                     { icon: MessageSquare, label: "We coordinate with your clients", sub: "You stay focused on your work" },
                   ].map(({ icon: Icon, label, sub }) => (
                     <div key={label} className="flex items-center gap-3">

@@ -443,7 +443,7 @@ const SERVICE_DATA: Record<string, {
     ],
     image: BRAND_IMAGES.storageWarehouse,
     imageAlt: "On The Go Moving warehousing facility interior",
-    statValue: "10,000+",
+    statValue: "25,000+",
     statLabel: "Sq Ft of Warehouse Space",
     ctaHeadline: "Need Warehousing for Your Business?",
   },

@@ -145,7 +145,7 @@ export default function ThankYou() {
               {[
                 { label: "5-Star Reviews", value: "500+" },
                 { label: "Years in Business", value: "17+" },
-                { label: "Moves Completed", value: "10,000+" },
+                { label: "Moves Completed", value: "25,000+" },
                 { label: "Cities Served", value: "26" },
               ].map(stat => (
                 <div key={stat.label} className="bg-white rounded-xl p-4 text-center shadow-sm">

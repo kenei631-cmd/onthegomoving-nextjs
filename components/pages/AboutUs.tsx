@@ -18,7 +18,7 @@ const TIMELINE = [
   { year: "2015", event: "Surpassed 5,000 successful moves. Earned Angie's List Super Service Award." },
   { year: "2018", event: "Launched commercial moving division to serve Eastside businesses and tech campuses." },
   { year: "2021", event: "Reached 1,000 Google reviews with a 4.8-star average. Expanded to 12 trucks." },
-  { year: "2024", event: "Over 50,000 moves completed. 1,562 five-star Google reviews and counting." },
+  { year: "2024", event: "Over 25,000 moves completed. 1,562 five-star Google reviews and counting." },
 ];
 
 const TEAM_QUALITIES = [
@@ -46,7 +46,7 @@ const VALUES = [
 const FAQS = [
   {
     q: "How long has On The Go Moving been in business?",
-    a: "On The Go Moving & Storage was founded in 2009 in Redmond, WA. We have been serving the Greater Seattle and Eastside area for over 15 years, completing more than 50,000 successful moves.",
+    a: "On The Go Moving & Storage was founded in 2009 in Redmond, WA. We have been serving the Greater Seattle and Eastside area for over 15 years, completing more than 25,000 successful moves.",
   },
   {
     q: "Are On The Go Moving movers licensed and insured?",
@@ -65,7 +65,7 @@ const FAQS = [
 export default function AboutUs() {
   useSEO({
     title: "Seattle Moving Company Since 2009 | On The Go Moving",
-    description: "On The Go Moving & Storage — Seattle's trusted movers since 2009. 50,000+ moves, 1,562 five-star reviews, licensed & insured in WA. Meet our team.",
+    description: "On The Go Moving & Storage — Seattle's trusted movers since 2009. 25,000+ moves, 1,562 five-star reviews, licensed & insured in WA. Meet our team.",
     canonical: "https://onthegomoving.com/about-us/",
     ogType: "website",
     schema: [
@@ -94,7 +94,7 @@ export default function AboutUs() {
           "https://www.yelp.com/biz/on-the-go-moving-and-storage-redmond",
         ],
         numberOfEmployees: { "@type": "QuantitativeValue", value: 30 },
-        description: "On The Go Moving & Storage is a licensed and insured moving company serving Seattle, Bellevue, Redmond, and the Greater Eastside since 2009. Over 50,000 moves completed.",
+        description: "On The Go Moving & Storage is a licensed and insured moving company serving Seattle, Bellevue, Redmond, and the Greater Eastside since 2009. Over 25,000 moves completed.",
       },
       {
         "@context": "https://schema.org",
@@ -136,7 +136,7 @@ export default function AboutUs() {
                 <span style={{ color: "#75aa11" }}>Moving &amp; Storage</span>
               </h1>
               <p className="text-green-100 text-lg leading-relaxed max-w-xl">
-                We are a locally owned moving company based in Redmond, WA. Since 2009, we have helped over 50,000 families, apartment renters, and businesses move across the Eastside and Greater Seattle area.
+                We are a locally owned moving company based in Redmond, WA. Since 2009, we have helped over 25,000 families, apartment renters, and businesses move across the Eastside and Greater Seattle area.
               </p>
             </div>
           </div>
@@ -161,7 +161,7 @@ export default function AboutUs() {
                   We are not a franchise, a broker, or a national chain. Every mover on every job is a direct employee of On The Go Moving — background-checked, professionally trained, and uniformed. We own our trucks and operate our own storage facility in Redmond, which means we control the quality of every move from start to finish.
                 </p>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  With over {COMPANY.googleReviewCount.toLocaleString()} five-star Google reviews and more than 50,000 successful moves, we are proud to be the moving company the Eastside trusts most.
+                  With over {COMPANY.googleReviewCount.toLocaleString()} five-star Google reviews and more than 25,000 successful moves, we are proud to be the moving company the Eastside trusts most.
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <a href="/contact-us/" className="btn-primary">Get a Free Quote <ArrowRight size={16} /></a>
