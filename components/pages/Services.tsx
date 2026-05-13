@@ -15,6 +15,7 @@ import {
   ArrowRight, Shield, Clock, CheckCircle, Star,
   Home as HomeIcon, Building2, Package, Archive,
   Dumbbell, Users, Briefcase, Phone, Layers,
+  Wrench, Sofa, Building, Inbox, Warehouse, Monitor, Handshake, Truck,
 } from "lucide-react";
 
 // Full service data with descriptions, images, and icons
@@ -99,6 +100,86 @@ const ALL_SERVICES = [
     image: BRAND_IMAGES.laborOnlyCrew,
     cta: "Learn About Labor Only",
   },
+  {
+    title: "Furniture Moving",
+    href: "/furniture-moving/",
+    icon: Sofa,
+    popular: false,
+    description:
+      "Careful handling of sofas, dining sets, bedroom furniture, and antiques. Our crews use blankets, shrink wrap, and proper lifting techniques to protect every piece.",
+    image: BRAND_IMAGES.crewWrappingFurniture,
+    cta: "Learn About Furniture Moving",
+  },
+  {
+    title: "Condo Moving",
+    href: "/condo-moving/",
+    icon: Building,
+    popular: false,
+    description:
+      "High-rise and mid-rise condo moves with COI documentation, elevator reservations, and loading dock coordination handled for you.",
+    image: BRAND_IMAGES.crewEntryway3,
+    cta: "Learn About Condo Moving",
+  },
+  {
+    title: "Appliance Moving",
+    href: "/appliance-moving/",
+    icon: Wrench,
+    popular: false,
+    description:
+      "Safe transport of washers, dryers, refrigerators, and other heavy appliances. We use dollies and protective gear to prevent damage to floors and walls.",
+    image: BRAND_IMAGES.crewCarryingFurniture,
+    cta: "Learn About Appliance Moving",
+  },
+  {
+    title: "Unpacking Services",
+    href: "/unpacking-services/",
+    icon: Inbox,
+    popular: false,
+    description:
+      "Let our crew unpack and organize your new home. We remove all packing materials and help you settle in faster \u2014 available same-day or next-day after your move.",
+    image: BRAND_IMAGES.crewEntryway1,
+    cta: "Learn About Unpacking",
+  },
+  {
+    title: "Warehousing & Distribution",
+    href: "/warehousing-distribution/",
+    icon: Warehouse,
+    popular: false,
+    description:
+      "Short and long-term warehousing at our Redmond facility. Ideal for businesses needing inventory storage, staging, or distribution support in the Greater Seattle area.",
+    image: BRAND_IMAGES.storageWarehouse,
+    cta: "Learn About Warehousing",
+  },
+  {
+    title: "Office Moving",
+    href: "/office-moving/",
+    icon: Monitor,
+    popular: false,
+    description:
+      "Complete office relocation services \u2014 desks, workstations, server equipment, and filing systems moved efficiently to minimize business disruption.",
+    image: BRAND_IMAGES.officeMoveAction,
+    cta: "Learn About Office Moving",
+  },
+  {
+    title: "Corporate Relocation",
+    href: "/corporate-relocation/",
+    icon: Handshake,
+    popular: false,
+    description:
+      "End-to-end relocation management for businesses moving employees or entire departments. Coordinated logistics, flexible scheduling, and dedicated project management.",
+    image: BRAND_IMAGES.crewCustomerCommercial,
+    cta: "Learn About Corporate Relocation",
+  },
+  {
+    title: "Freight Forwarding",
+    href: "/freight-forwarding-service/",
+    icon: Truck,
+    popular: false,
+    description:
+      "Reliable freight pickup, transport, and delivery for businesses and individuals. Our branded fleet handles oversized loads and time-sensitive freight across the Pacific Northwest.",
+    image: BRAND_IMAGES.brandedTruck,
+    cta: "Learn About Freight Forwarding",
+  },
 ];
 
 const SCHEMA = {
@@ -148,7 +229,7 @@ export default function Services() {
         <div className="container text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-green-300 text-xs font-semibold uppercase tracking-widest px-3 py-1.5 rounded-full mb-5">
             <Package className="w-3.5 h-3.5" />
-            8 Services · Greater Seattle, WA
+            16 Services · Greater Seattle, WA
           </div>
           <h1 className="font-display text-4xl lg:text-5xl font-black text-white mb-4">
             Moving &amp; Storage Services
