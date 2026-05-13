@@ -183,15 +183,10 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Mobile CTA */}
-              <div className="flex flex-col sm:flex-row gap-3 lg:hidden">
-                <a href="/contact-us/" className="btn-gold text-base justify-center">
-                  Get Free Quote <ArrowRight size={16} />
-                </a>
-                <a href={COMPANY.phoneHref} className="btn-primary text-base justify-center">
-                  <Phone size={16} /> {COMPANY.phone}
-                </a>
-              </div>
+              {/* Mobile CTA — phone only; form renders directly below hero */}
+              <a href={COMPANY.phoneHref} className="btn-primary text-base justify-center lg:hidden w-full sm:w-auto">
+                <Phone size={16} /> {COMPANY.phone}
+              </a>
             </div>
 
             {/* ── Right: Quote form ── */}
