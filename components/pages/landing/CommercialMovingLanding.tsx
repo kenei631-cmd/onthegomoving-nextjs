@@ -113,12 +113,6 @@ export default function CommercialMovingLanding() {
                   <Phone size={22} />
                   {COMPANY.phone}
                 </a>
-                <a
-                  href="#quote-form"
-                  className="lg:hidden inline-flex items-center gap-2 bg-[#fbc319] hover:bg-[#f5b800] text-[#1a1a1a] font-bold text-base px-6 py-4 rounded-xl transition-colors shadow-lg"
-                >
-                  Get a Quote &rarr;
-                </a>
               </div>
 
               {/* Trust badges */}
