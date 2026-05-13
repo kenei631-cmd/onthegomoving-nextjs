@@ -1262,3 +1262,183 @@
   to = "/seattle-movers/"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-services-redmond-wa/"
+  to = "/redmond-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pricing-services/"
+  to = "/how-much-do-movers-cost/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bellevue-movers-storage-service/"
+  to = "/bellevue-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/ballard-movers"
+  to = "/ballard-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/business-moving/"
+  to = "/commercial-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/redmond-movers-storage-service/"
+  to = "/redmond-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/moving-services-bellevue-wa/"
+  to = "/bellevue-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/north-bend-moving-services/"
+  to = "/north-bend-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kirkland-movers-storage-service/"
+  to = "/kirkland-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/sammamish-movers-storage-service/"
+  to = "/sammamish-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/senior-moving-services/"
+  to = "/senior-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/piano-moving"
+  to = "/piano-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/office-moving"
+  to = "/commercial-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/location/bellevue-wa/"
+  to = "/bellevue-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/shoreline-moving-services/"
+  to = "/shoreline-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/reliable-ballard-wa-moving-services/"
+  to = "/ballard-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-much-do-movers-cost-old/"
+  to = "/how-much-do-movers-cost/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/labor-only-moves/"
+  to = "/labor-only-moving/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/how-to-find-the-best-temporary-storage-units-in-your-area"
+  to = "/storage-services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/woodinville-moving-services/"
+  to = "/woodinville-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/woodinville-movers-storage-service/"
+  to = "/woodinville-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tukwila-moving-services/"
+  to = "/tukwila-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/renton-business-moving-services/"
+  to = "/renton-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/north-bend-business-moving-services/"
+  to = "/north-bend-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/redmond-business-moving-services/"
+  to = "/redmond-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bothell-senior-moving-services/"
+  to = "/bothell-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kirkland-business-moving-services/"
+  to = "/kirkland-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/apartment-movers-redmond/"
+  to = "/redmond-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/kirkland-wa-residential-moving-services/"
+  to = "/kirkland-movers/"
+  status = 301
+  force = true
