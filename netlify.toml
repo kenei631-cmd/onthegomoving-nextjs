@@ -1226,3 +1226,39 @@
   status = 301
   force = true
 
+
+[[redirects]]
+  from = "/sammamish-senior-movings-services/"
+  to = "/sammamish-movers/senior/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/senior-moving-services-issaquah/"
+  to = "/issaquah-movers/senior/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bellevue-senior-moving-services/"
+  to = "/bellevue-movers/senior/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/bothell-business-movings-services-2/"
+  to = "/bothell-movers/commercial/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/freemont-movers/"
+  to = "/fremont-movers/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/locations-2/seattle-wa/"
+  to = "/seattle-movers/"
+  status = 301
+  force = true
