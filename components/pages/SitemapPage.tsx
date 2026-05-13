@@ -13,7 +13,6 @@ const CORE_PAGES = [
   { label: "How Much Do Movers Cost?", href: "/how-much-do-movers-cost/" },
   { label: "Locations We Serve", href: "/we-are-local/" },
   { label: "Blog", href: "/blog/" },
-  { label: "Moving Supplies", href: "/moving-supplies/" },
   { label: "Real Estate Agents", href: "/real-estate-agents/" },
   { label: "Partners", href: "/partners/" },
   { label: "Staging Professionals", href: "/staging-professionals/" },

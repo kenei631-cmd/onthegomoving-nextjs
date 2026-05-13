@@ -156,9 +156,9 @@ export default function Footer() {
               {[
                 { label: "About Us", href: "/about-us/" },
                 { label: "Our Team", href: "/about-us/#team" },
-                { label: "Community", href: "/community/" },
+                { label: "Community", href: "/about-us/" },
                 { label: "Partners", href: "/partners/" },
-                { label: "Refer Us", href: "/refer-us/" },
+                { label: "Refer Us", href: "/about-us/" },
                 { label: "Blog", href: "/blog/" },
                 { label: "FAQ", href: "/faq/" },
                 { label: "Contact Us", href: "/contact-us/" },

@@ -30,7 +30,6 @@ const SERVICE_ICONS: Record<string, React.ReactNode> = {
   "/specialty-moving/":     <Gem size={16} />,
   "/apartment-moving/":     <HomeIcon size={16} />,
   "/senior-moving/":        <Users size={16} />,
-  "/moving-supplies/":      <Briefcase size={16} />,
 };
 
 const SERVICE_DESCRIPTIONS: Record<string, string> = {
@@ -42,7 +41,6 @@ const SERVICE_DESCRIPTIONS: Record<string, string> = {
   "/specialty-moving/":     "Pianos, antiques & safes",
   "/apartment-moving/":     "Studio to multi-bedroom",
   "/senior-moving/":        "Careful, patient service",
-  "/moving-supplies/":      "Boxes, tape & more",
 };
 
 // Services that get a "Most Popular" badge

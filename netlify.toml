@@ -799,12 +799,6 @@
   force = true
 
 [[redirects]]
-  from = "/piano-moving/"
-  to = "/piano-moving/"
-  status = 301
-  force = true
-
-[[redirects]]
   from = "/queen-anne-storage-services/"
   to = "/queen-anne-movers/"
   status = 301
