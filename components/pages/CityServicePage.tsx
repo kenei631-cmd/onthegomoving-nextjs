@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
+import { LOCATION_DATA } from "@/lib/locationData";
 
 // ---------------------------------------------------------------------------
 // Data types
@@ -887,19 +888,19 @@ export default function CityServicePage({ slug }: CityServicePageProps) {
         "@type": ["MovingCompany", "LocalBusiness"],
         name: COMPANY.name,
         url: `https://onthegomoving.com/${data.slug}/`,
-        telephone: COMPANY.phone,
+        telephone: LOCATION_DATA[`${data.citySlug}-movers`]?.gbp?.telephone ?? COMPANY.phone,
         address: {
           "@type": "PostalAddress",
-          streetAddress: "4024 13th Ave W",
-          addressLocality: "Redmond",
+          streetAddress: LOCATION_DATA[`${data.citySlug}-movers`]?.gbp?.streetAddress ?? "16625 Redmond Way #M365",
+          addressLocality: LOCATION_DATA[`${data.citySlug}-movers`]?.gbp?.addressLocality ?? "Redmond",
           addressRegion: "WA",
-          postalCode: "98052",
+          postalCode: LOCATION_DATA[`${data.citySlug}-movers`]?.gbp?.postalCode ?? "98052",
           addressCountry: "US",
         },
         areaServed: { "@type": "City", name: data.city, containedInPlace: { "@type": "State", name: "Washington" } },
-        aggregateRating: { "@type": "AggregateRating", ratingValue: "4.8", reviewCount: "1562", bestRating: "5" },
+        aggregateRating: { "@type": "AggregateRating", ratingValue: LOCATION_DATA[`${data.citySlug}-movers`]?.gbp?.ratingValue ?? "4.8", reviewCount: LOCATION_DATA[`${data.citySlug}-movers`]?.gbp?.reviewCount ?? "1562", bestRating: "5" },
         priceRange: "$$",
-        openingHours: ["Mo-Su 07:00-19:00"],
+        openingHours: ["Mo-Su 00:00-00:00"],
       },
       {
         "@context": "https://schema.org",

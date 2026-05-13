@@ -35,6 +35,17 @@ export interface LocationData {
   apartment: string;
   home: string;
   business: string;
+  // Optional GBP (Google Business Profile) overrides for secondary locations
+  gbp?: {
+    streetAddress: string;
+    addressLocality: string;
+    postalCode: string;
+    telephone?: string;
+    reviewCount: string;
+    ratingValue?: string;
+    latitude?: number;
+    longitude?: number;
+  };
 }
 
 export const LOCATION_DATA: Record<string, LocationData> = {
@@ -74,6 +85,16 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       ["Shoreline", "shoreline-movers"],
       ["Tukwila", "tukwila-movers"],
     ],
+    gbp: {
+      streetAddress: "4024 13th Ave W",
+      addressLocality: "Seattle",
+      postalCode: "98119",
+      telephone: "(425) 761-8500",
+      reviewCount: "394",
+      ratingValue: "4.8",
+      latitude: 47.6505,
+      longitude: -122.3793,
+    },
     apartment: "Seattle's apartment market is one of the most active in the country. South Lake Union, Capitol Hill, and Belltown have dense high-rise buildings with strict elevator reservation and move-in window requirements. Ballard, Fremont, and Wallingford have older low-rise buildings with narrower access. Our crews handle all coordination before move day. Most Seattle apartment moves complete in 2\u20135 hours depending on floor and building type.",
     home: "Seattle home moves span a wide range \u2014 from compact craftsman bungalows in Ballard and Fremont to large homes in Magnolia and Madison Park. Our residential crews handle steep driveways, narrow streets, and the oversized furniture common in Seattle's newer construction. We bring floor runners, door jamb protectors, and furniture pads on every job.",
     business: "Seattle is home to Amazon, Boeing, and hundreds of tech companies. Our commercial crews are trained on IT equipment handling, workstation disassembly, and chain-of-custody documentation. We work weekends and after hours to keep your business running.",
@@ -114,6 +135,16 @@ export const LOCATION_DATA: Record<string, LocationData> = {
       ["Mercer Island", "mercer-island-movers"],
       ["Issaquah", "issaquah-movers"],
     ],
+    gbp: {
+      streetAddress: "4010 140th Ave SE",
+      addressLocality: "Bellevue",
+      postalCode: "98006",
+      telephone: "(425) 761-8500",
+      reviewCount: "163",
+      ratingValue: "4.8",
+      latitude: 47.5701,
+      longitude: -122.1665,
+    },
     apartment: "Bellevue's apartment market ranges from luxury high-rises in Downtown to mid-rise complexes in Crossroads and Eastgate. Downtown buildings like The Bravern and Cirrus require elevator reservations and certificates of insurance. Crossroads complexes often have limited parking for moving trucks \u2014 we scout access points before move day. Most Bellevue apartment moves complete in 2\u20134 hours.",
     home: "Bellevue home moves span a wide range \u2014 from compact townhomes in Factoria to large estates in Somerset and Newport Hills. Our residential crews handle steep driveways, long carry distances, and the oversized furniture common in Bellevue's newer construction. We bring floor runners, door jamb protectors, and furniture pads on every job.",
     business: "Bellevue is home to major employers including Microsoft, T-Mobile, and Expedia, plus hundreds of tech startups in the Spring District and Bel-Red corridor. Our commercial crews are trained on IT equipment handling, workstation disassembly, and chain-of-custody documentation. We work weekends and after hours to keep your business running.",
