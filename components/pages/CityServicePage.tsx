@@ -985,7 +985,21 @@ export default function CityServicePage({ slug }: CityServicePageProps) {
               </div>
             </div>
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* Mobile: phone + form inline in hero */}
+            <div className="lg:hidden space-y-4">
+              <a
+                href={COMPANY.phoneHref}
+                className="inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-base px-6 py-3 rounded-lg transition-all hover:scale-105 shadow-lg w-full sm:w-auto"
+              >
+                <Phone className="w-5 h-5" />
+                Call {COMPANY.phone}
+              </a>
+              <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-t-4 border-brand-green">
+                <QuoteForm variant="hero" defaultFreeStorage={data.serviceSlug === "storage-services" || data.serviceSlug === "warehousing-and-logistics"} />
+              </div>
+            </div>
+            {/* Desktop: phone + quote link (sidebar has the form) */}
+            <div className="hidden lg:flex flex-row gap-4">
               <a
                 href={COMPANY.phoneHref}
                 className="inline-flex items-center justify-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-lg px-8 py-4 rounded-lg transition-all hover:scale-105 shadow-lg"

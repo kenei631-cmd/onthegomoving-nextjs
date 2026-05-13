@@ -426,18 +426,31 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 </div>
               </div>
 
-              {/* Phone CTA */}
+              {/* Mobile: phone + form inline in hero */}
+              <div className="lg:hidden space-y-4">
+                <a
+                  href={COMPANY.phoneHref}
+                  className="inline-flex items-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-base px-6 py-3 rounded-lg transition-all hover:scale-105 shadow-lg w-full sm:w-auto justify-center"
+                >
+                  <Phone className="w-5 h-5" />
+                  Call {COMPANY.phone}
+                </a>
+                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+                  <QuoteForm />
+                </div>
+              </div>
+              {/* Desktop: phone CTA only (form is in right column) */}
               <a
                 href={COMPANY.phoneHref}
-                className="inline-flex items-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-lg px-6 py-4 rounded-lg transition-all hover:scale-105 shadow-lg"
+                className="hidden lg:inline-flex items-center gap-3 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold text-lg px-6 py-4 rounded-lg transition-all hover:scale-105 shadow-lg"
               >
                 <Phone className="w-5 h-5" />
                 Call {COMPANY.phone}
               </a>
             </div>
 
-            {/* Right: Quote Form */}
-            <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            {/* Right: Quote Form (desktop only) */}
+            <div className="hidden lg:block bg-white rounded-2xl shadow-2xl overflow-hidden">
               <QuoteForm />
             </div>
           </div>

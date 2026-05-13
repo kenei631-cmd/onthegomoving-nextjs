@@ -991,26 +991,26 @@ export default function ServicePage({ slug }: ServicePageProps) {
                   <span className="text-white text-sm font-medium">Since 2009</span>
                 </div>
               </div>
-              <a
-                href={COMPANY.phoneHref}
-                className="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold px-6 py-3 rounded-lg transition-all hover:scale-105 text-base lg:hidden"
-              >
-                <Phone size={16} /> Call {COMPANY.phone}
-              </a>
+              {/* Mobile: phone + form inline in hero */}
+              <div className="lg:hidden space-y-4">
+                <a
+                  href={COMPANY.phoneHref}
+                  className="inline-flex items-center gap-2 bg-brand-gold hover:bg-brand-gold-dark text-brand-forest font-bold px-6 py-3 rounded-lg transition-all hover:scale-105 text-base w-full sm:w-auto justify-center"
+                >
+                  <Phone size={16} /> Call {COMPANY.phone}
+                </a>
+                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-t-4 border-brand-green">
+                  <QuoteForm variant="hero" defaultFreeStorage={slug === "storage-services" || slug === "warehousing-services"} />
+                </div>
+              </div>
             </div>
+            {/* Desktop: form in right column */}
             <div className="hidden lg:block">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border-t-4 border-brand-green">
                 <QuoteForm variant="hero" defaultFreeStorage={slug === "storage-services" || slug === "warehousing-services"} />
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Mobile quote form */}
-      <section className="lg:hidden bg-gray-50 py-8 border-b border-gray-200">
-        <div className="container">
-          <QuoteForm variant="inline" defaultFreeStorage={slug === "storage-services" || slug === "warehousing-services"} />
         </div>
       </section>
 
