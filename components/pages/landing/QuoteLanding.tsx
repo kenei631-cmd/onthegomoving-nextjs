@@ -110,9 +110,10 @@ export default function QuoteLanding() {
                 <a
                   href={COMPANY.phoneHref}
                   onClick={() => pushPhoneClickEvent("quote-hero")}
-                  className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-xl px-8 py-4 rounded-xl transition-colors shadow-lg"
+                  className="inline-flex items-center gap-3 bg-[#75aa11] hover:bg-[#5e8a0d] text-white font-extrabold text-base sm:text-xl px-5 sm:px-8 py-3 sm:py-4 rounded-xl transition-colors shadow-lg"
                 >
-                  <Phone size={22} />
+                  <Phone size={18} className="sm:hidden" />
+                  <Phone size={22} className="hidden sm:block" />
                   {COMPANY.phone}
                 </a>
               </div>
@@ -136,6 +137,7 @@ export default function QuoteLanding() {
                 variant="inline"
                 sourceLabel="landing-quote"
                 isLandingPage={true}
+                defaultMoveType="house"
               />
             </div>
           </div>

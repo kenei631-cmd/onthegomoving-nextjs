@@ -222,7 +222,7 @@ export default function QuoteForm({
 
   const inputClass = (name: string) =>
     [
-      "w-full px-3 py-2.5 text-sm border rounded-md bg-white text-gray-800 placeholder-gray-400",
+      "w-full px-3 py-3.5 text-base border rounded-md bg-white text-gray-800 placeholder-gray-400",
       "outline-none transition-all duration-200",
       focused === name
         ? "border-[#75aa11] ring-2 ring-[#75aa11]/20 shadow-sm"

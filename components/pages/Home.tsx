@@ -192,7 +192,7 @@ export default function Home() {
             {/* ── Right: Quote form ── */}
             <div className="hidden lg:block">
               <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                <QuoteForm variant="hero" />
+                <QuoteForm variant="hero" defaultMoveType="house" />
               </div>
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function Home() {
       {/* Mobile quote form */}
       <section className="lg:hidden bg-[#f5f5f3] py-8">
         <div className="container">
-          <QuoteForm variant="inline" />
+          <QuoteForm variant="inline" defaultMoveType="house" />
         </div>
       </section>
 
