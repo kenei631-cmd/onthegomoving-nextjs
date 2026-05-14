@@ -78,8 +78,8 @@ export default function Home() {
 
   // Schema is injected server-side in app/(main)/page.tsx for static HTML inclusion
   useSEO({
-    title: "On The Go Moving & Storage | Seattle Movers Since 2009",
-    description: "Seattle's most trusted movers since 2009. Residential, commercial, packing & storage across Greater Seattle & the Eastside. Licensed, insured, 4.8 stars. Free quote.",
+    title: "On The Go Moving & Storage | Greater Seattle Moving Company",
+    description: "On The Go Moving & Storage — Greater Seattle's trusted moving company since 2009. Residential, commercial, packing & storage across the Puget Sound. Licensed & insured. Free quote.",
     canonical: "https://onthegomoving.com/",
     ogType: "website",
   });
@@ -148,13 +148,12 @@ export default function Home() {
                 className="text-5xl lg:text-6xl xl:text-7xl font-extrabold text-white leading-tight mb-5"
                 style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
               >
-                Seattle Moving
+                Greater Seattle's
                 <br />
-                <span style={{ color: "#75aa11" }}>You Can Rely On.</span>
+                <span style={{ color: "#75aa11" }}>Trusted Movers.</span>
               </h1>
-
               <p className="text-green-100 text-lg leading-relaxed mb-7 max-w-lg">
-             Flat-rate pricing, professional crews, and 1 free month of storage — trusted by 25,000+ Seattle families since 2009.
+                Flat-rate pricing, professional crews, and 1 free month of storage — trusted by 25,000+ Puget Sound families since 2009.
               </p>
 
               {/* Trust strip — single line, plain text style */}
