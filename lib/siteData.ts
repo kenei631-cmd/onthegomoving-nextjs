@@ -164,6 +164,96 @@ export const SERVICES = [
       "Moving and storage services tailored for home stagers. Fast turnaround, flexible scheduling, and secure vault storage between staging projects.",
     image: BRAND_IMAGES.teamFleet,
   },
+  {
+    title: "Packing Services",
+    slug: "packing-services",
+    href: "/packing-services/",
+    icon: "📦",
+    description:
+      "Professional packing using quality materials — all supplies included. Full-pack, partial-pack, or fragile-only options available.",
+    image: BRAND_IMAGES.packingCrew,
+  },
+  {
+    title: "Labor Only Moving",
+    slug: "labor-only-moving",
+    href: "/labor-only-moving/",
+    icon: "💪",
+    description:
+      "Need loading or unloading help without a truck? Our professional crews bring the same care and equipment — ask about upgrading to a full-service move.",
+    image: BRAND_IMAGES.laborOnlyCrew,
+  },
+  {
+    title: "Furniture Moving",
+    slug: "furniture-moving",
+    href: "/furniture-moving/",
+    icon: "🛋️",
+    description:
+      "Single-item or full-room furniture moves, rearrangements, and deliveries. Fully padded and wrapped for protection on every job.",
+    image: BRAND_IMAGES.crewWrappingFurniture,
+  },
+  {
+    title: "Condo Moving",
+    slug: "condo-moving",
+    href: "/condo-moving/",
+    icon: "🏙️",
+    description:
+      "Condo moves handled with building compliance in mind — elevator reservations, COI certificates, and move-in/out rules managed for you.",
+    image: BRAND_IMAGES.crewEntryway3,
+  },
+  {
+    title: "Appliance Moving",
+    slug: "appliance-moving",
+    href: "/appliance-moving/",
+    icon: "🔧",
+    description:
+      "Safe transport of washers, dryers, refrigerators, and heavy appliances. Proper equipment and trained crews for every job.",
+    image: BRAND_IMAGES.crewCarryingFurniture,
+  },
+  {
+    title: "Unpacking Services",
+    slug: "unpacking-services",
+    href: "/unpacking-services/",
+    icon: "📬",
+    description:
+      "Let our crew unpack and set up your new home. We remove all packing materials and get everything in place so you can settle in faster.",
+    image: BRAND_IMAGES.crewEntryway1,
+  },
+  {
+    title: "Warehousing & Distribution",
+    slug: "warehousing-distribution",
+    href: "/warehousing-distribution/",
+    icon: "🏭",
+    description:
+      "Short and long-term warehousing at our Redmond facility. Secure vault storage, inventory management, and distribution services available.",
+    image: BRAND_IMAGES.storageWarehouse,
+  },
+  {
+    title: "Office Moving",
+    slug: "office-moving",
+    href: "/office-moving/",
+    icon: "🖥️",
+    description:
+      "Complete office relocations with minimal disruption. We handle workstations, filing systems, IT equipment, and furniture — evenings and weekends available.",
+    image: BRAND_IMAGES.officeMoveAction,
+  },
+  {
+    title: "Corporate Relocation",
+    slug: "corporate-relocation",
+    href: "/corporate-relocation/",
+    icon: "🤝",
+    description:
+      "End-to-end corporate relocation services for businesses of all sizes. Dedicated project managers, flexible scheduling, and full liability coverage.",
+    image: BRAND_IMAGES.crewCustomerCommercial,
+  },
+  {
+    title: "Freight Forwarding",
+    slug: "freight-forwarding-service",
+    href: "/freight-forwarding-service/",
+    icon: "🚚",
+    description:
+      "Long-distance freight forwarding and logistics services. We coordinate transport, handling, and delivery for large or complex shipments.",
+    image: BRAND_IMAGES.brandedTruck,
+  },
 ];
 
 export const TESTIMONIALS = [
