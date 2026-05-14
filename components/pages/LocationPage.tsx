@@ -405,25 +405,17 @@ export default function LocationPage({ slug }: LocationPageProps) {
                 {data.heroSubtitle}
               </p>
 
-              {/* Trust signals — single inline strip */}
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8">
-                <div className="flex items-center gap-1.5">
-                  <div className="flex text-brand-gold">
-                    {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-current" />)}
-                  </div>
-                  <span className="text-white text-sm font-semibold">4.8</span>
-                  <span className="text-green-200 text-xs">(1,562 reviews)</span>
+              {/* Trust strip — single line, plain text style */}
+              <div className="flex items-center gap-1.5 mb-8 text-xs sm:text-sm text-white/80">
+                <div className="flex items-center gap-1">
+                  {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
                 </div>
-                <span className="text-white/30 hidden sm:inline">|</span>
-                <div className="flex items-center gap-1.5">
-                  <Shield className="w-4 h-4 text-brand-gold" />
-                  <span className="text-white text-sm">Licensed & Insured</span>
-                </div>
-                <span className="text-white/30 hidden sm:inline">|</span>
-                <div className="flex items-center gap-1.5">
-                  <Clock className="w-4 h-4 text-brand-gold" />
-                  <span className="text-white text-sm">Since 2009</span>
-                </div>
+                <span className="text-white font-semibold">4.8</span>
+                <span className="text-white/50">(1,562 reviews)</span>
+                <span className="text-white/30 mx-1">·</span>
+                <span>Licensed &amp; Insured</span>
+                <span className="text-white/30 mx-1 hidden sm:inline">·</span>
+                <span className="hidden sm:inline">Since 2009</span>
               </div>
 
               {/* Mobile: phone + form inline in hero */}
