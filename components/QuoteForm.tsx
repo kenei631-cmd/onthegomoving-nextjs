@@ -250,8 +250,10 @@ export default function QuoteForm({
         className,
       ].join(" ")}
     >
-      {/* Hidden input required by Netlify Forms */}
+      {/* Hidden inputs required by Netlify Forms — must exist as real HTML elements for Netlify to capture them */}
       <input type="hidden" name="form-name" value="quote-request" />
+      <input type="hidden" name="sourcePage" value="" />
+      <input type="hidden" name="sourceLabel" value="" />
 
       {variant === "hero" && (
         <div className="mb-5">
