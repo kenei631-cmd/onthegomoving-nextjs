@@ -1687,3 +1687,40 @@
   to = "/blog/"
   status = 301
   force = true
+
+# ─── Corporate relocation city sub-pages — missing 7 cities (404 fix) ─────────
+[[redirects]]
+  from = "/seattle-movers/corporate-relocation/"
+  to = "/seattle-movers/commercial/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/lynnwood-movers/corporate-relocation/"
+  to = "/lynnwood-movers/commercial/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/snoqualmie-movers/corporate-relocation/"
+  to = "/snoqualmie-movers/commercial/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/carnation-movers/corporate-relocation/"
+  to = "/carnation-movers/commercial/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/mercer-island-movers/corporate-relocation/"
+  to = "/mercer-island-movers/commercial/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/kenmore-movers/corporate-relocation/"
+  to = "/kenmore-movers/commercial/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/tukwila-movers/corporate-relocation/"
+  to = "/tukwila-movers/commercial/"
+  status = 301
+  force = true
