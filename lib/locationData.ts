@@ -159,7 +159,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     drive: "Home base",
     metaTitle: "Redmond Movers & Storage",
     metaDescription: "On The Go Moving & Storage serves Redmond, WA. Licensed & insured local movers with 4.8 stars and 1,562 reviews. Get a free quote today.",
-    heroTagline: "Redmond's Home-Town Moving Company",
+    heroTagline: "Redmond's Most Trusted Local Movers",
     heroSubtitle: "Serving Downtown Redmond, Education Hill, Overlake, Bear Creek, Grass Lawn & all Redmond neighborhoods.",
     intro: "On The Go Moving & Storage is based in Redmond, WA \u2014 this is our home city. Our warehouse is on Redmond Way, and our crews live and work in the same neighborhoods we serve. We know the traffic patterns on 520, the parking rules near Redmond Town Center, the elevator policies at Overlake's tech campus apartment buildings, and the long driveways on Education Hill. No moving company knows Redmond better.",
     localKnowledge: "Redmond is Microsoft's hometown and one of the most active moving markets on the Eastside. The Overlake neighborhood near Microsoft's campus has dense apartment complexes with strict move-in policies. Education Hill and Bear Creek feature large family homes on wooded lots with challenging access. Downtown Redmond's newer mixed-use buildings require elevator coordination. Our warehouse on Redmond Way means we can mobilize faster than any other moving company in the city \u2014 typically arriving within 30 minutes of your scheduled start time.",
