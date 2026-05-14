@@ -196,8 +196,8 @@ export default function CommercialMovingLanding() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div className="rounded-2xl overflow-hidden shadow-lg order-2 lg:order-1">
               <img
-                src={BRAND_IMAGES.officeMoveAction}
-                alt="On The Go Moving commercial office relocation"
+                src="/commercialmovers.jpeg"
+                alt="On The Go Moving truck at Microsoft campus in Redmond, WA"
                 className="w-full h-72 object-cover"
                 loading="lazy"
               />
