@@ -30,6 +30,7 @@ import QuoteForm from "@/components/QuoteForm";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 import { COMPANY } from "@/lib/siteData";
 import { LOCATION_DATA } from "@/lib/locationData";
+import { TIER_A_CONTENT } from "@/lib/tierAContent";
 
 // ---------------------------------------------------------------------------
 // Canonical service definitions
@@ -683,6 +684,22 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
 
   const faqs = serviceDef.faqs(city);
   const steps = serviceDef.steps(city);
+
+  // Tier A deep content lookup
+  // Maps service keys to the 4 canonical Tier A service slugs
+  const TIER_A_SERVICE_MAP: Record<string, string> = {
+    residential: "residential",
+    apartment: "apartment",
+    condo: "apartment",
+    commercial: "commercial",
+    office: "commercial",
+    "corporate-relocation": "commercial",
+    packing: "packing",
+  };
+  const tierAServiceKey = TIER_A_SERVICE_MAP[serviceKey];
+  const tierAEntry = tierAServiceKey
+    ? TIER_A_CONTENT[`${citySlug}-${tierAServiceKey}`] ?? null
+    : null;
   const nearbySlug = NEARBY_CITIES[citySlug] || [];
 
   // Pick the most relevant challenge(s) from cityData based on service type
@@ -871,14 +888,19 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                   {serviceDef.label} in {city}, WA
                 </h2>
                 <p className="text-gray-700 leading-relaxed text-lg mb-5">
-                  {serviceDef.intro(city, cityData)}
-                  {localChallenges.length > 0 && (
-                    <span className="block mt-3 text-gray-600">
-                      {localChallenges.length === 1
-                        ? `One thing to know about moving in ${city}: ${localChallenges[0].charAt(0).toLowerCase() + localChallenges[0].slice(1)}.`
-                        : `A few things to know about moving in ${city}: ${localChallenges[0].charAt(0).toLowerCase() + localChallenges[0].slice(1)}; ${localChallenges[1].charAt(0).toLowerCase() + localChallenges[1].slice(1)}.`
-                      }
-                    </span>
+                  {/* Tier A: use deep intro; fallback to template intro + challenges */}
+                  {tierAEntry ? tierAEntry.intro : (
+                    <>
+                      {serviceDef.intro(city, cityData)}
+                      {localChallenges.length > 0 && (
+                        <span className="block mt-3 text-gray-600">
+                          {localChallenges.length === 1
+                            ? `One thing to know about moving in ${city}: ${localChallenges[0].charAt(0).toLowerCase() + localChallenges[0].slice(1)}.`
+                            : `A few things to know about moving in ${city}: ${localChallenges[0].charAt(0).toLowerCase() + localChallenges[0].slice(1)}; ${localChallenges[1].charAt(0).toLowerCase() + localChallenges[1].slice(1)}.`
+                          }
+                        </span>
+                      )}
+                    </>
                   )}
                 </p>
                 {/* Cross-link to service hub — differentiates content intent */}
@@ -915,13 +937,23 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                 </div>
               )}
 
-              {/* City-specific context — Option 2 */}
-              {cityContextBody && (
+              {/* City-specific context — Option 2 (non-Tier-A pages only) */}
+              {!tierAEntry && cityContextBody && (
                 <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
                   <h2 className="font-display text-2xl font-bold text-brand-forest mb-4">
                     {cityContextHeading}
                   </h2>
                   <p className="text-gray-700 leading-relaxed">{cityContextBody}</p>
+                </div>
+              )}
+
+              {/* Tier A: Building callouts card */}
+              {tierAEntry && (
+                <div className="bg-green-50 rounded-2xl border border-green-200 p-8">
+                  <h2 className="font-display text-2xl font-bold text-brand-forest mb-4">
+                    {tierAEntry.buildingCalloutsHeading}
+                  </h2>
+                  <p className="text-gray-700 leading-relaxed">{tierAEntry.buildingCallouts}</p>
                 </div>
               )}
 
@@ -963,7 +995,7 @@ export default function CityServiceSubPage({ citySlug, serviceKey }: CityService
                   {serviceDef.label} in {city} — Common Questions
                 </h2>
                 <div className="space-y-3">
-                  {[...faqs, ...blendedCityFaqs].map((faq, i) => (
+                  {[...faqs, ...(tierAEntry ? tierAEntry.extraFaqs : blendedCityFaqs)].map((faq, i) => (
                     <div key={i} className="border border-gray-200 rounded-xl overflow-hidden">
                       <button
                         onClick={() => setOpenFaq(openFaq === i ? null : i)}
