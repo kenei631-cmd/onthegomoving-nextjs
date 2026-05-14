@@ -969,20 +969,18 @@ export default function CityServicePage({ slug }: CityServicePageProps) {
             <p className="text-green-100 text-lg lg:text-xl mb-8 max-w-2xl">
               {data.heroSubtitle}
             </p>
-            {/* Trust badges */}
-            <div className="flex flex-wrap items-center gap-4 mb-8">
-              <div className="flex items-center gap-1.5 bg-white/10 rounded-full px-3 py-1.5">
-                {[1,2,3,4,5].map(i => <Star key={i} className="w-3.5 h-3.5 fill-brand-gold text-brand-gold" />)}
-                <span className="text-white text-xs font-semibold ml-1">4.8 (1,562 reviews)</span>
+            {/* Trust strip — single line, plain text style */}
+            <div className="flex items-center gap-1.5 mb-8 text-xs sm:text-sm text-white/80">
+              <div className="flex items-center gap-1">
+                {[1,2,3,4,5].map(i => <Star key={i} size={12} fill="#fbc319" color="#fbc319" />)}
               </div>
-              <div className="flex items-center gap-1.5 bg-white/10 rounded-full px-3 py-1.5">
-                <Shield className="w-3.5 h-3.5 text-brand-gold" />
-                <span className="text-white text-xs font-semibold">Licensed & Insured</span>
-              </div>
-              <div className="flex items-center gap-1.5 bg-white/10 rounded-full px-3 py-1.5">
-                <CheckCircle className="w-3.5 h-3.5 text-brand-gold" />
-                <span className="text-white text-xs font-semibold">Serving {data.city} since 2009</span>
-              </div>
+              <span className="text-white font-semibold">4.8</span>
+              <span className="text-white/50">(1,562 reviews)</span>
+              <span className="text-white/30 mx-1">·</span>
+              <Shield size={12} className="text-[#75aa11] flex-shrink-0" />
+              <span>Licensed &amp; Insured</span>
+              <span className="text-white/30 mx-1 hidden sm:inline">·</span>
+              <span className="hidden sm:inline">Since 2009</span>
             </div>
             {/* CTAs */}
             {/* Mobile: phone + form inline in hero */}
