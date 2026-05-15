@@ -783,7 +783,7 @@ export const BLOG_POSTS: BlogIndexPost[] = [
   {
     slug: "moving-to-seattle",
     title: `Moving to Seattle in 2026: What Living Here Is Actually Like (Honest Guide)`,
-    date: "March 15, 2021",
+    date: "May 14, 2026",
     category: "Local Guides",
     excerpt: `What is living in Seattle actually like? Real talk on the Seattle Freeze, neighborhoods, cost of living, the rain, and what locals wish they'd known before moving.`,
     image: BRAND_IMAGES.truckSeattleSkyline,
