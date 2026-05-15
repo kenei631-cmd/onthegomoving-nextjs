@@ -2274,9 +2274,3 @@
   to = "/blog/"
   status = 301
   force = true
-
-[[redirects]]
-  from = "/mercer-island-movers/"
-  to = "/mercer-island-movers/"
-  status = 301
-  force = true
