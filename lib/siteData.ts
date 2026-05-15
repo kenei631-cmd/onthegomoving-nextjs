@@ -256,6 +256,21 @@ export const SERVICES = [
   },
 ];
 
+// The 6 services shown on the home page (image 3 from design brief)
+export const HOME_SERVICES = SERVICES.filter((s) =>
+  [
+    "residential-moving",
+    "commercial-moving",
+    "storage-services",
+    "apartment-moving",
+    "senior-moving",
+    "staging-professionals",
+  ].includes(s.slug)
+).sort((a, b) => {
+  const order = ["residential-moving", "commercial-moving", "storage-services", "apartment-moving", "senior-moving", "staging-professionals"];
+  return order.indexOf(a.slug) - order.indexOf(b.slug);
+});
+
 export const TESTIMONIALS = [
   {
     name: "Sarah M.",

@@ -20,7 +20,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import QuoteForm from "@/components/QuoteForm";
 import {
-  COMPANY, SERVICES, TESTIMONIALS, STATS, FAQS, ALL_LOCATIONS,
+  COMPANY, HOME_SERVICES, TESTIMONIALS, STATS, FAQS, ALL_LOCATIONS,
 } from "@/lib/siteData";
 import { BRAND_IMAGES } from "@/lib/brandImages";
 
@@ -230,7 +230,7 @@ export default function Home() {
           </FadeSection>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {SERVICES.map((service) => (
+            {HOME_SERVICES.map((service) => (
               <FadeSection key={service.slug}>
                 <a href={service.href}>
                   <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg border border-transparent hover:border-[#75aa11]/20 transition-all duration-200 group h-full">
