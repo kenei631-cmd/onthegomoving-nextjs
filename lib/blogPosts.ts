@@ -1059,6 +1059,6 @@ export const BLOG_POSTS: BlogIndexPost[] = [
     image: BRAND_IMAGES.crewHoodieAtTruck,
     readTime: "7 min read",
   }
-];
+].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 export const BLOG_CATEGORIES = ["All", "Commercial Moving", "Local Guides", "Moving Costs", "Moving Tips", "Packing Tips", "Senior Moving", "Specialty Moving", "Storage"];
