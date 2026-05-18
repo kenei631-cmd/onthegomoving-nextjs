@@ -53,7 +53,7 @@ function buildSupermovePayload(lead) {
       primary_contact: {
         full_name: lead.fullName,
         email: lead.email,
-        phone_number: "+1" + (lead.phone || "").replace(/\D/g, ""),
+        phone_number: (() => { const d = (lead.phone || "").replace(/\D/g, "").slice(0, 10); return d.length === 10 ? `+1 ${d.slice(0,3)}-${d.slice(3,6)}-${d.slice(6)}` : "+1" + d; })(),
       },
     },
     jobs: [
