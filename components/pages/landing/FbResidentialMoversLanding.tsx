@@ -143,7 +143,10 @@ const MOVE_SIZES = [
 // Format phone for display: (425) 333-3333
 // Raw digits are extracted before sending to SuperMove
 function formatPhoneDisplay(value: string): string {
-  const digits = value.replace(/\D/g, "").slice(0, 10);
+  let digits = value.replace(/\D/g, "");
+  // Strip leading 1 (country code) if user accidentally types it
+  if (digits.length === 11 && digits.startsWith("1")) digits = digits.slice(1);
+  digits = digits.slice(0, 10);
   if (digits.length <= 3) return digits.length ? `(${digits}` : "";
   if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
   return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
