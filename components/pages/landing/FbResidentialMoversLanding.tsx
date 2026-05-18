@@ -241,14 +241,20 @@ function FbQuoteForm() {
         </div>
         <div>
           <label className="block text-xs font-semibold text-gray-600 mb-1">Phone *</label>
-          <input
-            type="tel"
-            required
-            value={phone}
-            onChange={(e) => setPhone(formatPhoneDisplay(e.target.value))}
-            placeholder="(425) 555-0100"
-            className="w-full border border-gray-300 rounded-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
-          />
+          <div className="flex items-center">
+            <span className="flex-shrink-0 px-3 py-2.5 text-sm border border-gray-300 border-r-0 rounded-l-lg bg-gray-50 text-gray-500 select-none">
+              +1
+            </span>
+            <input
+              type="tel"
+              required
+              autoComplete="tel-national"
+              value={phone}
+              onChange={(e) => setPhone(formatPhoneDisplay(e.target.value))}
+              placeholder="(425) 555-0100"
+              className="w-full border border-gray-300 rounded-r-lg px-3 py-2.5 text-sm text-gray-900 bg-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#75aa11] focus:border-transparent"
+            />
+          </div>
         </div>
       </div>
       <div>

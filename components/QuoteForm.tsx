@@ -54,6 +54,7 @@ const MOVE_SIZES = [
 ];
 
 /** Format phone digits as (425) 333-3333 for display.
+ *  Accepts only 10 digits — the +1 country code is shown as a static prefix in the UI.
  *  Raw digits are extracted before sending to SuperMove / Netlify Forms. */
 function formatPhoneDisplay(value: string): string {
   const digits = value.replace(/\D/g, "").slice(0, 10);
@@ -322,17 +323,35 @@ export default function QuoteForm({
           <label className={`${labelClass} ${focused === "phone" ? "text-[#75aa11]" : ""}`}>
             Phone *
           </label>
-          <input
-            type="tel"
-            name="phone"
-            required
-            autoComplete="tel"
-            value={formData.phone}
-            onChange={handleChange}
-            placeholder="(425) 555-0100"
-            className={inputClass("phone")}
-            {...focusProps("phone")}
-          />
+          <div className="flex items-center">
+            <span
+              className={[
+                "flex-shrink-0 px-3 py-3.5 text-base border rounded-l-md bg-gray-50 text-gray-500 select-none",
+                focused === "phone"
+                  ? "border-[#75aa11] ring-2 ring-[#75aa11]/20 ring-r-0 border-r-0"
+                  : "border-gray-200 border-r-0",
+              ].join(" ")}
+            >
+              +1
+            </span>
+            <input
+              type="tel"
+              name="phone"
+              required
+              autoComplete="tel-national"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="(425) 555-0100"
+              className={[
+                "w-full px-3 py-3.5 text-base border rounded-r-md bg-white text-gray-800 placeholder-gray-400",
+                "outline-none transition-all duration-200",
+                focused === "phone"
+                  ? "border-[#75aa11] ring-2 ring-[#75aa11]/20"
+                  : "border-gray-200 hover:border-gray-300",
+              ].join(" ")}
+              {...focusProps("phone")}
+            />
+          </div>
         </div>
 
         {/* Row 2: Email | Requested Move Date */}
