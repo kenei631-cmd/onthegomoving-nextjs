@@ -125,7 +125,7 @@ const COMPANIES = [
       "Offers packing and storage services",
     ],
     cons: [
-      "Some recent reviews (2025–2026) cite billing disputes and overruns",
+      "Some recent reviews (2026) cite billing disputes and overruns",
       "Pricing can vary significantly based on crew and date",
       "Less transparent pricing structure than hourly-only competitors",
     ],
@@ -345,7 +345,7 @@ const COMPANIES = [
       "No hidden fees policy advertised",
     ],
     cons: [
-      "Recent Reddit reports (2025–2026) of significant billing overruns vs. estimates",
+      "Recent Reddit reports (2026) of significant billing overruns vs. estimates",
       "One widely-shared Reddit post described a $915 estimate becoming a $3,700 final bill",
       "Mixed reviews — quality appears inconsistent across crews",
     ],
