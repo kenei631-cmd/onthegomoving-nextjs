@@ -302,75 +302,6 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
     ],
     pricingNote: "Redmond packing rates: $35–$55/hr per packer. All materials included.",
   },
-
-  // ──────────────────────────────────────────────────────────────────────────
-  // ISSAQUAH
-  // ──────────────────────────────────────────────────────────────────────────
-
-  "issaquah-residential": {
-    intro: `Issaquah's residential neighborhoods present a unique combination of challenges: the steep internal roads of Issaquah Highlands, the HOA move-in rules of Talus, the narrow historic streets of Downtown Issaquah, and the I-90 traffic that can add an hour to any move that isn't scheduled carefully. Issaquah Highlands — one of the largest planned communities in Washington State — has HOA move-in rules that require advance notice, a COI, and moves restricted to specific hours. Talus has similar requirements plus steep hillside lots that require careful truck positioning. Our crews have been moving Issaquah homes since 2009 and know every neighborhood's specific requirements before the truck leaves the yard.`,
-    buildingCalloutsHeading: "Issaquah Neighborhoods We Know Best",
-    buildingCallouts: `We move homes throughout Issaquah and have specific experience with each area: Issaquah Highlands (HOA move-in rules, COI required, restricted hours, steep internal roads), Talus (HOA coordination, steep hillside lots, limited truck access on upper streets), Downtown Issaquah (narrow historic streets near Gilman Village, limited truck parking), Grand Ridge (newer large-lot homes, long carries, HOA coordination), Montreux (gated community, advance notice required, large estate homes), and East Issaquah (rural properties, long driveways, limited road access in some areas).`,
-    extraFaqs: [
-      {
-        q: "What are the HOA move-in rules in Issaquah Highlands?",
-        a: "Issaquah Highlands HOA move-in rules require advance notice (typically 48–72 hours to the HOA), a certificate of insurance naming the HOA as additional insured, and moves restricted to daylight hours (typically 8 a.m.–6 p.m.). Some sections also require a refundable damage deposit. We handle all HOA coordination on your behalf — just provide your HOA contact when you book and we'll confirm the requirements before move day.",
-      },
-      {
-        q: "How do you handle I-90 traffic for Issaquah moves?",
-        a: "I-90 traffic between Issaquah and the rest of the Eastside can be significant during peak hours, especially on weekday mornings and Friday afternoons. We schedule Issaquah moves to avoid peak traffic — typically starting at 7–8 a.m. on weekdays to get ahead of the morning rush. For moves that involve multiple trips (large homes or long-distance moves within the region), we plan the route and timing to minimize I-90 exposure.",
-      },
-    ],
-  },
-
-  "issaquah-apartment": {
-    intro: `Issaquah's apartment market is centered around Issaquah Highlands and the newer mixed-use developments near downtown. Issaquah Highlands apartment buildings have standard elevator and move-in window requirements, and the HOA-level rules that apply to the broader Highlands community also apply to apartment residents. The newer mixed-use buildings near Front Street and Gilman Village have loading dock access but limited street parking for moving trucks. Our crews handle all building coordination before your move date, and because we're based nearby in Redmond, we can often accommodate last-minute bookings that out-of-area companies can't.`,
-    buildingCalloutsHeading: "Issaquah Apartment Buildings We Move Regularly",
-    buildingCallouts: `We have on-file experience with the following Issaquah apartment buildings: Issaquah Highlands apartment complexes (HOA and building elevator coordination, COI required, restricted hours), Front Street mixed-use buildings in Downtown Issaquah (loading dock access, limited street parking), Gilman Village-area apartments (older buildings, no freight elevator, stair carries common on upper floors), Grand Ridge apartments (newer construction, standard elevator reservation), and Talus-area townhomes (HOA coordination, steep access on some lots).`,
-    extraFaqs: [
-      {
-        q: "Do Issaquah Highlands apartments require a COI for moving companies?",
-        a: "Yes. Most apartment buildings in Issaquah Highlands require a certificate of insurance (COI) naming the building as additional insured. The HOA-level rules for Issaquah Highlands also require advance notice and moves restricted to specific hours. We carry the required insurance and can provide a COI for any Issaquah Highlands building. When you book, let us know your building and we'll handle the coordination.",
-      },
-      {
-        q: "Is there parking for moving trucks near Downtown Issaquah apartments?",
-        a: "Parking for large moving trucks near Downtown Issaquah and Gilman Village can be limited. We scout parking options before every Downtown Issaquah move — in some cases, we use a smaller vehicle for the final approach and shuttle items to the main truck on Front Street or a nearby side street. There's no additional charge for this — it's part of our standard preparation for Downtown Issaquah moves.",
-      },
-    ],
-  },
-
-  "issaquah-commercial": {
-    intro: `Issaquah's commercial moving market is smaller than Seattle or Bellevue but growing steadily, driven by the expansion of businesses along Front Street and in the Gilman Village area. The Front Street corridor has street-level loading that requires careful scheduling around Issaquah's peak traffic hours on I-90. Gilman Village's historic buildings have narrow access and no loading docks, requiring hand-carry from the street. Our commercial crews handle office moves of every size in Issaquah and work evenings and weekends to minimize business disruption. We're based in Redmond — 15 minutes from Issaquah — which means fast response times and no travel surcharge.`,
-    buildingCalloutsHeading: "Issaquah Office Buildings We Move Regularly",
-    buildingCallouts: `We have direct experience with the following Issaquah office locations: Front Street office buildings (street-level loading, I-90 traffic scheduling important), Gilman Village office spaces (historic buildings, narrow access, hand-carry from street), Issaquah Highlands commercial buildings (standard loading dock access, HOA coordination may apply), and East Issaquah office parks (surface parking, standard access). For any Issaquah commercial move, we recommend a free on-site walkthrough to assess access and plan the move sequence.`,
-    extraFaqs: [
-      {
-        q: "Can you move our Issaquah office on a weekend?",
-        a: "Yes — weekend moves are our most common request for Issaquah office relocations. We work Saturday and Sunday, and we can start as early as 6 a.m. to maximize your available time. Most Issaquah commercial buildings allow weekend access with advance notice. We'll coordinate directly with your building's property manager or landlord to confirm access.",
-      },
-      {
-        q: "How long does a typical Issaquah office move take?",
-        a: "A small Issaquah office (5–10 workstations) typically takes 4–6 hours with a 2-person crew. A medium office (20–30 workstations) takes 8–12 hours with a 3-person crew. For larger offices, we recommend a free on-site walkthrough to provide an accurate time and cost estimate. We provide flat-rate quotes for commercial moves so you know the final price before we start.",
-      },
-    ],
-  },
-
-  "issaquah-packing": {
-    intro: `Issaquah homes range from historic downtown properties to large new construction in Issaquah Highlands and Talus, and packing requirements vary accordingly. Issaquah Highlands and Talus homes tend to be large and well-furnished, with extensive contents that benefit from professional packing. Historic Downtown Issaquah homes often have vintage fixtures, antique furniture, and irregular-sized items that require specialty wrapping. Our Issaquah packing crews bring all materials and are experienced with the full range of packing scenarios. We also know the HOA move-out inspection requirements for Issaquah Highlands and Talus, and we pack accordingly to protect common area walls and floors.`,
-    buildingCalloutsHeading: "Packing Services Across Issaquah Neighborhoods",
-    buildingCallouts: `Our packing crews work throughout Issaquah and are experienced with the specific requirements of each area: Issaquah Highlands (large homes, HOA move-out inspection compliance, COI required), Talus (steep hillside homes, HOA coordination, packing sequence important for safe loading), Downtown Issaquah (historic homes with vintage fixtures and antique furniture, specialty wrapping required), Grand Ridge (newer large-lot homes, extensive contents, full-pack service common), and Montreux (gated estate homes, high-value contents, custom crating available).`,
-    extraFaqs: [
-      {
-        q: "Do you pack homes in Issaquah Highlands with HOA move-out requirements?",
-        a: "Yes. Issaquah Highlands HOA move-out requirements typically include protecting common area walls and floors during carry-out, which means every item needs to be properly wrapped and padded before it leaves your unit. Our packing crews are experienced with these requirements and bring floor runners, door jamb protectors, and furniture pads for every Issaquah Highlands move. We also coordinate with the HOA on your behalf to confirm specific requirements before move day.",
-      },
-      {
-        q: "How much does it cost to pack a 3-bedroom Issaquah Highlands home?",
-        a: "A typical 3-bedroom Issaquah Highlands home takes 6–10 hours to pack with a 2-person crew at $35–$55 per hour per packer. All packing materials are included — no surprise supply charges. For homes with extensive art, antiques, or a large kitchen, packing takes longer. We recommend getting a quote based on a walkthrough of your home so we can give you an accurate estimate.",
-      },
-    ],
-  },
-
   // ──────────────────────────────────────────────────────────────────────────
   // SAMMAMISH
   // ──────────────────────────────────────────────────────────────────────────
@@ -955,6 +886,781 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
       {
         q: "Do you pack outdoor furniture and garage equipment for Sammamish moves?",
         a: "Yes. Outdoor furniture, grills, lawn equipment, and garage tools are often the most time-consuming part of a Sammamish move. We bring heavy-duty boxes, stretch wrap, and weatherproof packing materials for outdoor items. For large power tools and equipment, we can disassemble and wrap components for safe transport. For items going into storage, we use weatherproof wrapping to protect against moisture.",
+      },
+    ],
+  },
+
+// ===================================================================
+// BOTHELL
+// ===================================================================
+
+  "bothell-residential": {
+    intro: `Bothell's residential moving market spans two counties — King and Snohomish — and our crews navigate both with ease. North Creek and Queensborough are the city's largest planned communities, with HOA move-in rules that require certificates of insurance and designated move windows. Canyon Park's newer construction features large homes with long driveways and oversized furniture that demands proper equipment. Downtown Bothell's revitalized core has older homes with narrow doorways and limited street parking — our crews scout access points before move day. I-405 and SR-522 are the main corridors; we schedule around peak traffic to keep your move on time. Our Redmond warehouse is 11 miles south, a fast 18-minute drive.`,
+    buildingCalloutsHeading: "Residential Moving Across Bothell Neighborhoods",
+    buildingCallouts: `On The Go Moving serves every Bothell neighborhood: North Creek (HOA coordination, COI required, large single-family homes), Queensborough (planned community, HOA move-in rules, newer construction), Canyon Park (dense residential and office mix, large homes, long driveways), Downtown Bothell (older homes, narrow streets, limited parking, historic character), Thrasher's Corner (newer suburban homes, standard access), and Westhill (established residential, mix of home sizes).`,
+    extraFaqs: [
+      {
+        q: "Do you handle moves that cross the King/Snohomish county line in Bothell?",
+        a: "Yes. Bothell straddles King and Snohomish counties, and many moves within the city cross the county line. Our license covers both counties — there's no additional charge or complication for cross-county moves within Bothell.",
+      },
+      {
+        q: "How do you handle HOA move-in requirements in North Creek and Queensborough?",
+        a: "We're experienced with both communities. We provide certificates of insurance on request, coordinate with HOA management for move-in windows, and ensure our crews follow all community rules. We recommend contacting your HOA 2–3 weeks before your move to confirm requirements.",
+      },
+    ],
+  },
+  "bothell-apartment": {
+    intro: `Bothell's apartment market is concentrated in Canyon Park and Downtown Bothell's newer mixed-use buildings. Canyon Park has seen significant apartment development over the past decade, with buildings that require elevator reservations and certificates of insurance. Downtown Bothell's revitalized core has brought new mixed-use buildings along Main Street with standard elevator and move-in window requirements. Our crews coordinate directly with building management to secure your elevator reservation and confirm move-in windows before move day — so you're not scrambling the morning of your move.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Bothell",
+    buildingCallouts: `Our apartment moving crews are experienced throughout Bothell: Canyon Park apartment complexes (elevator reservations required, COI required, standard move-in windows), Downtown Bothell mixed-use buildings along Main Street (elevator coordination, limited street parking, weekday and weekend moves available), North Creek apartment communities (standard move-in requirements, HOA coordination), and Thrasher's Corner apartment complexes (newer buildings, standard access, ample parking).`,
+    extraFaqs: [
+      {
+        q: "How do I get a certificate of insurance for my Canyon Park apartment move?",
+        a: "We provide certificates of insurance at no charge for all apartment moves. Just send us your building management's requirements — typically the building's name, address, and required coverage amounts — and we'll issue the COI within 24 hours.",
+      },
+      {
+        q: "Can you move me into a new Canyon Park apartment on a weekend?",
+        a: "Yes. We offer weekend moves throughout Canyon Park and Downtown Bothell. Weekend availability fills quickly in summer — we recommend booking 2–3 weeks in advance for weekend dates.",
+      },
+    ],
+  },
+  "bothell-packing": {
+    intro: `Bothell's mix of large planned-community homes and older downtown properties creates a wide range of packing scenarios. North Creek and Queensborough homes tend to be large and well-furnished — full-pack service is common for these moves, and our crews bring all materials. Canyon Park homes often have large garages with workshop equipment and outdoor furniture that requires weatherproof packing. Downtown Bothell's older homes sometimes have fragile antiques and collectibles that need custom wrapping. Whatever your Bothell home contains, our packing crews have the materials and experience to protect it.`,
+    buildingCalloutsHeading: "Packing Services Across Bothell Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Bothell neighborhoods: North Creek and Queensborough (large homes, extensive contents, HOA move-out compliance, full-pack service common), Canyon Park (large garages, workshop equipment, outdoor furniture, weatherproof packing), Downtown Bothell (older homes, antiques and collectibles, custom wrapping available), and Thrasher's Corner (newer suburban homes, standard packing, efficient turnaround).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a large North Creek home?",
+        a: "A typical 4-bedroom North Creek home takes 8–12 hours to pack with a 2-person crew. Homes with large garages or workshop equipment take longer. We recommend a 2-day packing schedule for large Bothell homes — packing the main living areas on day one and the garage and outdoor items on day two.",
+      },
+      {
+        q: "Do you pack antiques and collectibles in Downtown Bothell homes?",
+        a: "Yes. We have experience packing antiques, artwork, and collectibles. We use custom wrapping, double-boxing, and specialty packing materials for fragile and high-value items. For very high-value pieces, we can arrange custom crating.",
+      },
+    ],
+  },
+  "bothell-commercial": {
+    intro: `Canyon Park is one of the largest office parks in the north Eastside, and it's one of our most active commercial moving areas. The park's mix of tech companies, professional services firms, and medical offices means we handle everything from standard workstation moves to sensitive IT equipment and medical device relocation. Downtown Bothell's growing commercial corridor has added retail and restaurant moves to our Bothell workload. We work after hours and on weekends to minimize business disruption, and our project managers coordinate directly with your facilities team.`,
+    buildingCalloutsHeading: "Commercial Moving in Bothell's Business Districts",
+    buildingCallouts: `We serve Bothell's major commercial areas: Canyon Park Business Center (large office campus, IT equipment handling, after-hours moves, workstation disassembly/reassembly), North Creek Business Park (tech and professional services, sensitive equipment, weekend moves), Downtown Bothell commercial corridor (retail and restaurant moves, storefront access, flexible scheduling), and Thrasher's Corner commercial area (standard office moves, ample parking, efficient access).`,
+    extraFaqs: [
+      {
+        q: "Do you handle IT equipment moves in Canyon Park?",
+        a: "Yes. Canyon Park is one of our most active IT equipment move areas. Our crews are trained on proper handling for servers, workstations, and networking equipment. We use anti-static bags, custom crating, and climate-controlled transport for sensitive equipment.",
+      },
+      {
+        q: "Can you move our Canyon Park office over a weekend to avoid downtime?",
+        a: "Yes. Weekend moves are standard for Canyon Park office relocations. We coordinate with your facilities team to plan the move sequence, handle IT equipment first, and have your new space operational by Monday morning.",
+      },
+    ],
+  },
+  "bothell-storage": {
+    intro: `Bothell residents and businesses frequently need storage during moves — whether bridging a gap between closing dates, downsizing from a North Creek family home, or staging a Canyon Park office relocation. Our secure, climate-controlled storage facility in Redmond is 11 miles south of Bothell, a fast 18-minute drive via I-405. We offer month-to-month storage with no long-term contracts, and your first month is free with any Bothell move. Items are stored in individual vaulted units — your belongings are never co-mingled with other customers' items.`,
+    buildingCalloutsHeading: "Storage Solutions for Bothell Residents and Businesses",
+    buildingCallouts: `Common Bothell storage scenarios we handle: North Creek and Queensborough home downsizing (large furniture, seasonal items, long-term storage available), Canyon Park office staging (furniture, equipment, records storage during office relocation), Downtown Bothell home renovation storage (full household contents, month-to-month, first month free with move), and business inventory storage (palletized storage, forklift access, commercial rates available).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Bothell?",
+        a: "Our Redmond storage facility is 11 miles south of Bothell — about 18 minutes via I-405. We can pick up your items in Bothell and deliver them to storage, then deliver back to your new Bothell address when you're ready.",
+      },
+      {
+        q: "Do you offer long-term storage for Bothell residents who are relocating out of state?",
+        a: "Yes. We offer month-to-month storage with no minimum commitment. Many Bothell residents use our storage while they're between homes or waiting for a new home to close. We can store your belongings for as long as you need.",
+      },
+    ],
+  },
+  "bothell-senior": {
+    intro: `Senior moves in Bothell require patience, careful planning, and crews who understand that this move is more than just boxes and furniture. Whether you're downsizing from a large North Creek home into a smaller residence, or moving a parent into one of Bothell's assisted living communities, our senior moving crews bring the care and communication that makes the difference. We work at a pace that's comfortable for seniors, handle fragile items with extra care, and coordinate directly with family members who are managing the move remotely.`,
+    buildingCalloutsHeading: "Senior Moving Resources in Bothell",
+    buildingCallouts: `We regularly assist seniors moving to and from Bothell's senior communities: Sunrise of Bothell (assisted living, coordinated move-in, elevator access), Brookdale Bothell (memory care and assisted living, move-in coordination with staff), Chateau at Bothell Landing (independent living, standard move-in requirements), and private residences throughout North Creek, Queensborough, and Canyon Park (downsizing, estate moves, family coordination).`,
+    extraFaqs: [
+      {
+        q: "How do you coordinate a senior move into an assisted living facility in Bothell?",
+        a: "We contact the facility in advance to confirm move-in procedures, elevator access, and any items that cannot be brought in. On move day, we coordinate with facility staff to ensure a smooth transition. We can also help with furniture placement in the new room.",
+      },
+      {
+        q: "Can you help downsize a large North Creek home for a senior move?",
+        a: "Yes. We work with seniors and their families on downsizing moves. We can move selected items to the new residence, transport donations to local charities, and coordinate with junk removal services for items that won't be kept. We take the logistics off your plate.",
+      },
+    ],
+  },
+  "bothell-furniture": {
+    intro: `Bothell's large North Creek and Queensborough homes are full of oversized furniture — sectional sofas, king beds, dining sets, and entertainment centers that challenge even experienced movers. Canyon Park's newer construction often features open-plan layouts where furniture was assembled in place and can't exit through standard doorways without disassembly. Our Bothell furniture crews carry the right equipment for every scenario: furniture boards, appliance dollies, stair-climbing hand trucks, and moving straps. Single-item moves, in-home rearranging, or full furniture relocation — we handle all of it.`,
+    buildingCalloutsHeading: "Furniture Moving Across Bothell",
+    buildingCallouts: `Our furniture crews serve all Bothell neighborhoods: North Creek and Queensborough (large homes, oversized furniture, HOA move-in coordination), Canyon Park (newer construction, open-plan layouts, furniture disassembly/reassembly), Downtown Bothell (older homes, narrow doorways and staircases, careful maneuvering required), and Thrasher's Corner (standard suburban homes, efficient access, ample parking).`,
+    extraFaqs: [
+      {
+        q: "Can you move a large sectional sofa out of a North Creek home?",
+        a: "Yes. Large sectional sofas are one of the most common furniture challenges in North Creek and Queensborough homes. Our crews assess the best exit path — sometimes through a sliding door or garage — and disassemble sectionals when needed to navigate doorways safely.",
+      },
+      {
+        q: "Do you offer in-home furniture rearranging in Bothell?",
+        a: "Yes. We offer in-home furniture rearranging throughout Bothell. Our crews bring dollies and moving equipment to safely move heavy furniture within your home without damaging floors or walls. Minimum 2-hour booking applies.",
+      },
+    ],
+  },
+  "bothell-appliance": {
+    intro: `Appliance moves in Bothell require the right equipment and the right technique. A refrigerator dragged across hardwood floors in a North Creek home leaves scratches that cost more to fix than the moving service. Our Bothell appliance crews use appliance dollies, floor runners, and moving straps on every job — the refrigerator never touches your floor directly. We move refrigerators, washers, dryers, dishwashers, and large ranges throughout Bothell, and we coordinate disconnection and reconnection assistance for standard appliances.`,
+    buildingCalloutsHeading: "Appliance Moving Across Bothell",
+    buildingCallouts: `Our appliance moving crews serve all Bothell neighborhoods: North Creek and Queensborough (large homes, multiple appliances, hardwood floor protection), Canyon Park (newer construction, standard appliance access, garage appliance moves), Downtown Bothell (older homes, narrow doorways, careful maneuvering), and Thrasher's Corner (standard suburban homes, efficient appliance moves).`,
+    extraFaqs: [
+      {
+        q: "Can you disconnect and reconnect appliances in Bothell?",
+        a: "We can disconnect and reconnect standard appliances including washers, dryers, and refrigerators with standard water line connections. For gas appliances, we recommend a licensed plumber for disconnection and reconnection.",
+      },
+      {
+        q: "How much does it cost to move a refrigerator in Bothell?",
+        a: "A single appliance move in Bothell typically costs $150–$350 depending on size, weight, and distance. Multiple appliance moves are priced hourly at $120–$160/hr. We provide flat-rate quotes for all appliance jobs.",
+      },
+    ],
+  },
+  "bothell-unpacking": {
+    intro: `After a Bothell move, the last thing most people want to do is face a house full of boxes. Our unpacking crews come in after your move and turn those stacked boxes into a functional home. We unpack room by room, place items where you want them, and remove all packing materials when we're done. For large North Creek and Queensborough homes, we recommend scheduling unpacking for the day after your move — it's more efficient and less chaotic than trying to unpack while the moving crew is still working.`,
+    buildingCalloutsHeading: "Unpacking Services Across Bothell",
+    buildingCallouts: `Our unpacking crews serve all Bothell neighborhoods and specialize in: North Creek and Queensborough (large homes, extensive contents, full-unpack service, box removal), Canyon Park (newer construction, efficient layouts, kitchen and bedroom unpacking), Downtown Bothell (older homes, careful placement of antiques and collectibles), and Thrasher's Corner (standard suburban homes, efficient unpacking turnaround).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to unpack a large Bothell home?",
+        a: "A typical 4-bedroom Bothell home takes 6–10 hours to unpack with a 2-person crew. We work room by room and remove all packing materials as we go. For large North Creek homes, we recommend a full-day unpacking service.",
+      },
+      {
+        q: "Do you remove boxes and packing materials after unpacking in Bothell?",
+        a: "Yes. We remove all boxes and packing materials at the end of the unpacking service. We break down boxes and take them with us — you don't need to arrange separate recycling pickup.",
+      },
+    ],
+  },
+  "bothell-warehousing": {
+    intro: `Bothell businesses in Canyon Park and along the SR-522 corridor frequently need warehousing and distribution support — whether for office furniture during a relocation, inventory overflow, or equipment staging. Our Redmond warehouse facility is 11 miles south of Bothell, offering climate-controlled storage, palletized storage with forklift access, and flexible month-to-month terms. We handle the full logistics chain: pickup from your Bothell location, storage at our facility, and delivery to your new address or distribution point.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Bothell Businesses",
+    buildingCallouts: `We serve Bothell's major business areas with warehousing solutions: Canyon Park Business Center (office furniture storage, equipment staging, IT equipment storage), North Creek Business Park (inventory overflow, palletized storage, forklift access), Downtown Bothell commercial (retail inventory, seasonal storage, flexible terms), and Thrasher's Corner commercial (standard warehousing, efficient pickup and delivery).`,
+    extraFaqs: [
+      {
+        q: "Do you offer short-term warehousing for Canyon Park office relocations?",
+        a: "Yes. Short-term warehousing is one of our most common services for Canyon Park office relocations. We store furniture and equipment during the transition and deliver to your new location when it's ready. Month-to-month terms, no long-term commitment required.",
+      },
+      {
+        q: "Can you handle palletized inventory storage for a Bothell business?",
+        a: "Yes. Our Redmond facility has forklift access and can handle palletized inventory storage. We offer commercial rates for businesses with ongoing storage needs. Contact us for a custom quote based on your volume and service level.",
+      },
+    ],
+  },
+
+// ===================================================================
+// ISSAQUAH
+// ===================================================================
+
+  "issaquah-residential": {
+    intro: `Issaquah's residential moving landscape is defined by its hillside geography and its large planned communities. Issaquah Highlands sits on a ridge above the city, with steep internal roads that require experienced drivers and properly loaded trucks. Talus has strict HOA move-in rules including certificates of insurance and designated move windows. Historic Downtown Issaquah has narrow streets with limited truck parking — our crews arrive early to secure the best access position. I-90 makes Issaquah one of our most efficient service areas from our Redmond warehouse, just 10 miles northwest.`,
+    buildingCalloutsHeading: "Residential Moving Across Issaquah Neighborhoods",
+    buildingCallouts: `On The Go Moving serves every Issaquah neighborhood: Issaquah Highlands (steep internal roads, HOA coordination, large single-family homes, COI required), Talus (strict HOA move-in rules, newer construction, COI required), Downtown Issaquah (narrow streets, limited parking, older homes, historic character), Grand Ridge (newer development, standard access, large homes), Montreux (gated community, estate homes, advance coordination required), and Gilman Village (mixed residential/retail, standard access).`,
+    extraFaqs: [
+      {
+        q: "How do you navigate the steep roads in Issaquah Highlands?",
+        a: "Our drivers know Issaquah Highlands well. We use the most efficient truck access routes and load trucks with weight distribution optimized for hillside driving. For very steep driveways, we use our smaller trucks for the initial approach and stage the larger truck at a safe distance.",
+      },
+      {
+        q: "What HOA documentation do I need for a Talus move?",
+        a: "Talus typically requires a certificate of insurance from your moving company, advance notice to HOA management, and adherence to designated move-in windows. We provide COIs at no charge and recommend contacting Talus HOA management 2–3 weeks before your move to confirm current requirements.",
+      },
+    ],
+  },
+  "issaquah-apartment": {
+    intro: `Issaquah's apartment market is centered around Issaquah Highlands and the newer mixed-use developments near downtown. Highlands apartment buildings have standard elevator and move-in window requirements — our crews coordinate directly with building management to secure your reservation before move day. The newer buildings near Gilman Village and Front Street have similar requirements. Most Issaquah apartment moves complete in 2–4 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Issaquah",
+    buildingCallouts: `Our apartment moving crews are experienced throughout Issaquah: Issaquah Highlands apartment communities (elevator reservations required, COI required, standard move-in windows, hillside access), Gilman Village mixed-use apartments (standard move-in requirements, limited street parking, weekday and weekend moves), Front Street apartment buildings (newer construction, elevator coordination, efficient access), and Talus apartment units (HOA coordination, COI required, advance scheduling recommended).`,
+    extraFaqs: [
+      {
+        q: "Do Issaquah Highlands apartment buildings require a certificate of insurance?",
+        a: "Most Issaquah Highlands apartment buildings require a COI from your moving company. We provide certificates of insurance at no charge — just send us your building's requirements and we'll issue the COI within 24 hours.",
+      },
+      {
+        q: "How far in advance should I book an Issaquah apartment move?",
+        a: "We recommend booking 2–3 weeks in advance for Issaquah apartment moves, especially for Highlands buildings where elevator reservations fill quickly on weekends and end-of-month dates.",
+      },
+    ],
+  },
+  "issaquah-packing": {
+    intro: `Issaquah Highlands homes are large and well-furnished — full-pack service is common for these moves, and our crews bring all materials. Talus homes often have extensive outdoor furniture and garage equipment that requires weatherproof packing. Historic Downtown Issaquah homes sometimes contain antiques and collectibles that need custom wrapping. Whatever your Issaquah home contains, our packing crews have the experience and materials to protect it for the move.`,
+    buildingCalloutsHeading: "Packing Services Across Issaquah Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Issaquah neighborhoods: Issaquah Highlands (large homes, extensive contents, HOA move-out compliance, full-pack service common), Talus (large garages, outdoor furniture, weatherproof packing, HOA compliance), Downtown Issaquah (older homes, antiques and collectibles, custom wrapping available), Grand Ridge (newer construction, standard packing, efficient turnaround), and Montreux (estate homes, high-value contents, custom crating available).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a large Issaquah Highlands home?",
+        a: "A typical 4-bedroom Issaquah Highlands home takes 8–14 hours to pack with a 2-person crew. Homes with large garages or extensive outdoor furniture take longer. We recommend a 2-day packing schedule for large Highlands homes.",
+      },
+      {
+        q: "Can you pack wine collections for Issaquah moves?",
+        a: "Yes. We pack wine collections with proper padding and temperature-aware wrapping. For large collections, we recommend our full packing service to ensure every bottle is properly protected. We can also arrange climate-controlled transport for valuable collections.",
+      },
+    ],
+  },
+  "issaquah-commercial": {
+    intro: `Issaquah's business community is concentrated along Front Street and in the Gilman Village area, with a growing tech presence near I-90. Our commercial crews handle office moves with minimal disruption — we work after hours and on weekends, and our project managers coordinate directly with your facilities team. For tech companies near I-90, we have experience with sensitive IT equipment handling and workstation disassembly/reassembly. Flat-rate quotes available for all Issaquah commercial moves.`,
+    buildingCalloutsHeading: "Commercial Moving in Issaquah's Business Districts",
+    buildingCallouts: `We serve Issaquah's major commercial areas: Front Street business corridor (retail and office moves, standard access, flexible scheduling), Gilman Village commercial (retail and restaurant moves, historic buildings, careful access), I-90 tech corridor (IT equipment handling, workstation moves, after-hours available), and Issaquah Highlands commercial (office parks, standard move-in requirements, ample parking).`,
+    extraFaqs: [
+      {
+        q: "Do you handle IT equipment moves for Issaquah tech companies?",
+        a: "Yes. We regularly move IT equipment for tech companies near I-90 and in Issaquah Highlands. Our crews use anti-static bags, custom crating, and climate-controlled transport for sensitive equipment.",
+      },
+      {
+        q: "Can you move a Gilman Village retail store after hours?",
+        a: "Yes. We offer after-hours and weekend moves for Gilman Village retail stores. We coordinate with building management and work efficiently to minimize your downtime.",
+      },
+    ],
+  },
+  "issaquah-storage": {
+    intro: `Issaquah residents frequently need storage during moves — whether bridging a gap between closing dates, downsizing from a large Highlands home, or staging a relocation. Our secure, climate-controlled storage facility in Redmond is 10 miles from Issaquah via I-90 — a fast 15-minute drive. We offer month-to-month storage with no long-term contracts, and your first month is free with any Issaquah move. Items are stored in individual vaulted units — your belongings are never co-mingled with other customers' items.`,
+    buildingCalloutsHeading: "Storage Solutions for Issaquah Residents and Businesses",
+    buildingCallouts: `Common Issaquah storage scenarios we handle: Issaquah Highlands home downsizing (large furniture, seasonal items, long-term storage available), Talus home renovation storage (full household contents, month-to-month, first month free with move), Downtown Issaquah estate storage (antiques, collectibles, climate-controlled units), and business inventory storage (palletized storage, forklift access, commercial rates available).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Issaquah?",
+        a: "Our Redmond storage facility is 10 miles from Issaquah via I-90 — about 15 minutes. We can pick up your items in Issaquah and deliver them to storage, then deliver back to your new Issaquah address when you're ready.",
+      },
+      {
+        q: "Do you offer climate-controlled storage for antiques from Downtown Issaquah homes?",
+        a: "Yes. Our Redmond facility is climate-controlled, making it suitable for antiques, artwork, wine collections, and other temperature-sensitive items. All storage units maintain consistent temperature and humidity year-round.",
+      },
+    ],
+  },
+  "issaquah-senior": {
+    intro: `Senior moves in Issaquah often involve downsizing from large Highlands or Talus homes into smaller residences or assisted living communities. Our senior moving crews understand that this transition is significant — we work at a pace that's comfortable, handle fragile items with extra care, and coordinate with family members who may be managing the move from a distance. We regularly assist seniors moving into Issaquah's assisted living communities and can help navigate the specific move-in requirements for each facility.`,
+    buildingCalloutsHeading: "Senior Moving Resources in Issaquah",
+    buildingCallouts: `We regularly assist seniors moving to and from Issaquah's senior communities: Emerald City Senior Living (assisted living, coordinated move-in), Issaquah Senior Center area residences (independent living, standard move-in), private residences throughout Issaquah Highlands and Talus (downsizing, estate moves, family coordination), and moves to senior communities in nearby Bellevue, Sammamish, and Renton.`,
+    extraFaqs: [
+      {
+        q: "Can you help downsize a large Issaquah Highlands home for a senior move?",
+        a: "Yes. We work with seniors and their families on downsizing moves from large Highlands homes. We move selected items to the new residence, transport donations to local charities, and coordinate with junk removal services for items that won't be kept.",
+      },
+      {
+        q: "How do you handle the steep driveways in Issaquah Highlands for senior moves?",
+        a: "We assess the driveway in advance and bring the appropriate equipment. For very steep driveways, we use our smaller trucks for the initial approach. We take extra time on senior moves to ensure nothing is rushed or damaged.",
+      },
+    ],
+  },
+  "issaquah-furniture": {
+    intro: `Issaquah Highlands homes are large and full of oversized furniture — sectionals, king beds, and dining sets that challenge even experienced movers on the community's steep internal roads. Talus homes often have furniture that was assembled in place and requires disassembly to exit through standard doorways. Our Issaquah furniture crews carry furniture boards, appliance dollies, stair-climbing hand trucks, and moving straps on every job. Single-item moves, in-home rearranging, or full furniture relocation — we handle all of it.`,
+    buildingCalloutsHeading: "Furniture Moving Across Issaquah",
+    buildingCallouts: `Our furniture crews serve all Issaquah neighborhoods: Issaquah Highlands (steep roads, large homes, oversized furniture, HOA coordination), Talus (newer construction, furniture disassembly/reassembly, HOA compliance), Downtown Issaquah (older homes, narrow doorways, careful maneuvering), Grand Ridge (newer construction, standard access, large furniture common), and Montreux (estate homes, high-value furniture, white-glove handling available).`,
+    extraFaqs: [
+      {
+        q: "Can you move furniture up and down the steep roads in Issaquah Highlands?",
+        a: "Yes. Our drivers and crews are experienced with Issaquah Highlands' steep internal roads. We load trucks with proper weight distribution for hillside driving and use the safest access routes for each property.",
+      },
+      {
+        q: "Do you offer furniture disassembly and reassembly in Issaquah?",
+        a: "Yes. We disassemble and reassemble furniture as needed for moves throughout Issaquah. Common items include bed frames, large dining tables, sectional sofas, and wardrobe systems. Disassembly and reassembly is included in our standard move pricing.",
+      },
+    ],
+  },
+  "issaquah-appliance": {
+    intro: `Appliance moves in Issaquah require careful planning — especially in Issaquah Highlands, where steep driveways and hillside access add complexity. Our Issaquah appliance crews use appliance dollies, floor runners, and moving straps on every job to protect both the appliance and your floors. We move refrigerators, washers, dryers, dishwashers, and large ranges throughout Issaquah, and we coordinate disconnection and reconnection assistance for standard appliances.`,
+    buildingCalloutsHeading: "Appliance Moving Across Issaquah",
+    buildingCallouts: `Our appliance moving crews serve all Issaquah neighborhoods: Issaquah Highlands (steep driveways, careful appliance handling, floor protection), Talus (newer construction, standard appliance access, garage appliance moves), Downtown Issaquah (older homes, narrow doorways, careful maneuvering), and Grand Ridge (newer construction, standard appliance moves, efficient turnaround).`,
+    extraFaqs: [
+      {
+        q: "How do you move appliances on steep Issaquah Highlands driveways?",
+        a: "We use appliance dollies with straps and wheel chocks for steep driveway appliance moves. Our crews are trained on safe appliance handling on inclines. For very steep driveways, we use our smaller trucks for the initial approach.",
+      },
+      {
+        q: "Can you move a wine refrigerator or beverage cooler in Issaquah?",
+        a: "Yes. We regularly move wine refrigerators and beverage coolers in Issaquah. We empty and pad these units before moving, and we can coordinate with a wine storage specialist if you need climate-controlled transport for valuable collections.",
+      },
+    ],
+  },
+  "issaquah-unpacking": {
+    intro: `After a move into Issaquah Highlands or Talus, the last thing you want to face is a house full of boxes. Our unpacking crews come in after your move and turn those stacked boxes into a functional home — room by room, with all packing materials removed when we're done. For large Highlands homes, we recommend scheduling unpacking for the day after your move for maximum efficiency.`,
+    buildingCalloutsHeading: "Unpacking Services Across Issaquah",
+    buildingCallouts: `Our unpacking crews serve all Issaquah neighborhoods: Issaquah Highlands (large homes, extensive contents, full-unpack service, box removal), Talus (newer construction, efficient layouts, kitchen and bedroom unpacking), Downtown Issaquah (older homes, careful placement of antiques and collectibles), and Grand Ridge (newer construction, standard unpacking, efficient turnaround).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to unpack a large Issaquah Highlands home?",
+        a: "A typical 4-bedroom Issaquah Highlands home takes 6–10 hours to unpack with a 2-person crew. We work room by room and remove all packing materials as we go. For large Highlands homes, we recommend a full-day unpacking service.",
+      },
+      {
+        q: "Can you unpack and organize a kitchen in an Issaquah home?",
+        a: "Yes. Kitchen unpacking and organization is one of our most popular services. We unpack all kitchen boxes, place items in logical locations, and remove all packing materials. You can direct placement or let us use our standard kitchen organization approach.",
+      },
+    ],
+  },
+  "issaquah-warehousing": {
+    intro: `Issaquah businesses along Front Street and near I-90 frequently need warehousing support during relocations or for inventory overflow. Our Redmond warehouse facility is 10 miles from Issaquah via I-90, offering climate-controlled storage, palletized storage with forklift access, and flexible month-to-month terms. We handle the full logistics chain: pickup from your Issaquah location, storage at our facility, and delivery to your new address or distribution point.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Issaquah Businesses",
+    buildingCallouts: `We serve Issaquah's major business areas with warehousing solutions: Front Street business corridor (office furniture storage, retail inventory, flexible terms), I-90 tech corridor (IT equipment staging, workstation storage, climate-controlled units), Gilman Village commercial (retail inventory, seasonal storage, efficient pickup and delivery), and Issaquah Highlands commercial (office furniture, equipment staging, standard warehousing).`,
+    extraFaqs: [
+      {
+        q: "Do you offer warehousing for Issaquah tech companies during office relocations?",
+        a: "Yes. We regularly provide warehousing for tech companies near I-90 during office relocations. We store furniture and equipment during the transition and deliver to your new location when it's ready.",
+      },
+      {
+        q: "Can you store wine inventory for an Issaquah wine business?",
+        a: "Our climate-controlled facility is suitable for wine storage. For large commercial wine inventories, contact us for a custom quote based on your volume and storage requirements.",
+      },
+    ],
+  },
+
+// ===================================================================
+// RENTON
+// ===================================================================
+
+  "renton-residential": {
+    intro: `Renton is one of King County's most diverse and rapidly growing cities, and its residential moving market reflects that diversity. The Landing near Renton Airport has dense apartment buildings with standard elevator and move-in window requirements. Kennydale and Talbot Hill feature homes on steep hillside lots — our crews know the best access routes for each neighborhood. Fairwood and Cascade are established suburban neighborhoods with standard access. I-405 is the main corridor; our crews plan around peak traffic to keep your Renton move on time. Our Redmond warehouse is 13 miles north, a 20-minute drive.`,
+    buildingCalloutsHeading: "Residential Moving Across Renton Neighborhoods",
+    buildingCallouts: `On The Go Moving serves every Renton neighborhood: The Landing (elevator coordination, COI required, standard move-in windows), Kennydale (steep hillside lots, challenging access, large homes), Talbot Hill (hillside properties, careful truck access, established neighborhood), Highlands (established residential, mix of home sizes, standard access), Fairwood (suburban homes, ample parking, efficient moves), and Cascade (established neighborhood, standard access, mix of home sizes).`,
+    extraFaqs: [
+      {
+        q: "How do you handle steep hillside lots in Kennydale and Talbot Hill?",
+        a: "Our crews are experienced with Renton's hillside neighborhoods. We assess driveway access in advance and use the appropriate truck size for each property. For very steep driveways, we use our smaller trucks for the initial approach and stage the larger truck at a safe distance.",
+      },
+      {
+        q: "Do you handle moves near Boeing's Renton facility?",
+        a: "Yes. We regularly move Boeing employees and contractors in and out of Renton. We're familiar with the neighborhoods near the Boeing facility and can work around shift schedules for moves that need to happen on specific days.",
+      },
+    ],
+  },
+  "renton-apartment": {
+    intro: `Renton's apartment market is concentrated at The Landing near Renton Airport and in the Highlands area. The Landing buildings have standard elevator and move-in window requirements — our crews coordinate directly with building management to secure your reservation before move day. The Highlands has a mix of older and newer apartment buildings with varying requirements. Most Renton apartment moves complete in 2–4 hours, and we provide flat-rate quotes so you know the final price before we start.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Renton",
+    buildingCallouts: `Our apartment moving crews are experienced throughout Renton: The Landing apartment buildings (elevator reservations required, COI required, standard move-in windows, near Renton Airport), Highlands apartment complexes (mix of older and newer buildings, standard move-in requirements), Benson Hill apartments (newer construction, standard access, ample parking), and Cascade apartment communities (established buildings, standard move-in requirements).`,
+    extraFaqs: [
+      {
+        q: "How do I reserve an elevator at The Landing in Renton?",
+        a: "We coordinate elevator reservations directly with The Landing building management as part of our move planning process. We contact the building 1–2 weeks before your move to secure your reservation and confirm move-in window requirements.",
+      },
+      {
+        q: "Can you move me into a new Renton apartment on a weekend?",
+        a: "Yes. We offer weekend moves throughout Renton. Weekend availability fills quickly in summer and at end-of-month dates — we recommend booking 2–3 weeks in advance.",
+      },
+    ],
+  },
+  "renton-packing": {
+    intro: `Renton's diverse housing stock creates a wide range of packing scenarios. The Landing's apartment buildings require efficient packing that fits within move-in windows. Kennydale and Talbot Hill homes often have large garages and outdoor equipment that requires weatherproof packing. Fairwood and Cascade homes are typically well-furnished suburban properties where full-pack service is popular. Whatever your Renton home contains, our packing crews bring all materials and have the experience to protect it.`,
+    buildingCalloutsHeading: "Packing Services Across Renton Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Renton neighborhoods: The Landing (apartment packing, efficient turnaround, move-in window compliance), Kennydale and Talbot Hill (large homes, garages, outdoor equipment, weatherproof packing), Highlands (established homes, standard packing, full-pack service available), Fairwood and Cascade (suburban homes, extensive contents, full-pack service popular), and Benson Hill (newer construction, standard packing, efficient turnaround).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Renton home?",
+        a: "A typical 3-bedroom Renton home takes 6–10 hours to pack with a 2-person crew. Homes with large garages or extensive outdoor furniture take longer. We provide a time estimate after a free in-home or virtual consultation.",
+      },
+      {
+        q: "Do you pack items for long-term storage in Renton?",
+        a: "Yes. We pack items specifically for long-term storage using double-boxing, moisture barriers, and weatherproof wrapping for items going into storage. We label all boxes clearly for easy retrieval.",
+      },
+    ],
+  },
+  "renton-commercial": {
+    intro: `Renton's commercial moving market is anchored by Boeing's major manufacturing presence and a growing tech sector near I-405. Our commercial crews handle everything from standard office moves to sensitive IT equipment and manufacturing equipment relocation. Downtown Renton's older commercial buildings have freight elevator requirements that our crews know how to navigate. We work after hours and on weekends to minimize business disruption, and our project managers coordinate directly with your facilities team.`,
+    buildingCalloutsHeading: "Commercial Moving in Renton's Business Districts",
+    buildingCallouts: `We serve Renton's major commercial areas: The Landing commercial district (retail and office moves, standard access, flexible scheduling), Downtown Renton (older commercial buildings, freight elevator coordination, historic character), I-405 tech corridor (IT equipment handling, workstation moves, after-hours available), and Benson Hill commercial (newer office parks, standard move-in requirements, ample parking).`,
+    extraFaqs: [
+      {
+        q: "Do you handle office moves for Boeing contractors in Renton?",
+        a: "Yes. We regularly move Boeing contractors and suppliers in Renton. We're experienced with the security requirements near Boeing facilities and can coordinate moves that need to happen on specific days around production schedules.",
+      },
+      {
+        q: "Can you move a Renton restaurant or retail store?",
+        a: "Yes. We handle restaurant and retail moves throughout Renton. We coordinate with building management for after-hours access and work efficiently to minimize your downtime.",
+      },
+    ],
+  },
+  "renton-storage": {
+    intro: `Renton residents and businesses frequently need storage during moves — whether bridging a gap between closing dates, downsizing from a Kennydale hillside home, or staging a Landing apartment relocation. Our secure, climate-controlled storage facility in Redmond is 13 miles north of Renton, a 20-minute drive via I-405. We offer month-to-month storage with no long-term contracts, and your first month is free with any Renton move.`,
+    buildingCalloutsHeading: "Storage Solutions for Renton Residents and Businesses",
+    buildingCallouts: `Common Renton storage scenarios we handle: Kennydale and Talbot Hill home downsizing (large furniture, seasonal items, long-term storage available), The Landing apartment staging (furniture and boxes during renovation or relocation), Highlands home renovation storage (full household contents, month-to-month), and business inventory storage (palletized storage, forklift access, commercial rates available).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Renton?",
+        a: "Our Redmond storage facility is 13 miles north of Renton — about 20 minutes via I-405. We can pick up your items in Renton and deliver them to storage, then deliver back to your new Renton address when you're ready.",
+      },
+      {
+        q: "Do you offer storage for Boeing contractors between assignments in Renton?",
+        a: "Yes. We offer flexible month-to-month storage for contractors and employees between assignments. No long-term commitment required — store your belongings for as long as you need.",
+      },
+    ],
+  },
+  "renton-senior": {
+    intro: `Senior moves in Renton require patience and careful planning. Whether you're downsizing from a Kennydale hillside home, moving a parent into one of Renton's assisted living communities, or transitioning from a Fairwood family home, our senior moving crews bring the care and communication that makes the difference. We work at a pace that's comfortable for seniors, handle fragile items with extra care, and coordinate directly with family members managing the move remotely.`,
+    buildingCalloutsHeading: "Senior Moving Resources in Renton",
+    buildingCallouts: `We regularly assist seniors moving to and from Renton's senior communities: Merrill Gardens at Renton (assisted living, coordinated move-in, elevator access), Fairwood Retirement Village (independent and assisted living, standard move-in), Renton Highlands senior residences (established neighborhood, standard access), and private residences throughout Kennydale, Talbot Hill, and Fairwood (downsizing, estate moves, family coordination).`,
+    extraFaqs: [
+      {
+        q: "How do you handle steep driveways in Kennydale for senior moves?",
+        a: "We assess the driveway in advance and bring the appropriate equipment. For steep Kennydale driveways, we use our smaller trucks for the initial approach. We take extra time on senior moves to ensure nothing is rushed.",
+      },
+      {
+        q: "Can you coordinate a senior move into Merrill Gardens at Renton?",
+        a: "Yes. We contact Merrill Gardens in advance to confirm move-in procedures, elevator access, and any items that cannot be brought in. On move day, we coordinate with facility staff to ensure a smooth transition.",
+      },
+    ],
+  },
+  "renton-furniture": {
+    intro: `Renton's diverse housing stock creates a wide range of furniture moving challenges. The Landing's apartment buildings have elevator constraints that limit the size of items that can be moved in one piece. Kennydale and Talbot Hill homes have steep driveways where furniture must be carefully secured. Fairwood and Cascade homes often have large sectionals and entertainment centers that require disassembly. Our Renton furniture crews carry the right equipment for every scenario.`,
+    buildingCalloutsHeading: "Furniture Moving Across Renton",
+    buildingCallouts: `Our furniture crews serve all Renton neighborhoods: The Landing (elevator constraints, careful measurement, disassembly when needed), Kennydale and Talbot Hill (steep driveways, careful securing, large homes), Highlands (established homes, standard furniture moves, efficient access), Fairwood and Cascade (suburban homes, large sectionals and entertainment centers, disassembly/reassembly), and Benson Hill (newer construction, standard furniture moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move furniture into The Landing apartments in Renton?",
+        a: "Yes. We regularly move furniture into The Landing. We measure elevator dimensions in advance to confirm what can be moved in one piece, and we disassemble items that won't fit. We coordinate elevator reservations with building management.",
+      },
+      {
+        q: "Do you move pianos in Renton?",
+        a: "Yes. We have specialized equipment and trained crews for upright and grand pianos. Renton's hillside neighborhoods can make piano moves particularly challenging — our crews have the experience to handle it safely.",
+      },
+    ],
+  },
+  "renton-appliance": {
+    intro: `Appliance moves in Renton require the right equipment and technique — especially in Kennydale and Talbot Hill, where steep driveways add complexity. Our Renton appliance crews use appliance dollies, floor runners, and moving straps on every job. We move refrigerators, washers, dryers, dishwashers, and large ranges throughout Renton, and we coordinate disconnection and reconnection assistance for standard appliances.`,
+    buildingCalloutsHeading: "Appliance Moving Across Renton",
+    buildingCallouts: `Our appliance moving crews serve all Renton neighborhoods: Kennydale and Talbot Hill (steep driveways, careful appliance handling, floor protection), The Landing (elevator coordination, standard appliance moves), Highlands (established homes, standard appliance access), Fairwood and Cascade (suburban homes, multiple appliance moves common), and Benson Hill (newer construction, standard appliance moves).`,
+    extraFaqs: [
+      {
+        q: "How do you move appliances on steep Renton driveways?",
+        a: "We use appliance dollies with straps and wheel chocks for steep driveway appliance moves. Our crews are trained on safe appliance handling on inclines. For very steep driveways, we use our smaller trucks for the initial approach.",
+      },
+      {
+        q: "Can you move a washer and dryer in a Renton apartment building?",
+        a: "Yes. We regularly move washers and dryers in Renton apartment buildings. We coordinate elevator access and use appliance dollies and floor protection to move appliances safely through common areas.",
+      },
+    ],
+  },
+  "renton-unpacking": {
+    intro: `After a Renton move, our unpacking crews come in and turn those stacked boxes into a functional home. We unpack room by room, place items where you want them, and remove all packing materials when we're done. For large Kennydale and Fairwood homes, we recommend scheduling unpacking for the day after your move for maximum efficiency.`,
+    buildingCalloutsHeading: "Unpacking Services Across Renton",
+    buildingCallouts: `Our unpacking crews serve all Renton neighborhoods: The Landing (apartment unpacking, efficient turnaround, box removal), Kennydale and Talbot Hill (large homes, full-unpack service, box removal), Highlands (established homes, standard unpacking), Fairwood and Cascade (suburban homes, extensive contents, full-unpack service popular), and Benson Hill (newer construction, efficient unpacking turnaround).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to unpack a Renton home?",
+        a: "A typical 3-bedroom Renton home takes 5–8 hours to unpack with a 2-person crew. We work room by room and remove all packing materials as we go.",
+      },
+      {
+        q: "Do you offer unpacking services for The Landing apartments in Renton?",
+        a: "Yes. We offer unpacking services for all Renton apartment buildings including The Landing. We coordinate with building management for elevator access and work efficiently within your move-in window.",
+      },
+    ],
+  },
+  "renton-warehousing": {
+    intro: `Renton businesses near I-405 and in the Downtown corridor frequently need warehousing support during relocations or for inventory overflow. Our Redmond warehouse facility is 13 miles north of Renton, offering climate-controlled storage, palletized storage with forklift access, and flexible month-to-month terms. We handle the full logistics chain: pickup from your Renton location, storage at our facility, and delivery to your new address or distribution point.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Renton Businesses",
+    buildingCallouts: `We serve Renton's major business areas with warehousing solutions: The Landing commercial (retail inventory, office furniture, flexible terms), Downtown Renton (older commercial buildings, records storage, equipment staging), I-405 commercial corridor (office furniture, equipment staging, palletized storage), and Benson Hill commercial (newer office parks, standard warehousing, efficient pickup and delivery).`,
+    extraFaqs: [
+      {
+        q: "Do you offer warehousing for Renton businesses during office relocations?",
+        a: "Yes. We regularly provide warehousing for Renton businesses during office relocations. We store furniture and equipment during the transition and deliver to your new location when it's ready.",
+      },
+      {
+        q: "Can you handle palletized inventory storage for a Renton business?",
+        a: "Yes. Our Redmond facility has forklift access and can handle palletized inventory storage. We offer commercial rates for businesses with ongoing storage needs.",
+      },
+    ],
+  },
+
+// ===================================================================
+// WOODINVILLE
+// ===================================================================
+
+  "woodinville-residential": {
+    intro: `Woodinville is one of the most distinctive moving markets in the Greater Seattle area — large estate homes on wooded lots, Hollywood Hill's steep and narrow roads, and a wine country character that sets it apart from the typical Eastside suburb. Our crews know Hollywood Hill well: the steep grades, the narrow roads, and the properties set far back from the street that require careful truck positioning. Wellington Hills and other planned communities have HOA move-in rules that we navigate regularly. Our Redmond warehouse is 8 miles south — a fast 13-minute drive.`,
+    buildingCalloutsHeading: "Residential Moving Across Woodinville Neighborhoods",
+    buildingCallouts: `On The Go Moving serves every Woodinville neighborhood: Hollywood Hill (steep narrow roads, long driveways, estate homes, smaller trucks for initial access), Wellington Hills (HOA move-in rules, COI required, newer construction), Bear Creek (wooded lots, long driveways, challenging truck access), Downtown Woodinville (mixed residential/commercial, standard access), Cottage Lake (established neighborhood, wooded lots, standard access), and Leota (rural character, long driveways, estate properties).`,
+    extraFaqs: [
+      {
+        q: "How do you access properties on Hollywood Hill in Woodinville?",
+        a: "Hollywood Hill is one of the most challenging access areas in our service region. We use our smaller trucks for the initial approach on very steep or narrow driveways, staging the larger truck at a safe distance. Our drivers know the hill well and plan the best access route for each property in advance.",
+      },
+      {
+        q: "Do you move wine collections in Woodinville?",
+        a: "Yes. We handle wine collections with care — proper padding, temperature-aware transport, and careful handling. For large collections, we recommend our full packing service to ensure every bottle is properly protected. We can also arrange climate-controlled transport for valuable collections.",
+      },
+    ],
+  },
+  "woodinville-apartment": {
+    intro: `Woodinville has limited apartment inventory compared to other Eastside cities — most moves here are residential. The newer mixed-use developments near Downtown Woodinville have standard elevator and move-in window requirements. Our crews coordinate directly with building management to secure elevator reservations before move day. Most Woodinville apartment moves complete in 2–3 hours.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Woodinville",
+    buildingCallouts: `Our apartment moving crews serve Woodinville's apartment communities: Downtown Woodinville mixed-use apartments (elevator coordination, limited street parking, weekday and weekend moves), Wellington Hills apartment units (HOA coordination, COI required, standard move-in windows), and newer apartment developments along SR-522 (standard move-in requirements, ample parking).`,
+    extraFaqs: [
+      {
+        q: "Are there many apartment buildings in Woodinville?",
+        a: "Woodinville has fewer apartment buildings than other Eastside cities — most of our Woodinville moves are single-family homes. The newer mixed-use buildings near downtown are the main apartment inventory. We handle all of them regularly.",
+      },
+      {
+        q: "How far in advance should I book a Woodinville apartment move?",
+        a: "We recommend booking 2–3 weeks in advance for Woodinville apartment moves. Woodinville has fewer buildings, so elevator reservations are generally easier to secure than in denser cities.",
+      },
+    ],
+  },
+  "woodinville-packing": {
+    intro: `Woodinville's large estate homes are a significant packing undertaking. Hollywood Hill homes often have extensive wine collections, outdoor furniture, and garage equipment that requires specialized packing. Wellington Hills homes tend to be large and well-furnished — full-pack service is common. Bear Creek properties often have workshop equipment and tools that require careful wrapping. Our Woodinville packing crews bring all materials and are experienced with the full range of packing scenarios for large Eastside estate homes.`,
+    buildingCalloutsHeading: "Packing Services Across Woodinville Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Woodinville neighborhoods: Hollywood Hill (estate homes, wine collections, outdoor furniture, custom wrapping), Wellington Hills (large homes, extensive contents, HOA move-out compliance, full-pack service common), Bear Creek (wooded-lot homes, workshop equipment, outdoor items, weatherproof packing), Downtown Woodinville (mixed residential, standard packing), and Cottage Lake (established homes, standard packing, efficient turnaround).`,
+    extraFaqs: [
+      {
+        q: "How do you pack a wine collection for a Woodinville move?",
+        a: "We pack wine collections using wine-specific boxes with individual cell dividers, proper padding between bottles, and temperature-aware wrapping. For large collections, we recommend a dedicated packing day for the wine cellar or storage area. We can also arrange climate-controlled transport for valuable collections.",
+      },
+      {
+        q: "How long does it take to pack a large Hollywood Hill estate?",
+        a: "A large Hollywood Hill estate typically takes 12–20 hours to pack with a 2-person crew, depending on the size of the home and the extent of the wine collection, outdoor furniture, and garage equipment. We recommend a 2–3 day packing schedule for large estates.",
+      },
+    ],
+  },
+  "woodinville-commercial": {
+    intro: `Woodinville's business community is centered around its wine industry and the commercial corridor along SR-522. Our commercial crews handle winery and tasting room moves, office relocations, and retail moves throughout Woodinville. We work after hours and on weekends to minimize business disruption, and our project managers coordinate directly with your facilities team. For winery equipment moves, we have experience with specialized handling requirements.`,
+    buildingCalloutsHeading: "Commercial Moving in Woodinville's Business Districts",
+    buildingCallouts: `We serve Woodinville's major commercial areas: Woodinville Wine Country (winery and tasting room moves, specialized equipment handling, flexible scheduling), SR-522 commercial corridor (retail and office moves, standard access, efficient turnaround), Downtown Woodinville (mixed commercial, standard access, limited street parking), and Hollywood Hill commercial properties (estate-based businesses, challenging access, advance planning required).`,
+    extraFaqs: [
+      {
+        q: "Do you handle winery and tasting room moves in Woodinville?",
+        a: "Yes. We regularly move winery and tasting room equipment in Woodinville's wine country. We handle wine barrels, tasting room furniture, and specialized winery equipment with care. We work around your production and tasting schedule to minimize disruption.",
+      },
+      {
+        q: "Can you move a Woodinville retail store after hours?",
+        a: "Yes. We offer after-hours and weekend moves for Woodinville retail stores. We coordinate with building management and work efficiently to minimize your downtime.",
+      },
+    ],
+  },
+  "woodinville-storage": {
+    intro: `Woodinville residents frequently need storage during moves — whether bridging a gap between closing dates, downsizing from a large Hollywood Hill estate, or staging a wine country property sale. Our secure, climate-controlled storage facility in Redmond is 8 miles south of Woodinville — a fast 13-minute drive. We offer month-to-month storage with no long-term contracts, and your first month is free with any Woodinville move.`,
+    buildingCalloutsHeading: "Storage Solutions for Woodinville Residents and Businesses",
+    buildingCallouts: `Common Woodinville storage scenarios we handle: Hollywood Hill estate downsizing (large furniture, wine collections, seasonal items, long-term storage), Wellington Hills home renovation storage (full household contents, month-to-month, first month free with move), Bear Creek property staging (furniture and contents during home sale preparation), and winery inventory storage (wine equipment, tasting room furniture, seasonal storage).`,
+    extraFaqs: [
+      {
+        q: "Do you offer climate-controlled storage for wine collections from Woodinville homes?",
+        a: "Yes. Our Redmond facility is climate-controlled, making it suitable for wine collections and other temperature-sensitive items. All storage units maintain consistent temperature and humidity year-round.",
+      },
+      {
+        q: "How far is your storage facility from Woodinville?",
+        a: "Our Redmond storage facility is 8 miles south of Woodinville — about 13 minutes. We can pick up your items in Woodinville and deliver them to storage, then deliver back to your new address when you're ready.",
+      },
+    ],
+  },
+  "woodinville-senior": {
+    intro: `Senior moves in Woodinville often involve downsizing from large Hollywood Hill or Wellington Hills estates — a significant undertaking that requires careful planning and patient crews. Our senior moving crews work at a pace that's comfortable, handle fragile items with extra care, and coordinate with family members who may be managing the move from a distance. We regularly assist seniors moving from Woodinville's large estate homes into smaller residences or assisted living communities in nearby Bothell, Kirkland, and Redmond.`,
+    buildingCalloutsHeading: "Senior Moving Resources in Woodinville",
+    buildingCallouts: `We regularly assist seniors moving from Woodinville's neighborhoods: Hollywood Hill (estate downsizing, large furniture, wine collections, family coordination), Wellington Hills (planned community homes, HOA coordination, downsizing assistance), Bear Creek (wooded-lot homes, challenging access, patient crews), and moves to senior communities in nearby Bothell, Kirkland, Redmond, and Kenmore.`,
+    extraFaqs: [
+      {
+        q: "Can you help downsize a large Hollywood Hill estate for a senior move?",
+        a: "Yes. We work with seniors and their families on downsizing moves from large Woodinville estates. We move selected items to the new residence, transport donations to local charities, and coordinate with junk removal services for items that won't be kept.",
+      },
+      {
+        q: "How do you handle the challenging access on Hollywood Hill for senior moves?",
+        a: "We assess the driveway and road access in advance for every Hollywood Hill senior move. We use our smaller trucks for the initial approach on steep or narrow roads, and we take extra time to ensure nothing is rushed or damaged.",
+      },
+    ],
+  },
+  "woodinville-furniture": {
+    intro: `Woodinville's large estate homes are full of oversized furniture — grand dining sets, king beds, sectionals, and entertainment centers that challenge even experienced movers on Hollywood Hill's steep roads. Wellington Hills homes often have furniture that was assembled in place and requires disassembly to exit through standard doorways. Our Woodinville furniture crews carry furniture boards, appliance dollies, stair-climbing hand trucks, and moving straps on every job.`,
+    buildingCalloutsHeading: "Furniture Moving Across Woodinville",
+    buildingCallouts: `Our furniture crews serve all Woodinville neighborhoods: Hollywood Hill (steep roads, estate homes, oversized furniture, careful truck positioning), Wellington Hills (newer construction, furniture disassembly/reassembly, HOA compliance), Bear Creek (wooded lots, long carries, large furniture), Downtown Woodinville (standard access, mixed furniture types), and Cottage Lake (established homes, standard furniture moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move a grand piano from a Hollywood Hill estate?",
+        a: "Yes. We have specialized equipment and trained crews for grand piano moves. Hollywood Hill's steep roads make piano moves particularly challenging — we assess the access route in advance and bring the appropriate equipment for a safe move.",
+      },
+      {
+        q: "Do you move large outdoor furniture from Woodinville estates?",
+        a: "Yes. We regularly move large outdoor furniture from Woodinville estates — teak dining sets, large patio sectionals, fire pits, and outdoor kitchens. We use proper wrapping and securing for outdoor furniture transport.",
+      },
+    ],
+  },
+  "woodinville-appliance": {
+    intro: `Appliance moves in Woodinville require careful planning — especially on Hollywood Hill, where steep driveways and narrow roads add significant complexity. Our Woodinville appliance crews use appliance dollies, floor runners, and moving straps on every job. We move refrigerators, washers, dryers, dishwashers, and large ranges throughout Woodinville, and we coordinate disconnection and reconnection assistance for standard appliances.`,
+    buildingCalloutsHeading: "Appliance Moving Across Woodinville",
+    buildingCallouts: `Our appliance moving crews serve all Woodinville neighborhoods: Hollywood Hill (steep driveways, careful appliance handling, floor protection, smaller trucks for initial access), Wellington Hills (newer construction, standard appliance access, HOA compliance), Bear Creek (wooded lots, long carries, careful handling), and Downtown Woodinville (standard appliance moves, efficient access).`,
+    extraFaqs: [
+      {
+        q: "How do you move appliances on steep Hollywood Hill driveways?",
+        a: "We use appliance dollies with straps and wheel chocks for steep driveway appliance moves. For very steep Hollywood Hill driveways, we use our smaller trucks for the initial approach and stage the larger truck at a safe distance.",
+      },
+      {
+        q: "Can you move a wine refrigerator or wine cellar cooling unit in Woodinville?",
+        a: "Yes. We regularly move wine refrigerators and wine cellar cooling units in Woodinville. We coordinate with a wine storage specialist if you need climate-controlled transport for valuable collections.",
+      },
+    ],
+  },
+  "woodinville-unpacking": {
+    intro: `After a move into a Woodinville estate, the last thing you want to face is a house full of boxes. Our unpacking crews come in after your move and turn those stacked boxes into a functional home — room by room, with all packing materials removed when we're done. For large Hollywood Hill and Wellington Hills estates, we recommend scheduling unpacking for the day after your move for maximum efficiency.`,
+    buildingCalloutsHeading: "Unpacking Services Across Woodinville",
+    buildingCallouts: `Our unpacking crews serve all Woodinville neighborhoods: Hollywood Hill (estate homes, extensive contents, full-unpack service, box removal), Wellington Hills (large homes, HOA compliance, efficient unpacking), Bear Creek (wooded-lot homes, standard unpacking, box removal), and Downtown Woodinville (mixed residential, standard unpacking, efficient turnaround).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to unpack a large Woodinville estate?",
+        a: "A large Woodinville estate typically takes 8–14 hours to unpack with a 2-person crew. For very large estates, we recommend a 2-day unpacking service. We work room by room and remove all packing materials as we go.",
+      },
+      {
+        q: "Can you set up a wine cellar or wine storage area during unpacking in Woodinville?",
+        a: "Yes. We can organize and set up wine storage areas during unpacking. We place wine racks, organize collections by your preferred system, and ensure proper storage conditions are in place.",
+      },
+    ],
+  },
+  "woodinville-warehousing": {
+    intro: `Woodinville businesses in the wine country and along SR-522 frequently need warehousing support during relocations or for seasonal inventory. Our Redmond warehouse facility is 8 miles south of Woodinville, offering climate-controlled storage, palletized storage with forklift access, and flexible month-to-month terms. We handle the full logistics chain: pickup from your Woodinville location, storage at our facility, and delivery to your new address or distribution point.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Woodinville Businesses",
+    buildingCallouts: `We serve Woodinville's major business areas with warehousing solutions: Woodinville Wine Country (winery equipment storage, seasonal inventory, climate-controlled units), SR-522 commercial corridor (retail inventory, office furniture, flexible terms), Downtown Woodinville (mixed commercial storage, efficient pickup and delivery), and Hollywood Hill commercial properties (estate-based business storage, flexible terms).`,
+    extraFaqs: [
+      {
+        q: "Do you offer climate-controlled warehousing for winery equipment in Woodinville?",
+        a: "Yes. Our Redmond facility is climate-controlled and suitable for winery equipment, tasting room furniture, and wine inventory. Contact us for commercial rates based on your volume and storage requirements.",
+      },
+      {
+        q: "Can you handle seasonal inventory storage for a Woodinville winery?",
+        a: "Yes. We offer flexible month-to-month storage for seasonal inventory. Many Woodinville wineries use our storage for tasting room furniture and equipment during the off-season.",
+      },
+    ],
+  },
+
+// ===================================================================
+// SHORELINE
+// ===================================================================
+
+  "shoreline-residential": {
+    intro: `Shoreline is a North Seattle suburb undergoing significant transformation around its two future light rail stations at 145th and 185th Street. The city's residential market spans a wide range — from older mid-century homes in Richmond Beach and Ridgecrest to newer construction near the light rail corridors. Our crews know the Aurora Ave N traffic patterns, the waterfront access challenges in Richmond Beach, and the mix of older and newer housing stock throughout the city. Our Redmond warehouse is 16 miles east, a 25-minute drive.`,
+    buildingCalloutsHeading: "Residential Moving Across Shoreline Neighborhoods",
+    buildingCallouts: `On The Go Moving serves every Shoreline neighborhood: Richmond Beach (waterfront properties, challenging access, older homes), Ridgecrest (established residential, mix of home sizes, standard access), Briarcrest (older homes, narrow streets, limited parking), Echo Lake (established neighborhood, standard access), Ronald Bog (newer development, standard access), Parkwood (mid-century homes, standard access), and North City (established residential, mix of home sizes).`,
+    extraFaqs: [
+      {
+        q: "How do you handle waterfront property moves in Richmond Beach?",
+        a: "Richmond Beach waterfront properties often have challenging access — steep paths to the water, limited parking, and narrow roads. We assess access points in advance and bring the right equipment for challenging carries. We recommend a site visit before move day for waterfront properties.",
+      },
+      {
+        q: "Do you handle moves near the new light rail stations in Shoreline?",
+        a: "Yes. We regularly move in and out of the new apartment buildings near Shoreline's 145th and 185th Street light rail stations. We coordinate elevator reservations and work within building move-in windows.",
+      },
+    ],
+  },
+  "shoreline-apartment": {
+    intro: `Shoreline's apartment market is growing rapidly around the Aurora Ave N corridor and the new light rail stations at 145th and 185th Street. New buildings near the light rail stations have standard elevator and move-in window requirements — our crews coordinate directly with building management to secure your reservation before move day. The Aurora Ave N corridor has a mix of older and newer apartment buildings with varying requirements. Most Shoreline apartment moves complete in 2–4 hours.`,
+    buildingCalloutsHeading: "Apartment Buildings We Serve in Shoreline",
+    buildingCallouts: `Our apartment moving crews are experienced throughout Shoreline: New light rail station apartments at 145th Street (elevator reservations required, COI required, standard move-in windows), New light rail station apartments at 185th Street (elevator coordination, newer construction, efficient access), Aurora Ave N apartment corridor (mix of older and newer buildings, standard move-in requirements), and Richmond Beach apartment communities (established buildings, standard access).`,
+    extraFaqs: [
+      {
+        q: "How do I reserve an elevator at a new Shoreline light rail apartment building?",
+        a: "We coordinate elevator reservations directly with building management as part of our move planning process. We contact the building 1–2 weeks before your move to secure your reservation and confirm move-in window requirements.",
+      },
+      {
+        q: "Can you move me into a new Shoreline apartment on a weekend?",
+        a: "Yes. We offer weekend moves throughout Shoreline. Weekend availability fills quickly in summer — we recommend booking 2–3 weeks in advance for weekend dates.",
+      },
+    ],
+  },
+  "shoreline-packing": {
+    intro: `Shoreline's mix of older mid-century homes and newer construction creates a wide range of packing scenarios. Richmond Beach homes often have antiques and collectibles that need custom wrapping. Newer homes near the light rail corridors are typically well-furnished — full-pack service is popular for these moves. Whatever your Shoreline home contains, our packing crews bring all materials and have the experience to protect it.`,
+    buildingCalloutsHeading: "Packing Services Across Shoreline Neighborhoods",
+    buildingCallouts: `Our packing crews serve all Shoreline neighborhoods: Richmond Beach (older homes, antiques and collectibles, custom wrapping available), Ridgecrest and Briarcrest (established homes, standard packing, full-pack service available), Echo Lake and Ronald Bog (newer construction, standard packing, efficient turnaround), Aurora Ave N corridor (apartment packing, efficient turnaround, move-in window compliance), and North City (established homes, standard packing).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to pack a Shoreline home?",
+        a: "A typical 3-bedroom Shoreline home takes 6–10 hours to pack with a 2-person crew. Homes with antiques, collectibles, or large garages take longer. We provide a time estimate after a free in-home or virtual consultation.",
+      },
+      {
+        q: "Do you pack items for moves near the Shoreline light rail stations?",
+        a: "Yes. We offer full packing services for moves into and out of the new apartment buildings near Shoreline's light rail stations. We pack efficiently to fit within your move-in window.",
+      },
+    ],
+  },
+  "shoreline-commercial": {
+    intro: `Shoreline's business community is concentrated along Aurora Ave N and near the light rail stations, with a growing number of transit-oriented businesses. Our commercial crews handle office moves, retail relocations, and restaurant moves throughout Shoreline. We work after hours and on weekends to minimize business disruption, and our project managers coordinate directly with your facilities team.`,
+    buildingCalloutsHeading: "Commercial Moving in Shoreline's Business Districts",
+    buildingCallouts: `We serve Shoreline's major commercial areas: Aurora Ave N commercial corridor (retail and office moves, standard access, flexible scheduling), 145th Street light rail district (new commercial buildings, elevator coordination, efficient access), 185th Street light rail district (newer construction, standard move-in requirements, ample parking), and Richmond Beach commercial (smaller businesses, standard access, flexible scheduling).`,
+    extraFaqs: [
+      {
+        q: "Do you handle retail moves along Aurora Ave N in Shoreline?",
+        a: "Yes. Aurora Ave N is one of our most active commercial move corridors. We handle retail and office moves throughout the Aurora Ave N corridor, working after hours and on weekends to minimize your downtime.",
+      },
+      {
+        q: "Can you move a Shoreline business into a new light rail station building?",
+        a: "Yes. We regularly move businesses into the new transit-oriented buildings near Shoreline's light rail stations. We coordinate elevator access and work efficiently to get your business operational quickly.",
+      },
+    ],
+  },
+  "shoreline-storage": {
+    intro: `Shoreline residents and businesses frequently need storage during moves — whether bridging a gap between closing dates, downsizing from a Richmond Beach waterfront home, or staging a light rail corridor apartment relocation. Our secure, climate-controlled storage facility in Redmond is 16 miles east of Shoreline. We offer month-to-month storage with no long-term contracts, and your first month is free with any Shoreline move.`,
+    buildingCalloutsHeading: "Storage Solutions for Shoreline Residents and Businesses",
+    buildingCallouts: `Common Shoreline storage scenarios we handle: Richmond Beach home downsizing (waterfront furniture, antiques, long-term storage available), Light rail corridor apartment staging (furniture and boxes during renovation or relocation), Aurora Ave N business storage (retail inventory, office furniture, flexible terms), and Ridgecrest and Briarcrest home renovation storage (full household contents, month-to-month).`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Shoreline?",
+        a: "Our Redmond storage facility is 16 miles east of Shoreline — about 25 minutes. We can pick up your items in Shoreline and deliver them to storage, then deliver back to your new Shoreline address when you're ready.",
+      },
+      {
+        q: "Do you offer climate-controlled storage for antiques from Richmond Beach homes?",
+        a: "Yes. Our Redmond facility is climate-controlled, making it suitable for antiques, artwork, and other temperature-sensitive items. All storage units maintain consistent temperature and humidity year-round.",
+      },
+    ],
+  },
+  "shoreline-senior": {
+    intro: `Senior moves in Shoreline require patience and careful planning. Whether you're downsizing from a Richmond Beach waterfront home, moving a parent into one of Shoreline's senior communities, or transitioning from an established Ridgecrest neighborhood home, our senior moving crews bring the care and communication that makes the difference. We work at a pace that's comfortable for seniors and coordinate directly with family members managing the move remotely.`,
+    buildingCalloutsHeading: "Senior Moving Resources in Shoreline",
+    buildingCallouts: `We regularly assist seniors moving to and from Shoreline's senior communities: Shoreline Place Senior Living (assisted living, coordinated move-in, elevator access), Aegis Living Shoreline (memory care and assisted living, move-in coordination with staff), private residences throughout Richmond Beach, Ridgecrest, and Briarcrest (downsizing, estate moves, family coordination), and moves to senior communities in nearby Seattle, Kenmore, and Lake Forest Park.`,
+    extraFaqs: [
+      {
+        q: "Can you help downsize a Richmond Beach waterfront home for a senior move?",
+        a: "Yes. We work with seniors and their families on downsizing moves from Richmond Beach homes. We move selected items to the new residence, transport donations to local charities, and coordinate with junk removal services for items that won't be kept.",
+      },
+      {
+        q: "How do you coordinate a senior move into Aegis Living Shoreline?",
+        a: "We contact Aegis Living in advance to confirm move-in procedures, elevator access, and any items that cannot be brought in. On move day, we coordinate with facility staff to ensure a smooth transition and help with furniture placement in the new room.",
+      },
+    ],
+  },
+  "shoreline-furniture": {
+    intro: `Shoreline's mix of older mid-century homes and newer construction creates a wide range of furniture moving challenges. Richmond Beach's older homes have narrow doorways and staircases that require careful maneuvering. Newer homes near the light rail corridors often have large sectionals and entertainment centers that require disassembly. Our Shoreline furniture crews carry the right equipment for every scenario.`,
+    buildingCalloutsHeading: "Furniture Moving Across Shoreline",
+    buildingCallouts: `Our furniture crews serve all Shoreline neighborhoods: Richmond Beach (older homes, narrow doorways, antique furniture, careful maneuvering), Ridgecrest and Briarcrest (established homes, standard furniture moves, mix of sizes), Echo Lake and Ronald Bog (newer construction, large sectionals, disassembly/reassembly), Aurora Ave N corridor (apartment buildings, elevator constraints, careful measurement), and North City (established homes, standard furniture moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move antique furniture from a Richmond Beach home?",
+        a: "Yes. We regularly move antique furniture from Richmond Beach homes. We use furniture pads, custom wrapping, and careful handling for antique pieces. For very high-value antiques, we can arrange custom crating.",
+      },
+      {
+        q: "Do you move furniture into the new Shoreline light rail apartment buildings?",
+        a: "Yes. We regularly move furniture into the new apartment buildings near Shoreline's light rail stations. We measure elevator dimensions in advance and disassemble items that won't fit.",
+      },
+    ],
+  },
+  "shoreline-appliance": {
+    intro: `Appliance moves in Shoreline require the right equipment and technique. Richmond Beach's older homes have narrow doorways and staircases that add complexity. Newer homes near the light rail corridors have standard appliance access. Our Shoreline appliance crews use appliance dollies, floor runners, and moving straps on every job to protect both the appliance and your floors.`,
+    buildingCalloutsHeading: "Appliance Moving Across Shoreline",
+    buildingCallouts: `Our appliance moving crews serve all Shoreline neighborhoods: Richmond Beach (older homes, narrow doorways, careful maneuvering, floor protection), Ridgecrest and Briarcrest (established homes, standard appliance access), Echo Lake and Ronald Bog (newer construction, standard appliance moves), Aurora Ave N corridor (apartment buildings, elevator coordination), and North City (established homes, standard appliance moves).`,
+    extraFaqs: [
+      {
+        q: "Can you move appliances through narrow doorways in older Shoreline homes?",
+        a: "Yes. Older Shoreline homes — especially in Richmond Beach — often have narrow doorways that require careful maneuvering. We measure doorways in advance and use appliance dollies designed for tight spaces.",
+      },
+      {
+        q: "How much does it cost to move a refrigerator in Shoreline?",
+        a: "A single appliance move in Shoreline typically costs $150–$350 depending on size, weight, and distance. Multiple appliance moves are priced hourly at $120–$160/hr. We provide flat-rate quotes for all appliance jobs.",
+      },
+    ],
+  },
+  "shoreline-unpacking": {
+    intro: `After a Shoreline move, our unpacking crews come in and turn those stacked boxes into a functional home. We unpack room by room, place items where you want them, and remove all packing materials when we're done. For older Richmond Beach homes with antiques and collectibles, we take extra care with placement and handling during unpacking.`,
+    buildingCalloutsHeading: "Unpacking Services Across Shoreline",
+    buildingCallouts: `Our unpacking crews serve all Shoreline neighborhoods: Richmond Beach (older homes, antiques and collectibles, careful placement), Ridgecrest and Briarcrest (established homes, standard unpacking, box removal), Echo Lake and Ronald Bog (newer construction, efficient unpacking turnaround), Aurora Ave N corridor (apartment unpacking, efficient turnaround, box removal), and North City (established homes, standard unpacking).`,
+    extraFaqs: [
+      {
+        q: "How long does it take to unpack a Shoreline home?",
+        a: "A typical 3-bedroom Shoreline home takes 5–8 hours to unpack with a 2-person crew. We work room by room and remove all packing materials as we go.",
+      },
+      {
+        q: "Do you offer unpacking services for new Shoreline light rail apartments?",
+        a: "Yes. We offer unpacking services for all Shoreline apartment buildings including the new light rail station buildings. We coordinate elevator access and work efficiently within your move-in window.",
+      },
+    ],
+  },
+  "shoreline-warehousing": {
+    intro: `Shoreline businesses along Aurora Ave N and near the light rail stations frequently need warehousing support during relocations or for inventory overflow. Our Redmond warehouse facility is 16 miles east of Shoreline, offering climate-controlled storage, palletized storage with forklift access, and flexible month-to-month terms. We handle the full logistics chain: pickup from your Shoreline location, storage at our facility, and delivery to your new address or distribution point.`,
+    buildingCalloutsHeading: "Warehousing and Distribution for Shoreline Businesses",
+    buildingCallouts: `We serve Shoreline's major business areas with warehousing solutions: Aurora Ave N commercial corridor (retail inventory, office furniture, flexible terms), 145th Street light rail district (new commercial buildings, equipment staging, standard warehousing), 185th Street light rail district (newer construction, inventory overflow, efficient pickup and delivery), and Richmond Beach commercial (smaller businesses, flexible terms, standard warehousing).`,
+    extraFaqs: [
+      {
+        q: "Do you offer warehousing for Shoreline businesses during office relocations?",
+        a: "Yes. We regularly provide warehousing for Shoreline businesses during office relocations. We store furniture and equipment during the transition and deliver to your new location when it's ready.",
+      },
+      {
+        q: "Can you handle inventory storage for an Aurora Ave N retail business in Shoreline?",
+        a: "Yes. We offer flexible month-to-month storage for retail inventory. Many Aurora Ave N businesses use our Redmond facility for seasonal inventory overflow.",
       },
     ],
   },
