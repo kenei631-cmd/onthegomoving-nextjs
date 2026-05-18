@@ -4124,4 +4124,1047 @@ export const TIER_A_CONTENT: Record<string, TierAEntry> = {
       },
     ],
   },
+// ===================================================================
+// BALLARD
+// ===================================================================
+
+  "ballard-residential": {
+    intro: `Ballard is one of Seattle's fastest-growing neighborhoods, with a mix of historic craftsman homes, newer townhomes, and mid-rise condos along its main corridors. Our crews have been moving Ballard residents since 2009 and know every block's quirks — from the overhead utility lines on 24th Ave NW to the limited truck parking along NW Market Street. Many Ballard craftsman homes have narrow doorways (28–30 inches) and tight staircases that require disassembly of larger furniture pieces. Our Redmond warehouse is 14 miles east — a 22-minute drive — keeping us highly responsive for Ballard residential moves.`,
+    buildingCalloutsHeading: "Ballard Neighborhoods & Communities We Serve",
+    buildingCallouts: `**Old Ballard / Historic Core** — The blocks around Ballard Ave NW and NW Market St feature the oldest craftsman homes in the neighborhood. Truck parking requires SDOT temporary no-parking permits on most streets. **Sunset Hill** — Elevated residential area with stunning Sound views. Streets are generally accessible but have steep grades near the bluff. **Crown Hill** — Quieter residential area north of 85th St with good truck access and newer housing stock. **Loyal Heights** — Family-friendly area with a mix of craftsman bungalows and newer construction. **Shilshole** — Waterfront area near the marina with some access restrictions during peak marina season.`,
+    extraFaqs: [
+      {
+        q: "Do you handle SDOT parking permits for Ballard residential moves?",
+        a: "Yes. Most moves along NW Market Street and the Old Ballard core require a temporary no-parking permit from SDOT. We assist with the application process — permit fees are passed through at cost, typically $50–$100.",
+      },
+      {
+        q: "Can you move furniture through Ballard's narrow craftsman doorways?",
+        a: "Yes. Our crews are trained to disassemble and reassemble large furniture pieces — bed frames, sectional sofas, wardrobes — that won't fit through standard 28–30 inch craftsman doorways. We bring the tools and hardware to handle this on every move.",
+      },
+    ],
+    pricingNote: "Ballard residential moves typically run $125–$165/hr for a 2-person crew. A 1-bedroom craftsman home usually takes 3–4 hours ($375–$660). A 3-bedroom home typically runs 6–9 hours ($750–$1,485). Flat-rate quotes available.",
+  },
+
+  "ballard-apartment": {
+    intro: `Ballard's apartment market spans everything from vintage walk-up buildings in Old Ballard to modern mid-rise towers along the Leary Way corridor. Our crews have moved hundreds of Ballard apartment residents and know the building-specific quirks — which buildings have freight elevators, which require stair carries, and which have loading dock time windows. Many Ballard apartment buildings were built before 1970 and have no service elevator, making stair carries standard. We bring stair rollers, furniture dollies, and the right crew size to handle any Ballard apartment building efficiently.`,
+    buildingCalloutsHeading: "Ballard Apartment Buildings We Frequently Serve",
+    buildingCallouts: `**Ballard Landmark** (5555 Leary Ave NW) — Modern mid-rise with freight elevator access. Loading dock on the alley side. **The Lyric** (2222 NW Market St) — Mixed-use building with resident elevator and street-level loading. Parking permits required on NW Market St. **Ballard Vue** (1420 NW 56th St) — Older walk-up building, no elevator, stair carries required. **Vik's Flats** (5400 Leary Ave NW) — Newer construction with loading zone. **Vintage Ballard Walk-Ups** — Dozens of pre-1970 buildings throughout Old Ballard with no elevator and narrow stairwells.`,
+    extraFaqs: [
+      {
+        q: "Do Ballard apartment buildings require elevator reservations?",
+        a: "Most older Ballard apartment buildings have no elevator at all. Newer mid-rise buildings typically require elevator reservations made 48–72 hours in advance. We coordinate directly with your building management to secure the reservation.",
+      },
+      {
+        q: "How do you handle stair carries in Ballard walk-up buildings?",
+        a: "We bring stair rollers, furniture straps, and the right crew size for stair carry jobs. For buildings with more than 3 floors, we recommend a 3-person crew to maintain safe carry speeds and protect your furniture.",
+      },
+    ],
+    pricingNote: "Ballard apartment moves typically run $125–$165/hr for a 2-person crew. A studio apartment usually takes 2–3 hours ($250–$495). A 1-bedroom apartment typically runs 3–4 hours ($375–$660). Stair carry surcharges may apply for buildings above 3 floors.",
+  },
+
+  "ballard-packing": {
+    intro: `Ballard's dense residential mix — craftsman homes, vintage apartments, and modern condos — creates a wide variety of packing challenges. Our professional packing crews have packed thousands of Ballard homes and know how to handle everything from antique craftsman-era furniture to modern tech setups. We use double-walled boxes, acid-free tissue for artwork, and custom crating for fragile items. For Ballard's many vintage homes, we take extra care with antique mirrors, period furniture, and original artwork that often accompanies older homes in the neighborhood.`,
+    buildingCalloutsHeading: "Packing Services for Ballard's Unique Housing Stock",
+    buildingCallouts: `**Craftsman Home Packing** — Ballard's craftsman homes often contain antique furniture, vintage artwork, and period pieces that require specialized packing. We use custom crating and acid-free materials for fragile items. **Apartment Packing** — For Ballard's many apartment residents, we offer full-pack, partial-pack, and kitchen-only packing services. **Condo Packing** — Modern Ballard condos often have large-format art, wine collections, and high-end electronics that require careful packing. **Unpacking Services** — We also offer full unpacking and setup at your new Ballard or destination home.`,
+    extraFaqs: [
+      {
+        q: "Do you pack antique and vintage furniture for Ballard moves?",
+        a: "Yes. We have experience packing antique furniture, vintage mirrors, and period pieces common in Ballard's older craftsman homes. We use custom crating, furniture blankets, and acid-free materials to protect valuable items.",
+      },
+      {
+        q: "How much does professional packing cost in Ballard?",
+        a: "Packing costs depend on the volume of items. A 1-bedroom apartment typically runs $200–$400 for materials and labor. A 3-bedroom craftsman home usually costs $600–$1,200. We provide exact quotes after a free in-home assessment.",
+      },
+    ],
+    pricingNote: "Ballard packing services run $45–$65/hr per packer plus materials. A 1-bedroom apartment typically costs $200–$400 all-in. A 3-bedroom home usually runs $600–$1,200. Full-pack, partial-pack, and kitchen-only options available.",
+  },
+
+  "ballard-commercial": {
+    intro: `Ballard has one of Seattle's most vibrant small business communities, with a concentration of restaurants, boutiques, tech offices, and creative studios along Ballard Ave NW, NW Market Street, and the Leary Way corridor. Our commercial moving crews have relocated dozens of Ballard businesses — from restaurant kitchen equipment to tech office buildouts. We work after-hours and on weekends to minimize disruption to your business operations, and we coordinate with building management for loading dock access and elevator reservations.`,
+    buildingCalloutsHeading: "Ballard Commercial Districts We Serve",
+    buildingCallouts: `**Ballard Ave NW Historic District** — Boutiques, restaurants, and creative studios in Ballard's historic commercial core. Limited loading access requires careful scheduling. **NW Market Street Corridor** — Mixed retail and office space with SDOT parking permit requirements for loading. **Leary Way Corridor** — Light industrial, tech offices, and mixed-use commercial space with better truck access. **Shilshole Industrial Area** — Marine industry businesses and warehouses near the marina with good truck access.`,
+    extraFaqs: [
+      {
+        q: "Do you move restaurant equipment in Ballard?",
+        a: "Yes. We move commercial kitchen equipment including ranges, refrigeration units, hood systems, and prep tables. We coordinate with your kitchen equipment vendor for disconnection and reconnection as needed.",
+      },
+      {
+        q: "Can you move a Ballard office over a weekend?",
+        a: "Yes. Weekend and after-hours moves are our most common commercial move type. We work Friday evening through Sunday to have your office fully operational by Monday morning.",
+      },
+    ],
+    pricingNote: "Ballard commercial moves are priced by scope. Small office moves (under 10 workstations) typically run $800–$1,500. Restaurant equipment moves are quoted individually based on equipment volume and complexity. Free on-site quotes available.",
+  },
+
+  "ballard-storage": {
+    intro: `Ballard residents frequently need storage during the neighborhood's active real estate market — whether bridging a gap between a home sale and purchase, staging a craftsman home for sale, or managing the overflow from a downsizing move. On The Go Moving & Storage offers climate-controlled storage at our Redmond facility, just 14 miles from Ballard. We pick up from your Ballard home, store your items securely, and deliver to your new location when you're ready — no second truck rental needed.`,
+    buildingCalloutsHeading: "Storage Solutions for Ballard Residents",
+    buildingCallouts: `**Home Sale Bridge Storage** — Ballard's competitive real estate market often requires sellers to clear out furniture for staging. We store your items during the sale and deliver to your new home after closing. **Renovation Storage** — Ballard craftsman homes are frequently renovated. We store furniture and belongings while your kitchen, bathroom, or addition is under construction. **Downsizing Storage** — Many Ballard residents downsizing from larger craftsman homes to condos need temporary storage while deciding what to keep. **Long-Term Storage** — Month-to-month climate-controlled storage at our Redmond facility for Ballard residents needing extended storage.`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Ballard?",
+        a: "Our climate-controlled storage facility is in Redmond — 14 miles from Ballard, a 22-minute drive. We pick up from your Ballard home and deliver to your new location, so you never need to visit the facility.",
+      },
+      {
+        q: "Do you offer staging storage for Ballard home sales?",
+        a: "Yes. We work with Ballard homeowners and real estate agents to clear furniture for home staging. We store your items during the sale and deliver to your new home after closing. Short-term rates available.",
+      },
+    ],
+    pricingNote: "Ballard storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Ballard is available. Month-to-month contracts with no long-term commitment.",
+  },
+
+  "ballard-senior": {
+    intro: `Ballard has a significant senior population, particularly in the older craftsman neighborhoods and in senior living communities near the neighborhood core. Our senior moving specialists understand the emotional and physical complexity of a senior move — whether it's downsizing from a longtime Ballard craftsman home, transitioning to an assisted living community, or relocating closer to family. We work at a pace that's comfortable for you, handle all the heavy lifting, and treat every item with the care it deserves.`,
+    buildingCalloutsHeading: "Senior Living Communities Near Ballard We Serve",
+    buildingCallouts: `**Sunrise of Ballard** (1545 NW 57th St) — Assisted living and memory care community in the heart of Ballard. We coordinate move-in logistics with Sunrise staff. **Merrill Gardens at Ballard** (5450 Leary Ave NW) — Independent and assisted living. We handle full-service moves including packing, transport, and setup. **Aegis Living Ballard** — Memory care community. We work with families to manage the move with sensitivity and care. **Crown Hill Senior Residences** — Independent senior apartments in the Crown Hill area north of Ballard.`,
+    extraFaqs: [
+      {
+        q: "Do you help seniors downsize from Ballard craftsman homes?",
+        a: "Yes. We offer full downsizing support — helping sort items for donation, storage, and the new home. We work at your pace, handle all the packing and moving, and coordinate donation pickups for items you're not keeping.",
+      },
+      {
+        q: "Do you coordinate with Ballard assisted living communities?",
+        a: "Yes. We have experience moving residents into Sunrise of Ballard, Merrill Gardens, and Aegis Living. We coordinate move-in windows with community staff and work within their building access requirements.",
+      },
+    ],
+    pricingNote: "Senior moves in Ballard are priced by scope. A downsizing move from a 2-bedroom craftsman to a 1-bedroom senior apartment typically runs $600–$1,200 including packing. Full-service senior moves with packing, transport, and setup available.",
+  },
+
+  "ballard-furniture": {
+    intro: `Ballard's housing stock presents some of Seattle's most challenging furniture moving scenarios — narrow craftsman doorways, steep staircases, and tight hallways that require experienced crews and the right equipment. Our furniture moving specialists have navigated hundreds of Ballard homes and know exactly how to handle a sectional sofa through a 28-inch doorway, a king bed frame up a craftsman staircase, or a vintage armoire through a tight hallway. We bring furniture dollies, stair rollers, moving straps, and disassembly tools on every Ballard furniture move.`,
+    buildingCalloutsHeading: "Furniture Moving Challenges in Ballard",
+    buildingCallouts: `**Craftsman Home Furniture** — Ballard's craftsman homes have 28–30 inch doorways and steep staircases that often require furniture disassembly. We bring the tools and expertise to handle any piece. **Condo Furniture** — Modern Ballard condos often have large sectionals, king beds, and oversized furniture that require careful maneuvering through hallways and elevator doors. **Vintage & Antique Furniture** — Many Ballard craftsman homes contain antique and vintage furniture that requires extra care. We use furniture blankets, custom padding, and careful handling for valuable pieces. **Piano Moving** — We move upright and baby grand pianos throughout Ballard, including up and down craftsman staircases.`,
+    extraFaqs: [
+      {
+        q: "Can you move large furniture through Ballard craftsman doorways?",
+        a: "Yes. We disassemble and reassemble large furniture pieces — sectional sofas, king bed frames, wardrobes, bookshelves — that won't fit through standard craftsman doorways. We bring all necessary tools and hardware.",
+      },
+      {
+        q: "Do you move pianos in Ballard?",
+        a: "Yes. We move upright pianos, baby grands, and grand pianos throughout Ballard. Piano moves require specialized equipment and trained crews — we have both. We also move pianos up and down Ballard's craftsman staircases.",
+      },
+    ],
+    pricingNote: "Furniture-only moves in Ballard start at $185/hr for a 2-person crew with a 2-hour minimum. Piano moves are quoted separately based on piano type and access. Disassembly and reassembly included at no extra charge.",
+  },
+
+  "ballard-appliance": {
+    intro: `Moving appliances in Ballard requires navigating the neighborhood's narrow craftsman doorways, steep staircases, and tight kitchen layouts. Our appliance moving crews handle refrigerators, washers, dryers, ranges, and dishwashers throughout Ballard — including in the older craftsman homes where appliances must be carefully angled through tight spaces. We disconnect and reconnect standard appliances, protect your floors with Masonite boards, and handle all the heavy lifting so you don't have to.`,
+    buildingCalloutsHeading: "Appliance Moving in Ballard Homes",
+    buildingCallouts: `**Craftsman Kitchen Appliances** — Older Ballard craftsman homes often have narrow kitchen doorways and tight layouts that make appliance removal challenging. We have the equipment to angle refrigerators and ranges through tight spaces. **Laundry Room Appliances** — Many Ballard craftsman homes have laundry rooms in tight basement spaces or narrow closets. We disconnect and move washers and dryers from any location. **Apartment Appliances** — Ballard apartment buildings often have stacked washer/dryer units and compact refrigerators that require careful handling. **New Construction Appliances** — Modern Ballard condos often have large French door refrigerators and slide-in ranges that require careful installation.`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances in Ballard?",
+        a: "We disconnect and reconnect standard water, gas, and electrical connections for washers, dryers, refrigerators, and dishwashers. For gas appliances, we work with a licensed plumber if required by local code.",
+      },
+      {
+        q: "Can you move appliances through Ballard craftsman doorways?",
+        a: "Yes. We have experience moving full-size refrigerators, ranges, and washers through the narrow 28–30 inch doorways common in Ballard craftsman homes. We use appliance dollies, furniture sliders, and door frame protection on every job.",
+      },
+    ],
+    pricingNote: "Appliance moves in Ballard start at $185/hr for a 2-person crew with a 2-hour minimum. Single appliance moves (e.g., refrigerator only) are available starting at $150. Disconnection/reconnection included for standard connections.",
+  },
+
+  "ballard-unpacking": {
+    intro: `After a Ballard move, the last thing you want to do is spend days unpacking boxes. Our professional unpacking crews unbox, organize, and set up your new Ballard home — putting dishes in the kitchen, clothes in the closets, and books on the shelves — so you can start enjoying your new space immediately. We work systematically room by room, break down all boxes, and remove all packing materials when we're done. Whether you've moved into a craftsman home in Old Ballard or a new condo on Leary Way, we'll have you settled in faster than you thought possible.`,
+    buildingCalloutsHeading: "Unpacking Services for Ballard Homes",
+    buildingCallouts: `**Full Unpack** — We unbox and organize every room in your new Ballard home, from kitchen to bedroom to living room. All boxes broken down and packing materials removed. **Partial Unpack** — Choose specific rooms or areas for us to unpack — kitchen and master bedroom are the most popular choices. **Kitchen Setup** — We unpack and organize your kitchen — dishes, cookware, pantry items, and small appliances — so it's fully functional on day one. **Bedroom Setup** — We assemble beds, unpack clothing, and organize closets so you can sleep comfortably your first night.`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking a Ballard home take?",
+        a: "A 1-bedroom apartment typically takes 2–3 hours with a 2-person crew. A 3-bedroom craftsman home usually takes 5–8 hours. We provide time estimates after reviewing your move details.",
+      },
+      {
+        q: "Do you remove packing materials after unpacking in Ballard?",
+        a: "Yes. We break down all boxes, collect all packing paper and bubble wrap, and remove everything from your new Ballard home. We recycle cardboard boxes and dispose of packing materials responsibly.",
+      },
+    ],
+    pricingNote: "Unpacking services in Ballard run $95–$125/hr per unpacker. A 1-bedroom apartment typically costs $190–$375. A 3-bedroom home usually runs $475–$1,000. Combined move + unpack packages available at a discounted rate.",
+  },
+
+  "ballard-warehousing": {
+    intro: `Ballard's growing business community — from marine industry suppliers near Shilshole to tech companies along Leary Way — increasingly needs flexible warehousing and distribution solutions. On The Go Moving & Storage offers short-term and long-term warehousing at our Redmond facility, just 14 miles from Ballard. We handle receiving, inventory management, pick-and-pack, and last-mile delivery throughout the greater Seattle area. Our month-to-month contracts give Ballard businesses the flexibility to scale storage up or down as needed.`,
+    buildingCalloutsHeading: "Warehousing Solutions for Ballard Businesses",
+    buildingCallouts: `**Marine Industry Storage** — Ballard's marine industry businesses need specialized storage for equipment, parts, and seasonal inventory. Our Redmond facility handles oversized and heavy items. **Restaurant & Retail Storage** — Ballard's restaurants and boutiques use our warehousing for seasonal inventory overflow and equipment storage during renovations. **Tech Office Storage** — Ballard's growing tech sector uses our warehousing for IT equipment, office furniture, and archive storage. **E-commerce Fulfillment** — Small Ballard e-commerce businesses use our pick-and-pack services for order fulfillment.`,
+    extraFaqs: [
+      {
+        q: "Do you offer short-term warehousing for Ballard businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required. Minimum storage period is 30 days. We can accommodate short-term storage for Ballard businesses during renovations, seasonal inventory peaks, or office transitions.",
+      },
+      {
+        q: "Can you handle receiving and inventory management for Ballard businesses?",
+        a: "Yes. We offer receiving, inventory tracking, and reporting for Ballard businesses using our warehousing services. We provide monthly inventory reports and can notify you of low-stock items.",
+      },
+    ],
+    pricingNote: "Warehousing for Ballard businesses starts at $195/month for a 10×10 space at our Redmond facility. Larger spaces and pallet storage available. Pick-and-pack and last-mile delivery services priced separately. Month-to-month contracts.",
+  },
+
+// ===================================================================
+// CAPITOL HILL
+// ===================================================================
+
+  "capitol-hill-residential": {
+    intro: `Capitol Hill is one of Seattle's most densely populated neighborhoods, with a mix of Victorian homes, craftsman bungalows, modern apartment towers, and everything in between. Moving in Capitol Hill requires navigating steep hills, limited parking, and dense residential blocks. Our crews have been serving Capitol Hill residents since 2009 and know every block's logistics — from the SDOT permit requirements on Broadway to the steep grades on 10th and 12th Ave. Our Redmond warehouse is 13 miles east — a 21-minute drive.`,
+    buildingCalloutsHeading: "Capitol Hill Neighborhoods & Communities We Serve",
+    buildingCallouts: `**Broadway Corridor** — Dense mixed-use area with limited truck parking. SDOT temporary no-parking permits required for most moves. **Pike/Pine** — Seattle's most active nightlife corridor. After-hours moves recommended to avoid congestion. **First Hill** — High-rise residential towers near Swedish and Virginia Mason hospitals. Elevator reservations required. **Volunteer Park Area** — Quieter residential streets with better truck access. Victorian homes with narrow doorways. **Squire Park** — Transitional neighborhood with a mix of older homes and newer construction. **Stevens / Montlake Adjacent** — Family-friendly area near the Arboretum with good truck access.`,
+    extraFaqs: [
+      {
+        q: "Do you handle SDOT parking permits for Capitol Hill residential moves?",
+        a: "Yes. Most Capitol Hill moves require a temporary no-parking permit from SDOT — especially on Broadway, Pike/Pine, and the main arterials. We assist with the application process. Permit fees are passed through at cost, typically $50–$100.",
+      },
+      {
+        q: "How do you handle Capitol Hill's steep streets?",
+        a: "Our drivers are experienced with Capitol Hill's steep grades on 10th, 11th, and 12th Ave. We load trucks properly to prevent shifting on hills, use wheel chocks when parked on slopes, and plan routes to avoid the steepest sections where possible.",
+      },
+    ],
+    pricingNote: "Capitol Hill residential moves typically run $125–$165/hr for a 2-person crew. A 1-bedroom apartment usually takes 3–4 hours ($375–$660). A 3-bedroom Victorian home typically runs 7–10 hours ($875–$1,650). Flat-rate quotes available.",
+  },
+
+  "capitol-hill-apartment": {
+    intro: `Capitol Hill has one of Seattle's most active apartment markets, ranging from vintage walk-up buildings on Broadway to modern high-rises on First Hill. Our crews have moved hundreds of Capitol Hill apartment residents and know the building-specific requirements — which First Hill towers require elevator reservations, which Broadway walk-ups have no elevator, and which Pike/Pine buildings have loading dock time windows. We coordinate directly with building management to ensure smooth move-in and move-out logistics.`,
+    buildingCalloutsHeading: "Capitol Hill Apartment Buildings We Frequently Serve",
+    buildingCallouts: `**Olive 8** (1635 8th Ave) — Luxury high-rise on First Hill with freight elevator and strict move-in windows. **The Paramount** (724 Pine St) — Mixed-use building near Pike/Pine. Loading access from side street. **Capitol Hill Tower** (323 Broadway E) — Mid-rise with resident elevator. SDOT permit required for Broadway loading. **Vintage Broadway Walk-Ups** — Dozens of pre-1960 buildings on Broadway and side streets with no elevator and narrow stairwells. **Anhalt Apartments** (1005 E Roy St) — Historic 1920s courtyard apartments near Volunteer Park. Stair carries required.`,
+    extraFaqs: [
+      {
+        q: "Do First Hill high-rises require elevator reservations for moves?",
+        a: "Yes. First Hill high-rises like Olive 8 and similar towers require elevator reservations made 48–72 hours in advance. We coordinate directly with your building management to secure the reservation and work within your building's move window.",
+      },
+      {
+        q: "How do you handle stair carries in Capitol Hill walk-up buildings?",
+        a: "We bring stair rollers, furniture straps, and the right crew size for stair carry jobs. For buildings with more than 3 floors, we recommend a 3-person crew. Most Capitol Hill walk-ups are 3–4 stories.",
+      },
+    ],
+    pricingNote: "Capitol Hill apartment moves typically run $125–$165/hr for a 2-person crew. A studio apartment usually takes 2–3 hours ($250–$495). A 1-bedroom apartment typically runs 3–4 hours ($375–$660). Stair carry surcharges may apply for buildings above 3 floors.",
+  },
+
+  "capitol-hill-packing": {
+    intro: `Capitol Hill's diverse housing stock — Victorian homes, craftsman bungalows, modern condos, and vintage apartments — creates a wide variety of packing needs. Our professional packing crews have packed thousands of Capitol Hill homes and know how to handle everything from antique Victorian furniture to modern tech setups. We use double-walled boxes, acid-free tissue for artwork, and custom crating for fragile items. Capitol Hill's art-forward community means we frequently pack original artwork, sculptures, and gallery pieces that require specialized handling.`,
+    buildingCalloutsHeading: "Packing Services for Capitol Hill's Unique Housing Stock",
+    buildingCallouts: `**Victorian Home Packing** — Capitol Hill's Victorian homes often contain antique furniture, original artwork, and period pieces requiring specialized packing. We use custom crating and acid-free materials. **Apartment Packing** — Full-pack, partial-pack, and kitchen-only packing for Capitol Hill's many apartment residents. **Art & Gallery Packing** — Capitol Hill's vibrant arts community means we frequently pack original artwork, sculptures, and gallery collections. **Condo Packing** — Modern Capitol Hill condos often have large-format art, wine collections, and high-end electronics requiring careful packing.`,
+    extraFaqs: [
+      {
+        q: "Do you pack original artwork and sculptures for Capitol Hill moves?",
+        a: "Yes. We have experience packing original artwork, framed pieces, sculptures, and gallery collections common in Capitol Hill's arts community. We use custom crating, acid-free tissue, and foam padding for valuable pieces.",
+      },
+      {
+        q: "How much does professional packing cost in Capitol Hill?",
+        a: "Packing costs depend on volume. A 1-bedroom apartment typically runs $200–$400 for materials and labor. A 3-bedroom Victorian home usually costs $700–$1,400. We provide exact quotes after a free in-home assessment.",
+      },
+    ],
+    pricingNote: "Capitol Hill packing services run $45–$65/hr per packer plus materials. A 1-bedroom apartment typically costs $200–$400 all-in. A 3-bedroom Victorian home usually runs $700–$1,400. Full-pack, partial-pack, and kitchen-only options available.",
+  },
+
+  "capitol-hill-commercial": {
+    intro: `Capitol Hill's commercial landscape spans tech companies, creative agencies, restaurants, retail boutiques, and medical offices near First Hill's hospital cluster. Our commercial moving crews have relocated dozens of Capitol Hill businesses — from Pike/Pine restaurant equipment to First Hill medical offices. We work after-hours and on weekends to minimize business disruption, and we coordinate with building management for loading dock access, elevator reservations, and SDOT parking permits.`,
+    buildingCalloutsHeading: "Capitol Hill Commercial Districts We Serve",
+    buildingCallouts: `**Pike/Pine Corridor** — Restaurants, bars, boutiques, and creative agencies. After-hours moves recommended. Limited loading access requires SDOT permits. **Broadway Commercial Core** — Retail and service businesses along Broadway. SDOT permits required for loading. **First Hill Medical District** — Medical offices near Swedish, Virginia Mason, and Harborview. Elevator reservations required in most buildings. **Cal Anderson Park Area** — Creative studios, galleries, and small offices in the residential core.`,
+    extraFaqs: [
+      {
+        q: "Do you move medical offices in Capitol Hill's First Hill district?",
+        a: "Yes. We have experience moving medical offices near Swedish Medical Center, Virginia Mason, and Harborview. We handle sensitive medical equipment, patient records (in secure containers), and office furniture. We coordinate elevator reservations with building management.",
+      },
+      {
+        q: "Can you move a Capitol Hill restaurant over a weekend?",
+        a: "Yes. Weekend and after-hours moves are our most common commercial move type in Capitol Hill. We work Friday evening through Sunday to have your restaurant or business fully operational by Monday morning.",
+      },
+    ],
+    pricingNote: "Capitol Hill commercial moves are priced by scope. Small office moves (under 10 workstations) typically run $800–$1,500. Restaurant equipment moves are quoted individually. Medical office moves quoted based on equipment volume and sensitivity. Free on-site quotes available.",
+  },
+
+  "capitol-hill-storage": {
+    intro: `Capitol Hill's dense housing market and active real estate scene create frequent storage needs — from home staging during a sale to bridging the gap between a lease end and a new home closing. On The Go Moving & Storage offers climate-controlled storage at our Redmond facility, just 13 miles from Capitol Hill. We pick up from your Capitol Hill home or apartment, store your items securely, and deliver to your new location when you're ready.`,
+    buildingCalloutsHeading: "Storage Solutions for Capitol Hill Residents",
+    buildingCallouts: `**Home Sale Bridge Storage** — Capitol Hill's competitive real estate market often requires sellers to clear furniture for staging. We store your items during the sale and deliver to your new home after closing. **Apartment Transition Storage** — When your lease ends before your new place is ready, we bridge the gap with short-term storage. **Renovation Storage** — Capitol Hill Victorian homes are frequently renovated. We store furniture during kitchen, bathroom, or addition projects. **Long-Term Storage** — Month-to-month climate-controlled storage for Capitol Hill residents needing extended storage.`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Capitol Hill?",
+        a: "Our climate-controlled storage facility is in Redmond — 13 miles from Capitol Hill, a 21-minute drive. We pick up from your Capitol Hill home and deliver to your new location, so you never need to visit the facility.",
+      },
+      {
+        q: "Do you offer short-term storage for Capitol Hill apartment transitions?",
+        a: "Yes. We offer month-to-month storage with no minimum commitment beyond 30 days. This is ideal for Capitol Hill renters who need to vacate before their new place is ready.",
+      },
+    ],
+    pricingNote: "Capitol Hill storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Capitol Hill available. Month-to-month contracts with no long-term commitment.",
+  },
+
+  "capitol-hill-senior": {
+    intro: `Capitol Hill has several senior living communities serving the neighborhood's long-term residents who are ready to downsize from their Victorian homes or apartments. Our senior moving specialists understand the emotional weight of leaving a longtime Capitol Hill home — whether it's a craftsman bungalow near Volunteer Park or a vintage apartment on Broadway. We work at a comfortable pace, handle all the packing and heavy lifting, and treat every item with the care it deserves.`,
+    buildingCalloutsHeading: "Senior Living Communities Near Capitol Hill We Serve",
+    buildingCallouts: `**Horizon House** (900 University St, First Hill) — Continuing care retirement community on First Hill. We coordinate move-in logistics with Horizon House staff. **Emerald City Senior Living** — Independent and assisted living near Capitol Hill. We handle full-service moves including packing, transport, and setup. **First Hill Senior Residences** — Several senior apartment buildings near the hospital district. We work within building move-in windows. **Aging in Place** — Many Capitol Hill seniors prefer to stay in their Victorian homes. We help with furniture rearrangement and downsizing within the home.`,
+    extraFaqs: [
+      {
+        q: "Do you help seniors downsize from Capitol Hill Victorian homes?",
+        a: "Yes. We offer full downsizing support — helping sort items for donation, storage, and the new home. We work at your pace, handle all packing and moving, and coordinate donation pickups for items you're not keeping.",
+      },
+      {
+        q: "Do you coordinate with Capitol Hill senior living communities?",
+        a: "Yes. We have experience moving residents into Horizon House and other First Hill senior communities. We coordinate move-in windows with community staff and work within their building access requirements.",
+      },
+    ],
+    pricingNote: "Senior moves in Capitol Hill are priced by scope. A downsizing move from a 2-bedroom Victorian to a 1-bedroom senior apartment typically runs $700–$1,400 including packing. Full-service senior moves with packing, transport, and setup available.",
+  },
+
+  "capitol-hill-furniture": {
+    intro: `Capitol Hill's Victorian homes and craftsman bungalows present some of Seattle's most challenging furniture moving scenarios — narrow doorways, steep staircases, and tight hallways that require experienced crews and specialized equipment. Our furniture moving specialists have navigated hundreds of Capitol Hill homes and know exactly how to handle a sectional sofa through a 28-inch Victorian doorway, a king bed up a steep craftsman staircase, or an antique armoire through a tight hallway.`,
+    buildingCalloutsHeading: "Furniture Moving Challenges in Capitol Hill",
+    buildingCallouts: `**Victorian Home Furniture** — Capitol Hill's Victorian homes have 28–30 inch doorways, steep staircases, and tight hallways. Large furniture pieces often require disassembly. **Craftsman Bungalow Furniture** — Similar access challenges to Victorian homes, with the addition of low-clearance basement stairs in many bungalows. **High-Rise Condo Furniture** — First Hill high-rises have elevator doors that limit furniture dimensions. We measure and plan before move day. **Antique & Period Furniture** — Capitol Hill's older homes contain valuable antique furniture requiring extra care and specialized handling.`,
+    extraFaqs: [
+      {
+        q: "Can you move large furniture through Capitol Hill Victorian doorways?",
+        a: "Yes. We disassemble and reassemble large furniture pieces — sectional sofas, king bed frames, wardrobes — that won't fit through standard Victorian doorways. We bring all necessary tools and hardware.",
+      },
+      {
+        q: "Do you move antique furniture in Capitol Hill?",
+        a: "Yes. We have experience with antique Victorian furniture, period pieces, and vintage items common in Capitol Hill's older homes. We use furniture blankets, custom padding, and careful handling for valuable pieces.",
+      },
+    ],
+    pricingNote: "Furniture-only moves in Capitol Hill start at $185/hr for a 2-person crew with a 2-hour minimum. Piano moves quoted separately. Disassembly and reassembly included at no extra charge.",
+  },
+
+  "capitol-hill-appliance": {
+    intro: `Moving appliances in Capitol Hill's Victorian homes and older apartment buildings requires navigating narrow doorways, steep staircases, and tight kitchen layouts. Our appliance moving crews handle refrigerators, washers, dryers, ranges, and dishwashers throughout Capitol Hill — including in the older Victorian homes where appliances must be carefully angled through tight spaces. We protect your floors with Masonite boards and handle all the heavy lifting.`,
+    buildingCalloutsHeading: "Appliance Moving in Capitol Hill Homes",
+    buildingCallouts: `**Victorian Kitchen Appliances** — Older Capitol Hill Victorian homes often have narrow kitchen doorways and tight layouts. We have the equipment to angle refrigerators and ranges through tight spaces. **Basement Laundry** — Many Capitol Hill homes have laundry rooms in steep basement spaces. We disconnect and move washers and dryers from any location. **Apartment Appliances** — Capitol Hill apartment buildings often have stacked washer/dryer units and compact refrigerators. **High-Rise Appliances** — First Hill high-rises often have large French door refrigerators and built-in appliances requiring careful removal.`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances in Capitol Hill?",
+        a: "We disconnect and reconnect standard water, gas, and electrical connections for washers, dryers, refrigerators, and dishwashers. For gas appliances requiring licensed work, we coordinate with a licensed plumber.",
+      },
+      {
+        q: "Can you move appliances through Capitol Hill Victorian doorways?",
+        a: "Yes. We have experience moving full-size refrigerators and ranges through the narrow 28–30 inch doorways common in Capitol Hill Victorian homes. We use appliance dollies, furniture sliders, and door frame protection on every job.",
+      },
+    ],
+    pricingNote: "Appliance moves in Capitol Hill start at $185/hr for a 2-person crew with a 2-hour minimum. Single appliance moves start at $150. Disconnection/reconnection included for standard connections.",
+  },
+
+  "capitol-hill-unpacking": {
+    intro: `After a Capitol Hill move, the last thing you want is to spend days surrounded by boxes. Our professional unpacking crews unbox, organize, and set up your new Capitol Hill home — putting dishes in the kitchen, clothes in the closets, and books on the shelves — so you can start enjoying your new space immediately. We work room by room, break down all boxes, and remove all packing materials when we're done.`,
+    buildingCalloutsHeading: "Unpacking Services for Capitol Hill Homes",
+    buildingCallouts: `**Full Unpack** — We unbox and organize every room in your new Capitol Hill home. All boxes broken down and packing materials removed. **Partial Unpack** — Choose specific rooms — kitchen and master bedroom are the most popular. **Kitchen Setup** — We unpack and organize your kitchen so it's fully functional on day one. **Art & Decor Placement** — Capitol Hill residents often have extensive art collections. We help hang and place artwork in your new home.`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking a Capitol Hill home take?",
+        a: "A 1-bedroom apartment typically takes 2–3 hours with a 2-person crew. A 3-bedroom Victorian home usually takes 6–9 hours. We provide time estimates after reviewing your move details.",
+      },
+      {
+        q: "Do you help with art placement in Capitol Hill homes?",
+        a: "Yes. Many Capitol Hill residents have extensive art collections. We help hang and place artwork in your new home as part of our unpacking service. We bring picture hooks, a level, and the tools needed for proper art installation.",
+      },
+    ],
+    pricingNote: "Unpacking services in Capitol Hill run $95–$125/hr per unpacker. A 1-bedroom apartment typically costs $190–$375. A 3-bedroom Victorian home usually runs $475–$1,125. Combined move + unpack packages available at a discounted rate.",
+  },
+
+  "capitol-hill-warehousing": {
+    intro: `Capitol Hill's growing business community — from tech companies near First Hill to creative agencies along Pike/Pine — increasingly needs flexible warehousing solutions. On The Go Moving & Storage offers short-term and long-term warehousing at our Redmond facility, just 13 miles from Capitol Hill. We handle receiving, inventory management, and last-mile delivery throughout the greater Seattle area.`,
+    buildingCalloutsHeading: "Warehousing Solutions for Capitol Hill Businesses",
+    buildingCallouts: `**Creative Agency Storage** — Capitol Hill's creative agencies use our warehousing for set pieces, props, equipment, and archive storage. **Restaurant & Bar Storage** — Capitol Hill's restaurants and bars use our warehousing for seasonal inventory and equipment storage during renovations. **Medical Office Storage** — First Hill medical practices use our warehousing for archive records, medical equipment, and office furniture during office transitions. **Tech Company Storage** — Capitol Hill tech companies use our warehousing for IT equipment, office furniture, and archive storage.`,
+    extraFaqs: [
+      {
+        q: "Do you offer short-term warehousing for Capitol Hill businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required. Minimum storage period is 30 days. Ideal for Capitol Hill businesses during renovations, office transitions, or seasonal inventory peaks.",
+      },
+      {
+        q: "Can you handle medical records storage for First Hill practices?",
+        a: "Yes. We offer secure, climate-controlled storage for medical office records and equipment. We provide inventory tracking and can retrieve specific items on request.",
+      },
+    ],
+    pricingNote: "Warehousing for Capitol Hill businesses starts at $195/month for a 10×10 space at our Redmond facility. Larger spaces and pallet storage available. Month-to-month contracts.",
+  },
+
+// ===================================================================
+// QUEEN ANNE
+// ===================================================================
+
+  "queen-anne-residential": {
+    intro: `Queen Anne is one of Seattle's most iconic neighborhoods — known for its stunning views, Victorian architecture, and the steep hill that defines the community. Moving in Queen Anne requires experienced crews who know how to navigate steep grades, limited parking, and historic homes. Our crews have been serving Queen Anne residents since 2009, from the grand Victorians near Kerry Park to the dense apartments of Lower Queen Anne (Uptown). Our Redmond warehouse is 13 miles east — a 20-minute drive.`,
+    buildingCalloutsHeading: "Queen Anne Neighborhoods & Communities We Serve",
+    buildingCallouts: `**Upper Queen Anne** — The hilltop neighborhood with stunning Sound views. Steep grades on all approach streets require experienced drivers. Victorian homes with narrow doorways and staircases. **Lower Queen Anne / Uptown** — Dense apartment buildings near Seattle Center. Limited truck parking. SDOT permits often required. **Kerry Park Area** — Prestigious residential area with large Victorian homes and limited street parking. **Queen Anne Ave N Corridor** — Main commercial and residential artery. Limited truck loading zones. **Bigelow Ave N** — Quieter residential street with better truck access and a mix of housing types.`,
+    extraFaqs: [
+      {
+        q: "How do you handle Queen Anne's steep hill for residential moves?",
+        a: "Our drivers are experienced with Queen Anne's steep grades. We load trucks properly to prevent shifting, use wheel chocks when parked on slopes, and plan routes to use the most accessible approach streets. We've never had a hill-related incident in Queen Anne.",
+      },
+      {
+        q: "Do you handle SDOT parking permits for Queen Anne moves?",
+        a: "Yes. Most Queen Anne moves — especially in Lower Queen Anne and along Queen Anne Ave N — require a temporary no-parking permit from SDOT. We assist with the application. Permit fees are passed through at cost, typically $50–$100.",
+      },
+    ],
+    pricingNote: "Queen Anne residential moves typically run $125–$165/hr for a 2-person crew. A 1-bedroom apartment usually takes 3–4 hours ($375–$660). A 3-bedroom Victorian home typically runs 7–10 hours ($875–$1,650). Flat-rate quotes available.",
+  },
+
+  "queen-anne-apartment": {
+    intro: `Queen Anne's apartment market spans the dense towers of Lower Queen Anne (Uptown) near Seattle Center to the smaller walk-up buildings of Upper Queen Anne. Our crews have moved hundreds of Queen Anne apartment residents and know the building-specific requirements — which Uptown towers require elevator reservations, which Upper Queen Anne walk-ups have no elevator, and which buildings have loading dock time windows. We coordinate with building management to ensure smooth move logistics.`,
+    buildingCalloutsHeading: "Queen Anne Apartment Buildings We Frequently Serve",
+    buildingCallouts: `**The Mercer** (583 Mercer St) — Large apartment complex in Lower Queen Anne near Seattle Center. Freight elevator available. Loading from Mercer St. **Queen Anne Manor** (1318 Queen Anne Ave N) — Mid-rise on the main corridor. SDOT permit required for loading. **Uptown Flats** — Several newer apartment buildings in Lower Queen Anne with resident elevators. **Upper Queen Anne Walk-Ups** — Older 2–4 story buildings throughout Upper Queen Anne with no elevator and narrow stairwells. **Seattle Center Area Apartments** — Dense apartment buildings near the Seattle Center campus with limited parking.`,
+    extraFaqs: [
+      {
+        q: "Do Queen Anne apartment buildings require elevator reservations?",
+        a: "Larger Uptown buildings typically require elevator reservations 48–72 hours in advance. Upper Queen Anne walk-up buildings have no elevator. We coordinate with your building management regardless of building type.",
+      },
+      {
+        q: "How do you handle stair carries in Upper Queen Anne walk-up buildings?",
+        a: "We bring stair rollers, furniture straps, and the right crew size for stair carry jobs. For buildings with more than 3 floors, we recommend a 3-person crew. We charge a stair carry surcharge for buildings above 3 floors.",
+      },
+    ],
+    pricingNote: "Queen Anne apartment moves typically run $125–$165/hr for a 2-person crew. A studio apartment usually takes 2–3 hours ($250–$495). A 1-bedroom apartment typically runs 3–4 hours ($375–$660). Stair carry surcharges may apply.",
+  },
+
+  "queen-anne-packing": {
+    intro: `Queen Anne's Victorian homes and historic residences contain some of Seattle's most valuable and irreplaceable furniture, artwork, and period pieces. Our professional packing crews have packed hundreds of Queen Anne homes and know how to handle antique Victorian furniture, original artwork, and fragile period pieces with the care they deserve. We use double-walled boxes, acid-free tissue, custom crating, and furniture blankets on every Queen Anne packing job.`,
+    buildingCalloutsHeading: "Packing Services for Queen Anne's Historic Homes",
+    buildingCallouts: `**Victorian Home Packing** — Queen Anne's Victorian homes often contain antique furniture, original artwork, and period pieces requiring specialized packing and custom crating. **Apartment Packing** — Full-pack, partial-pack, and kitchen-only packing for Queen Anne apartment residents. **Art & Antique Packing** — Queen Anne's historic homes frequently contain valuable antiques and original artwork requiring museum-quality packing. **Condo Packing** — Modern Queen Anne condos with large-format art, wine collections, and high-end electronics.`,
+    extraFaqs: [
+      {
+        q: "Do you pack antique Victorian furniture for Queen Anne moves?",
+        a: "Yes. We have extensive experience packing antique Victorian furniture, period mirrors, and valuable artwork common in Queen Anne's historic homes. We use custom crating, acid-free tissue, and furniture blankets for valuable pieces.",
+      },
+      {
+        q: "How much does professional packing cost in Queen Anne?",
+        a: "A 1-bedroom apartment typically runs $200–$400. A 3-bedroom Victorian home usually costs $700–$1,400. We provide exact quotes after a free in-home assessment.",
+      },
+    ],
+    pricingNote: "Queen Anne packing services run $45–$65/hr per packer plus materials. A 1-bedroom apartment typically costs $200–$400 all-in. A 3-bedroom Victorian home usually runs $700–$1,400. Full-pack, partial-pack, and kitchen-only options available.",
+  },
+
+  "queen-anne-commercial": {
+    intro: `Queen Anne's commercial district along Queen Anne Ave N and the Uptown area near Seattle Center includes restaurants, boutiques, creative agencies, and entertainment businesses. Our commercial moving crews have relocated Queen Anne businesses of all sizes — from small boutiques on Queen Anne Ave to production companies near Seattle Center. We work after-hours and on weekends to minimize disruption to your business.`,
+    buildingCalloutsHeading: "Queen Anne Commercial Districts We Serve",
+    buildingCallouts: `**Queen Anne Ave N Corridor** — Boutiques, restaurants, and service businesses. SDOT permits required for loading. After-hours moves recommended. **Lower Queen Anne / Uptown** — Entertainment businesses, production companies, and offices near Seattle Center. **Seattle Center Campus** — Event and entertainment businesses within the Seattle Center campus. Special access coordination required. **Mercer Street Corridor** — Mixed commercial and residential with better truck access than the main corridor.`,
+    extraFaqs: [
+      {
+        q: "Do you move businesses near Seattle Center in Queen Anne?",
+        a: "Yes. We have experience with production companies, event businesses, and offices near Seattle Center. We coordinate access with Seattle Center management when required and work within your operational schedule.",
+      },
+      {
+        q: "Can you move a Queen Anne restaurant over a weekend?",
+        a: "Yes. Weekend and after-hours moves are our most common commercial move type. We work Friday evening through Sunday to have your Queen Anne restaurant or business fully operational by Monday morning.",
+      },
+    ],
+    pricingNote: "Queen Anne commercial moves are priced by scope. Small office moves typically run $800–$1,500. Restaurant equipment moves quoted individually. Free on-site quotes available.",
+  },
+
+  "queen-anne-storage": {
+    intro: `Queen Anne's active real estate market and historic home renovations create frequent storage needs for residents. On The Go Moving & Storage offers climate-controlled storage at our Redmond facility, just 13 miles from Queen Anne. We pick up from your Queen Anne home, store your items securely, and deliver to your new location when you're ready.`,
+    buildingCalloutsHeading: "Storage Solutions for Queen Anne Residents",
+    buildingCallouts: `**Home Sale Bridge Storage** — Queen Anne's competitive real estate market often requires sellers to clear furniture for staging. We store your items during the sale and deliver to your new home after closing. **Victorian Home Renovation Storage** — Queen Anne's Victorian homes are frequently renovated. We store furniture during major renovation projects. **Apartment Transition Storage** — When your lease ends before your new place is ready, we bridge the gap with short-term storage. **Long-Term Storage** — Month-to-month climate-controlled storage for Queen Anne residents needing extended storage.`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Queen Anne?",
+        a: "Our climate-controlled storage facility is in Redmond — 13 miles from Queen Anne, a 20-minute drive. We pick up from your Queen Anne home and deliver to your new location.",
+      },
+      {
+        q: "Do you offer staging storage for Queen Anne home sales?",
+        a: "Yes. We work with Queen Anne homeowners and real estate agents to clear furniture for home staging. Short-term rates available. We deliver to your new home after closing.",
+      },
+    ],
+    pricingNote: "Queen Anne storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Queen Anne available. Month-to-month contracts.",
+  },
+
+  "queen-anne-senior": {
+    intro: `Queen Anne has a significant senior population, particularly in the older Victorian neighborhoods and in senior communities near the neighborhood core. Our senior moving specialists understand the emotional complexity of leaving a longtime Queen Anne home — whether it's a grand Victorian near Kerry Park or a longtime apartment in Uptown. We work at a comfortable pace, handle all the heavy lifting, and treat every item with the care it deserves.`,
+    buildingCalloutsHeading: "Senior Living Communities Near Queen Anne We Serve",
+    buildingCallouts: `**Queen Anne Manor** (100 Crockett St) — Assisted living in the heart of Upper Queen Anne. We coordinate move-in logistics with Queen Anne Manor staff. **Bayview Manor** (11 W Aloha St) — Senior living community on the north slope of Queen Anne Hill. We handle full-service moves including packing, transport, and setup. **Uptown Senior Residences** — Several senior apartment buildings in Lower Queen Anne near Seattle Center. **Aging in Place** — Many Queen Anne seniors prefer to stay in their Victorian homes. We help with furniture rearrangement and downsizing.`,
+    extraFaqs: [
+      {
+        q: "Do you help seniors downsize from Queen Anne Victorian homes?",
+        a: "Yes. We offer full downsizing support — helping sort items for donation, storage, and the new home. We work at your pace and coordinate donation pickups for items you're not keeping.",
+      },
+      {
+        q: "Do you coordinate with Queen Anne Manor and Bayview Manor?",
+        a: "Yes. We have experience moving residents into both communities. We coordinate move-in windows with staff and work within their building access requirements.",
+      },
+    ],
+    pricingNote: "Senior moves in Queen Anne are priced by scope. A downsizing move from a 2-bedroom Victorian to a 1-bedroom senior apartment typically runs $700–$1,400 including packing. Full-service senior moves available.",
+  },
+
+  "queen-anne-furniture": {
+    intro: `Queen Anne's Victorian homes present some of Seattle's most challenging furniture moving scenarios — narrow doorways, steep staircases, and tight hallways that require experienced crews and specialized equipment. Our furniture moving specialists have navigated hundreds of Queen Anne homes and know exactly how to handle a sectional sofa through a Victorian doorway or an antique armoire up a steep staircase.`,
+    buildingCalloutsHeading: "Furniture Moving Challenges in Queen Anne",
+    buildingCallouts: `**Victorian Home Furniture** — Queen Anne's Victorian homes have 28–30 inch doorways and steep staircases. Large furniture pieces often require disassembly. **Antique & Period Furniture** — Queen Anne's historic homes contain valuable antique furniture requiring extra care and specialized handling. **Condo Furniture** — Modern Queen Anne condos often have large sectionals and oversized furniture requiring careful maneuvering. **Piano Moving** — We move upright and baby grand pianos throughout Queen Anne, including up and down steep Victorian staircases.`,
+    extraFaqs: [
+      {
+        q: "Can you move large furniture through Queen Anne Victorian doorways?",
+        a: "Yes. We disassemble and reassemble large furniture pieces that won't fit through standard Victorian doorways. We bring all necessary tools and hardware.",
+      },
+      {
+        q: "Do you move pianos in Queen Anne?",
+        a: "Yes. We move upright pianos, baby grands, and grand pianos throughout Queen Anne. Piano moves require specialized equipment and trained crews — we have both.",
+      },
+    ],
+    pricingNote: "Furniture-only moves in Queen Anne start at $185/hr for a 2-person crew with a 2-hour minimum. Piano moves quoted separately. Disassembly and reassembly included.",
+  },
+
+  "queen-anne-appliance": {
+    intro: `Moving appliances in Queen Anne's Victorian homes requires navigating narrow doorways, steep staircases, and tight kitchen layouts. Our appliance moving crews handle refrigerators, washers, dryers, ranges, and dishwashers throughout Queen Anne — including in the older Victorian homes where appliances must be carefully angled through tight spaces.`,
+    buildingCalloutsHeading: "Appliance Moving in Queen Anne Homes",
+    buildingCallouts: `**Victorian Kitchen Appliances** — Older Queen Anne Victorian homes often have narrow kitchen doorways and tight layouts. We angle refrigerators and ranges through tight spaces safely. **Basement Laundry** — Many Queen Anne homes have laundry rooms in steep basement spaces. We disconnect and move washers and dryers from any location. **Apartment Appliances** — Queen Anne apartment buildings often have compact appliances requiring careful handling. **High-End Appliances** — Queen Anne's upscale homes often have Sub-Zero refrigerators and Wolf ranges requiring specialized handling.`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances in Queen Anne?",
+        a: "We disconnect and reconnect standard water, gas, and electrical connections for washers, dryers, refrigerators, and dishwashers. For gas appliances requiring licensed work, we coordinate with a licensed plumber.",
+      },
+      {
+        q: "Can you move high-end appliances like Sub-Zero and Wolf in Queen Anne?",
+        a: "Yes. We have experience moving high-end built-in appliances including Sub-Zero refrigerators, Wolf ranges, and Miele dishwashers. We use appliance-specific dollies and protection to prevent damage to these expensive units.",
+      },
+    ],
+    pricingNote: "Appliance moves in Queen Anne start at $185/hr for a 2-person crew with a 2-hour minimum. Single appliance moves start at $150. Disconnection/reconnection included for standard connections.",
+  },
+
+  "queen-anne-unpacking": {
+    intro: `After a Queen Anne move, our professional unpacking crews unbox, organize, and set up your new home so you can start enjoying your new space immediately. We work room by room, break down all boxes, and remove all packing materials when we're done. Whether you've moved into a Victorian on Kerry Park or a condo in Uptown, we'll have you settled in faster than you thought possible.`,
+    buildingCalloutsHeading: "Unpacking Services for Queen Anne Homes",
+    buildingCallouts: `**Full Unpack** — We unbox and organize every room in your new Queen Anne home. All boxes broken down and packing materials removed. **Partial Unpack** — Choose specific rooms — kitchen and master bedroom are the most popular choices. **Kitchen Setup** — We unpack and organize your kitchen so it's fully functional on day one. **Art & Antique Placement** — Queen Anne residents often have valuable art and antiques. We help place and hang items in your new home.`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking a Queen Anne home take?",
+        a: "A 1-bedroom apartment typically takes 2–3 hours with a 2-person crew. A 3-bedroom Victorian home usually takes 6–9 hours. We provide time estimates after reviewing your move details.",
+      },
+      {
+        q: "Do you help with art and antique placement in Queen Anne homes?",
+        a: "Yes. We help hang and place artwork and antiques in your new Queen Anne home as part of our unpacking service. We bring picture hooks, a level, and the tools needed for proper installation.",
+      },
+    ],
+    pricingNote: "Unpacking services in Queen Anne run $95–$125/hr per unpacker. A 1-bedroom apartment typically costs $190–$375. A 3-bedroom Victorian home usually runs $475–$1,125. Combined move + unpack packages available.",
+  },
+
+  "queen-anne-warehousing": {
+    intro: `Queen Anne's businesses — from production companies near Seattle Center to boutiques along Queen Anne Ave N — need flexible warehousing solutions. On The Go Moving & Storage offers short-term and long-term warehousing at our Redmond facility, just 13 miles from Queen Anne. We handle receiving, inventory management, and last-mile delivery throughout the greater Seattle area.`,
+    buildingCalloutsHeading: "Warehousing Solutions for Queen Anne Businesses",
+    buildingCallouts: `**Production & Entertainment Storage** — Queen Anne's production companies and entertainment businesses near Seattle Center use our warehousing for sets, props, and equipment. **Retail Storage** — Queen Anne Ave N boutiques use our warehousing for seasonal inventory overflow. **Restaurant Storage** — Queen Anne restaurants use our warehousing for equipment storage during renovations. **Home-Based Business Storage** — Queen Anne's many home-based businesses use our warehousing for inventory overflow.`,
+    extraFaqs: [
+      {
+        q: "Do you offer short-term warehousing for Queen Anne businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required. Minimum storage period is 30 days.",
+      },
+      {
+        q: "Can you handle production equipment storage for Queen Anne entertainment businesses?",
+        a: "Yes. We have experience storing production equipment, sets, and props for entertainment businesses near Seattle Center. We provide inventory tracking and can retrieve specific items on request.",
+      },
+    ],
+    pricingNote: "Warehousing for Queen Anne businesses starts at $195/month for a 10×10 space at our Redmond facility. Larger spaces and pallet storage available. Month-to-month contracts.",
+  },
+
+// ===================================================================
+// FREMONT
+// ===================================================================
+
+  "fremont-residential": {
+    intro: `Fremont — the self-proclaimed Center of the Universe — is one of Seattle's most eclectic neighborhoods, with a mix of craftsman homes, modern condos, and tech offices along the Ship Canal. Moving in Fremont requires navigating narrow residential streets, limited parking near the commercial core, and the occasional quirky access challenge. Our crews have been serving Fremont residents since 2009 and know every block's logistics. Our Redmond warehouse is 13 miles east — a 21-minute drive.`,
+    buildingCalloutsHeading: "Fremont Neighborhoods & Communities We Serve",
+    buildingCallouts: `**Fremont Core** — The commercial heart of Fremont along Fremont Ave N and N 36th St. Limited truck parking. After-hours moves recommended. **North Fremont** — Quieter residential area north of N 50th St with better truck access and a mix of craftsman homes and newer construction. **Stone Way N Corridor** — Mixed residential and light industrial. Good truck access. **Phinney Ridge Adjacent** — Residential streets bordering Phinney Ridge with craftsman homes and good access. **Wallingford Adjacent** — Eastern Fremont bordering Wallingford with a mix of housing types.`,
+    extraFaqs: [
+      {
+        q: "How do you handle parking for Fremont residential moves?",
+        a: "Fremont's commercial core has virtually no truck parking. For moves near Fremont Ave N and N 36th St, we obtain SDOT temporary no-parking permits. For residential streets north of N 50th St, parking is generally available. We assess your specific address and plan accordingly.",
+      },
+      {
+        q: "Do you move craftsman homes in Fremont?",
+        a: "Yes. We have extensive experience with Fremont's craftsman homes, including their narrow doorways, steep staircases, and tight hallways. We bring the tools to disassemble and reassemble large furniture pieces that won't fit through standard craftsman doorways.",
+      },
+    ],
+    pricingNote: "Fremont residential moves typically run $125–$165/hr for a 2-person crew. A 1-bedroom apartment usually takes 3–4 hours ($375–$660). A 3-bedroom craftsman home typically runs 6–9 hours ($750–$1,485). Flat-rate quotes available.",
+  },
+
+  "fremont-apartment": {
+    intro: `Fremont's apartment market spans vintage walk-up buildings near the commercial core to newer condos along the Ship Canal waterfront. Our crews have moved hundreds of Fremont apartment residents and know the building-specific requirements — which buildings have freight elevators, which require stair carries, and which have loading dock time windows. We coordinate with building management to ensure smooth move logistics.`,
+    buildingCalloutsHeading: "Fremont Apartment Buildings We Frequently Serve",
+    buildingCallouts: `**Fremont Canal Park Apartments** (3601 Fremont Ave N) — Modern apartments near the Ship Canal with resident elevator. **The Fremont Building** (3600 Stone Way N) — Mixed-use building with commercial ground floor and residential above. **Vintage Fremont Walk-Ups** — Dozens of pre-1970 buildings throughout Fremont with no elevator and narrow stairwells. **Phinney Ridge Apartments** — Smaller apartment buildings on the Phinney Ridge border with good access. **Stone Way Condos** — Newer condos along Stone Way N with better access than the commercial core.`,
+    extraFaqs: [
+      {
+        q: "Do Fremont apartment buildings require elevator reservations?",
+        a: "Most older Fremont apartment buildings have no elevator. Newer buildings along the Ship Canal waterfront typically require elevator reservations 48–72 hours in advance. We coordinate with your building management.",
+      },
+      {
+        q: "How do you handle stair carries in Fremont walk-up buildings?",
+        a: "We bring stair rollers, furniture straps, and the right crew size for stair carry jobs. For buildings with more than 3 floors, we recommend a 3-person crew.",
+      },
+    ],
+    pricingNote: "Fremont apartment moves typically run $125–$165/hr for a 2-person crew. A studio apartment usually takes 2–3 hours ($250–$495). A 1-bedroom apartment typically runs 3–4 hours ($375–$660). Stair carry surcharges may apply.",
+  },
+
+  "fremont-packing": {
+    intro: `Fremont's eclectic community — artists, tech workers, and longtime residents — creates a wide variety of packing needs. Our professional packing crews have packed hundreds of Fremont homes and know how to handle everything from vintage record collections and art installations to modern tech setups and craftsman-era antiques. We use double-walled boxes, acid-free tissue for artwork, and custom crating for fragile items.`,
+    buildingCalloutsHeading: "Packing Services for Fremont's Unique Homes",
+    buildingCallouts: `**Craftsman Home Packing** — Fremont's craftsman homes often contain vintage furniture, art collections, and period pieces requiring specialized packing. **Apartment Packing** — Full-pack, partial-pack, and kitchen-only packing for Fremont apartment residents. **Art & Collection Packing** — Fremont's arts community means we frequently pack original artwork, sculptures, vinyl record collections, and unique items. **Tech Worker Packing** — Fremont's tech workers (Google campus nearby) often have extensive electronics and home office setups requiring careful packing.`,
+    extraFaqs: [
+      {
+        q: "Do you pack art and unique collections for Fremont moves?",
+        a: "Yes. Fremont's arts community means we regularly pack original artwork, sculptures, vintage collections, and unique items. We use custom crating, acid-free tissue, and foam padding for valuable pieces.",
+      },
+      {
+        q: "How much does professional packing cost in Fremont?",
+        a: "A 1-bedroom apartment typically runs $200–$400. A 3-bedroom craftsman home usually costs $600–$1,200. We provide exact quotes after a free in-home assessment.",
+      },
+    ],
+    pricingNote: "Fremont packing services run $45–$65/hr per packer plus materials. A 1-bedroom apartment typically costs $200–$400 all-in. A 3-bedroom craftsman home usually runs $600–$1,200. Full-pack, partial-pack, and kitchen-only options available.",
+  },
+
+  "fremont-commercial": {
+    intro: `Fremont is home to Google's Seattle campus, dozens of tech companies, creative agencies, restaurants, and boutiques along the Ship Canal. Our commercial moving crews have relocated Fremont businesses of all sizes — from small boutiques on Fremont Ave to tech office buildouts near the Google campus. We work after-hours and on weekends to minimize disruption to your business operations.`,
+    buildingCalloutsHeading: "Fremont Commercial Districts We Serve",
+    buildingCallouts: `**Google Seattle Campus** (601 N 34th St) — Large tech campus with specific move-in requirements. We coordinate with Google facilities management. **Fremont Ave N Commercial Core** — Boutiques, restaurants, and creative agencies. Limited loading access requires SDOT permits. **Stone Way N Corridor** — Light industrial, tech offices, and mixed-use commercial with better truck access. **Ship Canal Waterfront** — Tech companies and creative offices with waterfront access.`,
+    extraFaqs: [
+      {
+        q: "Do you move tech offices near the Google campus in Fremont?",
+        a: "Yes. We have experience with tech office moves in Fremont, including coordination with building facilities management for loading dock access and elevator reservations. We work after-hours to minimize disruption.",
+      },
+      {
+        q: "Can you move a Fremont restaurant or bar over a weekend?",
+        a: "Yes. Weekend and after-hours moves are our most common commercial move type in Fremont. We work Friday evening through Sunday to have your business fully operational by Monday morning.",
+      },
+    ],
+    pricingNote: "Fremont commercial moves are priced by scope. Small office moves (under 10 workstations) typically run $800–$1,500. Restaurant equipment moves quoted individually. Free on-site quotes available.",
+  },
+
+  "fremont-storage": {
+    intro: `Fremont's active real estate market and frequent apartment transitions create regular storage needs. On The Go Moving & Storage offers climate-controlled storage at our Redmond facility, just 13 miles from Fremont. We pick up from your Fremont home or apartment, store your items securely, and deliver to your new location when you're ready.`,
+    buildingCalloutsHeading: "Storage Solutions for Fremont Residents",
+    buildingCallouts: `**Home Sale Bridge Storage** — Fremont's competitive real estate market often requires sellers to clear furniture for staging. We store your items during the sale and deliver to your new home after closing. **Apartment Transition Storage** — When your lease ends before your new place is ready, we bridge the gap with short-term storage. **Renovation Storage** — Fremont craftsman homes are frequently renovated. We store furniture during major projects. **Long-Term Storage** — Month-to-month climate-controlled storage for Fremont residents needing extended storage.`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Fremont?",
+        a: "Our climate-controlled storage facility is in Redmond — 13 miles from Fremont, a 21-minute drive. We pick up from your Fremont home and deliver to your new location.",
+      },
+      {
+        q: "Do you offer short-term storage for Fremont apartment transitions?",
+        a: "Yes. We offer month-to-month storage with no minimum commitment beyond 30 days. Ideal for Fremont renters who need to vacate before their new place is ready.",
+      },
+    ],
+    pricingNote: "Fremont storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Fremont available. Month-to-month contracts.",
+  },
+
+  "fremont-senior": {
+    intro: `Fremont has a longtime residential community with many seniors who have called the neighborhood home for decades. Our senior moving specialists understand the emotional weight of leaving a longtime Fremont craftsman home or apartment. We work at a comfortable pace, handle all the packing and heavy lifting, and treat every item with the care it deserves.`,
+    buildingCalloutsHeading: "Senior Living Communities Near Fremont We Serve",
+    buildingCallouts: `**Fremont Senior Center** — Community resource for Fremont seniors. We partner with local senior services to coordinate moves. **Phinney Neighborhood Senior Housing** — Senior apartments on the Phinney Ridge border near Fremont. We coordinate move-in logistics with building management. **Wallingford Senior Residences** — Senior housing in nearby Wallingford. **Aging in Place** — Many Fremont seniors prefer to stay in their craftsman homes. We help with furniture rearrangement and downsizing within the home.`,
+    extraFaqs: [
+      {
+        q: "Do you help seniors downsize from Fremont craftsman homes?",
+        a: "Yes. We offer full downsizing support — helping sort items for donation, storage, and the new home. We work at your pace and coordinate donation pickups for items you're not keeping.",
+      },
+      {
+        q: "Do you offer senior discounts for Fremont moves?",
+        a: "Yes. We offer a 10% senior discount for residents 65 and older on all Fremont moves. Please mention this when requesting your quote.",
+      },
+    ],
+    pricingNote: "Senior moves in Fremont are priced by scope. A downsizing move from a 2-bedroom craftsman to a 1-bedroom senior apartment typically runs $600–$1,200 including packing. Full-service senior moves available. 10% senior discount available.",
+  },
+
+  "fremont-furniture": {
+    intro: `Fremont's craftsman homes and vintage apartments present furniture moving challenges that require experienced crews — narrow doorways, steep staircases, and tight hallways. Our furniture moving specialists have navigated hundreds of Fremont homes and know exactly how to handle a sectional sofa through a craftsman doorway or a vintage armoire up a steep staircase.`,
+    buildingCalloutsHeading: "Furniture Moving Challenges in Fremont",
+    buildingCallouts: `**Craftsman Home Furniture** — Fremont's craftsman homes have 28–30 inch doorways and steep staircases. Large furniture pieces often require disassembly. **Vintage & Antique Furniture** — Fremont's eclectic community means we frequently move vintage and antique furniture requiring extra care. **Tech Worker Furniture** — Fremont's tech workers often have large standing desks, ergonomic chairs, and extensive home office setups. **Piano Moving** — We move upright and baby grand pianos throughout Fremont, including up and down craftsman staircases.`,
+    extraFaqs: [
+      {
+        q: "Can you move large furniture through Fremont craftsman doorways?",
+        a: "Yes. We disassemble and reassemble large furniture pieces that won't fit through standard craftsman doorways. We bring all necessary tools and hardware.",
+      },
+      {
+        q: "Do you move vintage and antique furniture in Fremont?",
+        a: "Yes. Fremont's eclectic community means we regularly move vintage and antique furniture. We use furniture blankets, custom padding, and careful handling for valuable pieces.",
+      },
+    ],
+    pricingNote: "Furniture-only moves in Fremont start at $185/hr for a 2-person crew with a 2-hour minimum. Piano moves quoted separately. Disassembly and reassembly included.",
+  },
+
+  "fremont-appliance": {
+    intro: `Moving appliances in Fremont's craftsman homes requires navigating narrow doorways, steep staircases, and tight kitchen layouts. Our appliance moving crews handle refrigerators, washers, dryers, ranges, and dishwashers throughout Fremont — including in the older craftsman homes where appliances must be carefully angled through tight spaces.`,
+    buildingCalloutsHeading: "Appliance Moving in Fremont Homes",
+    buildingCallouts: `**Craftsman Kitchen Appliances** — Older Fremont craftsman homes often have narrow kitchen doorways and tight layouts. We angle refrigerators and ranges through tight spaces safely. **Basement Laundry** — Many Fremont craftsman homes have laundry rooms in tight basement spaces. We disconnect and move washers and dryers from any location. **Apartment Appliances** — Fremont apartment buildings often have stacked washer/dryer units and compact refrigerators. **Tech Worker Appliances** — Fremont's tech workers often have high-end appliances requiring careful handling.`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances in Fremont?",
+        a: "We disconnect and reconnect standard water, gas, and electrical connections for washers, dryers, refrigerators, and dishwashers. For gas appliances requiring licensed work, we coordinate with a licensed plumber.",
+      },
+      {
+        q: "Can you move appliances through Fremont craftsman doorways?",
+        a: "Yes. We have experience moving full-size refrigerators and ranges through the narrow 28–30 inch doorways common in Fremont craftsman homes. We use appliance dollies, furniture sliders, and door frame protection.",
+      },
+    ],
+    pricingNote: "Appliance moves in Fremont start at $185/hr for a 2-person crew with a 2-hour minimum. Single appliance moves start at $150. Disconnection/reconnection included for standard connections.",
+  },
+
+  "fremont-unpacking": {
+    intro: `After a Fremont move, our professional unpacking crews unbox, organize, and set up your new home so you can start enjoying your new space immediately. We work room by room, break down all boxes, and remove all packing materials when we're done. Whether you've moved into a craftsman on North Fremont or a condo near the Ship Canal, we'll have you settled in faster than you thought possible.`,
+    buildingCalloutsHeading: "Unpacking Services for Fremont Homes",
+    buildingCallouts: `**Full Unpack** — We unbox and organize every room in your new Fremont home. All boxes broken down and packing materials removed. **Partial Unpack** — Choose specific rooms — kitchen and master bedroom are the most popular choices. **Kitchen Setup** — We unpack and organize your kitchen so it's fully functional on day one. **Home Office Setup** — Fremont's tech workers often need home office setup. We assemble desks, set up monitors, and organize cables.`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking a Fremont home take?",
+        a: "A 1-bedroom apartment typically takes 2–3 hours with a 2-person crew. A 3-bedroom craftsman home usually takes 5–8 hours. We provide time estimates after reviewing your move details.",
+      },
+      {
+        q: "Do you help with home office setup in Fremont?",
+        a: "Yes. Many Fremont tech workers need home office setup after a move. We assemble standing desks, set up monitor arms, and organize cable management as part of our unpacking service.",
+      },
+    ],
+    pricingNote: "Unpacking services in Fremont run $95–$125/hr per unpacker. A 1-bedroom apartment typically costs $190–$375. A 3-bedroom craftsman home usually runs $475–$1,000. Combined move + unpack packages available.",
+  },
+
+  "fremont-warehousing": {
+    intro: `Fremont's growing business community — from Google's Seattle campus to the creative agencies and tech startups along Stone Way — needs flexible warehousing solutions. On The Go Moving & Storage offers short-term and long-term warehousing at our Redmond facility, just 13 miles from Fremont. We handle receiving, inventory management, and last-mile delivery throughout the greater Seattle area.`,
+    buildingCalloutsHeading: "Warehousing Solutions for Fremont Businesses",
+    buildingCallouts: `**Tech Company Storage** — Fremont's tech companies use our warehousing for IT equipment, office furniture, and archive storage. **Creative Agency Storage** — Fremont's creative agencies use our warehousing for set pieces, props, and equipment. **Restaurant & Bar Storage** — Fremont's restaurants and bars use our warehousing for seasonal inventory and equipment storage during renovations. **Small Business Storage** — Fremont's small businesses and home-based businesses use our warehousing for inventory overflow.`,
+    extraFaqs: [
+      {
+        q: "Do you offer short-term warehousing for Fremont businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required. Minimum storage period is 30 days.",
+      },
+      {
+        q: "Can you handle IT equipment storage for Fremont tech companies?",
+        a: "Yes. We offer secure, climate-controlled storage for IT equipment, servers, and electronics. We provide inventory tracking and can retrieve specific items on request.",
+      },
+    ],
+    pricingNote: "Warehousing for Fremont businesses starts at $195/month for a 10×10 space at our Redmond facility. Larger spaces and pallet storage available. Month-to-month contracts.",
+  },
+
+// ===================================================================
+// JUANITA
+// ===================================================================
+
+  "juanita-residential": {
+    intro: `Juanita is a beautiful waterfront community within Kirkland, known for Juanita Beach Park, quiet residential streets, and a mix of single-family homes and condos along the eastern shore of Lake Washington. On The Go Moving & Storage is just 7 miles from Juanita — making us one of the closest and most responsive moving companies for Juanita residents. Our Redmond warehouse is a 12-minute drive, which keeps travel time costs low and allows us to be highly responsive for same-week bookings.`,
+    buildingCalloutsHeading: "Juanita Neighborhoods & Communities We Serve",
+    buildingCallouts: `**Juanita Beach Area** — Waterfront homes and condos near Juanita Beach Park. Some waterfront properties have limited truck access. **Juanita Village** — The commercial and residential core of Juanita with good truck access. **Holmes Point** — Quieter residential area north of Juanita with a mix of older homes and newer construction. **Finn Hill Adjacent** — Hillside residential area bordering Juanita with steep driveways on some properties. **Totem Lake Adjacent** — Eastern Juanita bordering the Totem Lake commercial district.`,
+    extraFaqs: [
+      {
+        q: "How close are you to Juanita for residential moves?",
+        a: "Our Redmond warehouse is just 7 miles from Juanita — a 12-minute drive. This means lower travel time costs and faster response times. We can often accommodate same-week bookings for Juanita residential moves.",
+      },
+      {
+        q: "Do you move waterfront homes in Juanita?",
+        a: "Yes. We have experience with Juanita's waterfront homes, including properties with limited truck access near the lake. We assess access before move day and bring appropriately sized trucks for tight waterfront driveways.",
+      },
+    ],
+    pricingNote: "Juanita residential moves typically run $120–$160/hr for a 2-person crew. A 1-bedroom apartment usually takes 3–4 hours ($360–$640). A 3-bedroom home typically runs 6–8 hours ($720–$1,280). Flat-rate quotes available.",
+  },
+
+  "juanita-apartment": {
+    intro: `Juanita has a mix of apartment complexes and condos, particularly near Juanita Village and along the main corridors. Most Juanita apartment buildings are accessible with standard moving trucks and have reasonable parking. Our crews have moved many Juanita apartment residents and know the building-specific requirements. Being just 7 miles from Juanita, we can often accommodate short-notice apartment moves.`,
+    buildingCalloutsHeading: "Juanita Apartment Buildings We Frequently Serve",
+    buildingCallouts: `**Juanita Village Apartments** — Several apartment complexes near the Juanita Village commercial area with good access. **Lakeview Condos** — Condos with lake views near Juanita Beach. Elevator access in most buildings. **Holmes Point Apartments** — Smaller apartment buildings in the Holmes Point area with good access. **Finn Hill Condos** — Newer condos on the Finn Hill hillside with good access but steep driveways on some properties.`,
+    extraFaqs: [
+      {
+        q: "Do Juanita apartment buildings require elevator reservations?",
+        a: "Most Juanita apartment buildings are smaller and don't require formal elevator reservations. Larger condo buildings near Juanita Beach may require advance notice. We coordinate with your building management.",
+      },
+      {
+        q: "Can you accommodate short-notice apartment moves in Juanita?",
+        a: "Yes. Being just 7 miles from Juanita, we can often accommodate short-notice moves. Contact us and we'll do our best to fit you in, even on short notice.",
+      },
+    ],
+    pricingNote: "Juanita apartment moves typically run $120–$160/hr for a 2-person crew. A studio apartment usually takes 2–3 hours ($240–$480). A 1-bedroom apartment typically runs 3–4 hours ($360–$640).",
+  },
+
+  "juanita-packing": {
+    intro: `Juanita's mix of single-family homes, waterfront properties, and condos creates a variety of packing needs. Our professional packing crews have packed hundreds of Juanita homes and know how to handle everything from waterfront home collections to modern condo setups. We use double-walled boxes, acid-free tissue for artwork, and custom crating for fragile items.`,
+    buildingCalloutsHeading: "Packing Services for Juanita Homes",
+    buildingCallouts: `**Single-Family Home Packing** — Juanita's single-family homes often contain a full household of furniture, appliances, and personal items. We offer full-pack, partial-pack, and kitchen-only packing. **Waterfront Home Packing** — Juanita's waterfront homes often contain valuable artwork, nautical collections, and high-end furnishings requiring specialized packing. **Condo Packing** — Juanita condos often have large-format art, wine collections, and high-end electronics requiring careful packing. **Downsizing Packing** — Many Juanita residents downsizing from larger homes need help deciding what to pack and what to donate.`,
+    extraFaqs: [
+      {
+        q: "Do you pack waterfront home collections in Juanita?",
+        a: "Yes. Juanita's waterfront homes often contain valuable artwork, nautical collections, and high-end furnishings. We use custom crating, acid-free tissue, and furniture blankets for valuable pieces.",
+      },
+      {
+        q: "How much does professional packing cost in Juanita?",
+        a: "A 1-bedroom apartment typically runs $200–$400. A 3-bedroom home usually costs $600–$1,200. We provide exact quotes after a free in-home assessment.",
+      },
+    ],
+    pricingNote: "Juanita packing services run $45–$65/hr per packer plus materials. A 1-bedroom apartment typically costs $200–$400 all-in. A 3-bedroom home usually runs $600–$1,200. Full-pack, partial-pack, and kitchen-only options available.",
+  },
+
+  "juanita-commercial": {
+    intro: `Juanita's commercial district near Juanita Village includes small businesses, professional offices, and service businesses. Our commercial moving crews handle Juanita business moves of all sizes — from small professional offices to retail relocations. Being just 7 miles from Juanita, we can respond quickly and keep travel costs low for Juanita commercial moves.`,
+    buildingCalloutsHeading: "Juanita Commercial Districts We Serve",
+    buildingCallouts: `**Juanita Village Commercial Core** — Small businesses, restaurants, and service businesses near the Juanita Village shopping area. Good truck access. **Professional Offices** — Medical, dental, and professional offices throughout Juanita. **Home-Based Businesses** — Many Juanita residents run home-based businesses. We handle moves for home offices and small business inventory.`,
+    extraFaqs: [
+      {
+        q: "Do you move small businesses in Juanita?",
+        a: "Yes. We handle commercial moves for Juanita businesses of all sizes — from small professional offices to retail relocations. We work after-hours and on weekends to minimize business disruption.",
+      },
+      {
+        q: "How quickly can you respond for a Juanita commercial move?",
+        a: "Being just 7 miles from Juanita, we can often respond quickly for commercial moves. Contact us and we'll provide a same-day or next-day quote for most Juanita commercial moves.",
+      },
+    ],
+    pricingNote: "Juanita commercial moves are priced by scope. Small office moves (under 10 workstations) typically run $700–$1,300. Free on-site quotes available.",
+  },
+
+  "juanita-storage": {
+    intro: `Juanita residents frequently need storage during home sales, renovations, or transitions between homes. On The Go Moving & Storage offers climate-controlled storage at our Redmond facility, just 7 miles from Juanita. We pick up from your Juanita home, store your items securely, and deliver to your new location when you're ready.`,
+    buildingCalloutsHeading: "Storage Solutions for Juanita Residents",
+    buildingCallouts: `**Home Sale Bridge Storage** — Juanita's active real estate market often requires sellers to clear furniture for staging. We store your items during the sale and deliver to your new home after closing. **Renovation Storage** — Juanita homes are frequently renovated. We store furniture during kitchen, bathroom, or addition projects. **Waterfront Home Storage** — Juanita's waterfront homeowners often need seasonal storage for outdoor furniture and equipment. **Long-Term Storage** — Month-to-month climate-controlled storage for Juanita residents needing extended storage.`,
+    extraFaqs: [
+      {
+        q: "How far is your storage facility from Juanita?",
+        a: "Our climate-controlled storage facility is in Redmond — just 7 miles from Juanita, a 12-minute drive. We pick up from your Juanita home and deliver to your new location.",
+      },
+      {
+        q: "Do you offer seasonal storage for Juanita waterfront homeowners?",
+        a: "Yes. We offer seasonal storage for outdoor furniture, boats, and equipment for Juanita's waterfront homeowners. Month-to-month contracts with flexible pickup and delivery.",
+      },
+    ],
+    pricingNote: "Juanita storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pick-up and delivery from Juanita available. Month-to-month contracts.",
+  },
+
+  "juanita-senior": {
+    intro: `Juanita's quiet residential character and waterfront setting make it a popular community for seniors. Our senior moving specialists understand the emotional complexity of leaving a longtime Juanita home — whether it's a waterfront property near Juanita Beach or a longtime family home in Holmes Point. We work at a comfortable pace, handle all the heavy lifting, and treat every item with the care it deserves.`,
+    buildingCalloutsHeading: "Senior Living Communities Near Juanita We Serve",
+    buildingCallouts: `**Aegis Living Kirkland** (near Juanita) — Assisted living and memory care near Juanita. We coordinate move-in logistics with Aegis staff. **Kirkland Senior Housing** — Several senior apartment communities in Kirkland near Juanita. **Juanita Area Aging in Place** — Many Juanita seniors prefer to stay in their homes. We help with furniture rearrangement and downsizing within the home. **Totem Lake Senior Communities** — Senior living communities in nearby Totem Lake.`,
+    extraFaqs: [
+      {
+        q: "Do you help seniors downsize from Juanita waterfront homes?",
+        a: "Yes. We offer full downsizing support — helping sort items for donation, storage, and the new home. We work at your pace and coordinate donation pickups for items you're not keeping.",
+      },
+      {
+        q: "Do you offer senior discounts for Juanita moves?",
+        a: "Yes. We offer a 10% senior discount for residents 65 and older on all Juanita moves. Please mention this when requesting your quote.",
+      },
+    ],
+    pricingNote: "Senior moves in Juanita are priced by scope. A downsizing move from a 3-bedroom home to a 1-bedroom senior apartment typically runs $600–$1,200 including packing. Full-service senior moves available. 10% senior discount available.",
+  },
+
+  "juanita-furniture": {
+    intro: `Juanita's mix of single-family homes, waterfront properties, and condos creates a variety of furniture moving needs. Our furniture moving specialists handle everything from large waterfront home furniture to modern condo pieces. Being just 7 miles from Juanita, we can respond quickly and keep travel costs low for Juanita furniture moves.`,
+    buildingCalloutsHeading: "Furniture Moving in Juanita Homes",
+    buildingCallouts: `**Waterfront Home Furniture** — Juanita's waterfront homes often contain large, high-value furniture pieces requiring careful handling. We use furniture blankets and custom padding for valuable pieces. **Single-Family Home Furniture** — Standard household furniture moves throughout Juanita. **Condo Furniture** — Juanita condos often have large sectionals and oversized furniture requiring careful maneuvering through hallways and elevator doors. **Piano Moving** — We move upright and baby grand pianos throughout Juanita.`,
+    extraFaqs: [
+      {
+        q: "Do you move large furniture from Juanita waterfront homes?",
+        a: "Yes. We have experience with large furniture pieces from Juanita's waterfront homes, including oversized sofas, dining tables, and bedroom sets. We use furniture blankets and custom padding for valuable pieces.",
+      },
+      {
+        q: "Do you move pianos in Juanita?",
+        a: "Yes. We move upright pianos, baby grands, and grand pianos throughout Juanita. Piano moves require specialized equipment and trained crews — we have both.",
+      },
+    ],
+    pricingNote: "Furniture-only moves in Juanita start at $175/hr for a 2-person crew with a 2-hour minimum. Piano moves quoted separately. Disassembly and reassembly included.",
+  },
+
+  "juanita-appliance": {
+    intro: `Moving appliances in Juanita's homes and condos is straightforward compared to Seattle's urban neighborhoods — most Juanita properties have good truck access and standard doorway widths. Our appliance moving crews handle refrigerators, washers, dryers, ranges, and dishwashers throughout Juanita with efficiency and care.`,
+    buildingCalloutsHeading: "Appliance Moving in Juanita Homes",
+    buildingCallouts: `**Single-Family Home Appliances** — Standard appliance moves throughout Juanita's single-family homes. We disconnect and reconnect all standard connections. **Waterfront Home Appliances** — Juanita's waterfront homes often have high-end appliances requiring careful handling. **Condo Appliances** — Juanita condos often have compact appliances and built-in units requiring careful removal. **Garage Appliances** — Many Juanita homes have garage refrigerators and freezers that need to be moved separately.`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances in Juanita?",
+        a: "We disconnect and reconnect standard water, gas, and electrical connections for washers, dryers, refrigerators, and dishwashers. For gas appliances requiring licensed work, we coordinate with a licensed plumber.",
+      },
+      {
+        q: "Can you move high-end appliances in Juanita waterfront homes?",
+        a: "Yes. We have experience moving high-end built-in appliances including Sub-Zero refrigerators, Wolf ranges, and Miele dishwashers. We use appliance-specific dollies and protection to prevent damage.",
+      },
+    ],
+    pricingNote: "Appliance moves in Juanita start at $175/hr for a 2-person crew with a 2-hour minimum. Single appliance moves start at $145. Disconnection/reconnection included for standard connections.",
+  },
+
+  "juanita-unpacking": {
+    intro: `After a Juanita move, our professional unpacking crews unbox, organize, and set up your new home so you can start enjoying your new space immediately. We work room by room, break down all boxes, and remove all packing materials when we're done. Being just 7 miles from Juanita, we can often schedule unpacking services the same day or the day after your move.`,
+    buildingCalloutsHeading: "Unpacking Services for Juanita Homes",
+    buildingCallouts: `**Full Unpack** — We unbox and organize every room in your new Juanita home. All boxes broken down and packing materials removed. **Partial Unpack** — Choose specific rooms — kitchen and master bedroom are the most popular choices. **Kitchen Setup** — We unpack and organize your kitchen so it's fully functional on day one. **Bedroom Setup** — We assemble beds, unpack clothing, and organize closets so you can sleep comfortably your first night.`,
+    extraFaqs: [
+      {
+        q: "How long does unpacking a Juanita home take?",
+        a: "A 1-bedroom apartment typically takes 2–3 hours with a 2-person crew. A 3-bedroom home usually takes 5–7 hours. We provide time estimates after reviewing your move details.",
+      },
+      {
+        q: "Can you schedule same-day unpacking for Juanita moves?",
+        a: "Yes. Being just 7 miles from Juanita, we can often schedule unpacking services the same day or the day after your move. Contact us to check availability.",
+      },
+    ],
+    pricingNote: "Unpacking services in Juanita run $90–$120/hr per unpacker. A 1-bedroom apartment typically costs $180–$360. A 3-bedroom home usually runs $450–$840. Combined move + unpack packages available.",
+  },
+
+  "juanita-warehousing": {
+    intro: `Juanita's businesses and home-based entrepreneurs need flexible warehousing solutions close to home. On The Go Moving & Storage offers short-term and long-term warehousing at our Redmond facility, just 7 miles from Juanita. We handle receiving, inventory management, and last-mile delivery throughout the greater Seattle area.`,
+    buildingCalloutsHeading: "Warehousing Solutions for Juanita Businesses",
+    buildingCallouts: `**Home-Based Business Storage** — Juanita's many home-based businesses use our warehousing for inventory overflow and business equipment. **Small Business Storage** — Juanita Village businesses use our warehousing for seasonal inventory and equipment storage during renovations. **E-commerce Fulfillment** — Juanita-based e-commerce businesses use our pick-and-pack services for order fulfillment. **Professional Office Storage** — Juanita's professional offices use our warehousing for archive records and equipment storage.`,
+    extraFaqs: [
+      {
+        q: "Do you offer short-term warehousing for Juanita businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required. Minimum storage period is 30 days.",
+      },
+      {
+        q: "How far is your warehouse from Juanita?",
+        a: "Our Redmond warehouse is just 7 miles from Juanita — a 12-minute drive. This makes us one of the closest warehousing options for Juanita businesses.",
+      },
+    ],
+    pricingNote: "Warehousing for Juanita businesses starts at $195/month for a 10×10 space at our Redmond facility. Larger spaces and pallet storage available. Month-to-month contracts.",
+  },
+
+// ===================================================================
+// OLYMPIA
+// ===================================================================
+
+  "olympia-residential": {
+    intro: `On The Go Moving & Storage serves moves between Olympia and the Greater Seattle area. Whether you're relocating from Seattle to Olympia for a state government job, moving a family to the South Sound, or heading north to the Eastside, our experienced crews handle the full move with the same care and professionalism we bring to every job. Olympia moves are priced as flat-rate jobs based on the scope of the move — no hourly surprises on a 65-mile haul.`,
+    buildingCalloutsHeading: "Olympia Neighborhoods & Communities We Serve",
+    buildingCallouts: `**Downtown Olympia** — Historic downtown with older homes and limited truck access on some streets. We plan routes in advance for downtown Olympia moves. **Eastside** — Established residential neighborhoods east of downtown with good truck access. **Westside** — Growing residential area west of downtown with newer construction. **South Capitol** — Historic neighborhood near the State Capitol campus with a mix of older homes and state government buildings. **Lacey** — Suburban community east of Olympia with good truck access and newer housing stock. **Tumwater** — South of Olympia with industrial and residential areas. **Hawks Prairie** — Fast-growing area in Lacey with newer construction and good truck access.`,
+    extraFaqs: [
+      {
+        q: "How do you price moves between Seattle and Olympia?",
+        a: "Olympia moves are priced as flat-rate jobs based on the volume of your move and the specific addresses. We don't charge hourly for long-distance local moves — you get a firm price upfront with no surprises.",
+      },
+      {
+        q: "How long does a move from Seattle to Olympia take?",
+        a: "The drive is about 65 minutes from our Redmond warehouse to Olympia. A typical 2-bedroom move takes 6–8 hours total including loading, driving, and unloading. A 3-bedroom home typically takes 8–11 hours.",
+      },
+    ],
+    pricingNote: "Olympia residential moves are flat-rate priced. A 1-bedroom move typically costs $800–$1,200. A 2-bedroom home usually runs $1,200–$1,800. A 3-bedroom home typically costs $1,800–$2,800. Free quotes provided after reviewing your move details.",
+  },
+
+  "olympia-apartment": {
+    intro: `Olympia has a growing apartment market, particularly in the downtown core, Lacey, and Hawks Prairie. Our crews handle Olympia apartment moves as flat-rate jobs — no hourly uncertainty on a 65-mile haul. We coordinate with Olympia apartment building management for elevator reservations and move-in windows, and we handle all the logistics so you can focus on your new start in the South Sound.`,
+    buildingCalloutsHeading: "Olympia Apartment Areas We Serve",
+    buildingCallouts: `**Downtown Olympia Apartments** — Several apartment buildings in the downtown core with varying access. We coordinate with building management for move-in logistics. **Lacey Apartment Complexes** — Large apartment communities in Lacey with good truck access and standard move-in procedures. **Hawks Prairie Apartments** — Newer apartment communities in the fast-growing Hawks Prairie area. **Tumwater Apartments** — Affordable apartment options in Tumwater with good access. **Capitol Campus Area** — Apartments near the State Capitol campus popular with state government workers.`,
+    extraFaqs: [
+      {
+        q: "Do you move apartments to and from Olympia?",
+        a: "Yes. We handle apartment moves both to Olympia (from Seattle/Eastside) and from Olympia (to Seattle/Eastside). All Olympia apartment moves are priced as flat-rate jobs.",
+      },
+      {
+        q: "Do you coordinate with Olympia apartment building management?",
+        a: "Yes. We coordinate elevator reservations and move-in windows with Olympia apartment building management. We handle all the logistics so you can focus on your move.",
+      },
+    ],
+    pricingNote: "Olympia apartment moves are flat-rate priced. A studio apartment typically costs $600–$900. A 1-bedroom apartment usually runs $800–$1,200. A 2-bedroom apartment typically costs $1,200–$1,800.",
+  },
+
+  "olympia-packing": {
+    intro: `For moves between Olympia and the Greater Seattle area, proper packing is essential — your belongings will be in the truck for a 65-mile haul. Our professional packing crews pack Olympia homes to the same standard we use for all our moves: double-walled boxes, furniture blankets, and careful attention to fragile items. We offer full-pack, partial-pack, and kitchen-only packing for Olympia moves.`,
+    buildingCalloutsHeading: "Packing Services for Olympia Moves",
+    buildingCallouts: `**Full-Service Packing** — We pack your entire Olympia home, load the truck, drive to your new location, and unload. One company handles everything. **Partial Packing** — We pack the items you don't want to handle — kitchen, fragile items, artwork — while you pack the rest. **Kitchen Packing** — Kitchen packing is the most time-consuming part of any move. We pack your kitchen efficiently and safely. **Fragile Item Packing** — We specialize in packing fragile items — dishes, glassware, artwork, electronics — for the 65-mile haul between Olympia and Seattle.`,
+    extraFaqs: [
+      {
+        q: "Do you pack and move in the same day for Olympia moves?",
+        a: "Yes. For smaller Olympia moves (1–2 bedrooms), we can pack and move in the same day. For larger homes, we recommend packing the day before the move to ensure everything is ready.",
+      },
+      {
+        q: "How much does professional packing cost for an Olympia move?",
+        a: "Packing costs are included in our flat-rate Olympia move quotes. A 1-bedroom apartment pack typically adds $200–$400 to the move cost. A 3-bedroom home pack typically adds $600–$1,200.",
+      },
+    ],
+    pricingNote: "Olympia packing services are typically included in flat-rate move quotes. Standalone packing services run $45–$65/hr per packer plus materials. Full-pack, partial-pack, and kitchen-only options available.",
+  },
+
+  "olympia-commercial": {
+    intro: `Olympia is the state capital and home to a large state government workforce, as well as a growing private sector. Our commercial moving crews handle Olympia business moves — from state agency office relocations to private sector office moves. We work after-hours and on weekends to minimize disruption, and we price Olympia commercial moves as flat-rate jobs based on scope.`,
+    buildingCalloutsHeading: "Olympia Commercial Districts We Serve",
+    buildingCallouts: `**State Capitol Campus** — State agency offices in the Capitol Campus buildings. We coordinate with state facilities management for move logistics. **Downtown Olympia Commercial Core** — Private sector offices, law firms, and service businesses in downtown Olympia. **Lacey Commercial District** — Growing commercial area in Lacey with good truck access. **Tumwater Industrial Area** — Light industrial and commercial businesses in Tumwater. **Hawks Prairie Commercial** — New commercial development in the fast-growing Hawks Prairie area.`,
+    extraFaqs: [
+      {
+        q: "Do you move state agency offices in Olympia?",
+        a: "Yes. We have experience with state agency office moves in Olympia's Capitol Campus. We coordinate with state facilities management for building access, elevator reservations, and move logistics.",
+      },
+      {
+        q: "How do you price commercial moves between Seattle and Olympia?",
+        a: "Olympia commercial moves are priced as flat-rate jobs based on the volume of office furniture, equipment, and the specific addresses. We provide detailed quotes after an on-site assessment.",
+      },
+    ],
+    pricingNote: "Olympia commercial moves are flat-rate priced based on scope. Small office moves (under 10 workstations) typically run $1,200–$2,000 for Seattle-to-Olympia moves. Free on-site quotes available.",
+  },
+
+  "olympia-storage": {
+    intro: `For Olympia residents and businesses needing storage during a move or transition, On The Go Moving & Storage offers climate-controlled storage at our Redmond facility. We pick up from your Olympia home or business, store your items securely at our Redmond facility, and deliver to your new Olympia or Seattle-area location when you're ready.`,
+    buildingCalloutsHeading: "Storage Solutions for Olympia Residents",
+    buildingCallouts: `**Move Bridge Storage** — When your Olympia home closes before your new Seattle-area home is ready (or vice versa), we store your items in between. **State Worker Relocation Storage** — State government workers relocating between Olympia and Seattle often need temporary storage during the transition. **Renovation Storage** — Olympia homeowners renovating their homes use our storage during major projects. **Long-Term Storage** — Month-to-month climate-controlled storage for Olympia residents and businesses.`,
+    extraFaqs: [
+      {
+        q: "Do you pick up from Olympia for storage?",
+        a: "Yes. We pick up from Olympia and store your items at our climate-controlled Redmond facility. Pickup from Olympia is available with advance scheduling. We deliver to your new location when you're ready.",
+      },
+      {
+        q: "How much does storage cost for an Olympia move?",
+        a: "Storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit. Pickup from Olympia and delivery to your new location are priced separately based on distance.",
+      },
+    ],
+    pricingNote: "Olympia storage starts at $95/month for a 5×5 unit and $195/month for a 10×10 unit at our Redmond facility. Pickup from Olympia and delivery to your new location priced separately. Month-to-month contracts.",
+  },
+
+  "olympia-senior": {
+    intro: `Many Olympia seniors are relocating to be closer to family in the Greater Seattle area, or moving from Seattle to Olympia for a quieter retirement. Our senior moving specialists handle the full move with sensitivity and care — from packing a longtime Olympia home to setting up a new residence in the Seattle area. We work at a pace that's comfortable for you and treat every item with the respect it deserves.`,
+    buildingCalloutsHeading: "Senior Living Communities Near Olympia We Serve",
+    buildingCallouts: `**Panorama City** (1751 Circle Lane SE, Lacey) — Large continuing care retirement community in Lacey near Olympia. We coordinate move-in logistics with Panorama City staff. **Capital Place Senior Living** (Downtown Olympia) — Senior apartments in downtown Olympia. **Olympia Senior Center** — Community resource for Olympia seniors. **Lacey Senior Communities** — Several senior living options in Lacey near Olympia.`,
+    extraFaqs: [
+      {
+        q: "Do you help seniors relocate from Olympia to the Seattle area?",
+        a: "Yes. We handle full-service senior moves from Olympia to any Seattle-area destination — packing, transport, and setup. We work at your pace and treat every item with care.",
+      },
+      {
+        q: "Do you coordinate with Panorama City and other Olympia senior communities?",
+        a: "Yes. We have experience moving residents into Panorama City and other Olympia-area senior communities. We coordinate move-in windows with community staff.",
+      },
+    ],
+    pricingNote: "Senior moves between Olympia and Seattle are flat-rate priced. A downsizing move from a 2-bedroom Olympia home to a 1-bedroom Seattle-area senior apartment typically runs $1,000–$1,600 including packing. Full-service senior moves available.",
+  },
+
+  "olympia-furniture": {
+    intro: `For furniture-only moves between Olympia and the Greater Seattle area, On The Go Moving & Storage handles the full haul with the same care we bring to complete household moves. Whether you're moving a few large pieces or a full room of furniture, we price furniture-only Olympia moves as flat-rate jobs based on the volume and addresses.`,
+    buildingCalloutsHeading: "Furniture Moving Between Olympia and Seattle",
+    buildingCallouts: `**Large Furniture Hauls** — Moving large furniture pieces — sectional sofas, bedroom sets, dining tables — between Olympia and Seattle. Flat-rate pricing. **Antique & Valuable Furniture** — We use furniture blankets, custom padding, and careful handling for valuable pieces on the 65-mile haul. **Piano Moving** — We move upright and baby grand pianos between Olympia and the Greater Seattle area. **Office Furniture** — We move office furniture between Olympia state agency offices and Seattle-area locations.`,
+    extraFaqs: [
+      {
+        q: "Do you move furniture-only between Olympia and Seattle?",
+        a: "Yes. We handle furniture-only moves between Olympia and the Greater Seattle area. These are priced as flat-rate jobs based on the volume of furniture and the specific addresses.",
+      },
+      {
+        q: "Do you move pianos between Olympia and Seattle?",
+        a: "Yes. We move upright pianos, baby grands, and grand pianos between Olympia and the Greater Seattle area. Piano moves are quoted separately based on piano type and access.",
+      },
+    ],
+    pricingNote: "Olympia furniture-only moves are flat-rate priced. A small furniture haul (1–5 pieces) typically costs $400–$700. A full room of furniture typically runs $700–$1,200. Piano moves quoted separately.",
+  },
+
+  "olympia-appliance": {
+    intro: `Moving appliances between Olympia and the Greater Seattle area requires careful handling for the 65-mile haul. Our appliance moving crews handle refrigerators, washers, dryers, ranges, and dishwashers on Olympia moves — disconnecting at the origin, securing for transport, and reconnecting at the destination.`,
+    buildingCalloutsHeading: "Appliance Moving Between Olympia and Seattle",
+    buildingCallouts: `**Refrigerators** — We disconnect, transport, and reconnect refrigerators between Olympia and Seattle. We allow proper settling time before reconnecting. **Washers & Dryers** — We disconnect, transport, and reconnect washers and dryers. We bring drum stabilizers for washer transport. **Ranges & Dishwashers** — We disconnect and reconnect gas and electric ranges and dishwashers. **High-End Appliances** — We handle Sub-Zero, Wolf, and other high-end appliances with the specialized care they require.`,
+    extraFaqs: [
+      {
+        q: "Do you disconnect and reconnect appliances for Olympia moves?",
+        a: "We disconnect and reconnect standard water, gas, and electrical connections for washers, dryers, refrigerators, and dishwashers. For gas appliances requiring licensed work, we coordinate with a licensed plumber.",
+      },
+      {
+        q: "How do you price appliance moves between Olympia and Seattle?",
+        a: "Appliance moves between Olympia and Seattle are typically included in our flat-rate move quotes. Standalone appliance hauls are priced based on the number of appliances and the specific addresses.",
+      },
+    ],
+    pricingNote: "Olympia appliance moves are typically included in flat-rate move quotes. Standalone appliance hauls start at $300 for a single appliance between Olympia and Seattle. Disconnection/reconnection included for standard connections.",
+  },
+
+  "olympia-unpacking": {
+    intro: `After a long-distance local move from Seattle to Olympia (or vice versa), the last thing you want is to spend days surrounded by boxes. Our professional unpacking crews travel to Olympia to unbox, organize, and set up your new home — putting dishes in the kitchen, clothes in the closets, and books on the shelves — so you can start enjoying your new South Sound life immediately.`,
+    buildingCalloutsHeading: "Unpacking Services for Olympia Moves",
+    buildingCallouts: `**Full Unpack** — We unbox and organize every room in your new Olympia home. All boxes broken down and packing materials removed. **Partial Unpack** — Choose specific rooms — kitchen and master bedroom are the most popular choices. **Kitchen Setup** — We unpack and organize your kitchen so it's fully functional on day one. **Bedroom Setup** — We assemble beds, unpack clothing, and organize closets so you can sleep comfortably your first night.`,
+    extraFaqs: [
+      {
+        q: "Do you offer unpacking services in Olympia?",
+        a: "Yes. Our unpacking crews travel to Olympia to unbox and set up your new home. Unpacking services can be scheduled on move day or the day after.",
+      },
+      {
+        q: "How long does unpacking an Olympia home take?",
+        a: "A 1-bedroom apartment typically takes 2–3 hours with a 2-person crew. A 3-bedroom home usually takes 5–8 hours. Travel time to Olympia is included in the unpacking quote.",
+      },
+    ],
+    pricingNote: "Unpacking services in Olympia run $95–$125/hr per unpacker plus travel time to Olympia. A 1-bedroom apartment typically costs $250–$500 including travel. A 3-bedroom home usually runs $600–$1,200 including travel.",
+  },
+
+  "olympia-warehousing": {
+    intro: `Olympia businesses — from state agency contractors to private sector companies — need flexible warehousing solutions for the South Sound market. On The Go Moving & Storage offers short-term and long-term warehousing at our Redmond facility, with pickup and delivery service to Olympia. We handle receiving, inventory management, and last-mile delivery throughout the greater Seattle and South Sound area.`,
+    buildingCalloutsHeading: "Warehousing Solutions for Olympia Businesses",
+    buildingCallouts: `**State Agency Contractor Storage** — State government contractors in Olympia use our warehousing for equipment, supplies, and project materials. **Private Sector Business Storage** — Olympia's growing private sector uses our warehousing for inventory overflow and equipment storage. **Construction & Contractor Storage** — Olympia-area contractors use our warehousing for materials and equipment between projects. **E-commerce Fulfillment** — Olympia-based e-commerce businesses use our pick-and-pack services for order fulfillment.`,
+    extraFaqs: [
+      {
+        q: "Do you offer warehousing with delivery to Olympia?",
+        a: "Yes. We store your items at our Redmond facility and deliver to Olympia on a scheduled basis. Delivery to Olympia is available weekly or on-demand based on your business needs.",
+      },
+      {
+        q: "Do you offer month-to-month warehousing for Olympia businesses?",
+        a: "Yes. All our warehousing contracts are month-to-month — no long-term commitment required. Minimum storage period is 30 days.",
+      },
+    ],
+    pricingNote: "Warehousing for Olympia businesses starts at $195/month for a 10×10 space at our Redmond facility. Delivery to Olympia priced separately based on frequency and volume. Month-to-month contracts.",
+  },
 };
