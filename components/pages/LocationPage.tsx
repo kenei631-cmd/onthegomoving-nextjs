@@ -776,6 +776,35 @@ export default function LocationPage({ slug }: LocationPageProps) {
         </div>
       </section>
 
+      {/* ── RELATED RESOURCES ── */}
+      <section className="py-10 bg-gray-50 border-t border-gray-200">
+        <div className="container">
+          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4 text-center">Related Resources</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            <a
+              href="/how-much-do-movers-cost/"
+              className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-forest font-semibold text-sm px-4 py-2 rounded-full hover:border-brand-forest hover:shadow-sm transition-all"
+            >
+              How Much Do Movers Cost?
+            </a>
+            {data.slug === "seattle-movers" && (
+              <a
+                href="/best-moving-companies-seattle/"
+                className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-forest font-semibold text-sm px-4 py-2 rounded-full hover:border-brand-forest hover:shadow-sm transition-all"
+              >
+                10 Best Moving Companies in Seattle (2026)
+              </a>
+            )}
+            <a
+              href="/faq/"
+              className="inline-flex items-center gap-2 bg-white border border-gray-200 text-brand-forest font-semibold text-sm px-4 py-2 rounded-full hover:border-brand-forest hover:shadow-sm transition-all"
+            >
+              Moving FAQ
+            </a>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

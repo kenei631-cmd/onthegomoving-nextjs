@@ -11,6 +11,7 @@ const CORE_PAGES = [
   { label: "Contact Us", href: "/contact-us/" },
   { label: "FAQ", href: "/faq/" },
   { label: "How Much Do Movers Cost?", href: "/how-much-do-movers-cost/" },
+  { label: "10 Best Moving Companies in Seattle", href: "/best-moving-companies-seattle/" },
   { label: "Locations We Serve", href: "/we-are-local/" },
   { label: "Blog", href: "/blog/" },
   { label: "Real Estate Agents", href: "/real-estate-agents/" },

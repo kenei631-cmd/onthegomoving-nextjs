@@ -90,6 +90,12 @@ export default function Footer() {
                   How Much Do Movers Cost?
                 </a>
               </li>
+              <li>
+                <a href="/best-moving-companies-seattle/" className="text-white/75 hover:text-[#75aa11] text-sm transition-colors flex items-center gap-1.5">
+                  <span style={{ color: "#75aa11" }}>→</span>
+                  Best Moving Companies Seattle
+                </a>
+              </li>
             </ul>
           </div>
 
