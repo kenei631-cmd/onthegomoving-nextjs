@@ -34,7 +34,8 @@ function getSupermoveJobType(moveType) {
 
 function buildSupermovePayload(lead) {
   const { projectType, jobType } = getSupermoveJobType(lead.moveType);
-  let projectSize = "(none)";
+  // Omit values field entirely if no size known — SuperMove rejects "(none)"
+  let projectSize = null;
   if (lead.moveType === "commercial") {
     projectSize = "Commercial";
   } else if (lead.moveSize) {
@@ -69,7 +70,7 @@ function buildSupermovePayload(lead) {
     referral_source: "Custom Website via A Supermove-Managed Integration",
     referral_details: "Facebook Ads",
     tags: ["WEBSITE_LEAD", "FACEBOOK_LEAD_ADS_LEAD"],
-    values: { PROJECT_SIZE: projectSize },
+    ...(projectSize ? { values: { PROJECT_SIZE: projectSize } } : {}),
   };
 }
 

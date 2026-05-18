@@ -42,8 +42,9 @@ function buildSupermovePayload(lead) {
 
   // PROJECT_SIZE must be one of the valid SuperMove enum values:
   // 'Studio', '1 Bedroom', '2 Bedrooms', '3 Bedrooms', '4 Bedrooms',
-  // '5 Bedrooms', '6+ Bedrooms', 'Commercial', '(none)'
-  let projectSize = "(none)";
+  // '5 Bedrooms', '6+ Bedrooms', 'Commercial'
+  // Omit the field entirely if no size is known — SuperMove rejects "(none)"
+  let projectSize = null;
   if (lead.moveType === "commercial") {
     projectSize = "Commercial";
   } else if (lead.moveSize) {
@@ -78,7 +79,7 @@ function buildSupermovePayload(lead) {
     ],
     referral_source: "Custom Website via A Supermove-Managed Integration",
     tags: ["WEBSITE_LEAD"],
-    values: { PROJECT_SIZE: projectSize },
+    ...(projectSize ? { values: { PROJECT_SIZE: projectSize } } : {}),
   };
 }
 
