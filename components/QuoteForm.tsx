@@ -391,7 +391,7 @@ export default function QuoteForm({
             <span className="absolute left-0 top-6 bottom-0 w-0.5 bg-[#75aa11] rounded-full" />
           )}
           <label className={`${labelClass} ${focused === "moveDate" ? "text-[#75aa11]" : ""}`}>
-            Requested Move Date *
+            Move Date *
           </label>
           <input
             type="date"
