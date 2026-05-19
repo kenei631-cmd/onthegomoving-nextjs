@@ -20,6 +20,7 @@ import {
   ChevronDown,
   ChevronUp,
   ArrowDown,
+  ArrowUp,
   Zap,
   ClipboardList,
 } from "lucide-react";
@@ -591,7 +592,7 @@ export default function FbResidentialMoversLanding() {
           >
             <ClipboardList size={22} />
             Get My Free Quote
-            <ArrowDown size={18} />
+            <ArrowUp size={18} />
           </a>
           <p className="text-white/50 text-sm mt-4">No phone call required. We'll reach out by email or text.</p>
         </div>
