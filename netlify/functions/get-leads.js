@@ -53,6 +53,7 @@ export const handler = async (event) => {
           smProjectId, smProjectNumber, smStage, smBookingStatus,
           smTotalRevenue, smCoordinator, smSalesperson,
           smIsCancelled, smMoveDate, smLastSyncedAt,
+          smProjectType, smSentAt, smCompletedAt, smHrsToSend, smHrsToComplete,
           createdAt, updatedAt
         FROM leads
         WHERE createdAt >= ?
@@ -92,6 +93,11 @@ export const handler = async (event) => {
         smIsCancelled:   r.smIsCancelled   === 1,
         smMoveDate:      r.smMoveDate      || null,
         smLastSyncedAt:  r.smLastSyncedAt  || null,
+        smProjectType:   r.smProjectType   || null,
+        smSentAt:        r.smSentAt        || null,
+        smCompletedAt:   r.smCompletedAt   || null,
+        smHrsToSend:     r.smHrsToSend     != null ? Number(r.smHrsToSend) : null,
+        smHrsToComplete: r.smHrsToComplete != null ? Number(r.smHrsToComplete) : null,
         source:          "db",
       }));
 
