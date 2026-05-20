@@ -3,18 +3,74 @@
  *
  * Facebook Ads-specific lead submission function.
  * On every form submission this function:
- *   1. Calls the SuperMove webhook to create a project (same as submit-lead)
- *   2. Fires a Facebook Conversions API Lead event server-side
+ *   1. Writes the lead to the MySQL database (so it appears on /admin/leads/)
+ *   2. Calls the SuperMove webhook to create a project
+ *   3. Updates the lead's webhookStatus in the DB (synced / failed)
+ *   4. Fires a Facebook Conversions API Lead event server-side
  *
  * Required env vars:
+ *   DATABASE_URL             — MySQL connection string
  *   SUPERMOVE_WEBHOOK_URL    — SuperMove webhook URL (shared with submit-lead)
  *   FB_CAPI_ACCESS_TOKEN     — Facebook Conversions API access token
  *
  * FB Pixel ID: 129153980771695
  */
 import crypto from "crypto";
+import mysql from "mysql2/promise";
 
 const FB_PIXEL_ID = "129153980771695";
+
+// ── DB helper ────────────────────────────────────────────────────────────────
+
+async function getConnection() {
+  const url = process.env.DATABASE_URL;
+  if (!url) return null;
+  try {
+    return await mysql.createConnection(url);
+  } catch (err) {
+    console.error("[submit-fb-lead] DB connect error:", err.message);
+    return null;
+  }
+}
+
+async function insertLeadToDB(conn, lead, webhookStatus) {
+  const sql = `
+    INSERT INTO leads
+      (fullName, phone, email, moveDate, moveType, moveSize, fromZip, toZip,
+       wantsStorage, sourcePage, sourceLabel, webhookStatus, webhookAttemptedAt, createdAt, updatedAt)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, NOW(), NOW(), NOW())
+  `;
+  const phoneDigits = (() => {
+    let d = (lead.phone || "").replace(/\D/g, "");
+    if (d.length === 11 && d.startsWith("1")) d = d.slice(1);
+    return d.slice(0, 10);
+  })();
+  const values = [
+    (lead.fullName || "").slice(0, 255),
+    phoneDigits,
+    (lead.email || "").slice(0, 320),
+    lead.moveDate || null,
+    lead.moveType || null,
+    lead.moveSize || null,
+    lead.fromZip || null,
+    lead.toZip || null,
+    lead.wantsStorage ? 1 : 0,
+    lead.sourcePage || null,
+    (lead.sourceLabel || "Facebook Ads").slice(0, 128),
+    webhookStatus,
+  ];
+  const [result] = await conn.execute(sql, values);
+  return result.insertId;
+}
+
+async function updateLeadWebhookStatus(conn, id, status) {
+  await conn.execute(
+    `UPDATE leads SET webhookStatus = ?, webhookAttemptedAt = NOW(), updatedAt = NOW() WHERE id = ?`,
+    [status, id]
+  );
+}
+
+// ── Helpers ─────────────────────────────────────────────────────────────────
 
 function sha256(value) {
   if (!value) return undefined;
@@ -34,7 +90,6 @@ function getSupermoveJobType(moveType) {
 
 function buildSupermovePayload(lead) {
   const { projectType, jobType } = getSupermoveJobType(lead.moveType);
-  // Omit values field entirely if no size known — SuperMove rejects "(none)"
   let projectSize = null;
   if (lead.moveType === "commercial") {
     projectSize = "Commercial";
@@ -53,7 +108,11 @@ function buildSupermovePayload(lead) {
       primary_contact: {
         full_name: lead.fullName,
         email: lead.email,
-        phone_number: (() => { let d = (lead.phone || "").replace(/\D/g, ""); if (d.length === 11 && d.startsWith("1")) d = d.slice(1); return d.slice(0, 10); })(),
+        phone_number: (() => {
+          let d = (lead.phone || "").replace(/\D/g, "");
+          if (d.length === 11 && d.startsWith("1")) d = d.slice(1);
+          return d.slice(0, 10);
+        })(),
       },
     },
     jobs: [
@@ -81,7 +140,6 @@ function buildCAPIPayload(lead, eventHeaders, testEventCode) {
   const phoneDigits = (lead.phone || "").replace(/\D/g, "");
   const zip = (lead.fromZip || "").replace(/\D/g, "");
 
-  // Client IP from Netlify headers
   const clientIp =
     (eventHeaders["x-forwarded-for"] || "").split(",")[0].trim() ||
     eventHeaders["client-ip"] ||
@@ -114,12 +172,13 @@ function buildCAPIPayload(lead, eventHeaders, testEventCode) {
       },
     ],
   };
-  // Include test_event_code when testing via Meta Events Manager
   if (testEventCode) {
     payload.test_event_code = testEventCode;
   }
   return payload;
 }
+
+// ── Main handler ─────────────────────────────────────────────────────────────
 
 export const handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -133,7 +192,6 @@ export const handler = async (event) => {
     return { statusCode: 400, body: JSON.stringify({ error: "Invalid JSON" }) };
   }
 
-  // Basic validation
   if (!lead.fullName || !lead.phone || !lead.email) {
     return {
       statusCode: 400,
@@ -150,13 +208,25 @@ export const handler = async (event) => {
     };
   }
 
+  // ── 1. Write lead to DB (pending) ─────────────────────────────────────────
+  const conn = await getConnection();
+  let leadId = null;
+  if (conn) {
+    try {
+      leadId = await insertLeadToDB(conn, lead, "pending");
+    } catch (err) {
+      console.error("[submit-fb-lead] DB insert error:", err.message);
+    }
+  } else {
+    console.warn("[submit-fb-lead] No DB connection — lead will not appear in admin dashboard");
+  }
+
+  // ── 2. Fire SuperMove + CAPI in parallel ──────────────────────────────────
   const supermovePayload = buildSupermovePayload(lead);
   const capiPayload = buildCAPIPayload(lead, event.headers || {}, lead.testEventCode);
   const fbToken = process.env.FB_CAPI_ACCESS_TOKEN;
 
-  // Fire SuperMove and CAPI in parallel
   const [supermoveResult, capiResult] = await Promise.allSettled([
-    // 1. SuperMove webhook
     fetch(webhookUrl, {
       method: "POST",
       headers: {
@@ -166,8 +236,6 @@ export const handler = async (event) => {
       body: JSON.stringify(supermovePayload),
       signal: AbortSignal.timeout(10_000),
     }),
-
-    // 2. Facebook CAPI
     fbToken
       ? fetch(`https://graph.facebook.com/v20.0/${FB_PIXEL_ID}/events?access_token=${fbToken}`, {
           method: "POST",
@@ -178,7 +246,7 @@ export const handler = async (event) => {
       : Promise.resolve(null),
   ]);
 
-  // Log CAPI result
+  // ── 3. Log CAPI result ────────────────────────────────────────────────────
   if (!fbToken) {
     console.warn("[submit-fb-lead] FB_CAPI_ACCESS_TOKEN not set — CAPI skipped");
   } else if (capiResult.status === "fulfilled" && capiResult.value) {
@@ -192,19 +260,32 @@ export const handler = async (event) => {
     console.error("[submit-fb-lead] CAPI fetch failed:", capiResult.reason);
   }
 
-  // Always return success to the client (SuperMove failure is non-fatal UX-wise)
+  // ── 4. Evaluate SuperMove result + update DB ──────────────────────────────
+  let webhookStatus = "synced";
+
   if (supermoveResult.status === "fulfilled") {
     const smResp = supermoveResult.value;
     if (!smResp.ok) {
       const smText = await smResp.text().catch(() => "");
       console.error("[submit-fb-lead] SuperMove error:", smResp.status, smText);
+      webhookStatus = "failed";
     }
   } else {
     console.error("[submit-fb-lead] SuperMove fetch failed:", supermoveResult.reason);
+    webhookStatus = "failed";
+  }
+
+  if (conn && leadId) {
+    try {
+      await updateLeadWebhookStatus(conn, leadId, webhookStatus);
+    } catch (err) {
+      console.error("[submit-fb-lead] DB status update error:", err.message);
+    }
+    await conn.end().catch(() => {});
   }
 
   return {
     statusCode: 200,
-    body: JSON.stringify({ success: true }),
+    body: JSON.stringify({ success: true, webhookStatus }),
   };
 };

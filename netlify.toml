@@ -7,6 +7,10 @@
   NODE_VERSION = "20"
   PNPM_VERSION = "9"
 
+[functions]
+  # mysql2 uses native bindings — mark as external so esbuild doesn't try to bundle it
+  external_node_modules = ["mysql2"]
+
 # ─── Netlify Image CDN ────────────────────────────────────────────────────────
 # Allow /.netlify/images to transform images from our CloudFront CDN.
 # This enables automatic WebP conversion and resizing without re-uploading files.
