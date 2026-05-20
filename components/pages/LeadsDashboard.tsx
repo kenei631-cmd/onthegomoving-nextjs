@@ -453,7 +453,7 @@ export default function LeadsDashboard() {
     setDeleteResult(null);
     try {
       const res = await fetch(
-        `/.netlify/functions/get-leads?key=${encodeURIComponent(key)}&per_page=200&days=${days}`
+        `/.netlify/functions/get-leads?key=${encodeURIComponent(key)}&per_page=1000&days=${days}`
       );
       if (res.status === 401) {
         setError("Invalid admin key.");

@@ -28,7 +28,7 @@ export const handler = async (event) => {
   }
 
   const page    = Math.max(1, parseInt(event.queryStringParameters?.page     || "1",   10));
-  const perPage = Math.min(200, parseInt(event.queryStringParameters?.per_page || "100", 10));
+  const perPage = Math.min(1000, parseInt(event.queryStringParameters?.per_page || "100", 10));
   const days    = parseInt(event.queryStringParameters?.days || "30", 10);
   const offset  = (page - 1) * perPage;
 
