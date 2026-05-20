@@ -6,6 +6,8 @@
 [build.environment]
   NODE_VERSION = "20"
   PNPM_VERSION = "9"
+  # Increment this to bust the Netlify build cache
+  CACHE_BUST = "2"
 
 [functions]
   # mysql2 uses native bindings — mark as external so esbuild doesn't try to bundle it
