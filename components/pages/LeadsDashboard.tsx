@@ -648,18 +648,18 @@ export default function LeadsDashboard() {
     setCsvUploading(true);
     setCsvUploadResult(null);
     try {
-      const text = await csvUploadFile.text();
-      const res = await fetch("/.netlify/functions/upload-supermove-csv", {
+      const formData = new FormData();
+      formData.append("csv", csvUploadFile);
+      const res = await fetch("/api/upload-supermove-csv", {
         method: "POST",
         headers: {
-          "Content-Type": "text/plain",
           "X-Admin-Key": adminKey,
         },
-        body: text,
+        body: formData,
       });
       const data = await res.json();
       if (res.ok && data.success) {
-        setCsvUploadResult({ success: true, summary: data.summary });
+        setCsvUploadResult({ success: true, summary: { inserted: data.inserted, updated: data.updated, uniqueProjects: data.uniqueProjects } });
         await fetchLeads(adminKey, daysWindow);
       } else {
         setCsvUploadResult({ success: false, error: data.error || "Upload failed" });
