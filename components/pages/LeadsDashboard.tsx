@@ -1,7 +1,7 @@
 "use client";
 
 // ==========================================================================
-// ON THE GO MOVING — Leads Dashboard (v3)
+// ON THE GO MOVING — Leads Dashboard (v4)
 // Full-featured admin dashboard with Supermove sync, analytics, and charts.
 //
 // Access: /admin/leads/?key=otgm-admin-2025
@@ -34,9 +34,15 @@ import {
   Award,
   Activity,
   X,
+  Upload,
+  FileText,
+  ArrowRight,
 } from "lucide-react";
 
 // ── Types ──────────────────────────────────────────────────────────────────
+
+// ── New fields from CSV backfill ──────────────────────────────────────────
+declare module "./LeadsDashboard" {}
 
 interface Lead {
   id: string;
@@ -67,6 +73,11 @@ interface Lead {
   smMoveDate?: string | null;
   smLastSyncedAt?: string | null;
   source?: string;
+  smProjectType?: string | null;
+  smSentAt?: string | null;
+  smCompletedAt?: string | null;
+  smHrsToSend?: number | null;
+  smHrsToComplete?: number | null;
 }
 
 interface SourceGroup {
@@ -183,6 +194,104 @@ function daysBetween(a: string, b: string): number {
   const da = new Date(a).getTime();
   const db = new Date(b).getTime();
   return Math.round(Math.abs(db - da) / (1000 * 60 * 60 * 24));
+}
+
+// ── Job Type Revenue Chart (pure CSS) ────────────────────────────────────
+
+const JOB_TYPE_COLORS: Record<string, string> = {
+  "Local Move": "#3b82f6",
+  "Labor Only": "#f59e0b",
+  "Commercial Move": "#8b5cf6",
+  "Unknown": "#9ca3af",
+};
+
+function JobTypeRevenueChart({ smLeads }: { smLeads: Lead[] }) {
+  const types = ["Local Move", "Labor Only", "Commercial Move"];
+  const data = types.map((type) => {
+    const typeLeads = smLeads.filter((l) => l.smProjectType === type);
+    const revenue = typeLeads.reduce((s, l) => s + parseCurrency(l.smTotalRevenue), 0);
+    const booked = typeLeads.filter((l) => getLeadStage(l) === "Booked" || getLeadStage(l) === "Completed").length;
+    return { type, count: typeLeads.length, revenue, booked };
+  }).filter((d) => d.count > 0);
+
+  const maxRev = Math.max(...data.map((d) => d.revenue), 1);
+
+  return (
+    <div className="space-y-4">
+      {data.map((d) => (
+        <div key={d.type}>
+          <div className="flex items-center justify-between mb-1">
+            <div className="flex items-center gap-2">
+              <div className="w-3 h-3 rounded-full" style={{ backgroundColor: JOB_TYPE_COLORS[d.type] }} />
+              <span className="text-sm font-medium text-gray-700">{d.type}</span>
+              <span className="text-xs text-gray-400">({d.count} jobs)</span>
+            </div>
+            <div className="text-right">
+              <span className="text-sm font-bold text-gray-900">{formatCurrency(d.revenue)}</span>
+              {d.booked > 0 && <span className="text-xs text-green-600 ml-2">{d.booked} booked/completed</span>}
+            </div>
+          </div>
+          <div className="h-5 bg-gray-100 rounded-full overflow-hidden">
+            <div
+              className="h-full rounded-full transition-all duration-700"
+              style={{ width: `${Math.max((d.revenue / maxRev) * 100, 2)}%`, backgroundColor: JOB_TYPE_COLORS[d.type] }}
+            />
+          </div>
+        </div>
+      ))}
+      {data.length === 0 && (
+        <p className="text-sm text-gray-400 text-center py-4">No project type data available yet.</p>
+      )}
+    </div>
+  );
+}
+
+// ── Conversion Funnel (pure CSS) ──────────────────────────────────────────
+
+function ConversionFunnel({ smLeads, totalLeads }: { smLeads: Lead[]; totalLeads: number }) {
+  const stages = [
+    { label: "Total Leads", count: totalLeads, color: "#6b7280" },
+    { label: "New (Quoted)", count: smLeads.filter((l) => getLeadStage(l) === "New").length + smLeads.filter((l) => getLeadStage(l) === "On Hold").length + smLeads.filter((l) => getLeadStage(l) === "Booked").length + smLeads.filter((l) => getLeadStage(l) === "Completed").length + smLeads.filter((l) => getLeadStage(l) === "Cancelled").length, color: "#3b82f6" },
+    { label: "On Hold", count: smLeads.filter((l) => getLeadStage(l) === "On Hold").length + smLeads.filter((l) => getLeadStage(l) === "Booked").length + smLeads.filter((l) => getLeadStage(l) === "Completed").length, color: "#eab308" },
+    { label: "Booked", count: smLeads.filter((l) => getLeadStage(l) === "Booked").length + smLeads.filter((l) => getLeadStage(l) === "Completed").length, color: "#22c55e" },
+    { label: "Completed", count: smLeads.filter((l) => getLeadStage(l) === "Completed").length, color: "#059669" },
+  ];
+
+  const maxCount = Math.max(...stages.map((s) => s.count), 1);
+
+  return (
+    <div className="space-y-2">
+      {stages.map((stage, i) => {
+        const pct = Math.round((stage.count / maxCount) * 100);
+        const convPct = i > 0 && stages[i - 1].count > 0
+          ? Math.round((stage.count / stages[i - 1].count) * 100)
+          : null;
+        return (
+          <div key={stage.label} className="flex items-center gap-3">
+            <div className="w-24 text-xs font-medium text-gray-600 text-right flex-shrink-0">{stage.label}</div>
+            <div className="flex-1 flex items-center gap-2">
+              <div className="flex-1 h-8 bg-gray-100 rounded-lg overflow-hidden relative">
+                <div
+                  className="h-full rounded-lg transition-all duration-700 flex items-center justify-end pr-2"
+                  style={{ width: `${Math.max(pct, 4)}%`, backgroundColor: stage.color }}
+                >
+                  <span className="text-white text-xs font-bold">{stage.count}</span>
+                </div>
+              </div>
+              {convPct !== null && (
+                <div className="flex items-center gap-1 text-xs text-gray-400 w-16 flex-shrink-0">
+                  <ArrowRight size={10} />
+                  <span className={convPct >= 50 ? "text-green-600 font-semibold" : "text-gray-400"}>{convPct}%</span>
+                </div>
+              )}
+              {convPct === null && <div className="w-16 flex-shrink-0" />}
+            </div>
+          </div>
+        );
+      })}
+      <p className="text-xs text-gray-400 mt-2">Percentages show conversion from the previous stage.</p>
+    </div>
+  );
 }
 
 // ── Mini bar chart (pure CSS) ──────────────────────────────────────────────
@@ -313,7 +422,7 @@ export default function LeadsDashboard() {
   const [error, setError] = useState("");
   const [lastFetched, setLastFetched] = useState<Date | null>(null);
   const [expandedSource, setExpandedSource] = useState<string | null>(null);
-  const [activeTab, setActiveTab] = useState<"bySource" | "allLeads" | "supermove" | "analytics">("bySource");
+  const [activeTab, setActiveTab] = useState<"bySource" | "allLeads" | "supermove" | "analytics" | "upload">("bySource");
   const [sortField, setSortField] = useState<"createdAt" | "fullName" | "sourcePage" | "smTotalRevenue">("createdAt");
   const [sortDir, setSortDir] = useState<"asc" | "desc">("desc");
   const [filterMoveType, setFilterMoveType] = useState("");
@@ -327,6 +436,11 @@ export default function LeadsDashboard() {
   const [deleteResult, setDeleteResult] = useState<{ deleted: number; failed: number } | null>(null);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
+  const [sourceFilter, setSourceFilter] = useState<"all" | "form" | "supermove">("all");
+  const [csvUploadFile, setCsvUploadFile] = useState<File | null>(null);
+  const [csvUploading, setCsvUploading] = useState(false);
+  const [csvUploadResult, setCsvUploadResult] = useState<{ success: boolean; summary?: any; error?: string } | null>(null);
+  const [csvDragOver, setCsvDragOver] = useState(false);
 
   useEffect(() => {
     const saved = sessionStorage.getItem(ADMIN_KEY_STORAGE);
@@ -377,9 +491,12 @@ export default function LeadsDashboard() {
       const to = dateToInput(dateTo);
       if (from && created < from) return false;
       if (to && created > to) return false;
+      // Source filter
+      if (sourceFilter === "form" && lead.sourcePage === "supermove-import") return false;
+      if (sourceFilter === "supermove" && lead.sourcePage !== "supermove-import") return false;
       return true;
     });
-  }, [leads, dateFrom, dateTo]);
+  }, [leads, dateFrom, dateTo, sourceFilter]);
 
   // Not-synced leads (more than 2 days old, no Supermove project)
   const notSyncedLeads = useMemo(() => {
@@ -510,6 +627,36 @@ export default function LeadsDashboard() {
     else { setSortField(field); setSortDir("desc"); }
   };
 
+  // ── CSV Upload ────────────────────────────────────────────────────────────
+
+  const handleCsvUpload = async () => {
+    if (!csvUploadFile) return;
+    setCsvUploading(true);
+    setCsvUploadResult(null);
+    try {
+      const text = await csvUploadFile.text();
+      const res = await fetch("/.netlify/functions/upload-supermove-csv", {
+        method: "POST",
+        headers: {
+          "Content-Type": "text/plain",
+          "X-Admin-Key": adminKey,
+        },
+        body: text,
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setCsvUploadResult({ success: true, summary: data.summary });
+        await fetchLeads(adminKey, daysWindow);
+      } else {
+        setCsvUploadResult({ success: false, error: data.error || "Upload failed" });
+      }
+    } catch (err: any) {
+      setCsvUploadResult({ success: false, error: err.message || "Upload failed" });
+    } finally {
+      setCsvUploading(false);
+    }
+  };
+
   // ── Export CSV ────────────────────────────────────────────────────────────
 
   const exportCSV = () => {
@@ -629,6 +776,20 @@ export default function LeadsDashboard() {
             </div>
           </div>
           <div className="flex items-center gap-2 flex-wrap">
+            {/* Source filter */}
+            <div className="flex items-center bg-white/10 rounded-lg p-0.5 border border-white/20">
+              {(["all", "form", "supermove"] as const).map((s) => (
+                <button
+                  key={s}
+                  onClick={() => setSourceFilter(s)}
+                  className={`px-2.5 py-1 rounded-md text-xs font-medium transition-colors ${
+                    sourceFilter === s ? "bg-white text-gray-900" : "text-white/70 hover:text-white"
+                  }`}
+                >
+                  {s === "all" ? "All" : s === "form" ? "Form Leads" : "Supermove"}
+                </button>
+              ))}
+            </div>
             <select
               value={daysWindow}
               onChange={(e) => setDaysWindow(Number(e.target.value))}
@@ -965,12 +1126,13 @@ export default function LeadsDashboard() {
         {dateFilteredLeads.length > 0 && (
           <>
             <div className="flex gap-1 bg-gray-100 rounded-xl p-1 w-fit flex-wrap">
-              {(["bySource", "allLeads", "supermove", "analytics"] as const).map((tab) => {
+              {(["bySource", "allLeads", "supermove", "analytics", "upload"] as const).map((tab) => {
                 const labels: Record<string, string> = {
                   bySource: "By Source",
                   allLeads: "All Leads",
                   supermove: `Supermove${smLeads.length > 0 ? ` (${smLeads.length})` : ""}`,
                   analytics: "Analytics",
+                  upload: "Upload CSV",
                 };
                 return (
                   <button
@@ -1275,6 +1437,124 @@ export default function LeadsDashboard() {
               </div>
             )}
 
+            {/* ── Upload CSV Tab ── */}
+            {activeTab === "upload" && (
+              <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+                <div className="px-6 py-5 border-b border-gray-100 flex items-center gap-3">
+                  <Upload size={18} className="text-[#1e3a0f]" />
+                  <div>
+                    <h2 className="text-sm font-semibold text-gray-800">Upload Supermove CSV</h2>
+                    <p className="text-xs text-gray-400 mt-0.5">Upload your combined_projects.csv export from Supermove to sync all project data.</p>
+                  </div>
+                </div>
+                <div className="p-6 space-y-5">
+                  {/* Drop zone */}
+                  <div
+                    onDragOver={(e) => { e.preventDefault(); setCsvDragOver(true); }}
+                    onDragLeave={() => setCsvDragOver(false)}
+                    onDrop={(e) => {
+                      e.preventDefault();
+                      setCsvDragOver(false);
+                      const file = e.dataTransfer.files[0];
+                      if (file && file.name.endsWith(".csv")) setCsvUploadFile(file);
+                    }}
+                    className={`border-2 border-dashed rounded-xl p-10 text-center transition-colors cursor-pointer ${
+                      csvDragOver ? "border-[#75aa11] bg-green-50" : csvUploadFile ? "border-green-400 bg-green-50" : "border-gray-200 hover:border-gray-300"
+                    }`}
+                    onClick={() => document.getElementById("csv-file-input")?.click()}
+                  >
+                    <input
+                      id="csv-file-input"
+                      type="file"
+                      accept=".csv"
+                      className="hidden"
+                      onChange={(e) => {
+                        const file = e.target.files?.[0];
+                        if (file) setCsvUploadFile(file);
+                      }}
+                    />
+                    {csvUploadFile ? (
+                      <div className="flex flex-col items-center gap-2">
+                        <FileText size={32} className="text-green-600" />
+                        <div className="font-semibold text-gray-800">{csvUploadFile.name}</div>
+                        <div className="text-xs text-gray-400">{(csvUploadFile.size / 1024).toFixed(1)} KB · Ready to upload</div>
+                        <button
+                          onClick={(e) => { e.stopPropagation(); setCsvUploadFile(null); setCsvUploadResult(null); }}
+                          className="text-xs text-red-500 hover:text-red-700 underline mt-1"
+                        >Remove</button>
+                      </div>
+                    ) : (
+                      <div className="flex flex-col items-center gap-2">
+                        <Upload size={32} className="text-gray-300" />
+                        <div className="font-medium text-gray-600">Drag & drop your CSV here</div>
+                        <div className="text-xs text-gray-400">or click to browse · .csv files only</div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Instructions */}
+                  <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm text-blue-800 space-y-1">
+                    <div className="font-semibold">How to export from Supermove:</div>
+                    <ol className="list-decimal list-inside space-y-0.5 text-xs text-blue-700">
+                      <li>In Supermove, go to Reports</li>
+                      <li>Export each report: Projects Created, Quotes Sent, Confirmations Sent, Quotes Completed, Confirmations Completed</li>
+                      <li>Combine all exports into a single CSV (keep the header row once)</li>
+                      <li>Upload the combined file here</li>
+                    </ol>
+                  </div>
+
+                  {/* Upload button */}
+                  <button
+                    onClick={handleCsvUpload}
+                    disabled={!csvUploadFile || csvUploading}
+                    className="w-full py-3 bg-[#1e3a0f] hover:bg-[#2a5015] text-white rounded-xl font-semibold text-sm transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+                  >
+                    {csvUploading ? (
+                      <><RefreshCw size={16} className="animate-spin" /> Uploading & syncing…</>
+                    ) : (
+                      <><Upload size={16} /> Upload & Sync All Projects</>
+                    )}
+                  </button>
+
+                  {/* Result */}
+                  {csvUploadResult && (
+                    <div className={`rounded-xl p-4 border text-sm ${
+                      csvUploadResult.success
+                        ? "bg-green-50 border-green-200 text-green-800"
+                        : "bg-red-50 border-red-200 text-red-800"
+                    }`}>
+                      {csvUploadResult.success ? (
+                        <div className="space-y-1">
+                          <div className="font-semibold">✓ Upload successful!</div>
+                          {csvUploadResult.summary && (
+                            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-3">
+                              {[
+                                { label: "CSV Projects", value: csvUploadResult.summary.csvProjects },
+                                { label: "Updated", value: csvUploadResult.summary.updated },
+                                { label: "Inserted", value: csvUploadResult.summary.inserted },
+                                { label: "Skipped", value: csvUploadResult.summary.skipped },
+                              ].map((s) => (
+                                <div key={s.label} className="bg-white rounded-lg p-3 text-center border border-green-200">
+                                  <div className="text-xl font-bold text-gray-900">{s.value}</div>
+                                  <div className="text-xs text-gray-500">{s.label}</div>
+                                </div>
+                              ))}
+                            </div>
+                          )}
+                          <p className="text-xs text-green-700 mt-2">Dashboard has been refreshed with the latest data.</p>
+                        </div>
+                      ) : (
+                        <div>
+                          <div className="font-semibold">✗ Upload failed</div>
+                          <div className="text-xs mt-1">{csvUploadResult.error}</div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
+
             {/* ── Analytics Tab ── */}
             {activeTab === "analytics" && (
               <div className="space-y-6">
@@ -1383,6 +1663,26 @@ export default function LeadsDashboard() {
                       </div>
                     )}
                   </div>
+                </div>
+
+                {/* Job Type Revenue */}
+                {smLeads.length > 0 && (
+                  <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+                    <div className="flex items-center gap-2 mb-4">
+                      <Briefcase size={16} className="text-[#75aa11]" />
+                      <h2 className="text-sm font-semibold text-gray-800">Revenue by Job Type</h2>
+                    </div>
+                    <JobTypeRevenueChart smLeads={smLeads} />
+                  </div>
+                )}
+
+                {/* Conversion Funnel */}
+                <div className="bg-white rounded-xl p-5 shadow-sm border border-gray-100">
+                  <div className="flex items-center gap-2 mb-4">
+                    <Filter size={16} className="text-[#75aa11]" />
+                    <h2 className="text-sm font-semibold text-gray-800">Conversion Funnel</h2>
+                  </div>
+                  <ConversionFunnel smLeads={smLeads} totalLeads={dateFilteredLeads.length} />
                 </div>
 
                 {/* Source page performance table */}
