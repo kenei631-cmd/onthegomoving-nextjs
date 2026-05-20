@@ -6,10 +6,12 @@
  * into the leads table (insert new, update existing by project number).
  *
  * Security: requires X-Admin-Key header matching ADMIN_SECRET env var.
+ *
+ * NOTE: Uses a built-in CSV parser (no external csv-parse dependency)
+ * to avoid Netlify function bundling issues.
  */
 
 const mysql = require("mysql2/promise");
-const { parse } = require("csv-parse/sync");
 
 const STATUS_PRIORITY = {
   COMPLETED: 7,
@@ -33,17 +35,87 @@ const PROJECT_TYPE_MAP = {
   "Commercial Move": "commercial",
 };
 
+/**
+ * Simple RFC 4180-compliant CSV parser (no external deps).
+ * Returns array of objects keyed by header row.
+ */
+function parseCSV(text) {
+  // Normalize line endings
+  text = text.replace(/\r\n/g, "\n").replace(/\r/g, "\n");
+  // Remove BOM if present
+  if (text.charCodeAt(0) === 0xfeff) text = text.slice(1);
+
+  const lines = [];
+  let current = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (ch === '"') {
+      if (inQuotes && text[i + 1] === '"') {
+        current += '"';
+        i++;
+      } else {
+        inQuotes = !inQuotes;
+      }
+    } else if (ch === "\n" && !inQuotes) {
+      lines.push(current);
+      current = "";
+    } else {
+      current += ch;
+    }
+  }
+  if (current) lines.push(current);
+
+  function splitLine(line) {
+    const fields = [];
+    let field = "";
+    let inQ = false;
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (ch === '"') {
+        if (inQ && line[i + 1] === '"') {
+          field += '"';
+          i++;
+        } else {
+          inQ = !inQ;
+        }
+      } else if (ch === "," && !inQ) {
+        fields.push(field.trim());
+        field = "";
+      } else {
+        field += ch;
+      }
+    }
+    fields.push(field.trim());
+    return fields;
+  }
+
+  const nonEmpty = lines.filter((l) => l.trim());
+  if (nonEmpty.length < 2) return [];
+
+  const headers = splitLine(nonEmpty[0]);
+  const records = [];
+  for (let i = 1; i < nonEmpty.length; i++) {
+    const vals = splitLine(nonEmpty[i]);
+    const obj = {};
+    headers.forEach((h, idx) => {
+      obj[h] = vals[idx] !== undefined ? vals[idx] : "";
+    });
+    records.push(obj);
+  }
+  return records;
+}
+
 function parseDate(val) {
   if (!val) return null;
   val = val.trim().split(",")[0].trim();
-  // mm/dd/yyyy or m/d/yyyy
   let m = val.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})$/);
   if (m) {
     let [, mo, d, y] = m;
     if (y.length === 2) y = "20" + y;
     return `${y}-${mo.padStart(2, "0")}-${d.padStart(2, "0")}`;
   }
-  // m-d-yy
   m = val.match(/^(\d{1,2})-(\d{1,2})-(\d{2,4})$/);
   if (m) {
     let [, mo, d, y] = m;
@@ -85,7 +157,6 @@ exports.handler = async (event) => {
 
     if (event.isBase64Encoded) {
       const body = Buffer.from(event.body, "base64").toString("utf-8");
-      // Extract CSV from multipart/form-data
       const boundary = (event.headers["content-type"] || "").split(
         "boundary="
       )[1];
@@ -94,7 +165,6 @@ exports.handler = async (event) => {
         for (const part of parts) {
           if (part.includes('name="csv"') || part.includes("name=csv")) {
             csvText = part.split("\r\n\r\n").slice(1).join("\r\n\r\n").trim();
-            // Remove trailing boundary marker
             csvText = csvText.replace(/--$/, "").trim();
             break;
           }
@@ -104,7 +174,6 @@ exports.handler = async (event) => {
       }
     } else {
       csvText = event.body || "";
-      // If it looks like multipart, extract the CSV part
       const ct = event.headers["content-type"] || "";
       if (ct.includes("multipart/form-data")) {
         const boundary = ct.split("boundary=")[1];
@@ -128,13 +197,15 @@ exports.handler = async (event) => {
       };
     }
 
-    // ── Parse CSV ────────────────────────────────────────────────────────
-    const records = parse(csvText, {
-      columns: true,
-      skip_empty_lines: true,
-      bom: true,
-      trim: true,
-    });
+    // ── Parse CSV using built-in parser ──────────────────────────────────
+    const records = parseCSV(csvText);
+
+    if (!records.length) {
+      return {
+        statusCode: 400,
+        body: JSON.stringify({ error: "CSV parsed 0 records" }),
+      };
+    }
 
     // Group by project number
     const byProject = {};
@@ -145,7 +216,7 @@ exports.handler = async (event) => {
       byProject[proj].push(r);
     }
 
-    // Build best record per project
+    // Build best record per project (most advanced status)
     const projects = {};
     for (const [projNum, projRows] of Object.entries(byProject)) {
       const best = projRows.reduce((a, b) =>
@@ -155,21 +226,19 @@ exports.handler = async (event) => {
           : a
       );
 
-      const sentAt = projRows
-        .map((r) => parseDate(r["Sent At"]))
-        .find(Boolean) || null;
-      const completedAt = projRows
-        .map((r) => parseDate(r["Completed At"]))
-        .find(Boolean) || null;
-      const createdAt = projRows
-        .map((r) => parseDate(r["Created At"]))
-        .find(Boolean) || null;
-      const hrsToSend = projRows
-        .map((r) => safeFloat(r["Hrs to Send"]))
-        .find((v) => v !== null) ?? null;
-      const hrsToComplete = projRows
-        .map((r) => safeFloat(r["Hrs to Complete"]))
-        .find((v) => v !== null) ?? null;
+      const sentAt =
+        projRows.map((r) => parseDate(r["Sent At"])).find(Boolean) || null;
+      const completedAt =
+        projRows.map((r) => parseDate(r["Completed At"])).find(Boolean) || null;
+      const createdAt =
+        projRows.map((r) => parseDate(r["Created At"])).find(Boolean) || null;
+      const hrsToSend =
+        projRows.map((r) => safeFloat(r["Hrs to Send"])).find((v) => v !== null) ??
+        null;
+      const hrsToComplete =
+        projRows
+          .map((r) => safeFloat(r["Hrs to Complete"]))
+          .find((v) => v !== null) ?? null;
 
       projects[projNum] = {
         projNum,
@@ -213,14 +282,12 @@ exports.handler = async (event) => {
         ? proj.createdAt + " 00:00:00"
         : new Date().toISOString().slice(0, 19).replace("T", " ");
 
-      // Check if exists
       let existingId = byProjNum[String(proj.projNum)];
       if (!existingId) {
         existingId = byName[normName(proj.client)];
       }
 
       if (existingId) {
-        // Update existing record
         await conn.execute(
           `UPDATE leads SET
             smProjectNumber = ?,
@@ -252,7 +319,6 @@ exports.handler = async (event) => {
         );
         updated++;
       } else {
-        // Insert new record
         await conn.execute(
           `INSERT INTO leads (
             fullName, phone, email, sourcePage, sourceLabel,
@@ -285,7 +351,6 @@ exports.handler = async (event) => {
           ]
         );
         inserted++;
-        // Add to lookup so duplicates within same CSV are caught
         byProjNum[String(proj.projNum)] = true;
         byName[normName(proj.client)] = true;
       }

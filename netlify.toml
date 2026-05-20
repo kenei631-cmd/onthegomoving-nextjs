@@ -12,7 +12,7 @@
 [functions]
   # mysql2 uses native bindings — mark as external so esbuild doesn't try to bundle it
   # csv-parse must also be external so esbuild can resolve it at runtime
-  external_node_modules = ["mysql2", "csv-parse"]
+  external_node_modules = ["mysql2"]
 
 # ─── Netlify Image CDN ────────────────────────────────────────────────────────
 # Allow /.netlify/images to transform images from our CloudFront CDN.
