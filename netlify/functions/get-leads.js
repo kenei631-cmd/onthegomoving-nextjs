@@ -42,8 +42,9 @@ export const handler = async (event) => {
       const cutoff = new Date(Date.now() - days * 24 * 60 * 60 * 1000)
         .toISOString().slice(0, 19).replace("T", " ");
 
-      const [rows] = await conn.execute(
-        `SELECT
+      const limitVal = Number(perPage);
+      const offsetVal = Number(offset);
+      const sql = `SELECT
           id, fullName, phone, email,
           moveDate, moveType, moveSize, squareFeet,
           fromZip, toZip, wantsStorage,
@@ -56,9 +57,8 @@ export const handler = async (event) => {
         FROM leads
         WHERE createdAt >= ?
         ORDER BY createdAt DESC
-        LIMIT ${Number(perPage)} OFFSET ${Number(offset)}`,
-        [cutoff]
-      );
+        LIMIT ${limitVal} OFFSET ${offsetVal}`;
+      const [rows] = await conn.execute(sql, [cutoff]);
 
       const [[{ total }]] = await conn.execute(
         "SELECT COUNT(*) AS total FROM leads WHERE createdAt >= ?",
