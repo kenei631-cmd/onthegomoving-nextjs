@@ -120,41 +120,27 @@ export default function MovingCostBreakdown() {
 
         {/* ── HERO ── */}
         <section
-          className="relative min-h-[400px] flex items-center"
+          className="relative min-h-[480px] flex items-center justify-center"
           style={{
-            backgroundImage: `linear-gradient(to right, rgba(15,40,10,0.92) 50%, rgba(15,40,10,0.65) 100%), url(${BRAND_IMAGES.heroMovingCrew})`,
+            backgroundImage: `linear-gradient(to right, rgba(15,40,10,0.88) 0%, rgba(15,40,10,0.75) 100%), url(${BRAND_IMAGES.heroMovingCrew})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
-          <div className="container relative z-10 py-14 lg:py-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
-              <div>
-                <h1
-                  className="text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5"
-                  style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
-                >
-                  What Does a Local
-                  <br />
-                  <span style={{ color: "#75aa11" }}>Move Cost?</span>
-                </h1>
-                <p className="text-green-100 text-lg leading-relaxed max-w-xl">
-                  Typical ranges by home size. Every move is a little different — but most local moves fall into the ranges below. Your actual price depends on crew size, access (stairs/elevators), prep, and move date.
-                </p>
-              </div>
-              <div className="hidden lg:block">
-                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
-                  <QuoteForm variant="hero" />
-                </div>
-              </div>
+          <div className="container relative z-10 py-20 flex items-center justify-center">
+            <div className="text-center max-w-3xl">
+              <h1
+                className="text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-5"
+                style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
+              >
+                What Does a Local
+                <br />
+                <span style={{ color: "#75aa11" }}>Move Cost?</span>
+              </h1>
+              <p className="text-green-100 text-lg leading-relaxed max-w-2xl mx-auto">
+                Typical ranges by home size. Every move is a little different — but most local moves fall into the ranges below. Your actual price depends on crew size, access (stairs/elevators), prep, and move date.
+              </p>
             </div>
-          </div>
-        </section>
-
-        {/* Mobile form */}
-        <section className="lg:hidden bg-[#f5f5f3] py-8">
-          <div className="container">
-            <QuoteForm variant="inline" />
           </div>
         </section>
 
