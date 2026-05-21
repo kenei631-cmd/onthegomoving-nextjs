@@ -23,6 +23,7 @@ export interface LocationData {
   intro: string;
   localKnowledge: string;
   neighborhoods: string[];
+  neighborhoodDetails?: { name: string; desc: string }[]; // Optional rich neighborhood cards
   challenges: string[];
   pricing: {
     studio: string;
@@ -57,10 +58,10 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     miles: 12,
     drive: "15 min",
     dispatchFrom: "Seattle",
-    metaTitle: "Seattle Movers & Storage",
-    metaDescription: "Local movers in Seattle, WA. Serving Capitol Hill, Ballard, Queen Anne, Fremont & nearby areas. Licensed & insured, 4.8 stars. Free quote.",
-    heroTagline: "Seattle's Trusted Local Moving Company",
-    heroSubtitle: "Serving Capitol Hill, Ballard, Queen Anne, Fremont, South Lake Union, Beacon Hill & all Seattle neighborhoods.",
+    metaTitle: "Seattle Residential & Apartment Movers | On The Go Moving",
+    metaDescription: "Expert residential and apartment movers in Seattle, WA. We handle Capitol Hill high-rises, Queen Anne hillside homes, Ballard apartments, and every Seattle neighborhood. Licensed & insured. Free quote.",
+    heroTagline: "Seattle Residential & Apartment Moving Specialists",
+    heroSubtitle: "High-rise elevator coordination, SDOT parking permits, and expert crews for Capitol Hill, Ballard, Queen Anne, Fremont, South Lake Union & all Seattle neighborhoods.",
     intro: "Seattle is one of the most complex moving markets in the Pacific Northwest. From the high-rise apartments of South Lake Union to the steep hills of Queen Anne and Capitol Hill, and the dense residential streets of Ballard and Fremont, every Seattle move presents unique logistical challenges. On The Go Moving & Storage has been navigating Seattle's neighborhoods since 2009, and our crews know the parking restrictions, elevator policies, and access challenges that make Seattle moves different from anywhere else.",
     localKnowledge: "Seattle moves require specific preparation that goes beyond what most moving companies offer. South Lake Union's tech campus apartments \u2014 including buildings near Amazon's headquarters \u2014 require elevator reservations booked 48\u201372 hours in advance and have strict move-in windows. Capitol Hill and First Hill have limited street parking for large trucks, requiring temporary no-parking permits from SDOT. Queen Anne's steep streets demand experienced drivers and properly loaded trucks. Ballard and Fremont have narrow residential streets with overhead utility lines that limit truck height. Our Redmond warehouse is 12 miles east \u2014 a 20-minute drive that keeps our response times fast for all Seattle neighborhoods.",
     neighborhoods: ["Capitol Hill", "Ballard", "Queen Anne", "Fremont", "South Lake Union", "Beacon Hill", "Magnolia", "Wallingford", "Green Lake", "Northgate", "First Hill", "Madison Park", "Madrona", "Leschi", "Columbia City", "West Seattle"],
@@ -114,6 +115,16 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     intro: "Bellevue is one of the fastest-growing cities in Washington State, and its mix of luxury high-rises in Downtown, established neighborhoods in Somerset and Newport Hills, and dense apartment corridors along 156th Ave NE creates a wide range of moving challenges. On The Go Moving & Storage has been serving Bellevue residents and businesses since 2009, and our crews know every building, every parking restriction, and every elevator policy in the city.",
     localKnowledge: "Bellevue moves require specific preparation. Downtown Bellevue high-rises \u2014 including The Bravern, Cirrus, and Bellevue Towers \u2014 require elevator reservations booked 48\u201372 hours in advance and have strict move-in windows, typically 8am\u20135pm on weekdays. The Crossroads and Eastgate neighborhoods have dense apartment complexes with limited truck access. Somerset and Newport Hills feature large homes on steep lots with long carry distances. Our Redmond warehouse is 5 miles north \u2014 the closest of any major moving company to central Bellevue.",
     neighborhoods: ["Downtown Bellevue", "Crossroads", "Factoria", "Somerset", "Newport Hills", "Eastgate", "Bridle Trails", "Lake Hills", "Wilburton", "Bel-Red", "West Bellevue", "Medina"],
+    neighborhoodDetails: [
+      { name: "Downtown Bellevue", desc: "Luxury high-rises like The Bravern, Cirrus, and Bellevue Towers — elevator reservations and COI requirements handled in advance." },
+      { name: "Somerset", desc: "Upscale hillside neighborhood with steep driveways and large homes — our crews bring the right equipment for long carries." },
+      { name: "Newport Hills", desc: "Established residential area with large family homes on wooded lots — full-service residential moves." },
+      { name: "Crossroads", desc: "Dense apartment corridor with limited truck access — we scout parking and access points before move day." },
+      { name: "Eastgate", desc: "Mixed residential and commercial area near I-90 — popular for office relocations and apartment moves." },
+      { name: "Factoria", desc: "Townhomes and condos near Bellevue Square — compact moves with elevator and parking coordination." },
+      { name: "Bel-Red", desc: "Fast-growing corridor with new apartment buildings near the Spring District — we handle new-construction move-in requirements." },
+      { name: "Lake Hills", desc: "Established neighborhood with single-family homes and easy truck access — one of our most common Bellevue job types." },
+    ],
     challenges: ["Elevator reservations required in Downtown Bellevue high-rises", "Strict move-in windows at luxury apartment buildings", "Steep driveways in Somerset and Newport Hills", "Limited truck parking in Crossroads and Bel-Red corridors", "HOA move-in fees and certificate of insurance requirements"],
     pricing: {
       studio: "$300\u2013$500",
@@ -149,7 +160,7 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     },
     apartment: "Bellevue's apartment market ranges from luxury high-rises in Downtown to mid-rise complexes in Crossroads and Eastgate. Downtown buildings like The Bravern and Cirrus require elevator reservations and certificates of insurance. Crossroads complexes often have limited parking for moving trucks \u2014 we scout access points before move day. Most Bellevue apartment moves complete in 2\u20134 hours.",
     home: "Bellevue home moves span a wide range \u2014 from compact townhomes in Factoria to large estates in Somerset and Newport Hills. Our residential crews handle steep driveways, long carry distances, and the oversized furniture common in Bellevue's newer construction. We bring floor runners, door jamb protectors, and furniture pads on every job.",
-    business: "Bellevue is home to major employers including Microsoft, T-Mobile, and Expedia, plus hundreds of tech startups in the Spring District and Bel-Red corridor. Our commercial crews are trained on IT equipment handling, workstation disassembly, and chain-of-custody documentation. We work weekends and after hours to keep your business running.",
+    business: "Bellevue is home to major employers including Microsoft, T-Mobile, and Expedia, plus hundreds of tech startups in the Spring District and Bel-Red corridor. We handle office relocations of all sizes — from a 5-person startup to a 100-workstation enterprise move. After-hours and weekend scheduling available to eliminate downtime.",
   },
   "redmond-movers": {
     slug: "redmond-movers",
@@ -164,6 +175,16 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     intro: "On The Go Moving & Storage is based in Redmond, WA \u2014 this is our home city. Our warehouse is on Redmond Way, and our crews live and work in the same neighborhoods we serve. We know the traffic patterns on 520, the parking rules near Redmond Town Center, the elevator policies at Overlake's tech campus apartment buildings, and the long driveways on Education Hill. No moving company knows Redmond better.",
     localKnowledge: "Redmond is Microsoft's hometown and one of the most active moving markets on the Eastside. The Overlake neighborhood near Microsoft's campus has dense apartment complexes with strict move-in policies. Education Hill and Bear Creek feature large family homes on wooded lots with challenging access. Downtown Redmond's newer mixed-use buildings require elevator coordination. Our warehouse on Redmond Way means we can mobilize faster than any other moving company in the city \u2014 typically arriving within 30 minutes of your scheduled start time.",
     neighborhoods: ["Downtown Redmond", "Education Hill", "Overlake", "Bear Creek", "Grass Lawn", "Willows", "Idylwood", "Rose Hill", "Ames Lake", "Novelty Hill", "Union Hill", "Redmond Ridge"],
+    neighborhoodDetails: [
+      { name: "Overlake", desc: "Dense apartment complexes near Microsoft's campus — elevator reservations and COI requirements handled by our crew." },
+      { name: "Education Hill", desc: "Large family homes on wooded lots with steep driveways and long carry distances — our most common Redmond job type." },
+      { name: "Downtown Redmond", desc: "Mixed-use buildings near Redmond Town Center with elevator coordination and limited street parking." },
+      { name: "Bear Creek", desc: "Spacious properties on the east side of Redmond — we handle long driveways and rural access roads." },
+      { name: "Grass Lawn", desc: "Established residential neighborhood with single-family homes and easy truck access." },
+      { name: "Redmond Ridge", desc: "Newer HOA-governed development with strict move-in rules — we coordinate with property management in advance." },
+      { name: "Rose Hill", desc: "Hillside neighborhood bordering Kirkland — popular for tech employees relocating to the Eastside." },
+      { name: "Novelty Hill", desc: "Large homes and newer construction near Trilogy and Willowmere — full-service residential moves." },
+    ],
     challenges: ["Elevator reservations at Overlake tech campus apartments", "Long wooded driveways on Education Hill and Bear Creek", "Traffic congestion on 520 and Redmond Way during peak hours", "Strict HOA move-in rules in newer Redmond Ridge developments", "Limited truck access in Downtown Redmond's mixed-use blocks"],
     pricing: {
       studio: "$280\u2013$480",
@@ -204,6 +225,16 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     intro: "Kirkland's waterfront location on Lake Washington, its mix of historic downtown neighborhoods and newer developments in Totem Lake and Kingsgate, and the presence of Google's major campus make it one of the most dynamic moving markets on the Eastside. On The Go Moving & Storage has been serving Kirkland since 2009, and our crews know the parking challenges on the waterfront, the elevator policies at Google's campus apartments, and the steep streets in Lakeview and Highlands.",
     localKnowledge: "Kirkland moves come with specific logistical considerations. Downtown Kirkland's waterfront streets have limited truck parking \u2014 we secure temporary no-parking permits when needed. The Totem Lake area has dense apartment complexes near the Google campus with elevator reservations required. Juanita and Lakeview neighborhoods feature homes on steep hillside lots with challenging access. The Parkplace complex near downtown is one of the most active apartment move locations in the city. Our Redmond warehouse is 5 miles east, making Kirkland one of our fastest-response service areas.",
     neighborhoods: ["Downtown Kirkland", "Juanita", "Totem Lake", "Bridle Trails", "Lakeview", "Highlands", "Kingsgate", "Finn Hill", "Norkirk", "Houghton", "Moss Bay", "South Kirkland"],
+    neighborhoodDetails: [
+      { name: "Downtown Kirkland", desc: "Waterfront streets with limited truck parking — we secure temporary no-parking permits and scout access before move day." },
+      { name: "Totem Lake", desc: "Dense apartment corridor near Google's Kirkland campus — elevator reservations and COI requirements handled in advance." },
+      { name: "Juanita", desc: "Established residential neighborhood with hillside lots and narrow streets — experienced crews for challenging access." },
+      { name: "Lakeview & Highlands", desc: "Steep hillside neighborhoods with large homes and long carry distances — we bring the right equipment for every job." },
+      { name: "Finn Hill", desc: "Growing residential area with newer construction and HOA-governed communities." },
+      { name: "Kingsgate", desc: "Established neighborhood near SR-405 with easy truck access and a mix of home sizes." },
+      { name: "Moss Bay", desc: "Upscale waterfront area with luxury homes — white-glove service for high-value moves." },
+      { name: "Norkirk", desc: "Older residential neighborhood with compact homes and narrow streets — our smaller trucks navigate easily." },
+    ],
     challenges: ["Limited truck parking on Downtown Kirkland waterfront streets", "Elevator reservations at Totem Lake and Google campus apartments", "Steep hillside lots in Lakeview and Highlands", "Narrow streets in older Juanita and Norkirk neighborhoods", "Parkplace complex move-in coordination and elevator booking"],
     pricing: {
       studio: "$300\u2013$500",
@@ -284,6 +315,14 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     intro: "Issaquah sits at the foot of the Cascade foothills, and its mix of historic downtown, the large Issaquah Highlands development, and newer communities like Talus creates a diverse moving landscape. On The Go Moving & Storage has been serving Issaquah since 2009. Our crews know the steep grades in Issaquah Highlands, the HOA requirements in Talus, and the traffic patterns on I-90 and Front Street.",
     localKnowledge: "Issaquah moves require specific preparation. Issaquah Highlands is a large planned community on a hillside with steep internal roads \u2014 our drivers know the best access routes for large moving trucks. Talus has strict HOA move-in rules including required certificates of insurance. The historic downtown area has narrow streets with limited truck parking. I-90 access makes Issaquah one of our most efficient service areas from our Redmond warehouse, just 10 miles northwest.",
     neighborhoods: ["Issaquah Highlands", "Talus", "Downtown Issaquah", "Cougar Mountain", "Squak Mountain", "Gilman Village", "East Issaquah", "Grand Ridge", "Montreux"],
+    neighborhoodDetails: [
+      { name: "Issaquah Highlands", desc: "Large planned community on a hillside with steep internal roads — our drivers know the best truck access routes and handle HOA move-in coordination." },
+      { name: "Talus", desc: "Newer HOA-governed community with strict move-in rules and certificate of insurance requirements — all handled before move day." },
+      { name: "Downtown Issaquah", desc: "Historic downtown with narrow streets and limited truck parking — we scout access and secure parking in advance." },
+      { name: "Grand Ridge", desc: "Newer construction neighborhood in Issaquah Highlands with large homes and HOA oversight." },
+      { name: "Gilman Village", desc: "Mixed residential and retail area near downtown — compact moves with easy I-90 access." },
+      { name: "Cougar Mountain", desc: "Wooded residential area with hillside lots and challenging truck access — experienced crews for steep driveways." },
+    ],
     challenges: ["Steep internal roads in Issaquah Highlands", "HOA move-in rules and COI requirements in Talus", "Narrow streets in historic Downtown Issaquah", "Limited truck parking near Gilman Village", "I-90 traffic congestion during peak hours"],
     pricing: {
       studio: "$300\u2013$500",
@@ -324,6 +363,14 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     intro: "Woodinville is known for its wine country, large estate properties, and a mix of rural and suburban neighborhoods. On The Go Moving & Storage has been serving Woodinville since 2009. Our crews know the long driveways on Hollywood Hill, the access challenges on Bear Creek Road, and the HOA requirements in Wellington Hills and other planned communities.",
     localKnowledge: "Woodinville moves are predominantly large residential \u2014 estate homes on wooded lots with long driveways and challenging access for large moving trucks. Hollywood Hill has some of the most challenging access in the region, with steep, narrow roads and properties set far back from the street. Bear Creek Road properties often require our smaller trucks for initial access. Wellington Hills and other planned communities have HOA move-in rules. Our Redmond warehouse is 8 miles south \u2014 a 13-minute drive.",
     neighborhoods: ["Hollywood Hill", "Bear Creek", "Wellington Hills", "Downtown Woodinville", "Cottage Lake", "Tolt Hill", "Woodinville Wine Country", "Leota"],
+    neighborhoodDetails: [
+      { name: "Hollywood Hill", desc: "Estate properties on steep, narrow roads — we use smaller lead vehicles for initial access and stage the main truck safely." },
+      { name: "Bear Creek", desc: "Rural properties along Bear Creek Road with long driveways and limited truck turnaround space." },
+      { name: "Wellington Hills", desc: "HOA-governed planned community — we coordinate move-in rules and parking with property management in advance." },
+      { name: "Cottage Lake", desc: "Lakeside residential neighborhood with a mix of older cabins and newer homes — waterfront access handled with care." },
+      { name: "Downtown Woodinville", desc: "Mixed-use buildings near the wine district — standard elevator and parking coordination." },
+      { name: "Woodinville Wine Country", desc: "Winery and estate moves including wine collections — we provide padded, temperature-aware transport for every bottle." },
+    ],
     challenges: ["Steep, narrow roads on Hollywood Hill", "Long driveways requiring smaller lead vehicles", "HOA move-in rules in Wellington Hills", "Limited truck access on Bear Creek Road properties", "Traffic on SR-522 and Woodinville-Duvall Road"],
     pricing: {
       studio: "$300\u2013$500",
@@ -404,6 +451,14 @@ export const LOCATION_DATA: Record<string, LocationData> = {
     intro: "Bothell straddles King and Snohomish counties, with a revitalized downtown, major employment centers in Canyon Park, and established residential neighborhoods throughout. On The Go Moving & Storage has been serving Bothell since 2009. Our crews know the traffic patterns on I-405 and SR-522, the HOA requirements in North Creek and Queensborough, and the mix of older and newer homes throughout the city.",
     localKnowledge: "Bothell is one of the most active moving markets in the north Eastside. Canyon Park has dense office and apartment development with standard move-in requirements. North Creek and Queensborough are established planned communities with HOA oversight. Downtown Bothell's revitalization has brought new mixed-use buildings with elevator coordination requirements. I-405 and SR-522 are the main access routes \u2014 our crews plan around peak traffic to maximize efficiency. Our Redmond warehouse is 11 miles south.",
     neighborhoods: ["Downtown Bothell", "Canyon Park", "North Creek", "Queensborough", "Thrasher's Corner", "Westhill", "Shelton View", "Filbert Creek", "North Bothell"],
+    neighborhoodDetails: [
+      { name: "Canyon Park", desc: "Major office and apartment hub — our most active Bothell commercial move area, with elevator and after-hours coordination." },
+      { name: "Downtown Bothell", desc: "Revitalized mixed-use district with newer apartment buildings and older homes — we handle both." },
+      { name: "North Creek", desc: "Established planned community with HOA oversight — we coordinate move-in rules and parking in advance." },
+      { name: "Queensborough", desc: "Newer residential development with HOA requirements and large single-family homes." },
+      { name: "Thrasher's Corner", desc: "Residential area near the Snohomish County border — we serve both the King and Snohomish County sides of Bothell." },
+      { name: "UW Bothell Area", desc: "Active apartment and student housing market near the UW Bothell campus — high move volume in August and September." },
+    ],
     challenges: ["I-405 and SR-522 traffic congestion during peak hours", "HOA move-in rules in North Creek and Queensborough", "Elevator coordination in Canyon Park apartment buildings", "Mix of older homes with narrow access in Downtown Bothell", "Snohomish County permit requirements for some moves"],
     pricing: {
       studio: "$300\u2013$500",

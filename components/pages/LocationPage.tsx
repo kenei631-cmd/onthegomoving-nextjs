@@ -429,9 +429,9 @@ export default function LocationPage({ slug }: LocationPageProps) {
               </div>
               <h3 className="font-display text-xl font-black mb-4">Apartment & Condo Movers in {data.city}</h3>
               <p className="text-green-100 text-sm leading-relaxed mb-5">{data.apartment}</p>
-              <a href="/apartment-moving/">
+              <a href={`/${slug}/apartment/`}>
                 <span className="inline-flex items-center gap-2 text-brand-gold font-semibold text-sm hover:gap-3 transition-all">
-                  Get apartment moving quote <ArrowRight className="w-4 h-4" />
+                  See {data.city} apartment moving details <ArrowRight className="w-4 h-4" />
                 </span>
               </a>
             </div>
@@ -453,9 +453,9 @@ export default function LocationPage({ slug }: LocationPageProps) {
               </div>
               <h3 className="font-display text-xl font-black text-brand-forest mb-4">Business Movers in {data.city}</h3>
               <p className="text-gray-600 text-sm leading-relaxed mb-5">{data.business}</p>
-              <a href="/commercial-moving/">
+              <a href={`/${slug}/commercial/`}>
                 <span className="inline-flex items-center gap-2 text-brand-green font-semibold text-sm hover:gap-3 transition-all">
-                  Get commercial moving quote <ArrowRight className="w-4 h-4" />
+                  See {data.city} commercial moving details <ArrowRight className="w-4 h-4" />
                 </span>
               </a>
             </div>
@@ -555,13 +555,24 @@ export default function LocationPage({ slug }: LocationPageProps) {
               <h3 className="font-display font-bold text-brand-forest text-lg mb-4">
                 {data.city} Neighborhoods We Serve
               </h3>
-              <div className="flex flex-wrap gap-2">
-                {data.neighborhoods.map((n, i) => (
-                  <span key={i} className="bg-white border border-gray-200 text-gray-700 text-xs px-3 py-1.5 rounded-full hover:bg-brand-green/10 hover:border-brand-green/40 hover:text-brand-forest transition-colors cursor-default">
-                    {n}
-                  </span>
-                ))}
-              </div>
+              {data.neighborhoodDetails ? (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {data.neighborhoodDetails.map((n, i) => (
+                    <div key={i} className="bg-white rounded-xl border border-gray-100 shadow-sm p-4 hover:shadow-md hover:border-brand-green/30 transition-all">
+                      <p className="font-bold text-brand-forest text-sm mb-1">{n.name}</p>
+                      <p className="text-gray-500 text-xs leading-relaxed">{n.desc}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {data.neighborhoods.map((n, i) => (
+                    <span key={i} className="bg-white border border-gray-200 text-gray-700 text-xs px-3 py-1.5 rounded-full hover:bg-brand-green/10 hover:border-brand-green/40 hover:text-brand-forest transition-colors cursor-default">
+                      {n}
+                    </span>
+                  ))}
+                </div>
+              )}
             </div>
 
             <div>
