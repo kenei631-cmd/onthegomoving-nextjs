@@ -800,7 +800,7 @@ export default function LeadsDashboard() {
                     sourceFilter === s ? "bg-white text-gray-900" : "text-white/70 hover:text-white"
                   }`}
                 >
-                  {s === "all" ? "All" : s === "form" ? "Form Leads" : "Supermove"}
+                  {s === "all" ? "All Records" : s === "form" ? "Form Leads (Netlify)" : "Supermove Imports"}
                 </button>
               ))}
             </div>
@@ -1178,10 +1178,19 @@ export default function LeadsDashboard() {
                         <div className="w-7 h-7 rounded-full bg-[#1e3a0f] text-white text-xs font-bold flex items-center justify-center flex-shrink-0">{idx + 1}</div>
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 mb-1.5">
-                            <span className="font-mono text-sm text-gray-800 truncate">{group.sourcePage}</span>
-                            <a href={`https://onthegomoving.com${group.sourcePage}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="text-gray-400 hover:text-[#75aa11] flex-shrink-0">
-                              <ExternalLink size={12} />
-                            </a>
+                            {group.sourcePage === "supermove-import" ? (
+                              <>
+                                <span className="text-sm font-semibold text-purple-700">Supermove Imports</span>
+                                <span className="text-xs bg-purple-100 text-purple-600 px-1.5 py-0.5 rounded font-medium">CSV</span>
+                              </>
+                            ) : (
+                              <>
+                                <span className="font-mono text-sm text-gray-800 truncate">{group.sourcePage}</span>
+                                <a href={`https://onthegomoving.com${group.sourcePage}`} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="text-gray-400 hover:text-[#75aa11] flex-shrink-0">
+                                  <ExternalLink size={12} />
+                                </a>
+                              </>
+                            )}
                           </div>
                           <div className="flex items-center gap-2">
                             <div className="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden">
@@ -1313,12 +1322,18 @@ export default function LeadsDashboard() {
                             </div>
                           </td>
                           <td className="px-4 py-3">
-                            <div className="flex items-center gap-1">
-                              <span className="font-mono text-xs text-gray-600 truncate max-w-[180px]">{lead.sourcePage || "/"}</span>
-                              <a href={`https://onthegomoving.com${lead.sourcePage}`} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#75aa11] flex-shrink-0">
-                                <ExternalLink size={11} />
-                              </a>
-                            </div>
+                            {lead.sourcePage === "supermove-import" ? (
+                              <span className="inline-flex items-center gap-1 text-xs font-medium text-purple-700 bg-purple-50 border border-purple-200 px-2 py-0.5 rounded-full">
+                                Supermove Import
+                              </span>
+                            ) : (
+                              <div className="flex items-center gap-1">
+                                <span className="font-mono text-xs text-gray-600 truncate max-w-[180px]">{lead.sourcePage || "/"}</span>
+                                <a href={`https://onthegomoving.com${lead.sourcePage}`} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#75aa11] flex-shrink-0">
+                                  <ExternalLink size={11} />
+                                </a>
+                              </div>
+                            )}
                           </td>
                           <td className="px-4 py-3">
                             {lead.smProjectNumber ? (
