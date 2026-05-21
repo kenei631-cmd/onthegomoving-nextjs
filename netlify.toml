@@ -2281,3 +2281,63 @@
   to = "/blog/"
   status = 301
   force = true
+
+# ─── Search Console 404 fixes — May 2026 ─────────────────────────────────────
+# Seattle city-service pages: old flat URLs → new /city/service/ pattern
+[[redirects]]
+  from = "/seattle-apartment-moving/"
+  to = "/seattle-movers/apartment/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/seattle-residential-moving/"
+  to = "/seattle-movers/residential/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/seattle-unpacking-services/"
+  to = "/seattle-movers/unpacking/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/seattle-furniture-moving/"
+  to = "/seattle-movers/furniture/"
+  status = 301
+  force = true
+# Issaquah sub-page with invalid service key
+[[redirects]]
+  from = "/issaquah-movers/corporate-relocation/"
+  to = "/issaquah-movers/"
+  status = 301
+  force = true
+# Blog posts indexed under /blog/slug/ on old WordPress site
+[[redirects]]
+  from = "/blog/15-signs-of-a-worst-moving-company/"
+  to = "/15-signs-of-a-worst-moving-company/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/reasons-in-moving-to-bellevue-wa/"
+  to = "/moving-to-bellevue/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/successful-yard-sale/"
+  to = "/packing-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/how-to-make-a-new-apartment-feel-like-home/"
+  to = "/apartment-moving/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/how-can-you-prepare-your-items-for-long-term-storage/"
+  to = "/storage-services/"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/blog/9-moving-lessons-dont-have-to-learn-hard-way/"
+  to = "/residential-moving/"
+  status = 301
+  force = true
