@@ -409,7 +409,7 @@ export default function BlogPost({ slug: slugProp }: { slug?: string }) {
                     : null;
                   const citySlug = post.relatedCity ?? null;
                   const cityLinks = citySlug ? [
-                    { label: `${cityName} Movers`, href: `/${citySlug}-movers/` },
+                    { label: `${cityName} Movers`, href: citySlug === "seattle" ? "/" : `/${citySlug}-movers/` },
                     { label: `${cityName} Residential Moving`, href: `/${citySlug}-movers/residential/` },
                     { label: `${cityName} Apartment Moving`, href: `/${citySlug}-movers/apartment/` },
                     { label: `${cityName} Packing Services`, href: `/${citySlug}-movers/packing/` },
