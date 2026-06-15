@@ -131,7 +131,10 @@ function buildSupermovePayload(lead) {
       },
     ],
     referral_source: "Custom Website via A Supermove-Managed Integration",
-    tags: ["WEBSITE_LEAD"],
+    tags: [
+      "WEBSITE_LEAD",
+      ...(lead.sourceLabel === "landing-social-residential-movers" ? ["SOCIAL_MEDIA_LEAD"] : []),
+    ],
     ...(projectSize ? { values: { PROJECT_SIZE: projectSize } } : {}),
   };
 }
