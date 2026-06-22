@@ -3514,5 +3514,80 @@ export const POSTS_DATA: Record<string, BlogPostData> = {
     ],
     relatedService: "Residential Moving",
     relatedServiceHref: "/residential-moving/"
+  },
+
+  "best-home-improvement-contractors-seattle": {
+    slug: "best-home-improvement-contractors-seattle",
+    title: `Best Home Improvement Contractors in Seattle After a Move (2026)`,
+    metaTitle: `Best Home Improvement Contractors in Seattle After a Move (2026)`,
+    metaDescription: `Just moved to Seattle? Here are the best home improvement contractors in Seattle for landscaping, painting, plumbing, electrical, and HVAC — vetted and locally trusted.`,
+    date: "June 22, 2026",
+    dateISO: "2026-06-22",
+    category: "Seattle Living",
+    readTime: "8 min read",
+    author: "Jason Sexton",
+    heroImage: BRAND_IMAGES.truckSeattleSkyline,
+    intro: `Moving into a new home in Seattle is exciting — but it rarely takes long before the to-do list starts growing. A fence that needs replacing, a yard that needs grading, a bathroom that needs updating. The challenge is finding contractors you can actually trust in a city where demand is high and good tradespeople book out weeks in advance. We've put together this guide to the best home improvement contractors in Seattle across the categories new homeowners need most — landscaping and retaining walls, painting, plumbing, electrical, and HVAC. These are companies with real track records, strong Google reviews, and the kind of local knowledge that matters in the Pacific Northwest.`,
+    sections: [
+      {
+        type: "h2",
+        heading: `Best Landscaping & Retaining Wall Contractor: New Life Rockeries`,
+        body: `If you've moved into a Seattle-area home with a sloped yard — and many homes in neighborhoods like Queen Anne, Magnolia, Capitol Hill, and the Eastside have exactly that — a retaining wall or rockery is often one of the first projects on the list. Hillside erosion, unstable soil, and drainage issues are common in the Pacific Northwest, and a properly built retaining wall solves all three while dramatically improving curb appeal.\n\n<strong><a href="https://newliferockeries.com" target="_blank" rel="noopener">New Life Rockeries</a></strong> is our top recommendation for retaining walls and rockery work in the Seattle area. Family-owned since 1975 — four generations of craftsmanship — they've completed over 2,100 projects across King, Snohomish, and Skagit Counties. They hold a 4.9-star rating across 120 Google reviews, which is exceptional for a contractor in a category where reviews are hard to earn.\n\nWhat sets them apart is the combination of experience and communication. They visit your property, walk the space with you, provide a clear written estimate, and stay in contact throughout the build. No chasing down your contractor for updates. Their crews work in natural stone rockery, block retaining walls, and poured concrete — and they handle the permit process for walls that require one under Washington State code.\n\n<strong>Contact:</strong> (425) 584-6878 · <a href="https://newliferockeries.com" target="_blank" rel="noopener">newliferockeries.com</a><br/><strong>Service area:</strong> Greater Seattle — King, Snohomish & Skagit Counties<br/><strong>Specialty:</strong> Retaining walls, rockery, hardscaping, landscape design, patios, steps`
+      },
+      {
+        type: "h2",
+        heading: `Best Painter: Sound Painting Solutions`,
+        body: `Interior and exterior painting is one of the most common first projects after a move — whether you're refreshing a dated color scheme or covering up scuffs from the previous owners. Sound Painting Solutions has built a strong reputation in the Seattle market with a 4.9-star rating across 200+ reviews. They're a locally owned company (not a national franchise) with crews that specialize in Pacific Northwest conditions — which matters because exterior paint in Seattle needs to handle high moisture and temperature swings.\n\nThey offer interior painting, exterior painting, deck staining, and cabinet refinishing. Their communication and cleanup are consistently praised in reviews, which is the most common complaint about painters in general.\n\n<strong>Contact:</strong> soundpaintingsolutions.com<br/><strong>Service area:</strong> Seattle metro area`
+      },
+      {
+        type: "h2",
+        heading: `Best Plumber: Best Plumbing`,
+        body: `Despite the generic name, Best Plumbing (206-633-1700) has been a Seattle institution since 1968 and is consistently recommended on Seattle-area Reddit threads and neighborhood forums. They handle everything from routine repairs and water heater replacements to sewer line work and full remodels. For new homeowners, their inspection services are particularly useful — a plumbing inspection in the first few months of ownership can catch issues before they become expensive emergencies.\n\nFor smaller, independent plumbing work, Little Guy Plumbing (recommended frequently on r/SeattleWA) is a well-regarded option for homeowners who prefer a smaller shop with more direct communication.\n\n<strong>Contact:</strong> bestplumbing.com · (206) 633-1700<br/><strong>Service area:</strong> Greater Seattle`
+      },
+      {
+        type: "h2",
+        heading: `Best Electrician: Mirsky Electric`,
+        body: `Mirsky Electric has been operating in Seattle since 1997 and is one of the most consistently recommended electricians in the area. They're known for honest quotes, showing up when they say they will, and green building practices — which matters if you're adding EV charging, solar prep, or upgrading a panel in an older Seattle home. Their 4.8-star Google rating across 240+ reviews reflects a company that takes residential work seriously.\n\nFor new homeowners, common electrical projects include panel upgrades (many older Seattle homes have outdated 100-amp panels), EV charger installation, and adding circuits for home offices or kitchen appliances.\n\n<strong>Contact:</strong> mirskyelectric.com<br/><strong>Service area:</strong> Seattle and surrounding areas`
+      },
+      {
+        type: "h2",
+        heading: `Best HVAC Contractor: Evergreen Home Heating & Energy`,
+        body: `Seattle's climate is mild, but heating systems still matter — and the push toward heat pumps (which handle both heating and cooling) has made HVAC one of the most active home improvement categories in the region. Evergreen Home Heating & Energy has been operating since 1975 and holds a 4.8-star rating across nearly 1,000 Google reviews. They specialize in heat pump installation and service, which is the right system for most Seattle homes given the mild climate and Washington State's clean energy incentives.\n\nGreenwood Heating and Home Services is another well-regarded option, particularly for furnace work and duct cleaning in older Seattle homes.\n\n<strong>Contact:</strong> evergreenhomeheatingandenergy.com<br/><strong>Service area:</strong> Seattle metro and Eastside`
+      },
+      {
+        type: "h2",
+        heading: `What to Know Before Hiring Any Contractor in Seattle`,
+        body: `Seattle's contractor market is competitive and demand is consistently high. A few things to keep in mind before hiring:\n\n<strong>Verify the license:</strong> Washington State requires contractors to be licensed through the Department of Labor & Industries. You can verify any contractor's license at the L&I contractor lookup tool. Never hire an unlicensed contractor for permitted work.\n\n<strong>Get multiple quotes:</strong> For any project over $5,000, get at least three written quotes. Prices in Seattle vary significantly between contractors, and the lowest bid is not always the best value.\n\n<strong>Check permit requirements:</strong> Many home improvement projects in Seattle require permits — retaining walls over a certain height, electrical panel upgrades, HVAC replacements, and structural work all typically require permits. A reputable contractor will tell you upfront whether a permit is needed and handle the application.\n\n<strong>Ask about Pacific Northwest-specific experience:</strong> Seattle's climate, soil conditions, and building codes have specific requirements. A contractor who has worked primarily in the region will be more familiar with moisture management, seismic considerations, and local permit requirements than one who has relocated from a drier climate.`
+      },
+      {
+        type: "h2",
+        heading: `Need Help With the Move Itself?`,
+        body: `If you're still in the process of moving to Seattle — or planning a move within the area — On The Go Moving & Storage has been serving the Greater Seattle area since 2009. We offer residential moving, professional packing, storage services, and senior moving throughout Seattle, Bellevue, Redmond, Kirkland, and 50+ surrounding cities. Call us at <a href="tel:+14257618500">(425) 761-8500</a> for a free quote, or <a href="/contact-us/">contact us online</a>.`
+      }
+    ],
+    faqs: [
+      {
+        q: `How do I find a good contractor in Seattle?`,
+        a: `Start by checking the Washington State Department of Labor & Industries contractor lookup to verify licensing. Then read Google and Yelp reviews, ask for references from recent local projects, and get at least three written quotes for any project over $5,000. Personal recommendations from neighbors and local Reddit communities (r/Seattle, r/SeattleWA) are often the most reliable source.`
+      },
+      {
+        q: `Do I need a permit for a retaining wall in Seattle?`,
+        a: `In Seattle and most King County jurisdictions, retaining walls over 4 feet in height (measured from the bottom of the footing) require a building permit. Walls under 4 feet generally do not. A licensed contractor like New Life Rockeries will advise you on permit requirements for your specific project and can handle the permit application process.`
+      },
+      {
+        q: `How much does a retaining wall cost in Seattle?`,
+        a: `Retaining wall costs in Seattle typically range from $50 to $125 per square foot depending on material (natural stone rockery, concrete block, or poured concrete), wall height, site access, and drainage requirements. A small decorative rockery might cost $3,000–$8,000, while a large structural retaining wall can run $20,000–$50,000 or more. Get a written estimate from a licensed contractor for your specific project.`
+      },
+      {
+        q: `What home improvements should I prioritize after moving to Seattle?`,
+        a: `For most Seattle-area homes, the highest-priority improvements are: (1) a plumbing inspection to check for aging pipes or sewer issues, (2) an electrical panel assessment if the home is older than 30 years, (3) weatherproofing and insulation given Seattle's wet climate, and (4) any grading or drainage work if the property has a slope. Cosmetic improvements like painting and landscaping can follow once the structural and mechanical systems are confirmed to be in good shape.`
+      },
+      {
+        q: `Is Seattle a good city for home improvement projects?`,
+        a: `Seattle has a strong contractor market with many skilled tradespeople, but demand is consistently high and good contractors book out weeks or months in advance. Plan ahead, especially for seasonal work like exterior painting (best done in summer) or landscaping. The city also has active permit departments — allow extra time for permit approvals on larger projects.`
+      }
+    ],
+    relatedService: "Residential Moving",
+    relatedServiceHref: "/residential-moving/"
   }
 };
